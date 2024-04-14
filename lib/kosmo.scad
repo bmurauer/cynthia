@@ -1,9 +1,10 @@
-defaultHeight = 195;
+panelHeight = 197;
 thickness = 2.5;
 mountHoleDiameter = 3.0;
 jackHoleDiameter = 9.1;
 potHoleDiameter = 7;
 switchHoleDiameter = 6;
+midiSocketHoleDiameter = 15;
 
 buffer = 12.5;
 
@@ -14,8 +15,8 @@ row3 = 155;
 
 
 module pcbHolders(){
-  pcbHolder(width-5, defaultHeight/2 + 140/2 - 5);
-  pcbHolder(width-5, defaultHeight/2 - 140/2 - 5);
+  pcbHolder(width-7, panelHeight/2 + 140/2 - 5);
+  pcbHolder(width-7, panelHeight/2 - 140/2 - 5);
 }
 
 
@@ -23,19 +24,35 @@ module pcbHolder(x, y){
   pcbHole = 3;
   w = 10;
   h = 20;
-  translate([x, y, 1]) {
+  clearance = 15; // distance between panel and PCB hole
+    
+  translate([x, y, -0.1]) { // prevent gap
     rotate([0, 90, 0]) {
-      intersection() {
+      union() {
         difference() {
-          cube([h, w, thickness+1]);
-          translate([h-pcbHole-2, w/2, -1]){
-            cylinder(r=pcbHole/2,  h=thickness+2, $fn=20);
-            cylinder(r=6.2/2, h=2.3, $fn=6);
+          translate([0, 0, -5]) {               
+            cube([5,w,5]);
+          }
+          translate([5, w+1, -5]) {
+            rotate([90, 0, 0]) {
+              cylinder(r=5, h=w+2,$fn=49);
+            }
           }
         }
-        translate([h/2-2, w/2, -1]) {
-          cylinder(r=w+1, h=thickness+2, $fn=40);
+        /**/
+        intersection() {
+          difference() {
+            cube([h, w, thickness+1]);
+            translate([clearance, w/2, -1]){
+              cylinder(r=pcbHole/2,  h=thickness+2, $fn=20);
+              cylinder(r=3.1, h=2.3, $fn=6);
+            }
+          }
+          translate([h/2-2, w/2, -1]) {
+            cylinder(r=w+1, h=thickness+2, $fn=40);
+          }
         }
+        /**/
       }
     }
   }
@@ -62,6 +79,14 @@ module punchHole(x, y, holeSize,chamfer=false){
   }
 }
 
+module midiSocket(x, y) {
+    punchHole(x, y, midiSocketHoleDiameter);
+}
+
+module switch(x, y) { 
+    punchHole(x, y, switchHoleDiameter);
+}
+
 module pot(x, y) {
   translate([x, y , 0]) {
     union() {
@@ -79,8 +104,8 @@ module jack(x, y){
 
 module panel(width) {
   difference() {
-    cube([width, defaultHeight, thickness]);
-    kosmoMountHoles(width, defaultHeight);
+    cube([width, panelHeight, thickness]);
+    kosmoMountHoles(width, panelHeight);
   }
 }
 
