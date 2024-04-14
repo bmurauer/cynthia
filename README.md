@@ -57,9 +57,9 @@ The tabs have small indentations for the nuts.
 
 ![pcb tabs](images/pcb_holder.png)
 
-[!NOTE]
-The distance between the tabs that I have used depends on the pre-drilled holes of the strip boards that I like to use.
-Please change this distance if you have other PCBs.
+> [!NOTE]
+> The distance between the tabs that I have used depends on the pre-drilled holes of the strip boards that I like to use.
+> Please change this distance if you have other PCBs.
 
 ## Thanks to
 
