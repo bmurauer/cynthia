@@ -5,7 +5,7 @@ difference(){
     panel(width);
     midiSocket(width/2, panelHeight-35);
     
-    buffer=23;
+    buffer=20;
 
     jack(buffer, 40); 
     switch(width/2, 40);
