@@ -24,9 +24,17 @@
 #define GATE3 3
 #define GATE4 2
 
-#define DAC1  9 
-#define DAC2  8
 
+#define SWITCH1 A0
+#define SWITCH2 A1
+#define SWITCH3 A2
+#define SWITCH4 A3
+#define LED LED_BUILTIN
+#define DAC1  9 
+#define DAC2  8  
+
+
+uint8_t switches[4] = {SWITCH1, SWITCH2, SWITCH3, SWITCH4};
 uint8_t gates[4] = {GATE1, GATE2, GATE3, GATE4};
 
 MIDI_CREATE_DEFAULT_INSTANCE();
@@ -37,6 +45,14 @@ void setup()
  pinMode(gates[1], OUTPUT);
  pinMode(gates[2], OUTPUT);
  pinMode(gates[3], OUTPUT);
+
+ pinMode(switches[0], INPUT_PULLUP);
+ pinMode(switches[1], INPUT_PULLUP);
+ pinMode(switches[2], INPUT_PULLUP);
+ pinMode(switches[3], INPUT_PULLUP);
+
+ pinMode(LED, OUTPUT);
+ 
  pinMode(DAC1, OUTPUT);
  pinMode(DAC2, OUTPUT);
  
@@ -47,60 +63,113 @@ void setup()
  digitalWrite(DAC1,HIGH);
  digitalWrite(DAC2,HIGH);
 
+ 
+ //Serial.begin(9600);
  SPI.begin();
-
  MIDI.begin(MIDI_CHANNEL_OMNI);
 
 }
 
-bool registers[4] = {0,0,0,0};
-uint8_t active = 0;
+uint8_t registers[4] = {0, 0, 0, 0};
+uint8_t active = 3;
 uint8_t noteMsg; 
 uint8_t type;
 
 void loop()
 {
+  /**/
   if (MIDI.read()) {                    
     type = MIDI.getType();
-    switch (type) {
-      
-      case midi::NoteOn: 
-        noteMsg = MIDI.getData1() - 21; // A0 = 21, Top Note = 108
-        if ((noteMsg < 0) || (noteMsg > 87)) break; // Only 88 notes of keyboard are supported
-        noteOff(noteMsg);
-        break;
-        
-      case midi::NoteOff:
-        noteMsg = MIDI.getData1() - 21;
-        if ((noteMsg < 0) || (noteMsg > 87)) break; 
+    if (type == midi::NoteOn || type == midi::NoteOff) {
+      noteMsg = MIDI.getData1() - 21; // A0 = 21, Top Note = 108
+      if (type == midi::NoteOn && MIDI.getData2() > 0) { // velocity
         noteOn(noteMsg);
-        break;
-        
-      default:
-        break;
+      } else {
+        noteOff(noteMsg);
+      }
     }
   }
+  /**/
+  /**
+  for (int i=0; i<10; i++) {
+    noteOn(40);
+    delay(1000);
+    noteOff(40);
+    delay(1000);
+  }
+  /**/
+  /**
+  for (int i=0; i<3; i++) {
+    noteOn(40);
+    delay(500);
+    noteOn(41);
+    delay(500);
+    noteOn(42);
+    delay(500);
+    noteOn(43);
+    delay(500);
+    noteOn(44);
+    delay(500);
+
+    delay(1000);
+
+    noteOff(40);
+    delay(500);
+    noteOff(41);
+    delay(500);
+    noteOff(42);
+    delay(500);
+    noteOff(43);
+    delay(500);
+    noteOff(44);
+    delay(500);
+    
+    delay(1000);
+  }
+  /**/
+}
+
+bool isEnabled(uint8_t idx) {
+  /**
+  if (idx == 1) return twoEnabled;
+  return true;
+  /**/
+  return !digitalRead(switches[idx]);
+  // return true;
 }
 
 void noteOn(uint8_t note)
 {
+  // first, check if there are registers that are free and not switched off.
+  // as long as there are free registers, we don't have to advance the last register index.
   for (uint8_t i=0; i<4; i++){
-    if (registers[(active+i)% 4] == 0){ 
-      registers[(active+i)% 4] = true;
-      commandNote(note, (active+i)%4);
+    
+    // check if switch is on "ON" position
+    if (!isEnabled(i)) {
+      continue;
+    }
+    
+    // check if register is free
+    if (registers[i] == 0){ 
+      registers[i] = note;
+      commandNote(note, i);
+      // Serial.println("playing  " + String(note) + " on free " + String(i));
       return;
     } 
   }
-  commandNote(note, active);
-  active++;
+
+  // if we have reached this point, all registers are switched off.
+  // we better wait for some time for someone to switch one on again.
+  delay(100);
 }
 
 void noteOff(uint8_t note)
 {
   for (uint8_t i=0; i<4; i++) {
     if (registers[i] == note) {
-      registers[i] = false;
+      registers[i] = 0;
       digitalWrite(gates[i], LOW);
+      // no break, no switch-checks - note off should put all notes off.
     }
   }
 }
@@ -113,16 +182,17 @@ void noteOff(uint8_t note)
 // Note that DAC output will need to be amplified by 1.77X for the standard 1V/octave
 // This is done using a trimmer pot on the circuit board. 
 #define NOTE_SF 47.069f 
-
-void commandNote(uint8_t noteMsg, uint8_t gate) {
+  
+void commandNote(uint8_t note, uint8_t gate) {
   digitalWrite(gates[gate],HIGH);
-  unsigned int mV = (unsigned int) ((float) noteMsg * NOTE_SF + 0.5); 
+  unsigned int mV = (unsigned int) ((float) note * NOTE_SF + 0.5); 
   // register 0 = dac 0 channel 0
   // register 1 = dac 0 channel 1
   // register 2 = dac 1 channel 0
   // register 3 = dac 1 channel 1
-  uint8_t pin = gate & 0x0010 ? DAC1 : DAC2;
+  uint8_t pin = gate < 2 ? DAC1 : DAC2;
   bool chn = gate & 0x0001;
+  //Serial.println("writing " + note + " (=" + mV + "mV) to gate "+gate+ " (=pin " + pin + "), channel " + chn);
   setVoltage(pin, chn, mV); 
 }
 
