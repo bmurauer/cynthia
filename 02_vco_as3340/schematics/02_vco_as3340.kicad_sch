@@ -3138,12 +3138,6 @@
 		(uuid "3c1fb316-64f8-48b7-a0a7-c840c9200f4a")
 	)
 	(junction
-		(at 223.52 133.35)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3f03fc95-f1e6-440a-9bff-ffa7fbb8736d")
-	)
-	(junction
 		(at 67.31 200.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3238,6 +3232,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "858fcc6d-0eb1-4879-828e-3690ec99086c")
+	)
+	(junction
+		(at 143.51 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "85cf36b4-eba2-4dba-b013-d3dc7e532f49")
 	)
 	(junction
 		(at 234.95 130.81)
@@ -3382,16 +3382,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f623b5dd-d0bc-4062-b79c-91305ce72b45")
-	)
-	(wire
-		(pts
-			(xy 213.36 133.35) (xy 223.52 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03970005-17a6-454c-bff8-5769b9a10e05")
 	)
 	(wire
 		(pts
@@ -3575,6 +3565,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 125.73) (xy 143.51 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1aaccb2f-adb5-46a8-b9fb-588a2abc0455")
+	)
+	(wire
+		(pts
 			(xy 228.6 69.85) (xy 228.6 73.66)
 		)
 		(stroke
@@ -3655,7 +3655,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 167.64) (xy 82.55 167.64)
+			(xy 68.58 167.64) (xy 82.55 167.64)
 		)
 		(stroke
 			(width 0)
@@ -3665,7 +3665,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 133.35) (xy 238.76 133.35)
+			(xy 213.36 133.35) (xy 238.76 133.35)
 		)
 		(stroke
 			(width 0)
@@ -3792,6 +3792,16 @@
 			(type default)
 		)
 		(uuid "2e80a947-c782-48f8-b19b-e7ecd08db8df")
+	)
+	(wire
+		(pts
+			(xy 154.94 125.73) (xy 154.94 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2eac39e5-64fc-4a4e-b5dd-9fa320bb2ca4")
 	)
 	(wire
 		(pts
@@ -4425,7 +4435,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 163.83) (xy 73.66 165.1)
+			(xy 68.58 163.83) (xy 68.58 165.1)
 		)
 		(stroke
 			(width 0)
@@ -4712,6 +4722,16 @@
 			(type default)
 		)
 		(uuid "9ce3b8ba-9938-49b4-9b9a-79c59926766b")
+	)
+	(wire
+		(pts
+			(xy 154.94 125.73) (xy 151.13 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d135640-66c5-4bc4-8521-be37d49d01b5")
 	)
 	(wire
 		(pts
@@ -5145,7 +5165,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 163.83) (xy 73.66 163.83)
+			(xy 71.12 163.83) (xy 68.58 163.83)
 		)
 		(stroke
 			(width 0)
@@ -5175,7 +5195,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 120.65) (xy 143.51 133.35)
+			(xy 143.51 120.65) (xy 143.51 125.73)
 		)
 		(stroke
 			(width 0)
@@ -5262,6 +5282,16 @@
 			(type default)
 		)
 		(uuid "e289ba6f-1f15-448f-93be-e22e1bf6d785")
+	)
+	(wire
+		(pts
+			(xy 143.51 125.73) (xy 143.51 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e29a7678-6048-452f-9bca-ea7c8d9d9847")
 	)
 	(wire
 		(pts
@@ -5638,7 +5668,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Audio:AudioJack2")
-		(at 68.58 167.64 0)
+		(at 63.5 167.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5646,7 +5676,7 @@
 		(dnp no)
 		(uuid "01739ab3-d06f-456f-8098-c98c63c7749c")
 		(property "Reference" "J7"
-			(at 57.658 166.116 0)
+			(at 52.578 166.116 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5654,7 +5684,7 @@
 			)
 		)
 		(property "Value" "PWM CV IN"
-			(at 57.658 168.656 0)
+			(at 52.578 168.656 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5662,7 +5692,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NJ5FD-V_Vertical"
-			(at 68.58 167.64 0)
+			(at 63.5 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5671,7 +5701,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 68.58 167.64 0)
+			(at 63.5 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5680,7 +5710,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 68.58 167.64 0)
+			(at 63.5 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6196,7 +6226,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -7736,7 +7765,7 @@
 		(dnp no)
 		(uuid "2ce3bdba-9d7a-4b9c-a745-a6cbbcb0e840")
 		(property "Reference" "TP6"
-			(at 224.028 156.464 0)
+			(at 223.266 152.654 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7745,7 +7774,7 @@
 			)
 		)
 		(property "Value" "50k"
-			(at 226.568 156.464 0)
+			(at 225.806 152.654 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8135,6 +8164,73 @@
 			(project "02_vco_as3340"
 				(path "/7bf3d2ed-8bab-4c92-b1a7-3c419691fd96"
 					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 154.94 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "39f1b38a-e4d3-4daa-ad0b-b53ea4742f07")
+		(property "Reference" "#PWR053"
+			(at 154.94 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 154.94 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
+			(at 154.94 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f356dda0-f5a0-4c1b-8e71-7eb0411a1802")
+		)
+		(instances
+			(project "02_vco_as3340"
+				(path "/7bf3d2ed-8bab-4c92-b1a7-3c419691fd96"
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -10380,6 +10476,74 @@
 			(project "02_vco_as3340"
 				(path "/7bf3d2ed-8bab-4c92-b1a7-3c419691fd96"
 					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 148.59 125.73 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e3f0371-5ac8-465a-9b7b-22acca5d97e9")
+		(property "Reference" "C15"
+			(at 148.5837 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 148.5837 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm"
+			(at 148.59 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 148.59 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0f47edd9-9ff2-4f37-a50c-7cf1f7860acd")
+		)
+		(pin "1"
+			(uuid "5e84867c-9c27-4818-9be0-d2492ef9f40c")
+		)
+		(instances
+			(project "02_vco_as3340"
+				(path "/7bf3d2ed-8bab-4c92-b1a7-3c419691fd96"
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -13324,7 +13488,7 @@
 		(dnp no)
 		(uuid "acde053b-7374-4352-b043-4479fb667afd")
 		(property "Reference" "R31"
-			(at 211.074 154.94 0)
+			(at 213.614 154.432 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13333,7 +13497,7 @@
 			)
 		)
 		(property "Value" "18k"
-			(at 211.074 157.48 0)
+			(at 213.614 156.972 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14406,7 +14570,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDREF")
-		(at 76.2 163.83 0)
+		(at 71.12 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14415,7 +14579,7 @@
 		(fields_autoplaced yes)
 		(uuid "c877662e-3cb6-4f30-931e-28998dec30cd")
 		(property "Reference" "#PWR016"
-			(at 76.2 170.18 0)
+			(at 71.12 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14424,7 +14588,7 @@
 			)
 		)
 		(property "Value" "GNDREF"
-			(at 76.2 168.91 0)
+			(at 71.12 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14433,7 +14597,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 163.83 0)
+			(at 71.12 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14442,7 +14606,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 163.83 0)
+			(at 71.12 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14451,7 +14615,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
-			(at 76.2 163.83 0)
+			(at 71.12 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
