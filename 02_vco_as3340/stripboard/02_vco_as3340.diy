@@ -760,9 +760,9 @@
       <name>J20</name>
       <alpha>127</alpha>
       <points>
-        <point x="7.3" y="5.6"/>
-        <point x="7.3" y="4.9"/>
-        <point x="7.3" y="5.25"/>
+        <point x="7.1" y="5.6"/>
+        <point x="7.1" y="4.9"/>
+        <point x="7.1" y="5.25"/>
       </points>
       <bodyColor hex="ffffff"/>
       <borderColor hex="000000"/>
@@ -803,7 +803,7 @@
       <cutBetweenHoles>false</cutBetweenHoles>
       <orientation>VERTICAL</orientation>
       <holeSpacing value="0.1" unit="in"/>
-      <point x="7.7" y="4.2"/>
+      <point x="7.8" y="4.2"/>
     </diylc.connectivity.TraceCut>
     <diylc.connectivity.TraceCut>
       <name>Cut45</name>
@@ -814,7 +814,7 @@
       <cutBetweenHoles>false</cutBetweenHoles>
       <orientation>VERTICAL</orientation>
       <holeSpacing value="0.1" unit="in"/>
-      <point x="7.7" y="4.1"/>
+      <point x="7.8" y="4.1"/>
     </diylc.connectivity.TraceCut>
     <diylc.connectivity.TraceCut>
       <name>Cut47</name>
@@ -1129,7 +1129,7 @@
       <cutBetweenHoles>false</cutBetweenHoles>
       <orientation>VERTICAL</orientation>
       <holeSpacing value="0.1" unit="in"/>
-      <point x="7.5" y="5.0"/>
+      <point x="7.4" y="5.0"/>
     </diylc.connectivity.TraceCut>
     <diylc.passive.RadialElectrolytic>
       <name>C1</name>
@@ -1144,7 +1144,7 @@
       <borderColor hex="4a4c90"/>
       <labelColor hex="ffffff"/>
       <leadColor hex="cccccc"/>
-      <display>VALUE</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -1173,7 +1173,7 @@
       <borderColor hex="4a4c90"/>
       <labelColor hex="ffffff"/>
       <leadColor hex="cccccc"/>
-      <display>VALUE</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -1259,7 +1259,7 @@
       <borderColor hex="a8a162"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -1283,7 +1283,7 @@
       <borderColor hex="a8a162"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -1307,7 +1307,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -1348,7 +1348,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -1396,15 +1396,15 @@
       <length value="0.25" unit="in"/>
       <width value="0.125" unit="in"/>
       <points>
-        <point x="7.7" y="4.4"/>
-        <point x="7.7" y="4.3"/>
-        <point x="7.7" y="4.35"/>
+        <point x="7.8" y="4.4"/>
+        <point x="7.8" y="4.3"/>
+        <point x="7.8" y="4.35"/>
       </points>
       <bodyColor hex="f0e68c"/>
       <borderColor hex="a8a162"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -1428,7 +1428,7 @@
       <borderColor hex="a8a162"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -1452,7 +1452,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -1477,14 +1477,14 @@
       <borderColor hex="b25900"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
       <hideShortLeads>false</hideShortLeads>
       <value value="1.0" unit="nF"/>
       <voltage>_63V</voltage>
-      <voltageNew value="25.0"/>
+      <voltageNew value="25.0" unit="V"/>
       <showOuterFoil>false</showOuterFoil>
       <outerFoilColor hex="ffffff"/>
       <pinSpacing value="0.1" unit="in"/>
@@ -1504,14 +1504,14 @@
       <borderColor hex="b25900"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
       <hideShortLeads>false</hideShortLeads>
       <value value="1.0" unit="nF"/>
       <voltage>_63V</voltage>
-      <voltageNew value="25.0"/>
+      <voltageNew value="25.0" unit="V"/>
       <showOuterFoil>false</showOuterFoil>
       <outerFoilColor hex="ffffff"/>
       <pinSpacing value="0.1" unit="in"/>
@@ -1531,14 +1531,14 @@
       <borderColor hex="b25900"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
       <hideShortLeads>false</hideShortLeads>
       <value value="1.0" unit="nF"/>
       <voltage>_63V</voltage>
-      <voltageNew value="25.0"/>
+      <voltageNew value="25.0" unit="V"/>
       <showOuterFoil>false</showOuterFoil>
       <outerFoilColor hex="ffffff"/>
       <pinSpacing value="0.1" unit="in"/>
@@ -1558,7 +1558,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -1583,7 +1583,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -1654,7 +1654,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -1679,7 +1679,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -1704,7 +1704,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -1745,7 +1745,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -1770,7 +1770,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -1811,14 +1811,14 @@
       <borderColor hex="b25900"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
       <hideShortLeads>false</hideShortLeads>
       <value value="10.0" unit="nF"/>
       <voltage>_63V</voltage>
-      <voltageNew value="25.0"/>
+      <voltageNew value="25.0" unit="V"/>
       <showOuterFoil>false</showOuterFoil>
       <outerFoilColor hex="ffffff"/>
       <pinSpacing value="0.1" unit="in"/>
@@ -1838,7 +1838,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -1863,14 +1863,14 @@
       <borderColor hex="b25900"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
       <hideShortLeads>false</hideShortLeads>
       <value value="10.0" unit="nF"/>
       <voltage>_63V</voltage>
-      <voltageNew value="25.0"/>
+      <voltageNew value="25.0" unit="V"/>
       <showOuterFoil>false</showOuterFoil>
       <outerFoilColor hex="ffffff"/>
       <pinSpacing value="0.1" unit="in"/>
@@ -1890,7 +1890,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -1915,7 +1915,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -1940,14 +1940,14 @@
       <borderColor hex="b25900"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
       <hideShortLeads>false</hideShortLeads>
       <value value="10.0" unit="nF"/>
       <voltage>_63V</voltage>
-      <voltageNew value="25.0"/>
+      <voltageNew value="25.0" unit="V"/>
       <showOuterFoil>false</showOuterFoil>
       <outerFoilColor hex="ffffff"/>
       <pinSpacing value="0.1" unit="in"/>
@@ -1967,7 +1967,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2017,7 +2017,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2042,14 +2042,14 @@
       <borderColor hex="b25900"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
       <hideShortLeads>false</hideShortLeads>
       <value value="1.0" unit="nF"/>
       <voltage>_63V</voltage>
-      <voltageNew value="25.0"/>
+      <voltageNew value="25.0" unit="V"/>
       <showOuterFoil>false</showOuterFoil>
       <outerFoilColor hex="ffffff"/>
       <pinSpacing value="0.1" unit="in"/>
@@ -2069,7 +2069,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2094,7 +2094,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2109,9 +2109,9 @@
       <name>TP4</name>
       <alpha>127</alpha>
       <controlPoints>
-        <point x="7.5" y="4.1"/>
-        <point x="7.5" y="4.2"/>
-        <point x="7.5" y="4.3"/>
+        <point x="7.6" y="4.1"/>
+        <point x="7.6" y="4.2"/>
+        <point x="7.6" y="4.3"/>
       </controlPoints>
       <resistance value="10.0" unit="K"/>
       <orientation>DEFAULT</orientation>
@@ -2127,15 +2127,15 @@
       <length value="7.0" unit="mm"/>
       <width value="2.5" unit="mm"/>
       <points>
-        <point x="7.3" y="4.8"/>
-        <point x="7.3" y="4.2"/>
-        <point x="7.3" y="4.5"/>
+        <point x="7.4" y="4.8"/>
+        <point x="7.4" y="4.2"/>
+        <point x="7.4" y="4.5"/>
       </points>
       <bodyColor hex="82cffd"/>
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2160,7 +2160,7 @@
       <borderColor hex="a8a162"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2184,7 +2184,7 @@
       <borderColor hex="a8a162"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2208,7 +2208,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2233,7 +2233,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2258,7 +2258,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2283,7 +2283,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2308,7 +2308,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2333,7 +2333,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2358,7 +2358,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2383,7 +2383,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2408,7 +2408,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2433,7 +2433,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2458,7 +2458,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2603,7 +2603,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2628,7 +2628,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2653,7 +2653,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2678,7 +2678,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2719,7 +2719,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2744,7 +2744,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2769,7 +2769,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2794,7 +2794,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2819,7 +2819,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2844,7 +2844,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2869,7 +2869,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -2934,8 +2934,8 @@
       <alpha>127</alpha>
       <points>
         <point x="7.500000000000001" y="5.3"/>
-        <point x="7.500000000000001" y="5.2"/>
-        <point x="7.500000000000001" y="5.25"/>
+        <point x="7.5" y="5.0"/>
+        <point x="7.5" y="5.15"/>
       </points>
       <bodyColor hex="ffffff"/>
       <borderColor hex="000000"/>
@@ -3088,9 +3088,9 @@
       <length value="7.0" unit="mm"/>
       <width value="2.5" unit="mm"/>
       <points>
-        <point x="7.4" y="5.0"/>
-        <point x="7.399999999999999" y="4.7"/>
-        <point x="7.4" y="4.85"/>
+        <point x="7.3" y="5.0"/>
+        <point x="7.3" y="4.7"/>
+        <point x="7.3" y="4.85"/>
       </points>
       <bodyColor hex="82cffd"/>
       <borderColor hex="5b90b1"/>
@@ -3121,7 +3121,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -3307,7 +3307,7 @@
       <borderColor hex="5b90b1"/>
       <labelColor hex="000000"/>
       <leadColor hex="cccccc"/>
-      <display>NAME</display>
+      <display>BOTH</display>
       <flipStanding>false</flipStanding>
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
@@ -3354,16 +3354,16 @@
   </components>
   <groups>
     <set>
-      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[30]"/>
       <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[28]"/>
       <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[29]"/>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[30]"/>
+      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92"/>
     </set>
     <set>
+      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92[2]"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[19]"/>
       <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[20]"/>
       <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[21]"/>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[19]"/>
-      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92[2]"/>
     </set>
   </groups>
   <lockedLayers/>
