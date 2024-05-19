@@ -18,3 +18,8 @@ The provided design features six division stages of the 4040, resulting in 1/64 
 Combined with the max 4017, the maximum total division = 1/9 * 1/64 = 1/576. 
 Applied to a 24 beats / quarter note midi clock signal, this results in one beat every 576/24 = 24 quarter notes.
 You should be able to easily extend the module if you want more divisions by tapping into the unused Q6 - Q11 pins of the 4040 chip.
+
+![schematics](schematics/04_clock_divider_schematics.png)
+
+![stripboard](stripboard/04_clock_divider.png)
+
