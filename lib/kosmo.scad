@@ -2,17 +2,26 @@ panelHeight = 197;
 thickness = 2.5;
 mountHoleDiameter = 3.0;
 jackHoleDiameter = 9.1;
+ledHoleDiameter = 5;
+pushButtonHoleDiameter = 7;
 potHoleDiameter = 7;
 switchHoleDiameter = 6;
+rotarySwitchHoleDiameter = 9.1;
 midiSocketHoleDiameter = 15;
 
-buffer = 12.5;
+offsetTopBottom = 20; // Mounting area
 
-row0 = 45;
-row1 = 80;
-row2 = 120;
-row3 = 155;
+firstRow = offsetTopBottom + 10;
+lastRow = panelHeight - offsetTopBottom - 10;
+usableArea = lastRow - firstRow;
+echo("usable area:");
+echo(usableArea);
+echo(concat("/4", usableArea / 4));
+echo(concat("/5", usableArea / 5));
+echo(concat("/6", usableArea / 6));
 
+function row (i) = firstRow + i*usableArea/(n_rows-1);
+    
 
 module pcbHolders(){
   pcbHolder(width-7, panelHeight/2 + 140/2 - 5);
@@ -43,7 +52,7 @@ module pcbHolder(x, y){
         intersection() {
           difference() {
             cube([h, w, thickness+1]);
-            translate([clearance, w/2, -1]){
+            translate([clearance, w/2, -0.9]){
               cylinder(r=pcbHole/2,  h=thickness+2, $fn=20);
               cylinder(r=3.1, h=2.3, $fn=6);
             }
@@ -83,8 +92,18 @@ module midiSocket(x, y) {
     punchHole(x, y, midiSocketHoleDiameter);
 }
 
+module led(x, y) {
+    punchHole(x, y, ledHoleDiameter);
+}
+
 module switch(x, y) { 
     punchHole(x, y, switchHoleDiameter);
+}
+module pushButton(x, y) { 
+    punchHole(x, y, pushButtonHoleDiameter);
+}
+module rotarySwitch(x, y) { 
+    punchHole(x, y, rotarySwitchHoleDiameter);
 }
 
 module pot(x, y) {
