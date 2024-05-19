@@ -8,11 +8,17 @@ These numbers only correspond to the order that I included them into this projec
 Every project should at least contain:
 - a `README.md` with more information about the module
 - `schematics` for the schematics, made in [KiCAD](https://www.kicad.org/)
-- `stripboard` for the design of the stripboard (you don't need this if you order proper PCBs). I use [DIY Layout Creator](https://diy-fever.com/software/diylc/) for this.
-- `panel` for the Kosmo-format (20cm height) panels. I use a custom template for [OpenSCAD](https://diy-fever.com/software/diylc/) which can be found in `lib/kosmo.scad`.
+- `stripboard` for the design of the stripboard (you don't need this if you order proper PCBs). 
+  I use [DIY Layout Creator](https://diy-fever.com/software/diylc/) for this.
+- `panel` for the Kosmo-format (20cm height) panels.
+  I use a custom template for [OpenSCAD](https://diy-fever.com/software/diylc/) which can be found in `lib/kosmo.scad`.
+  On linux, you can use the template by copying it to:
+  ```bash
+  mkdir ~/.local/share/OpenSCAD/libraries 
+  cp lib/kosmo.scad ~/.local/share/OpenSCAD/libraries/
+  ```
 
 Some modules have additional subfolders with sound samples or Arduino source code.
-
 
 ## OpenSCAD panels
 
@@ -54,6 +60,7 @@ This results in the following panel: ![generated panel](images/01_poly_midi_2_cv
 
 I have included two tabs for the PCB that are printed with the panel, to which I can screw the PCB using M3 screws.
 The tabs have small indentations for the nuts.
+Since I have a crappy 3D printer, those holes are not very tidy, and I use my soldering iron to convince the nuts to go where they should.
 
 ![pcb tabs](images/pcb_holder.png)
 
@@ -63,11 +70,13 @@ The tabs have small indentations for the nuts.
 
 ## Thanks to
 
-I heavily relied on all material by [Moritz Klein](https://www.youtube.com/@MoritzKlein0). Thanks for these awesome videos. These were the starting point for my project.
+I heavily relied on all material by [Moritz Klein](https://www.youtube.com/@MoritzKlein0). 
+Thanks for these awesome videos.
+These were the starting point for my project.
 
 Further good sources that I recommend are: 
- - https://www.eddybergman.com/
- - https://www.lookmumnocomputer.com/
+ - https://www.eddybergman.com
+ - https://www.lookmumnocomputer.com
 
 
 P.S. I have built Cynthia using striboards, because I wanted to learn and prototype fast.
