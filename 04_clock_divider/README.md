@@ -22,7 +22,13 @@ You should be able to easily extend the module if you want more divisions by tap
 Similarly, I use a six-stage rotary switch simply because I don't have any others laying around. 
 If you have one with more stages, I suggest using it and add the other missing pins of the 4017 to the switch.
 
+## Images
+
+### Schematics
+
 ![schematics](schematics/04_clock_divider_schematics.png)
+
+### Stripboard 
 
 ![stripboard](stripboard/04_clock_divider.png)
 
