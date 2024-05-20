@@ -1,13 +1,13 @@
 # 04 Clock Divider
 
-This module combines a 4017 and a 4040 to make a binary clock divider.
+This module combines a 4017 and a 4040 to make a clock divider.
 
 The 4017 is added to tackle one specific problem: The midi quarter note is divided into 
 24 clock signals, and I wanted to be able to get a quarter note pulse from the module.
 The rotary switch selects the "pre-division" of the 4017 chip. If it is set to 3, the 4040 will only get every third signal from the gate input.
 This way, the 4040 is able to generate pulses for each quarter, half, or whole note etc. 
 
-Setting the rotary swith to other values allows for other funky beats.
+Setting the rotary switch to other values allows for other funky rhythms.
 
 ## LEDs
 I use high-brightness LEDs, which allow me to use chonky 10k resistors and the 4040 is able to power directly.
@@ -29,6 +29,9 @@ If you have one with more stages, I suggest using it and add the other missing p
 ![schematics](schematics/04_clock_divider_schematics.png)
 
 ### Stripboard 
+
+> [!WARNING]
+> Note that the CD4040 is mounted upside-down.
 
 ![stripboard](stripboard/04_clock_divider_stripboard.png)
 
