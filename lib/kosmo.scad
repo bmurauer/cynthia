@@ -11,17 +11,18 @@ midiSocketHoleDiameter = 15;
 
 offsetTopBottom = 20; // Mounting area
 
-firstRow = offsetTopBottom + 10;
-lastRow = panelHeight - offsetTopBottom - 10;
-usableArea = lastRow - firstRow;
-echo("usable area:");
-echo(usableArea);
-echo(concat("/4", usableArea / 4));
-echo(concat("/5", usableArea / 5));
-echo(concat("/6", usableArea / 6));
+n_rows = 6;
+n_cols = width / 25;
 
-function row (i) = firstRow + i*usableArea/(n_rows-1);
-    
+rowsStart = 30;
+rowsEnd = panelHeight - 30;
+
+colsStart = 15;
+colsEnd = width - 15;
+
+
+function row (i) = 30 + i * (rowsEnd - rowsStart) / (n_rows - 1);
+function col (i) = 15 + i * (colsEnd - colsStart) / (n_cols - 1);
 
 module pcbHolders(){
   pcbHolder(width-7, panelHeight/2 + 140/2 - 5);
@@ -115,13 +116,18 @@ module pot(x, y) {
       }
     }
   }
+  echo(concat("pot at ", x, y));
 }
 
 module jack(x, y){
   punchHole(x, y, jackHoleDiameter);
+    echo(concat("Jack at", x, y));
 }
 
 module panel(width) {
+    
+  echo(concat(n_rows, "rows, distance=",n_rows, (rowsEnd - rowsStart) / (n_rows-1)));
+  echo(concat(n_cols, "cols, distance=",n_cols, (colsEnd - colsStart) / (n_cols-1)));
   difference() {
     cube([width, panelHeight, thickness]);
     kosmoMountHoles(width, panelHeight);

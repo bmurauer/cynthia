@@ -2034,9 +2034,9 @@
       <length value="6.0" unit="mm"/>
       <width value="2.0" unit="mm"/>
       <points>
-        <point x="6.5" y="4.9"/>
-        <point x="6.5" y="4.8"/>
-        <point x="6.5" y="4.85"/>
+        <point x="4.9" y="4.4"/>
+        <point x="4.9" y="4.3"/>
+        <point x="4.9" y="4.35"/>
       </points>
       <bodyColor hex="ff8000"/>
       <borderColor hex="b25900"/>
@@ -3351,19 +3351,124 @@
       <display>BOTH</display>
       <type>VERTICAL_OFFSET</type>
     </diylc.passive.TrimmerPotentiometer>
+    <diylc.passive.RadialFilmCapacitor>
+      <name>C16</name>
+      <alpha>127</alpha>
+      <length value="6.0" unit="mm"/>
+      <width value="2.0" unit="mm"/>
+      <points>
+        <point x="5.0" y="4.5"/>
+        <point x="5.0" y="4.3"/>
+        <point x="5.0" y="4.3999999999999995"/>
+      </points>
+      <bodyColor hex="ff8000"/>
+      <borderColor hex="b25900"/>
+      <labelColor hex="000000"/>
+      <leadColor hex="cccccc"/>
+      <display>BOTH</display>
+      <flipStanding>false</flipStanding>
+      <labelOriantation>Directional</labelOriantation>
+      <moveLabel>false</moveLabel>
+      <hideShortLeads>false</hideShortLeads>
+      <value value="10.0" unit="nF"/>
+      <voltage>_63V</voltage>
+      <voltageNew value="25.0" unit="V"/>
+      <showOuterFoil>false</showOuterFoil>
+      <outerFoilColor hex="ffffff"/>
+      <pinSpacing value="0.1" unit="in"/>
+      <shape>DROP</shape>
+    </diylc.passive.RadialFilmCapacitor>
+    <diylc.electromechanical.MiniToggleSwitch>
+      <name defined-in="diylc.AbstractComponent">SW1</name>
+      <alpha>127</alpha>
+      <controlPoints>
+        <point x="4.2" y="4.1"/>
+        <point x="4.2" y="4.3"/>
+        <point x="4.2" y="4.5"/>
+      </controlPoints>
+      <switchType>SPDT</switchType>
+      <orientation>VERTICAL</orientation>
+      <spacing value="0.2" unit="in"/>
+      <bodyColor hex="3299cc"/>
+      <borderColor hex="236b8e"/>
+    </diylc.electromechanical.MiniToggleSwitch>
+    <diylc.connectivity.HookupWire>
+      <name>W1</name>
+      <alpha>127</alpha>
+      <controlPoints2>
+        <point x="4.2" y="4.1"/>
+        <point x="4.5" y="4.1"/>
+        <point x="4.7" y="4.2"/>
+        <point x="4.8" y="4.4"/>
+      </controlPoints2>
+      <color hex="00ff00"/>
+      <pointCount>FOUR</pointCount>
+      <style>SOLID</style>
+      <smooth>true</smooth>
+      <lastUpdatePointIndex>-1</lastUpdatePointIndex>
+      <gauge>_22</gauge>
+      <striped>false</striped>
+      <stripeColor hex="ffff00"/>
+    </diylc.connectivity.HookupWire>
+    <diylc.connectivity.HookupWire>
+      <name>W2</name>
+      <alpha>127</alpha>
+      <controlPoints2>
+        <point x="4.2" y="4.5"/>
+        <point x="4.5" y="4.5"/>
+        <point x="4.6" y="4.6"/>
+        <point x="4.8" y="4.5"/>
+      </controlPoints2>
+      <color hex="00ff00"/>
+      <pointCount>FOUR</pointCount>
+      <style>SOLID</style>
+      <smooth>true</smooth>
+      <lastUpdatePointIndex>-1</lastUpdatePointIndex>
+      <gauge>_22</gauge>
+      <striped>false</striped>
+      <stripeColor hex="ffff00"/>
+    </diylc.connectivity.HookupWire>
+    <diylc.connectivity.HookupWire>
+      <name>W3</name>
+      <alpha>127</alpha>
+      <controlPoints2>
+        <point x="4.2" y="4.3"/>
+        <point x="4.9" y="4.4"/>
+        <point x="6.0" y="4.9"/>
+        <point x="6.5" y="4.9"/>
+      </controlPoints2>
+      <color hex="00ff00"/>
+      <pointCount>FOUR</pointCount>
+      <style>SOLID</style>
+      <smooth>true</smooth>
+      <lastUpdatePointIndex>-1</lastUpdatePointIndex>
+      <gauge>_22</gauge>
+      <striped>false</striped>
+      <stripeColor hex="ffff00"/>
+    </diylc.connectivity.HookupWire>
+    <diylc.misc.Label>
+      <name>LAB16</name>
+      <point x="4.3" y="3.9"/>
+      <text>Freq. Range</text>
+      <font name="Dialog.plain" size="14" style="0"/>
+      <color hex="000000"/>
+      <horizontalAlignment>RIGHT</horizontalAlignment>
+      <verticalAlignment>CENTER</verticalAlignment>
+      <orientation>DEFAULT</orientation>
+    </diylc.misc.Label>
   </components>
   <groups>
     <set>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[30]"/>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[28]"/>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[29]"/>
-      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92"/>
+      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92[2]"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[21]"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[20]"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[19]"/>
     </set>
     <set>
-      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92[2]"/>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[19]"/>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[20]"/>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[21]"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[28]"/>
+      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[30]"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[29]"/>
     </set>
   </groups>
   <lockedLayers/>
