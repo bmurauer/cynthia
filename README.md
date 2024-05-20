@@ -20,6 +20,27 @@ Every project should at least contain:
 
 Some modules have additional subfolders with sound samples or Arduino source code.
 
+
+## Case, PSU, and Bus Boards
+
+I made my own case, following the guide from [Look Mum No Computer](https://www.youtube.com/watch?v=4T6J-K8_yk4).
+Bought some wood, screwed everything together, and painted everything white.
+
+I was not confident enough to build my own PSU since:
+    1. I'm really not an electrician, and I am afraid of things blowing up.
+    2. I have trouble sourcing reliable 12V AC/AC transformers.
+So, I decided to buy a Meanwell RT-65B, which has +12V, -12V, and +5V outputs, and is not too expensive.
+Perfect! It can also be used to power USB- or arduino-based modules.
+
+For bus boards, I soldered some shrouded 16-pin headers on pieces of stripboard and connected everything using the same 16-pin eurorack cables that I use to power the modules.
+I include smoothing caps on each module rather than on the bus boards.
+
+## Cables
+
+I found that the cheapest option to get cables is to just make your own. 
+1/4 inch jacks are cheap, and you have the benefit of making the sizes that you actually need.
+I bought a 30m microphone cable from which I snip off what I need.
+
 ## OpenSCAD panels
 
 Design the panels using [OpenSCAD](https://diy-fever.com/software/diylc/), because it is intuitive to me as a programmer.
@@ -61,6 +82,7 @@ This results in the following panel: ![generated panel](images/01_poly_midi_2_cv
 I have included two tabs for the PCB that are printed with the panel, to which I can screw the PCB using M3 screws.
 The tabs have small indentations for the nuts.
 Since I have a crappy 3D printer, those holes are not very tidy, and I use my soldering iron to convince the nuts to go where they should.
+And since I am an even crappier woodcraftsman than I am an electrician, the panels are set to 197 mm height in the library file to compensate for the bad measuring I did when making the case.
 
 ![pcb tabs](images/pcb_holder.png)
 
