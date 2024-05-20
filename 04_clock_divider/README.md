@@ -32,3 +32,10 @@ If you have one with more stages, I suggest using it and add the other missing p
 
 ![stripboard](stripboard/04_clock_divider_stripboard.png)
 
+### Final - front side
+
+![front](final_front.png)
+
+### Final - back side
+
+![back](final_back.png)
