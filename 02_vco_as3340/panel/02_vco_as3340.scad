@@ -1,8 +1,8 @@
-width = 75;
+width = 100;
 include <kosmo.scad>
 
 
-function col(n) = 15 + n*22.5;
+function col(n) = 18 + n*27.5;
 
  difference() {
      panel(width);
