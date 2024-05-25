@@ -1481,7 +1481,7 @@
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
       <hideShortLeads>false</hideShortLeads>
-      <value value="910.0" unit="R"/>
+      <value value="680.0" unit="R"/>
       <power>HALF</power>
       <powerNew value="0.25" unit="W"/>
       <colorCode>_5_BAND</colorCode>
@@ -1799,7 +1799,7 @@
       <labelOriantation>Directional</labelOriantation>
       <moveLabel>false</moveLabel>
       <hideShortLeads>false</hideShortLeads>
-      <value value="200.0" unit="K"/>
+      <value value="330.0" unit="K"/>
       <power>HALF</power>
       <powerNew value="0.25" unit="W"/>
       <colorCode>_5_BAND</colorCode>
@@ -4070,6 +4070,25 @@
       <holeSpacing value="0.1" unit="in"/>
       <point x="5.8" y="3.1"/>
     </diylc.connectivity.TraceCut>
+    <diylc.connectivity.Jumper>
+      <name>J31</name>
+      <alpha>127</alpha>
+      <points>
+        <point x="5.4" y="4.6"/>
+        <point x="5.4" y="4.1"/>
+        <point x="5.4" y="4.3500000000000005"/>
+      </points>
+      <bodyColor hex="ffffff"/>
+      <borderColor hex="000000"/>
+      <labelColor hex="000000"/>
+      <leadColor hex="00cccc"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <labelOriantation>Directional</labelOriantation>
+      <moveLabel>false</moveLabel>
+      <hideShortLeads>false</hideShortLeads>
+      <style>SOLID</style>
+    </diylc.connectivity.Jumper>
     <diylc.semiconductors.TransistorTO92>
       <name>Q2</name>
       <alpha>100</alpha>
@@ -4253,16 +4272,16 @@
   </components>
   <groups>
     <set>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[28]"/>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[30]"/>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[29]"/>
-      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[21]"/>
+      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92[2]"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[20]"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[19]"/>
     </set>
     <set>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[21]"/>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[19]"/>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[20]"/>
-      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92[2]"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[29]"/>
+      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[30]"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[28]"/>
     </set>
   </groups>
   <lockedLayers/>
