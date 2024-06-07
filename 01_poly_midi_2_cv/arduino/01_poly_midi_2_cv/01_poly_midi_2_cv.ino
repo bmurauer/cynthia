@@ -70,8 +70,10 @@ void setup()
 
 }
 
+// notes currently being played
 uint8_t registers[4] = {0, 0, 0, 0};
-uint8_t active = 3;
+uint8_t nextRegister = 0;
+
 uint8_t noteMsg; 
 uint8_t type;
 
@@ -138,8 +140,39 @@ bool isEnabled(uint8_t idx) {
   // return true;
 }
 
+bool anyRegistersAreAvailable() {
+  for (uint8_t i=0; i<4; i++){
+    if (isEnabled(i)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+
+void setNextRegister()
+{
+  uint8_t candidate;
+  for (uint8_t i=0; i<4; i++) {
+    candidate = (nextRegister + i + 1) % 4;
+    if (isEnabled(candidate)) {
+      nextRegister = candidate;
+      return;
+    }
+  }
+  // no other registers are available, leaving current as-is.
+}
+
+
 void noteOn(uint8_t note)
 {
+  if (!anyRegistersAreAvailable()) {
+    // if we have reached this point, all registers are switched off.
+    // we better wait for some time for someone to switch one on again.
+    delay(100);
+    return;
+  }
+  
   // first, check if there are registers that are free and not switched off.
   // as long as there are free registers, we don't have to advance the last register index.
   for (uint8_t i=0; i<4; i++){
@@ -151,16 +184,16 @@ void noteOn(uint8_t note)
     
     // check if register is free
     if (registers[i] == 0){ 
-      registers[i] = note;
       commandNote(note, i);
       // Serial.println("playing  " + String(note) + " on free " + String(i));
       return;
-    } 
+    }
   }
 
-  // if we have reached this point, all registers are switched off.
-  // we better wait for some time for someone to switch one on again.
-  delay(100);
+  // at this point, all register are already playing something.
+  // this means we have to push one register out of the queue.
+  commandNote(note, nextRegister);
+
 }
 
 void noteOff(uint8_t note)
@@ -184,6 +217,8 @@ void noteOff(uint8_t note)
 #define NOTE_SF 47.069f 
   
 void commandNote(uint8_t note, uint8_t gate) {
+  registers[gate] = note;
+  setNextRegister();
   digitalWrite(gates[gate],HIGH);
   unsigned int mV = (unsigned int) ((float) note * NOTE_SF + 0.5); 
   // register 0 = dac 0 channel 0
