@@ -3508,6 +3508,12 @@
 		(uuid "e8df3f4e-1907-4fb1-a0ae-5198951714d5")
 	)
 	(junction
+		(at 229.87 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ea312a17-6772-414d-a1dc-25411b49cb5f")
+	)
+	(junction
 		(at 58.42 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3671,6 +3677,16 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 96.52) (xy 233.68 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e462bb3-6244-41bd-b4a3-33a30468c491")
+	)
+	(wire
+		(pts
 			(xy 223.52 116.84) (xy 223.52 107.95)
 		)
 		(stroke
@@ -3698,6 +3714,16 @@
 			(type default)
 		)
 		(uuid "2a5cc293-18b1-4d19-8d3d-f08fe9a77b19")
+	)
+	(wire
+		(pts
+			(xy 226.06 96.52) (xy 229.87 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cb1ef70-3996-41de-8deb-ffd6ace353c3")
 	)
 	(wire
 		(pts
@@ -4341,7 +4367,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 91.44) (xy 222.25 91.44)
+			(xy 222.25 91.44) (xy 214.63 91.44)
 		)
 		(stroke
 			(width 0)
@@ -4541,7 +4567,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 92.71) (xy 229.87 91.44)
+			(xy 222.25 92.71) (xy 222.25 91.44)
 		)
 		(stroke
 			(width 0)
@@ -4841,7 +4867,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 96.52) (xy 222.25 93.98)
+			(xy 214.63 96.52) (xy 214.63 93.98)
 		)
 		(stroke
 			(width 0)
@@ -5435,7 +5461,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDREF")
-		(at 222.25 96.52 0)
+		(at 214.63 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5444,7 +5470,7 @@
 		(fields_autoplaced yes)
 		(uuid "0df7eaf6-1914-48d8-9c22-325815bf5ef0")
 		(property "Reference" "#PWR027"
-			(at 222.25 102.87 0)
+			(at 214.63 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5453,7 +5479,7 @@
 			)
 		)
 		(property "Value" "GNDREF"
-			(at 222.25 101.6 0)
+			(at 214.63 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5462,7 +5488,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 222.25 96.52 0)
+			(at 214.63 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5471,7 +5497,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 222.25 96.52 0)
+			(at 214.63 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5480,7 +5506,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 222.25 96.52 0)
+			(at 214.63 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5776,7 +5802,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Potentiometer")
-		(at 229.87 96.52 0)
+		(at 222.25 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5784,7 +5810,7 @@
 		(dnp no)
 		(uuid "16733e47-30d4-4c69-9319-8dde519dc3ed")
 		(property "Reference" "RV4"
-			(at 226.06 96.52 90)
+			(at 218.44 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5792,7 +5818,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 223.52 96.52 90)
+			(at 215.9 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5800,7 +5826,7 @@
 			)
 		)
 		(property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical"
-			(at 229.87 96.52 0)
+			(at 222.25 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5809,7 +5835,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 229.87 96.52 0)
+			(at 222.25 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5818,7 +5844,7 @@
 			)
 		)
 		(property "Description" "Accent CV lvl"
-			(at 227.838 96.52 90)
+			(at 220.218 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9720,6 +9746,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D")
+		(at 229.87 100.33 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6a014071-6a36-475a-be35-c5988b28fbb1")
+		(property "Reference" "D6"
+			(at 232.41 101.6001 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 232.41 99.0601 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_T-1_P10.16mm_Horizontal"
+			(at 229.87 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.87 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 229.87 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bff33c15-69d8-41ce-b862-762610b1ba88")
+		)
+		(pin "2"
+			(uuid "dc2ecdd7-0d2e-4bb8-a226-c974837c6bb4")
+		)
+		(instances
+			(project "05_hihat"
+				(path "/2375ec83-956c-4ce3-8106-f4a8f815549e"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 186.69 64.77 90)
 		(unit 1)
@@ -13126,7 +13222,7 @@
 	)
 	(symbol
 		(lib_id "Connector:AudioJack2")
-		(at 217.17 91.44 0)
+		(at 209.55 91.44 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13135,7 +13231,7 @@
 		(dnp no)
 		(uuid "b9aa39ec-d070-4b57-a779-0ab652420578")
 		(property "Reference" "J3"
-			(at 212.09 90.8049 0)
+			(at 204.47 90.8049 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13144,7 +13240,7 @@
 			)
 		)
 		(property "Value" "Accent CV In"
-			(at 212.09 93.3449 0)
+			(at 204.47 93.3449 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13153,7 +13249,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NJ5FD-V_Vertical"
-			(at 217.17 91.44 0)
+			(at 209.55 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13162,7 +13258,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 217.17 91.44 0)
+			(at 209.55 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13171,7 +13267,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 217.17 91.44 0)
+			(at 209.55 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13535,6 +13631,73 @@
 			(project "05_hihat"
 				(path "/2375ec83-956c-4ce3-8106-f4a8f815549e"
 					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 229.87 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c8399c76-ccb4-493f-a845-db93a5e84d8e")
+		(property "Reference" "#PWR049"
+			(at 229.87 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 229.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 229.87 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "35a46aa9-a446-459d-9b3d-2c22bbda69ca")
+		)
+		(instances
+			(project "05_hihat"
+				(path "/2375ec83-956c-4ce3-8106-f4a8f815549e"
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -15034,7 +15197,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDREF")
-		(at 229.87 100.33 0)
+		(at 222.25 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15043,7 +15206,7 @@
 		(fields_autoplaced yes)
 		(uuid "f92eb6a5-53f6-42fd-b27e-1e9150b5d4f8")
 		(property "Reference" "#PWR029"
-			(at 229.87 106.68 0)
+			(at 222.25 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15052,7 +15215,7 @@
 			)
 		)
 		(property "Value" "GNDREF"
-			(at 229.87 105.41 0)
+			(at 222.25 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15061,7 +15224,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 229.87 100.33 0)
+			(at 222.25 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15070,7 +15233,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 229.87 100.33 0)
+			(at 222.25 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15079,7 +15242,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 229.87 100.33 0)
+			(at 222.25 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
