@@ -2810,8 +2810,8 @@
       <width value="2.0" unit="mm"/>
       <points>
         <point x="8.2" y="5.9"/>
-        <point x="8.2" y="6.1"/>
-        <point x="8.2" y="6.0"/>
+        <point x="8.2" y="6.2"/>
+        <point x="8.2" y="6.05"/>
       </points>
       <bodyColor hex="ff8000"/>
       <borderColor hex="b25900"/>
@@ -3398,6 +3398,29 @@
       <colorCode>_5_BAND</colorCode>
       <shape>Standard</shape>
     </diylc.passive.Resistor>
+    <diylc.semiconductors.DiodeGlass>
+      <name>D6</name>
+      <alpha>127</alpha>
+      <length value="0.2" unit="in"/>
+      <width value="0.09" unit="in"/>
+      <points>
+        <point x="6.3" y="6.5"/>
+        <point x="6.3" y="7.2"/>
+        <point x="6.3" y="6.85"/>
+      </points>
+      <bodyColor hex="e1f0ff"/>
+      <borderColor hex="808080"/>
+      <labelColor hex="ffffff"/>
+      <leadColor hex="cccccc"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <labelOriantation>Directional</labelOriantation>
+      <moveLabel>false</moveLabel>
+      <hideShortLeads>false</hideShortLeads>
+      <value></value>
+      <markerColor hex="808080"/>
+      <insideColor hex="e66e31"/>
+    </diylc.semiconductors.DiodeGlass>
     <diylc.misc.Label>
       <name>LAB1</name>
       <point x="5.3" y="5.8"/>
@@ -3481,40 +3504,40 @@
   </components>
   <groups>
     <set>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[13]"/>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[14]"/>
       <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[12]"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[14]"/>
       <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92[2]"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[13]"/>
     </set>
     <set>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[19]"/>
-      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92[3]"/>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[18]"/>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[17]"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[9]"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[8]"/>
+      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[10]"/>
     </set>
     <set>
       <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[22]"/>
       <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[21]"/>
-      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92[4]"/>
       <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[20]"/>
+      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92[4]"/>
     </set>
     <set>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[28]"/>
-      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92[6]"/>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[30]"/>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[29]"/>
-    </set>
-    <set>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[8]"/>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[10]"/>
-      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92"/>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[9]"/>
-    </set>
-    <set>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[27]"/>
       <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[26]"/>
       <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92[5]"/>
       <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[25]"/>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[27]"/>
+    </set>
+    <set>
+      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92[3]"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[19]"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[17]"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[18]"/>
+    </set>
+    <set>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[30]"/>
+      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92[6]"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[29]"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[28]"/>
     </set>
   </groups>
   <lockedLayers/>
