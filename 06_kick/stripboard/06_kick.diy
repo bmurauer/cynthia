@@ -36,6 +36,30 @@
       <stripColor hex="da8a67"/>
       <orientation>HORIZONTAL</orientation>
     </diylc.boards.VeroBoard>
+    <diylc.boards.VeroBoard>
+      <name>Board1</name>
+      <alpha>127</alpha>
+      <value></value>
+      <controlPoints>
+        <point x="8.6" y="0.9"/>
+        <point x="3.7" y="4.0"/>
+      </controlPoints>
+      <firstPoint x="3.7" y="0.9"/>
+      <secondPoint x="8.6" y="4.0"/>
+      <boardColor hex="f8ebb3"/>
+      <borderColor hex="ada47d"/>
+      <coordinateColor hex="b6b6b6"/>
+      <xType>Numbers</xType>
+      <coordinateOrigin>Top_Left</coordinateOrigin>
+      <coordinateDisplay>One_Side</coordinateDisplay>
+      <yType>Letters</yType>
+      <length value="88.90000000000002" unit="mm"/>
+      <width value="63.5" unit="mm"/>
+      <mode>TwoPoints</mode>
+      <spacing value="0.1" unit="in"/>
+      <stripColor hex="da8a67"/>
+      <orientation>HORIZONTAL</orientation>
+    </diylc.boards.VeroBoard>
     <diylc.connectivity.CopperTrace>
       <name>Trace1</name>
       <alpha>127</alpha>
@@ -775,6 +799,303 @@
       <hideShortLeads>false</hideShortLeads>
       <style>SOLID</style>
     </diylc.connectivity.Jumper>
+    <diylc.connectivity.TraceCut>
+      <name>Cut13</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="8.3" y="1.2"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut29</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="8.3" y="1.2999999999999994"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut30</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="8.1" y="1.0"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut31</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="7.8" y="1.0"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut32</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="8.0" y="1.2"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut33</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="8.2" y="2.1"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut34</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="7.4" y="2.3"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut35</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="6.7" y="1.9"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut36</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="6.7" y="2.0"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut37</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="6.7" y="2.1"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut38</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="6.7" y="2.2"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut39</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="6.7" y="2.3"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut40</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="6.7" y="2.4"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut41</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="6.7" y="2.5"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut42</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="7.4" y="2.4"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut43</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="8.2" y="1.7"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut44</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="8.2" y="2.2"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut45</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="8.2" y="3.4"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut46</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="8.2" y="3.5"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut47</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="8.2" y="3.1"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut48</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="7.9" y="2.8"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut49</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="7.9" y="2.9"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut50</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="7.7" y="3.1"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut51</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="7.7" y="3.0"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut52</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="3.9999999999999987" y="2.9"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut53</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="7.4" y="2.5"/>
+    </diylc.connectivity.TraceCut>
+    <diylc.connectivity.TraceCut>
+      <name>Cut54</name>
+      <size value="0.1" unit="in"/>
+      <fillColor hex="ffffff"/>
+      <borderColor hex="ff0000"/>
+      <boardColor hex="ff00ff"/>
+      <cutBetweenHoles>false</cutBetweenHoles>
+      <orientation>VERTICAL</orientation>
+      <holeSpacing value="0.1" unit="in"/>
+      <point x="3.9999999999999987" y="1.9"/>
+    </diylc.connectivity.TraceCut>
     <diylc.passive.RadialElectrolytic>
       <name>C1</name>
       <alpha>127</alpha>
@@ -1739,31 +2060,6 @@
       <colorCode>_5_BAND</colorCode>
       <shape>Standard</shape>
     </diylc.passive.Resistor>
-    <diylc.passive.Resistor>
-      <name>R1</name>
-      <alpha>127</alpha>
-      <length value="7.0" unit="mm"/>
-      <width value="2.5" unit="mm"/>
-      <points>
-        <point x="6.1" y="6.2"/>
-        <point x="6.1" y="5.7"/>
-        <point x="6.1" y="5.95"/>
-      </points>
-      <bodyColor hex="82cffd"/>
-      <borderColor hex="5b90b1"/>
-      <labelColor hex="000000"/>
-      <leadColor hex="cccccc"/>
-      <display>BOTH</display>
-      <flipStanding>false</flipStanding>
-      <labelOriantation>Directional</labelOriantation>
-      <moveLabel>false</moveLabel>
-      <hideShortLeads>false</hideShortLeads>
-      <value value="47.0" unit="K"/>
-      <power>HALF</power>
-      <powerNew value="0.25" unit="W"/>
-      <colorCode>_5_BAND</colorCode>
-      <shape>Standard</shape>
-    </diylc.passive.Resistor>
     <diylc.passive.RadialFilmCapacitor>
       <name>C11</name>
       <alpha>127</alpha>
@@ -1849,9 +2145,9 @@
       <length value="7.0" unit="mm"/>
       <width value="2.5" unit="mm"/>
       <points>
-        <point x="6.3" y="6.3"/>
-        <point x="6.3" y="5.7"/>
-        <point x="6.3" y="6.0"/>
+        <point x="6.1" y="6.3"/>
+        <point x="6.1" y="5.7"/>
+        <point x="6.1" y="6.0"/>
       </points>
       <bodyColor hex="82cffd"/>
       <borderColor hex="5b90b1"/>
@@ -2223,33 +2519,31 @@
     </set>
     <set>
       <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[17]"/>
-      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92[4]"/>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[16]"/>
       <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[15]"/>
-    </set>
-    <set>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[13]"/>
-      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92[3]"/>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[12]"/>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[11]"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[16]"/>
+      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92[4]"/>
     </set>
     <set>
       <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[18]"/>
-      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[19]"/>
       <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[20]"/>
       <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92[5]"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[19]"/>
     </set>
     <set>
+      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92"/>
       <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[6]"/>
       <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[5]"/>
-      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92"/>
       <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[4]"/>
+    </set>
+    <set>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[12]"/>
+      <diylc.semiconductors.TransistorTO92 reference="../../../components/diylc.semiconductors.TransistorTO92[3]"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[13]"/>
+      <diylc.connectivity.Jumper reference="../../../components/diylc.connectivity.Jumper[11]"/>
     </set>
   </groups>
   <lockedLayers/>
-  <lockedComponents>
-    <diylc.boards.VeroBoard reference="../../components/diylc.boards.VeroBoard"/>
-  </lockedComponents>
+  <lockedComponents/>
   <hiddenLayers/>
   <font name="Dialog.plain" size="14" style="0"/>
 </project>
