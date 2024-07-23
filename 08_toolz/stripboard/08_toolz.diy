@@ -18,10 +18,10 @@
       <value></value>
       <controlPoints>
         <point x="1.9" y="2.5"/>
-        <point x="3.8" y="4.1"/>
+        <point x="3.8" y="4.0"/>
       </controlPoints>
       <firstPoint x="1.9" y="2.5"/>
-      <secondPoint x="3.8" y="4.1"/>
+      <secondPoint x="3.8" y="4.0"/>
       <boardColor hex="f8ebb3"/>
       <borderColor hex="ada47d"/>
       <coordinateColor hex="b6b6b6"/>
@@ -430,25 +430,6 @@
       <holeSpacing value="0.1" unit="in"/>
       <point x="2.2" y="3.3999999999999995"/>
     </diylc.connectivity.TraceCut>
-    <diylc.connectivity.Jumper>
-      <name>J24</name>
-      <alpha>127</alpha>
-      <points>
-        <point x="3.3" y="3.6999999999999993"/>
-        <point x="3.3" y="4.0"/>
-        <point x="3.3" y="3.8500000000000005"/>
-      </points>
-      <bodyColor hex="ffffff"/>
-      <borderColor hex="000000"/>
-      <labelColor hex="000000"/>
-      <leadColor hex="00cccc"/>
-      <display>NAME</display>
-      <flipStanding>false</flipStanding>
-      <labelOriantation>Directional</labelOriantation>
-      <moveLabel>false</moveLabel>
-      <hideShortLeads>false</hideShortLeads>
-      <style>SOLID</style>
-    </diylc.connectivity.Jumper>
     <diylc.connectivity.TraceCut>
       <name>Cut81</name>
       <size value="0.08" unit="in"/>
@@ -479,17 +460,6 @@
       <hideShortLeads>false</hideShortLeads>
       <style>SOLID</style>
     </diylc.connectivity.Jumper>
-    <diylc.connectivity.TraceCut>
-      <name>Cut10</name>
-      <size value="0.15" unit="in"/>
-      <fillColor hex="ffffff"/>
-      <borderColor hex="ff0000"/>
-      <boardColor hex="ff0066"/>
-      <cutBetweenHoles>false</cutBetweenHoles>
-      <orientation>VERTICAL</orientation>
-      <holeSpacing value="0.1" unit="in"/>
-      <point x="3.5" y="4.0"/>
-    </diylc.connectivity.TraceCut>
     <diylc.connectivity.Jumper>
       <name>J14</name>
       <alpha>127</alpha>
@@ -712,31 +682,6 @@
       <pinSpacing value="0.1" unit="in"/>
       <voltage>_63V</voltage>
     </diylc.passive.RadialCeramicDiskCapacitor>
-    <diylc.passive.Resistor>
-      <name>R19</name>
-      <alpha>88</alpha>
-      <length value="0.3" unit="in"/>
-      <width value="0.1" unit="in"/>
-      <points>
-        <point x="3.4" y="4.0"/>
-        <point x="3.6" y="4.0"/>
-        <point x="3.5" y="4.0"/>
-      </points>
-      <bodyColor hex="82cffd"/>
-      <borderColor hex="5b90b1"/>
-      <labelColor hex="000000"/>
-      <leadColor hex="cccccc"/>
-      <display>VALUE</display>
-      <flipStanding>false</flipStanding>
-      <labelOriantation>Directional</labelOriantation>
-      <moveLabel>false</moveLabel>
-      <hideShortLeads>false</hideShortLeads>
-      <value value="1.0" unit="K"/>
-      <power>HALF</power>
-      <powerNew value="0.25" unit="W"/>
-      <colorCode>_5_BAND</colorCode>
-      <shape>Standard</shape>
-    </diylc.passive.Resistor>
     <diylc.passive.RadialCeramicDiskCapacitor>
       <name>C4</name>
       <alpha>127</alpha>
@@ -886,6 +831,31 @@
       <pinSpacing value="0.1" unit="in"/>
       <shape>BOX</shape>
     </diylc.passive.RadialFilmCapacitor>
+    <diylc.passive.Resistor>
+      <name>R3</name>
+      <alpha>88</alpha>
+      <length value="7.0" unit="mm"/>
+      <width value="2.5" unit="mm"/>
+      <points>
+        <point x="3.7" y="3.3"/>
+        <point x="3.7" y="2.9"/>
+        <point x="3.6999999999999975" y="3.25"/>
+      </points>
+      <bodyColor hex="82cffd"/>
+      <borderColor hex="5b90b1"/>
+      <labelColor hex="000000"/>
+      <leadColor hex="cccccc"/>
+      <display>VALUE</display>
+      <flipStanding>false</flipStanding>
+      <labelOriantation>Directional</labelOriantation>
+      <moveLabel>true</moveLabel>
+      <hideShortLeads>false</hideShortLeads>
+      <value value="1.0" unit="K"/>
+      <power>HALF</power>
+      <powerNew value="0.25" unit="W"/>
+      <colorCode>_5_BAND</colorCode>
+      <shape>Standard</shape>
+    </diylc.passive.Resistor>
     <diylc.misc.Label>
       <name>LAB10</name>
       <point x="2.0" y="3.5"/>
@@ -893,16 +863,6 @@
       <font name="Dialog.plain" size="14" style="0"/>
       <color hex="000000"/>
       <horizontalAlignment>RIGHT</horizontalAlignment>
-      <verticalAlignment>CENTER</verticalAlignment>
-      <orientation>DEFAULT</orientation>
-    </diylc.misc.Label>
-    <diylc.misc.Label>
-      <name>LAB32</name>
-      <point x="3.7" y="4.0"/>
-      <text>CV out</text>
-      <font name="Dialog.plain" size="14" style="0"/>
-      <color hex="000000"/>
-      <horizontalAlignment>LEFT</horizontalAlignment>
       <verticalAlignment>CENTER</verticalAlignment>
       <orientation>DEFAULT</orientation>
     </diylc.misc.Label>
@@ -948,23 +908,13 @@
     </diylc.misc.Label>
     <diylc.misc.Label>
       <name>LAB4</name>
-      <point x="2.0" y="4.0"/>
+      <point x="3.7" y="3.7"/>
       <text>Inv switch 2</text>
-      <font name="Dialog.plain" size="14" style="0"/>
-      <color hex="000000"/>
-      <horizontalAlignment>RIGHT</horizontalAlignment>
-      <verticalAlignment>CENTER</verticalAlignment>
-      <orientation>DEFAULT</orientation>
-    </diylc.misc.Label>
-    <diylc.misc.Label>
-      <name>LAB5</name>
-      <point x="3.3" y="3.9"/>
-      <text>Lin/Log pin 1 (LOG)</text>
       <font name="Dialog.plain" size="14" style="0"/>
       <color hex="000000"/>
       <horizontalAlignment>LEFT</horizontalAlignment>
       <verticalAlignment>CENTER</verticalAlignment>
-      <orientation>_90</orientation>
+      <orientation>DEFAULT</orientation>
     </diylc.misc.Label>
     <diylc.misc.Label>
       <name>LAB6</name>
@@ -990,6 +940,16 @@
       <name>LAB8</name>
       <point x="3.7" y="3.5"/>
       <text>slew rate pin2</text>
+      <font name="Dialog.plain" size="14" style="0"/>
+      <color hex="000000"/>
+      <horizontalAlignment>LEFT</horizontalAlignment>
+      <verticalAlignment>CENTER</verticalAlignment>
+      <orientation>DEFAULT</orientation>
+    </diylc.misc.Label>
+    <diylc.misc.Label>
+      <name>LAB5</name>
+      <point x="3.5" y="2.9"/>
+      <text>CV Out</text>
       <font name="Dialog.plain" size="14" style="0"/>
       <color hex="000000"/>
       <horizontalAlignment>LEFT</horizontalAlignment>
