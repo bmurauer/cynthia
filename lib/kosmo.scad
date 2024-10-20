@@ -95,11 +95,9 @@ module punchHole(x, y, holeSize,chamfer=false){
 module midiSocket(x, y) {
     punchHole(x, y, midiSocketHoleDiameter);
 }
-
 module led(x, y) {
     punchHole(x, y, ledHoleDiameter);
 }
-
 module switch(x, y) { 
     punchHole(x, y, switchHoleDiameter);
 }
@@ -108,6 +106,11 @@ module pushButton(x, y) {
 }
 module rotarySwitch(x, y) { 
     punchHole(x, y, rotarySwitchHoleDiameter);
+}
+module sevenSegmentDisplay(x, y) {
+    translate([x-6.5, y-9.6, -1]){
+        cube([13, 19.2, thickness+2]);
+    }
 }
 
 module pot(x, y) {
@@ -128,9 +131,6 @@ module jack(x, y){
 }
 
 module panel(width) {
-    
-  echo(concat(n_rows, "rows, distance=",n_rows, (rowsEnd - rowsStart) / (n_rows-1)));
-  echo(concat(n_cols, "cols, distance=",n_cols, (colsEnd - colsStart) / (n_cols-1)));
   difference() {
     cube([width, panelHeight, thickness]);
     kosmoMountHoles(width, panelHeight);
