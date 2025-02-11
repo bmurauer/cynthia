@@ -1,7 +1,7 @@
 {
   "board": {
     "active_layer": 31,
-    "active_layer_preset": "All Layers",
+    "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
@@ -15,17 +15,17 @@
       "zones": 0.6
     },
     "selection_filter": {
-      "dimensions": true,
-      "footprints": true,
-      "graphics": true,
-      "keepouts": true,
+      "dimensions": false,
+      "footprints": false,
+      "graphics": false,
+      "keepouts": false,
       "lockedItems": false,
-      "otherItems": true,
-      "pads": true,
-      "text": true,
+      "otherItems": false,
+      "pads": false,
+      "text": false,
       "tracks": true,
-      "vias": true,
-      "zones": true
+      "vias": false,
+      "zones": false
     },
     "visible_items": [
       0,
@@ -49,7 +49,6 @@
       21,
       22,
       23,
-      24,
       25,
       26,
       27,
@@ -64,7 +63,7 @@
       39,
       40
     ],
-    "visible_layers": "fffffff_ffffffff",
+    "visible_layers": "7ffffff_ffffffff",
     "zone_display_mode": 0
   },
   "git": {
@@ -74,7 +73,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "03_env_ar_pluck.kicad_prl",
+    "filename": "03_env_vca.kicad_prl",
     "version": 3
   },
   "project": {

@@ -8,30 +8,25 @@ potHoleDiameter = 7;
 switchHoleDiameter = 6;
 rotarySwitchHoleDiameter = 9.1;
 midiSocketHoleDiameter = 15;
-colPaddingLeft = 20;
-colPaddingRight = 10;
-rowPadding = 30;
-
-offsetTopBottom = 20; // Mounting area
-
-n_rows = 6;
-n_cols = width / 25;
-
-rowsStart = rowPadding;
-rowsEnd = panelHeight - rowPadding;
-
-colsStart = colPaddingRight;
-colsEnd = width - colPaddingLeft;
 
 
-function row (i) = rowsStart + i * (rowsEnd - rowsStart) / (n_rows - 1);
-function col (i) = colsStart + i * (colsEnd - colsStart) / (n_cols - 1);
+itemWidth = 20;
+itemHeight = 25;
 
-module pcbHolders(){
-  pcbHolder(width-5, panelHeight/2 + 140/2 - 5);
-  pcbHolder(width-5, panelHeight/2 - 140/2 - 5);
+rowsStart = 25; // offset for frame 
+colsStart = 10; // offset for PCB holders
+
+function row (i) = rowsStart + i * itemHeight + (itemHeight / 2);
+function col (i) = width - (colsStart + i * itemWidth + (itemWidth / 2));
+
+module pcbHoldersStripboard(){
+  pcbHolders(140);
 }
 
+module pcbHolders(distance) {
+  pcbHolder(width-5, panelHeight/2 + distance/2 - 5);
+  pcbHolder(width-5, panelHeight/2 - distance/2 - 5);
+}
 
 module pcbHolder(x, y){
   pcbHole = 3;
