@@ -145,6 +145,10 @@
 	(net 63 "Net-(C8-Pad2)")
 	(net 64 "Net-(C14-Pad1)")
 	(net 65 "Net-(C18-Pad1)")
+	(net 66 "/Output Board/SQUARE")
+	(net 67 "/Output Board/TRI")
+	(net 68 "/Output Board/SAW")
+	(net 69 "/Output Board/SINE")
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "01cc58b3-5b62-4e7c-9af6-160d899b6535")
@@ -3709,7 +3713,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 35 "/PCB/Sine")
+			(net 69 "/Output Board/SINE")
 			(pintype "passive")
 			(uuid "16359df0-cead-43fd-bade-7b9c7682f36d")
 		)
@@ -4266,6 +4270,132 @@
 			(rotate
 				(xyz 0 0 0)
 			)
+		)
+	)
+	(footprint "cynthia:6.35 mm jack socket mono"
+		(layer "F.Cu")
+		(uuid "25f4f8ac-7afd-4311-b6f5-4285fcb93b60")
+		(at 134.7 91.36)
+		(property "Reference" "J14"
+			(at 0 9.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "adf2a2ec-5cc1-4189-a708-ba33273bdb03")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "SINE OUT"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "364156dd-ff77-4941-b41a-33506386f07c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "cynthia:6.35 mm jack socket mono"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e1e1cb0d-5038-4976-99d1-76c6ab2e27ac")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bfe9f4f1-e5bf-496e-a8aa-a2e35d7d9cb2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "53f7b0a5-85a7-4498-93fe-65ac20732aa2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/a356543c-4be0-4e55-8929-89a1377b7da9/e9c4e67f-f4d5-456d-9935-f490839ae175")
+		(sheetname "Output Board")
+		(sheetfile "outputs.kicad_sch")
+		(attr through_hole)
+		(fp_circle
+			(center 0 0)
+			(end 4.5 -3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill none)
+			(layer "F.SilkS")
+			(uuid "f28f6862-127d-4fdc-a83f-79f20432cf03")
+		)
+		(fp_poly
+			(pts
+				(xy -8 -8) (xy 4 -8) (xy 8 -4) (xy 8 8) (xy -8 8)
+			)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill none)
+			(layer "F.SilkS")
+			(uuid "109bebba-1467-4a2a-89ed-94544e22ed37")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "ee954944-6bea-4daa-8cd3-f5ed130aaf17")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole oval
+			(at -6.75 -0.5 90)
+			(size 3 1.5)
+			(drill oval 2.1 0.5)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 69 "/Output Board/SINE")
+			(pinfunction "T")
+			(pintype "output")
+			(uuid "b29184f6-a733-45d7-ba96-ad60cb3424c1")
+		)
+		(pad "2" thru_hole oval
+			(at 5 -5 135)
+			(size 3 1.5)
+			(drill oval 2.1 0.5)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "5dbfe270-0560-4e9f-9314-f7252efb47b9")
 		)
 	)
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
@@ -7669,7 +7799,6 @@
 			)
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
-		(path "/433ea1e1-e1de-400b-a175-16604464a825")
 		(sheetname "Root")
 		(sheetfile "02_vco_as3340.kicad_sch")
 		(attr through_hole)
@@ -10792,6 +10921,132 @@
 			)
 		)
 	)
+	(footprint "cynthia:6.35 mm jack socket mono"
+		(layer "F.Cu")
+		(uuid "5a98d277-a666-4138-a995-63103d93eb0f")
+		(at 134.7 74.26)
+		(property "Reference" "J13"
+			(at 0 9.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "526b83cc-1c66-4765-830d-421e64ffe12f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "SAW OUT"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "f3c6e002-45e7-42a9-ac70-066a119e7990")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "cynthia:6.35 mm jack socket mono"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e91c8829-f364-45e7-a92d-7b0dae85a8bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6b1d1135-2d12-41c2-bf75-866250ffac74")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "32e4721b-66f0-48e4-a2ed-1e45f2c1cd3a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/a356543c-4be0-4e55-8929-89a1377b7da9/801f5f94-7019-49e4-80b0-998532e828e5")
+		(sheetname "Output Board")
+		(sheetfile "outputs.kicad_sch")
+		(attr through_hole)
+		(fp_circle
+			(center 0 0)
+			(end 4.5 -3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill none)
+			(layer "F.SilkS")
+			(uuid "edce3349-c2bf-4dfc-a722-1e453be8477d")
+		)
+		(fp_poly
+			(pts
+				(xy -8 -8) (xy 4 -8) (xy 8 -4) (xy 8 8) (xy -8 8)
+			)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill none)
+			(layer "F.SilkS")
+			(uuid "432de136-dfe1-4bcc-9222-eee9b12e8eee")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "3b3fb193-5d7c-410c-acb0-27e3ab150709")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole oval
+			(at -6.75 -0.5 90)
+			(size 3 1.5)
+			(drill oval 2.1 0.5)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 68 "/Output Board/SAW")
+			(pinfunction "T")
+			(pintype "output")
+			(uuid "830108fc-2003-40e7-8b51-392b1373d005")
+		)
+		(pad "2" thru_hole oval
+			(at 5 -5 135)
+			(size 3 1.5)
+			(drill oval 2.1 0.5)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "593fd043-efbd-4c7c-a433-89951faa7aac")
+		)
+	)
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "5bfe9733-bcde-4f6b-8226-b34efc53ec33")
@@ -12154,7 +12409,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 37 "/PCB/Triangle")
+			(net 67 "/Output Board/TRI")
 			(pintype "passive")
 			(uuid "6f0d2c3c-6f86-4063-a657-71bc61390293")
 		)
@@ -12443,6 +12698,132 @@
 			(rotate
 				(xyz 0 0 0)
 			)
+		)
+	)
+	(footprint "cynthia:6.35 mm jack socket mono"
+		(layer "F.Cu")
+		(uuid "717575bb-843d-4503-9304-157b1d9aa0ae")
+		(at 134.7 57.16)
+		(property "Reference" "J12"
+			(at 0 9.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "3d79b849-4426-47fe-84c5-09a9e8dd1b70")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "TRI OUT"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "d9373d03-f3c3-4560-870b-90125e9e4c41")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "cynthia:6.35 mm jack socket mono"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c99d4c0b-72f0-41a7-bc1e-4d85b7ac2316")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "026b52ea-028c-4d45-9e23-9b8d92650584")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2745d322-ccd8-4567-bafe-28cc20556c04")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/a356543c-4be0-4e55-8929-89a1377b7da9/62ab5193-517d-4369-82f7-ceccd000974f")
+		(sheetname "Output Board")
+		(sheetfile "outputs.kicad_sch")
+		(attr through_hole)
+		(fp_circle
+			(center 0 0)
+			(end 4.5 -3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill none)
+			(layer "F.SilkS")
+			(uuid "d5809791-3da9-40d5-9781-9f2543a49a7b")
+		)
+		(fp_poly
+			(pts
+				(xy -8 -8) (xy 4 -8) (xy 8 -4) (xy 8 8) (xy -8 8)
+			)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill none)
+			(layer "F.SilkS")
+			(uuid "75d5df9a-16ee-4a84-b70b-f170cdd96590")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "3a3fd075-3d3c-4351-8b06-678958a21eb7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole oval
+			(at -6.75 -0.5 90)
+			(size 3 1.5)
+			(drill oval 2.1 0.5)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 67 "/Output Board/TRI")
+			(pinfunction "T")
+			(pintype "output")
+			(uuid "779151a2-caa2-4f81-a6c3-78833ed548d4")
+		)
+		(pad "2" thru_hole oval
+			(at 5 -5 135)
+			(size 3 1.5)
+			(drill oval 2.1 0.5)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "0aaef91e-1b6b-483b-b327-62824af1547f")
 		)
 	)
 	(footprint "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm"
@@ -15119,7 +15500,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 36 "/PCB/Square")
+			(net 66 "/Output Board/SQUARE")
 			(pintype "passive")
 			(uuid "bde6168c-9770-4eb3-b8bb-b7ae82bb37c5")
 		)
@@ -16333,6 +16714,132 @@
 			(rotate
 				(xyz 0 0 0)
 			)
+		)
+	)
+	(footprint "cynthia:6.35 mm jack socket mono"
+		(layer "F.Cu")
+		(uuid "a6688ba4-86cb-4e91-8617-365266ace317")
+		(at 134.7 40.06)
+		(property "Reference" "J11"
+			(at 0 9.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "803330a7-3f2e-4fe1-8cbd-80a56b0b1f70")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "SQUARE OUT"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "0fb07d9c-da7d-482a-905c-cf00c45ebc12")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "cynthia:6.35 mm jack socket mono"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3d2e393c-08b0-4435-ae71-6dff4c60f071")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6be6751-e250-4f40-b143-75c8b8024ceb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a780bd20-cc89-4369-a1a2-04fb00e826e3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/a356543c-4be0-4e55-8929-89a1377b7da9/2769f78a-01c3-4737-ba7b-bac7dd1b3e15")
+		(sheetname "Output Board")
+		(sheetfile "outputs.kicad_sch")
+		(attr through_hole)
+		(fp_circle
+			(center 0 0)
+			(end 4.5 -3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill none)
+			(layer "F.SilkS")
+			(uuid "ae83166c-addf-458e-9885-fbadf501312a")
+		)
+		(fp_poly
+			(pts
+				(xy -8 -8) (xy 4 -8) (xy 8 -4) (xy 8 8) (xy -8 8)
+			)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill none)
+			(layer "F.SilkS")
+			(uuid "2e0a7b58-9806-4229-998d-2dacf7a4e127")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "5ce23871-0fc7-4c0e-9359-3055ca3c179a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole oval
+			(at -6.75 -0.5 90)
+			(size 3 1.5)
+			(drill oval 2.1 0.5)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 66 "/Output Board/SQUARE")
+			(pinfunction "T")
+			(pintype "output")
+			(uuid "a23d5895-11b3-4fab-bb9f-248f083114ea")
+		)
+		(pad "2" thru_hole oval
+			(at 5 -5 135)
+			(size 3 1.5)
+			(drill oval 2.1 0.5)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "8cda3a8d-395a-4b6d-8394-926c42a24887")
 		)
 	)
 	(footprint "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm"
@@ -21912,7 +22419,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 39 "/PCB/Saw")
+			(net 68 "/Output Board/SAW")
 			(pintype "passive")
 			(uuid "39215f29-eae3-429a-93e7-967e04c61aba")
 		)
