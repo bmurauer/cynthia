@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.6)
 		(legacy_teardrops no)
@@ -9,43 +9,44 @@
 	(paper "A4")
 	(layers
 		(0 "F.Cu" signal)
-		(31 "B.Cu" signal)
-		(32 "B.Adhes" user "B.Adhesive")
-		(33 "F.Adhes" user "F.Adhesive")
-		(34 "B.Paste" user)
-		(35 "F.Paste" user)
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(40 "Dwgs.User" user "User.Drawings")
-		(41 "Cmts.User" user "User.Comments")
-		(42 "Eco1.User" user "User.Eco1")
-		(43 "Eco2.User" user "User.Eco2")
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(48 "B.Fab" user)
-		(49 "F.Fab" user)
-		(50 "User.1" user)
-		(51 "User.2" user)
-		(52 "User.3" user)
-		(53 "User.4" user)
-		(54 "User.5" user)
-		(55 "User.6" user)
-		(56 "User.7" user)
-		(57 "User.8" user)
-		(58 "User.9" user)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user)
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+		(47 "User.5" user)
+		(49 "User.6" user)
+		(51 "User.7" user)
+		(53 "User.8" user)
+		(55 "User.9" user)
 	)
 	(setup
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(aux_axis_origin 19.3722 16.8399)
 		(grid_origin 15.4352 18.3143)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
@@ -55,7 +56,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -63,22 +63,26 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue yes)
-			(plotfptext yes)
+			(plot_black_and_white yes)
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "gerber/")
 		)
 	)
 	(net 0 "")
@@ -114,7 +118,7 @@
 		(property "Reference" "RV4"
 			(at 0.254 10.08 180)
 			(layer "F.SilkS")
-			(uuid "a957816c-9ad0-4765-9e0d-7b1f20f94f0d")
+			(uuid "0f4795ba-f9ef-409d-8c93-97300754288b")
 			(effects
 				(font
 					(size 1 1)
@@ -125,23 +129,10 @@
 		(property "Value" "100k"
 			(at 4.416063 10.054695 180)
 			(layer "F.SilkS")
-			(uuid "75a55f23-5f8e-46cd-960b-5bcad9153391")
+			(uuid "e8749886-29fe-4129-a212-63186b900e3e")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_CircularHoles"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "80d53308-844c-4893-8169-5514df611f52")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -151,7 +142,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "463b03bf-157f-4492-9931-37eaef06eefe")
+			(uuid "e1810bce-e0fa-4daf-a7c3-5fbe85a31f5d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -163,7 +154,7 @@
 			(at 13.462 3.984 90)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "053c2570-9ce5-46da-8e01-7ab380705f64")
+			(uuid "afb3b4b5-0335-4ef1-94fe-50fccaf1453f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -173,7 +164,7 @@
 		)
 		(property ki_fp_filters "Potentiometer*")
 		(path "/a78ab41f-0a00-4099-b3cd-4d941d09e931")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "board_io.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -353,7 +344,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "9c3c6d28-58da-4fae-a6c7-ef03d4fd6a9a")
 		)
@@ -417,6 +408,7 @@
 			(pintype "passive")
 			(uuid "604aa2ff-dbf8-4d2a-8760-81e3c60adffc")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Potentiometer_THT.3dshapes/Potentiometer_Alpha_RD901F-40-00D_Single_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -437,7 +429,7 @@
 			(at 8.796 -6.238 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "57071fec-adce-47a1-993d-c72755442c7b")
+			(uuid "276b7f5c-7f2f-426f-a65b-991d4fd43ac6")
 			(effects
 				(font
 					(size 1 1)
@@ -449,20 +441,7 @@
 			(at 0 1 0)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "b404766e-0f9f-4d1c-9163-4edff070e24b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "cynthia:mini rotary switch"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2419c896-c38a-400b-90ae-d64990edb2ee")
+			(uuid "c7631ec9-c849-4c56-8bce-a4d4831531c2")
 			(effects
 				(font
 					(size 1 1)
@@ -475,7 +454,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "62e45921-225c-4afd-beb5-0348506e463d")
+			(uuid "186b87c0-879c-4929-b5d6-e3706b36170d")
 			(effects
 				(font
 					(size 1 1)
@@ -483,11 +462,11 @@
 				)
 			)
 		)
-		(property "Description" "Sync Mode"
+		(property "Description" ""
 			(at 12.352 -4.714 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "d8a05c23-a825-403e-8ad2-e8b7e162b0cc")
+			(uuid "29609944-3667-43fa-a8cc-09bb3c55e05f")
 			(effects
 				(font
 					(size 1 1)
@@ -496,7 +475,7 @@
 			)
 		)
 		(path "/02d486c6-bcce-4e78-8a63-02de118cb498")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "board_io.kicad_sch")
 		(attr through_hole)
 		(fp_circle
@@ -506,7 +485,7 @@
 				(width 0.1)
 				(type dash)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "8def14ff-d7d9-4cb7-b35c-7876c7fe5575")
 		)
@@ -622,6 +601,7 @@
 			(pintype "input+no_connect")
 			(uuid "cd527719-e40c-4f22-9873-9760bf2f7ec0")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_CircularHoles"
 		(layer "F.Cu")
@@ -632,7 +612,7 @@
 		(property "Reference" "RV1"
 			(at 0.254 10.094 180)
 			(layer "F.SilkS")
-			(uuid "cc2c5ef0-8b05-4136-a683-19d72e22d7aa")
+			(uuid "2bcb8e1b-e16c-49a8-9b86-23865c957e4c")
 			(effects
 				(font
 					(size 1 1)
@@ -643,23 +623,10 @@
 		(property "Value" "250k"
 			(at 4.6198 10.1041 180)
 			(layer "F.SilkS")
-			(uuid "9189df1f-f8b9-46c9-91fe-6ddad11c9939")
+			(uuid "e7684a11-3b7d-40dd-bcaf-0a450d50a03a")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_CircularHoles"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "26699278-8f2d-4f35-8027-15ad7cc49f47")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -669,7 +636,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3139ad69-d5b9-478e-ae82-d8e90ce263e3")
+			(uuid "2442a430-a8c9-46c9-b762-bd7d29ccfdcb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -681,7 +648,7 @@
 			(at 13.462 3.998 90)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "22a2fc66-b8d9-44bf-ae74-c03ebba374e5")
+			(uuid "efbfcb16-3a83-48ed-a59c-46c6c15ce2d9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -691,7 +658,7 @@
 		)
 		(property ki_fp_filters "Potentiometer*")
 		(path "/c3b084eb-3a00-4a30-b4d1-3f6e5ddc69d5")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "board_io.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -871,7 +838,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "3a33b11f-111b-4bf4-b578-e106540ea329")
 		)
@@ -935,6 +902,7 @@
 			(pintype "passive")
 			(uuid "278982b4-aada-498d-91a0-b3bf4277a5c6")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Potentiometer_THT.3dshapes/Potentiometer_Alpha_RD901F-40-00D_Single_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -975,19 +943,6 @@
 				)
 			)
 		)
-		(property "Footprint" "cynthia:mini switch"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5587791b-e3d3-4777-8955-229948dc8570")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
@@ -1014,7 +969,7 @@
 			)
 		)
 		(path "/89683de0-57fb-490b-8b88-0969e3cba906")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "board_io.kicad_sch")
 		(attr through_hole)
 		(fp_rect
@@ -1024,7 +979,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "3213d3f0-0d42-49bc-8bbd-f8cee0ca3528")
 		)
@@ -1073,6 +1028,7 @@
 			(pintype "passive")
 			(uuid "4acfefa0-550d-42e0-bbe3-fce4455db391")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_CircularHoles"
 		(layer "F.Cu")
@@ -1083,7 +1039,7 @@
 		(property "Reference" "RV2"
 			(at 0.1554 10.1499 180)
 			(layer "F.SilkS")
-			(uuid "4d70d531-0859-41e4-9df0-aac0c3250e1a")
+			(uuid "f65f0a4a-ee4d-470c-99aa-be686c146d81")
 			(effects
 				(font
 					(size 1 1)
@@ -1094,23 +1050,10 @@
 		(property "Value" "100k"
 			(at 4.5212 10.16 180)
 			(layer "F.SilkS")
-			(uuid "4cfac9e2-2dd6-4ea6-9134-b9a0d676a055")
+			(uuid "b9939461-ca44-4138-9e20-89b2fae48454")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_CircularHoles"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ca3e23ef-acb3-4def-8dda-517d550d797f")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1120,7 +1063,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "942d37d4-fdb4-4b5f-8723-7d6f9381ede5")
+			(uuid "b8755041-7985-450d-b285-32d3c836384f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1132,7 +1075,7 @@
 			(at 13.342 6.59 90)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "c446725c-7a91-4d60-a3f6-d3fe091cfd39")
+			(uuid "f8170735-6242-4f6f-8015-32bb63122ec9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1142,7 +1085,7 @@
 		)
 		(property ki_fp_filters "Potentiometer*")
 		(path "/630f1186-541d-43c2-9bcd-2c7a474521e8")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "board_io.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1322,7 +1265,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "7b6c5f9c-4e3a-4bbc-9727-95d9797556fd")
 		)
@@ -1386,6 +1329,7 @@
 			(pintype "passive")
 			(uuid "0e30ed21-fd07-40f3-8398-24f42eb6ee44")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Potentiometer_THT.3dshapes/Potentiometer_Alpha_RD901F-40-00D_Single_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1407,7 +1351,7 @@
 		(property "Reference" "RV3"
 			(at 0.2818 10.1961 180)
 			(layer "F.SilkS")
-			(uuid "7e99fed6-38f3-4c1a-b4b1-2f55fee10ae0")
+			(uuid "0a23efb2-4907-49a9-b7a2-71991be88fc0")
 			(effects
 				(font
 					(size 1 1)
@@ -1418,23 +1362,10 @@
 		(property "Value" "100k"
 			(at 4.8538 10.1961 180)
 			(layer "F.SilkS")
-			(uuid "af6c9f7a-57c7-4f7a-9296-a8db5ed38ecc")
+			(uuid "0de597f9-3816-4a29-8a20-c86170cab283")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_CircularHoles"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "345ef38a-9d47-426d-9eb2-e81319c1acf6")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1444,7 +1375,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "bd2781a6-a452-4905-9699-fd062765f37d")
+			(uuid "89f9151f-a3a0-4cc4-9f43-eee2ddb68c26")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1456,7 +1387,7 @@
 			(at 13.402 5.776 90)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "9fc47d76-6d3c-490e-8234-b4e6c602b0f9")
+			(uuid "967faf63-526c-4e5a-aadc-3f6c49a0e6fc")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1466,7 +1397,7 @@
 		)
 		(property ki_fp_filters "Potentiometer*")
 		(path "/a774640c-34de-4663-845a-6f34a1442936")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "board_io.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1646,7 +1577,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "be2a3914-56ed-4e97-96ec-97cf48fab9fd")
 		)
@@ -1710,6 +1641,7 @@
 			(pintype "passive")
 			(uuid "57d5cccf-42f7-4590-befb-1a6500b6fdc9")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Potentiometer_THT.3dshapes/Potentiometer_Alpha_RD901F-40-00D_Single_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1731,7 +1663,7 @@
 		(property "Reference" "RV5"
 			(at 0.2818 10.1961 180)
 			(layer "F.SilkS")
-			(uuid "f92e5201-a28a-42d0-96a8-7f8a29638404")
+			(uuid "4e47cd52-147b-410d-a13b-4d2167ccd0fd")
 			(effects
 				(font
 					(size 1 1)
@@ -1742,23 +1674,10 @@
 		(property "Value" "100k"
 			(at 6.1238 10.1961 180)
 			(layer "F.SilkS")
-			(uuid "43cc6049-144a-4c8a-bbd0-b9d1f6a50e81")
+			(uuid "be29495e-45ff-494e-a59f-e44edb5ae325")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_CircularHoles"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "acb15cea-b521-4d67-a37b-e52bbee6538b")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1768,7 +1687,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "603c41fc-e77e-4ebb-a3de-f113c3e7a4a3")
+			(uuid "d28ca224-42b5-430e-b95c-271f6058dcd7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1780,7 +1699,7 @@
 			(at 13.342 2.714 90)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "3481ae3c-dd39-4d9c-b247-91bbd4b7a02f")
+			(uuid "cfae0107-1b33-4e51-84aa-74d465a607a1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1790,7 +1709,7 @@
 		)
 		(property ki_fp_filters "Potentiometer*")
 		(path "/7482dd4c-ef8a-4a37-a475-7c416d7e4727")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "board_io.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1970,7 +1889,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "1a7a34c2-a766-4ab7-baf6-050812178229")
 		)
@@ -2034,6 +1953,7 @@
 			(pintype "passive")
 			(uuid "4eccae28-20fa-47ae-83aa-039d6ed9f1c6")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Potentiometer_THT.3dshapes/Potentiometer_Alpha_RD901F-40-00D_Single_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2055,7 +1975,7 @@
 		(property "Reference" "J2"
 			(at 1.27 2.33 90)
 			(layer "B.SilkS")
-			(uuid "ee3de23b-373a-4ad1-883c-bdd003e3cd4a")
+			(uuid "3d83572f-409b-4d58-89fe-a21279604931")
 			(effects
 				(font
 					(size 1 1)
@@ -2064,27 +1984,14 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "Header 2"
+		(property "Value" "Conn_02x04_Odd_Even"
 			(at 1.27 -9.95 90)
 			(layer "B.SilkS")
-			(uuid "e225934d-8ccc-437f-8abb-a7b3c498e91d")
+			(hide yes)
+			(uuid "27deb223-449e-4ec2-9fc8-574b7b606946")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "37cb791e-1483-400b-addd-1a7fc130f82b")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -2095,7 +2002,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "618c02e5-d9eb-4551-9046-d6eb8870bcc6")
+			(uuid "a42932d6-9f45-4abf-869c-76c6b42c1225")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2104,12 +2011,11 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 0 90)
+		(property "Description" "Header 2"
+			(at 1.006 -10.228 90)
 			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "5ac3d5b6-d65f-4c4d-8318-8c9d05e6dbc0")
+			(layer "B.SilkS")
+			(uuid "1b45249f-d89c-46a7-b6fa-1afe80826cd4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2120,7 +2026,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_2x??_*")
 		(path "/08c88ce3-eb4c-450e-92af-c736ad3c9936")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "board_io.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2393,6 +2299,7 @@
 			(pintype "passive")
 			(uuid "28cc3b8b-248c-4755-a62f-f109162f09b5")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x04_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2414,7 +2321,7 @@
 		(property "Reference" "J1"
 			(at 1.27 2.33 0)
 			(layer "B.SilkS")
-			(uuid "09e639c2-8b5c-41a9-9f74-159a2a97fd4f")
+			(uuid "77e96b50-c9a9-4417-bd00-a09db539f02d")
 			(effects
 				(font
 					(size 1 1)
@@ -2423,27 +2330,14 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "Header 1"
+		(property "Value" "Conn_02x05_Odd_Even"
 			(at 1.27 -12.49 0)
 			(layer "B.SilkS")
-			(uuid "aee1781c-5a33-4dac-a33c-86e4e243c6fb")
+			(hide yes)
+			(uuid "a301c868-9f42-4acb-93c5-d1a37f0753e6")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "97d49848-ee5a-4643-a621-793ad5876fb1")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -2454,7 +2348,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "58a5d858-6b43-41fe-8306-181611f3153e")
+			(uuid "9cdc8a74-8c92-4bb9-8268-e0b93ef3f0ad")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2463,12 +2357,11 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 0 180)
+		(property "Description" "Header 1"
+			(at -2.902 -4.856 90)
 			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "7dd676bd-6cfb-4cf4-a6ce-a6c93316f37d")
+			(layer "B.SilkS")
+			(uuid "09c1744f-0e44-4d48-8490-538e1965bf37")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2479,7 +2372,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_2x??_*")
 		(path "/dbb214d8-b7cd-443e-9b95-1145aea619d0")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "board_io.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2774,6 +2667,7 @@
 			(pintype "passive")
 			(uuid "b0001894-8678-4b0c-9efb-6605dc239245")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x05_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2787,24 +2681,24 @@
 		)
 	)
 	(gr_rect
-		(start 15.4352 18.3143)
+		(start 14.6732 18.3143)
 		(end 63.4352 73.3143)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "540193e1-c0af-4115-9eed-36a2948f1e03")
 	)
 	(gr_rect
-		(start 15.4352 18.3143)
+		(start 14.6732 18.3143)
 		(end 63.4352 73.3143)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Margin")
 		(uuid "6b86cadd-f7e9-42bb-a660-0954096ff777")
 	)
@@ -3948,4 +3842,5 @@
 		(net 18)
 		(uuid "d77932a5-87d7-4fc5-ae4c-3812d7449efe")
 	)
+	(embedded_fonts no)
 )
