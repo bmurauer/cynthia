@@ -3280,6 +3280,7 @@
 	(symbol
 		(lib_id "Device:R_Potentiometer_Small")
 		(at 64.77 157.48 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3287,7 +3288,7 @@
 		(dnp no)
 		(uuid "630f1186-541d-43c2-9bcd-2c7a474521e8")
 		(property "Reference" "RV2"
-			(at 62.738 157.988 0)
+			(at 62.738 156.972 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3296,7 +3297,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 62.738 160.528 0)
+			(at 62.738 154.432 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3323,7 +3324,7 @@
 			)
 		)
 		(property "Description" "FM lvl"
-			(at 62.738 163.068 0)
+			(at 62.738 151.892 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3419,6 +3420,7 @@
 	(symbol
 		(lib_id "Device:R_Potentiometer_Small")
 		(at 66.04 138.43 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3427,7 +3429,7 @@
 		(fields_autoplaced yes)
 		(uuid "7482dd4c-ef8a-4a37-a475-7c416d7e4727")
 		(property "Reference" "RV5"
-			(at 63.5 135.8899 0)
+			(at 63.5 140.9701 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3436,7 +3438,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 63.5 138.4299 0)
+			(at 63.5 138.4301 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3463,7 +3465,7 @@
 			)
 		)
 		(property "Description" "Coarse Tuning"
-			(at 63.5 140.9699 0)
+			(at 63.5 135.8901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3829,6 +3831,7 @@
 	(symbol
 		(lib_id "Device:R_Potentiometer_Small")
 		(at 64.77 171.45 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3836,7 +3839,7 @@
 		(dnp no)
 		(uuid "a774640c-34de-4663-845a-6f34a1442936")
 		(property "Reference" "RV3"
-			(at 62.992 170.688 0)
+			(at 62.992 172.212 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3845,7 +3848,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 62.992 173.228 0)
+			(at 62.992 169.672 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3872,7 +3875,7 @@
 			)
 		)
 		(property "Description" "PWM lvl"
-			(at 62.992 175.768 0)
+			(at 62.992 167.132 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3901,6 +3904,7 @@
 	(symbol
 		(lib_id "Device:R_Potentiometer_Small")
 		(at 66.04 115.57 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3909,7 +3913,7 @@
 		(fields_autoplaced yes)
 		(uuid "a78ab41f-0a00-4099-b3cd-4d941d09e931")
 		(property "Reference" "RV4"
-			(at 63.5 113.0299 0)
+			(at 63.5 118.1101 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3918,7 +3922,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 63.5 115.5699 0)
+			(at 63.5 115.5701 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3945,7 +3949,7 @@
 			)
 		)
 		(property "Description" "Fine Tuning"
-			(at 63.5 118.1099 0)
+			(at 63.5 113.0301 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3974,6 +3978,7 @@
 	(symbol
 		(lib_id "Device:R_Potentiometer_Small")
 		(at 58.42 35.56 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3981,7 +3986,7 @@
 		(dnp no)
 		(uuid "c3b084eb-3a00-4a30-b4d1-3f6e5ddc69d5")
 		(property "Reference" "RV1"
-			(at 56.896 33.274 0)
+			(at 56.896 37.846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3990,7 +3995,7 @@
 			)
 		)
 		(property "Value" "250k"
-			(at 56.896 35.814 0)
+			(at 56.896 35.306 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4017,7 +4022,7 @@
 			)
 		)
 		(property "Description" "PWM offset"
-			(at 56.896 38.354 0)
+			(at 56.896 32.766 0)
 			(effects
 				(font
 					(size 1.27 1.27)
