@@ -15509,7 +15509,7 @@
 			(uuid "8cb939b9-8ab1-42fc-97b6-537d62a80995")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x05_P2.54mm_Vertical.wrl"
+		(model "/home/benjamin/git/cynthia/lib/kicad/3d_models/shrouded_10_pin_header.step"
 			(offset
 				(xyz 0 0 0)
 			)
