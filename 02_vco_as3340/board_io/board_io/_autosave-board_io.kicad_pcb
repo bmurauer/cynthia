@@ -43,7 +43,7 @@
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting front back)
 		(aux_axis_origin 19.3722 16.8399)
-		(grid_origin 22.2932 25.7923)
+		(grid_origin 40.4352 32.3143)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -151,7 +151,7 @@
 			)
 		)
 		(property "Description" "Fine Tuning"
-			(at 0 -3.556 0)
+			(at -0.762 -4.318 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "86c38bfa-284a-4c29-bd6f-e2f211349467")
