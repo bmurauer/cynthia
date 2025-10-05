@@ -1,0 +1,110 @@
+(footprint "6.25mm Jack Stereo Switched"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 3 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "b02ad803-e803-4e56-9a28-862e2d5b7050")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Untitled"
+		(at 12 3 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "81457096-ce27-429d-906b-f0277773cf33")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8971f1a8-0e0e-4ca0-b7ea-fca8f94cd85d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "04d16b43-7040-44db-861a-40920d6c74cb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_poly
+		(pts
+			(xy -2.031769 2.031769) (xy 14.994158 1.994158) (xy 15 -10.5) (xy 10.5 -15) (xy -1.983537 -14.983537)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "ab08194a-870e-4a9a-9122-ab8857d28308")
+	)
+	(pad "R" thru_hole oval
+		(at 0 -7 90)
+		(size 4 2.2)
+		(drill oval 2.5 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f530ddba-7369-4b6b-8228-0d3457375bf8")
+	)
+	(pad "RN" thru_hole oval
+		(at 4 -13)
+		(size 4 2.2)
+		(drill oval 2.5 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "226cb969-e0a0-419a-a8c5-37427895223a")
+	)
+	(pad "S" thru_hole oval
+		(at 11 -11 134)
+		(size 4 2.2)
+		(drill oval 2.5 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5353ff7e-dc1d-489e-95c6-cbb74ddc6bb6")
+	)
+	(pad "T" thru_hole oval
+		(at 7 0)
+		(size 4 2.2)
+		(drill oval 2.5 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7e267113-999d-490b-8ded-b8bd4fa8bc46")
+	)
+	(pad "TN" thru_hole oval
+		(at 13 -4 90)
+		(size 4 2.2)
+		(drill oval 2.5 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5bf940ca-8d51-4680-b8d9-1cdb8ec252d4")
+	)
+	(embedded_fonts no)
+)

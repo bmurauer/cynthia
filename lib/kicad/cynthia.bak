@@ -420,7 +420,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin unspecified line
 				(at 5.08 1.27 180)
 				(length 2.54)
 				(name "T"
@@ -438,7 +438,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin unspecified line
 				(at 5.08 -1.27 180)
 				(length 2.54)
 				(name "TN"
@@ -456,7 +456,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin unspecified line
 				(at 5.08 -3.81 180)
 				(length 2.54)
 				(name "R"
@@ -474,7 +474,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin unspecified line
 				(at 5.08 -6.35 180)
 				(length 2.54)
 				(name "RN"
@@ -544,8 +544,8 @@
 		)
 		(symbol "SW_DPDT_0_1"
 			(rectangle
-				(start -2.54 7.62)
-				(end 6.35 -7.62)
+				(start -2.54 5.08)
+				(end 6.35 -6.35)
 				(stroke
 					(width 0)
 					(type default)
@@ -556,7 +556,7 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 3.81) (xy -1.27 3.81)
+					(xy -2.54 2.54) (xy -1.27 2.54)
 				)
 				(stroke
 					(width 0)
@@ -580,7 +580,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.27 3.81) (xy 3.9136 5.8619)
+					(xy -1.27 2.54) (xy 3.9136 4.5919)
 				)
 				(stroke
 					(width 0)
@@ -604,7 +604,7 @@
 			)
 			(polyline
 				(pts
-					(xy 6.35 5.08) (xy 3.81 5.08)
+					(xy 6.35 3.81) (xy 3.81 3.81)
 				)
 				(stroke
 					(width 0)
@@ -616,7 +616,7 @@
 			)
 			(polyline
 				(pts
-					(xy 6.35 2.54) (xy 3.81 2.54)
+					(xy 6.35 1.27) (xy 3.81 1.27)
 				)
 				(stroke
 					(width 0)
@@ -654,7 +654,7 @@
 		(symbol "SW_DPDT_1_1"
 			(polyline
 				(pts
-					(xy 2.54 5.08) (xy 2.54 -2.54)
+					(xy 2.54 3.81) (xy 2.54 -2.54)
 				)
 				(stroke
 					(width 0)
@@ -665,7 +665,7 @@
 				)
 			)
 			(circle
-				(center 3.81 5.08)
+				(center 3.81 3.81)
 				(radius 0.4215)
 				(stroke
 					(width 0)
@@ -676,7 +676,7 @@
 				)
 			)
 			(circle
-				(center 3.81 2.54)
+				(center 3.81 1.27)
 				(radius 0.4215)
 				(stroke
 					(width 0)
@@ -709,7 +709,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -5.08 3.81 0)
+				(at -5.08 2.54 0)
 				(length 2.54)
 				(name ""
 					(effects
@@ -745,7 +745,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 8.89 5.08 180)
+				(at 8.89 3.81 180)
 				(length 2.54)
 				(name ""
 					(effects
@@ -763,7 +763,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 8.89 2.54 180)
+				(at 8.89 1.27 180)
 				(length 2.54)
 				(name ""
 					(effects

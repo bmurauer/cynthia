@@ -20,7 +20,7 @@ function row (i) = rowsStart + i * itemHeight + (itemHeight / 2);
 function col (i) = width - (colsStart + i * itemWidth + (itemWidth / 2));
 
 module pcbHoldersStripboard(){
-  pcbHolders(140);
+  pcbHolders(27*2.54);
 }
 
 module pcbHolders(distance) {

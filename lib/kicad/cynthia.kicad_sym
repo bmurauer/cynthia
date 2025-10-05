@@ -420,7 +420,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 5.08 1.27 180)
 				(length 2.54)
 				(name "T"
@@ -438,7 +438,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 5.08 -1.27 180)
 				(length 2.54)
 				(name "TN"
@@ -456,7 +456,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 5.08 -3.81 180)
 				(length 2.54)
 				(name "R"
@@ -474,7 +474,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 5.08 -6.35 180)
 				(length 2.54)
 				(name "RN"
