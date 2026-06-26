@@ -1,0 +1,118 @@
+(footprint "3.5mm jack mono switched"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -4 7 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "4657141d-c8ad-4082-8883-50203f2cfb80")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Val**"
+		(at 4 7 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "4aab7ece-fe49-44ca-97f1-ff261d6a364b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7bcbc344-7c84-4a92-97d2-8d066dbbdf06")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c24f3636-d273-4e3e-b5d3-9ce5c1acd21d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -6 -6)
+		(end 6 6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "7b576aa5-ed8d-4f19-8f82-abc11ae7b9c7")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "a4f45ac0-4511-4ba1-94a7-e9d5bc3d7e20")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "S" thru_hole roundrect
+		(at -4.7 0.6 90)
+		(size 4 2)
+		(drill oval 2.7 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.5)
+		(uuid "a1d70d97-b7b1-486d-a137-709b402c3292")
+	)
+	(pad "S" thru_hole roundrect
+		(at 4.7 0.6 90)
+		(size 4 2)
+		(drill oval 2.7 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.5)
+		(uuid "dcf03b92-224e-4bbf-ab83-dfabc7600546")
+	)
+	(pad "T" thru_hole roundrect
+		(at 0 -4.8)
+		(size 3.7 1.7)
+		(drill oval 2.7 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.5)
+		(uuid "cecbe3a3-efc0-47d6-b66d-4ed01e9dbfcf")
+	)
+	(pad "TN" thru_hole roundrect
+		(at 0 3.3)
+		(size 3.7 1.7)
+		(drill oval 2.7 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.5)
+		(uuid "4968608f-746b-4d90-a48f-6c49449c5718")
+	)
+	(embedded_fonts no)
+)
