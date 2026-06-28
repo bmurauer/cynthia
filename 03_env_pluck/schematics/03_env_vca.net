@@ -1,0 +1,4153 @@
+(export
+	(version "E")
+	(design
+		(source "/home/benjamin/git/cynthia/03_env_pluck/schematics/03_env_vca.kicad_sch")
+		(date "2026-06-28T17:06:45")
+		(tool "Eeschema 10.0.3")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title "mailman")
+				(company)
+				(rev "2")
+				(date)
+				(source "03_env_vca.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "C1")
+			(value "47nF")
+			(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
+			(fields
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "8d367b8a-368b-4517-b733-16127c7bf461")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C2")
+			(value "50uF")
+			(footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
+			(description "Polarized capacitor, small symbol")
+			(fields
+				(field
+					(name "Footprint") "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Polarized capacitor, small symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "C_Polarized_Small")
+				(description "Polarized capacitor, small symbol")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "CP_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1982c897-227c-449d-bf92-d51ea8d2493e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C3")
+			(value "50uF")
+			(footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
+			(description "Polarized capacitor, small symbol")
+			(fields
+				(field
+					(name "Footprint") "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Polarized capacitor, small symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "C_Polarized_Small")
+				(description "Polarized capacitor, small symbol")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "CP_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "792bb847-31b4-46e1-befd-6e5ebcc5bf8f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C4")
+			(value "100nF")
+			(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
+			(description "Unpolarized capacitor, small symbol")
+			(fields
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor, small symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "C_Small")
+				(description "Unpolarized capacitor, small symbol")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "capacitor cap")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a219e646-5731-47d5-b5e1-be95f7d37e96")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C5")
+			(value "1uF")
+			(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
+			(fields
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "fcc8916b-ec41-4771-9b98-85cbc19eb438")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C6")
+			(value "100nF")
+			(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
+			(description "Unpolarized capacitor, small symbol")
+			(fields
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor, small symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "C_Small")
+				(description "Unpolarized capacitor, small symbol")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "capacitor cap")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a23c4ff4-7ca3-454e-ba0f-060b84773608")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C7")
+			(value "100nF")
+			(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
+			(description "Unpolarized capacitor, small symbol")
+			(fields
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor, small symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "C_Small")
+				(description "Unpolarized capacitor, small symbol")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "capacitor cap")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "30e0cb08-4abe-4f84-abb7-7385e003db41")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D1")
+			(value "1N4148")
+			(footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
+			(datasheet "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf")
+			(description "100V 0.15A standard switching diode, DO-35")
+			(fields
+				(field
+					(name "Sim.Device") "D")
+				(field
+					(name "Sim.Pins") "1=K 2=A")
+				(field
+					(name "Footprint") "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
+				(field
+					(name "Datasheet") "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf")
+				(field
+					(name "Description") "100V 0.15A standard switching diode, DO-35")
+			)
+			(libsource
+				(lib "Diode")
+				(part "1N4148")
+				(description "50V 1A General Purpose Rectifier Diode, DO-41")
+			)
+			(property
+				(name "Sim.Device")
+				(value "D")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "1=K 2=A")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "diode")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "D*DO?35*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "cf294561-cb94-4ebe-a944-55aabaee0e5c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D2")
+			(value "1N4148")
+			(footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
+			(datasheet "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf")
+			(description "100V 0.15A standard switching diode, DO-35")
+			(fields
+				(field
+					(name "Sim.Device") "D")
+				(field
+					(name "Sim.Pins") "1=K 2=A")
+				(field
+					(name "Footprint") "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
+				(field
+					(name "Datasheet") "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf")
+				(field
+					(name "Description") "100V 0.15A standard switching diode, DO-35")
+			)
+			(libsource
+				(lib "Diode")
+				(part "1N4148")
+				(description "50V 1A General Purpose Rectifier Diode, DO-41")
+			)
+			(property
+				(name "Sim.Device")
+				(value "D")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "1=K 2=A")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "diode")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "D*DO?35*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "973aa93f-4915-4ea2-8b88-279aeaf81555")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D3")
+			(value "1N4148")
+			(footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
+			(datasheet "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf")
+			(description "100V 0.15A standard switching diode, DO-35")
+			(fields
+				(field
+					(name "Sim.Device") "D")
+				(field
+					(name "Sim.Pins") "1=K 2=A")
+				(field
+					(name "Footprint") "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
+				(field
+					(name "Datasheet") "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf")
+				(field
+					(name "Description") "100V 0.15A standard switching diode, DO-35")
+			)
+			(libsource
+				(lib "Diode")
+				(part "1N4148")
+				(description "50V 1A General Purpose Rectifier Diode, DO-41")
+			)
+			(property
+				(name "Sim.Device")
+				(value "D")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "1=K 2=A")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "diode")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "D*DO?35*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "af7800fa-b705-4551-9ea9-501417b328db")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J1")
+			(value "gate in 1")
+			(footprint "cynthia:3.5mm jack mono switched")
+			(description "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)")
+			(fields
+				(field
+					(name "Footprint") "cynthia:3.5mm jack mono switched")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)")
+			)
+			(libsource
+				(lib "Connector_Audio")
+				(part "AudioJack2_SwitchT")
+				(description "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "audio jack receptacle mono headphones phone TS connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Jack*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "e9a7a6a9-ea3f-4557-919f-abdbd27acecd")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "S")
+						)
+						(pin
+							(num "T")
+						)
+						(pin
+							(num "TN")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "Eurorack")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical")
+			(description "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(fields
+				(field
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(libsource
+				(lib "Connector_Generic")
+				(part "Conn_02x05_Odd_Even")
+				(description "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_2x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1b23cac2-d882-4d05-b7e6-eb48739c985e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "10")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J3")
+			(value "signal in")
+			(footprint "cynthia:3.5mm jack mono switched")
+			(description "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)")
+			(fields
+				(field
+					(name "Footprint") "cynthia:3.5mm jack mono switched")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)")
+			)
+			(libsource
+				(lib "Connector_Audio")
+				(part "AudioJack2_SwitchT")
+				(description "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "audio jack receptacle mono headphones phone TS connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Jack*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "0c80be62-8e8e-40ad-800f-9b3b2fbf126d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "S")
+						)
+						(pin
+							(num "T")
+						)
+						(pin
+							(num "TN")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J4")
+			(value "Env out 1")
+			(footprint "cynthia:3.5mm jack mono")
+			(description "Audio Jack, 2 Poles (Mono / TS)")
+			(fields
+				(field
+					(name "Footprint") "cynthia:3.5mm jack mono")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Audio Jack, 2 Poles (Mono / TS)")
+			)
+			(libsource
+				(lib "Connector_Audio")
+				(part "AudioJack2")
+				(description "Audio Jack, 2 Poles (Mono / TS)")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "audio jack receptacle mono phone headphone TS connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Jack*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9e614766-2248-4c30-b3c3-fb1efd04ee16")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "S")
+						)
+						(pin
+							(num "T")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J5")
+			(value "Signal out")
+			(footprint "cynthia:3.5mm jack mono")
+			(description "Audio Jack, 2 Poles (Mono / TS)")
+			(fields
+				(field
+					(name "Footprint") "cynthia:3.5mm jack mono")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Audio Jack, 2 Poles (Mono / TS)")
+			)
+			(libsource
+				(lib "Connector_Audio")
+				(part "AudioJack2")
+				(description "Audio Jack, 2 Poles (Mono / TS)")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "audio jack receptacle mono phone headphone TS connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Jack*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "d0738242-37bb-42a4-8301-c3a138ff0ea8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "S")
+						)
+						(pin
+							(num "T")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Q1")
+			(value "BC857")
+			(footprint "Package_TO_SOT_SMD:SOT-23")
+			(datasheet "https://www.onsemi.com/pub/Collateral/BC860-D.pdf")
+			(description "0.1A Ic, 45V Vce, PNP Transistor, SOT-23")
+			(fields
+				(field
+					(name "Sim.Device") "PNP")
+				(field
+					(name "Sim.Pins") "1=B 2=E 3=C")
+				(field
+					(name "Footprint") "Package_TO_SOT_SMD:SOT-23")
+				(field
+					(name "Datasheet") "https://www.onsemi.com/pub/Collateral/BC860-D.pdf")
+				(field
+					(name "Description") "0.1A Ic, 45V Vce, PNP Transistor, SOT-23")
+			)
+			(libsource
+				(lib "Transistor_BJT")
+				(part "BC857")
+				(description "PNP transistor, base/emitter/collector")
+			)
+			(property
+				(name "Sim.Device")
+				(value "PNP")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "1=B 2=E 3=C")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "PNP transistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SOT?23*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "87da4a61-521f-4323-8c04-e4e9f6557297")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Q2")
+			(value "BC857")
+			(footprint "Package_TO_SOT_SMD:SOT-23")
+			(datasheet "https://www.onsemi.com/pub/Collateral/BC860-D.pdf")
+			(description "0.1A Ic, 45V Vce, PNP Transistor, SOT-23")
+			(fields
+				(field
+					(name "Sim.Device") "PNP")
+				(field
+					(name "Sim.Pins") "1=B 2=E 3=C")
+				(field
+					(name "Footprint") "Package_TO_SOT_SMD:SOT-23")
+				(field
+					(name "Datasheet") "https://www.onsemi.com/pub/Collateral/BC860-D.pdf")
+				(field
+					(name "Description") "0.1A Ic, 45V Vce, PNP Transistor, SOT-23")
+			)
+			(libsource
+				(lib "Transistor_BJT")
+				(part "BC857")
+				(description "PNP transistor, base/emitter/collector")
+			)
+			(property
+				(name "Sim.Device")
+				(value "PNP")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "1=B 2=E 3=C")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "PNP transistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SOT?23*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "f5d58564-bde8-4284-b22c-c16b83fd33a8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R1")
+			(value "100k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "c1ea0901-5ae4-4322-affd-2beb6fff9f34")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "100k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "820eb757-d490-4deb-bb7e-55697c6424ad")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R3")
+			(value "100k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a835525e-4fa0-4a0c-af95-97aba44fc849")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R4")
+			(value "82k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "51d5e82d-e748-43fd-bef3-4df357ca0e25")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R5")
+			(value "18k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "33fd889c-bcc8-45ed-a9db-29dd6a7cc83e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R6")
+			(value "100k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ebd769e6-ca80-4fdc-84a2-9752f1db4d9d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R7")
+			(value "100k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a38fbf84-7919-4bfc-8c9a-b908723daf3b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R8")
+			(value "100k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "37152a97-fa8b-4f82-ae65-7f3a9c618556")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R9")
+			(value "82k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "19515e74-1861-499b-9027-32d6e3c41245")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R10")
+			(value "560R")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "173262ab-c381-4de3-bc1e-fc2de2d4329c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R11")
+			(value "100R")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "cfe0b0e5-70dd-4762-b4ce-ce0e8e9f1a8b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R12")
+			(value "10k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "14e15339-8146-48c0-bfa1-07f965743c89")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R13")
+			(value "20k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "daf2c107-83d8-48ab-8b84-0be0cba629ec")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R14")
+			(value "20k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "7321d6c8-9c75-4f82-bee3-1ebc22ffa3b5")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R15")
+			(value "100R")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "8333cbc2-4d9c-4895-b8e6-2a661ca178a0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R16")
+			(value "100k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "8fedf133-70c7-48ca-bd98-c81efb616af0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R17")
+			(value "10k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ad8c6827-669d-4822-a17e-33fbb05b5927")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R18")
+			(value "10k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "47896ca1-8763-4a78-96ac-4acbbc4be70f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R19")
+			(value "100k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "d0ab5b4f-0f57-477f-a7c1-51b7ffec3e0b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R20")
+			(value "100k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ce107612-6fc2-472f-9ab0-a2a49ab4ffe0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R21")
+			(value "1k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "476d09da-a58e-4b7b-ba6a-4d1dd079ba55")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R22")
+			(value "1k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "669aa19c-cbb8-4b11-8c47-fdb027b6cb7b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "RV1")
+			(value "1M")
+			(description "attack")
+			(fields
+				(field
+					(name "Sim.Device") "R")
+				(field
+					(name "Sim.Type") "POT")
+				(field
+					(name "Sim.Pins") "1=r0 2=wiper 3=r1")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "attack")
+			)
+			(libsource
+				(lib "Device")
+				(part "R_Potentiometer")
+				(description "Potentiometer")
+			)
+			(property
+				(name "Sim.Device")
+				(value "R")
+			)
+			(property
+				(name "Sim.Type")
+				(value "POT")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "1=r0 2=wiper 3=r1")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "resistor variable")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Potentiometer*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "38d95630-3595-4a66-8388-68f167f1779c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "RV2")
+			(value "1M")
+			(description "release")
+			(fields
+				(field
+					(name "Sim.Device") "R")
+				(field
+					(name "Sim.Type") "POT")
+				(field
+					(name "Sim.Pins") "1=r0 2=wiper 3=r1")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "release")
+			)
+			(libsource
+				(lib "Device")
+				(part "R_Potentiometer")
+				(description "Potentiometer")
+			)
+			(property
+				(name "Sim.Device")
+				(value "R")
+			)
+			(property
+				(name "Sim.Type")
+				(value "POT")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "1=r0 2=wiper 3=r1")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "resistor variable")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Potentiometer*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a0026121-9e90-4c0c-8aa8-f542e9a031cb")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "RV3")
+			(value "100k")
+			(description "Trim-potentiometer")
+			(fields
+				(field
+					(name "Sim.Device") "R")
+				(field
+					(name "Sim.Type") "POT")
+				(field
+					(name "Sim.Pins") "1=r0 2=wiper 3=r1")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Trim-potentiometer")
+			)
+			(libsource
+				(lib "Device")
+				(part "R_Potentiometer_Trim")
+				(description "Trim-potentiometer")
+			)
+			(property
+				(name "Sim.Device")
+				(value "R")
+			)
+			(property
+				(name "Sim.Type")
+				(value "POT")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "1=r0 2=wiper 3=r1")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "resistor variable trimpot trimmer")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Potentiometer*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "d2fd4308-6934-4db3-be97-e96738e1f850")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW1")
+			(value "SW_SPDT")
+			(description "Switch, single pole double throw")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Switch, single pole double throw")
+			)
+			(libsource
+				(lib "Switch")
+				(part "SW_SPDT")
+				(description "Switch, single pole double throw")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "switch single-pole double-throw spdt ON-ON")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "75edac8f-cc72-4599-a732-cf7eaa9e8829")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "LM358")
+			(footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
+			(datasheet "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf")
+			(description "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8")
+			(fields
+				(field
+					(name "Footprint") "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
+				(field
+					(name "Datasheet") "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf")
+				(field
+					(name "Description") "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8")
+			)
+			(libsource
+				(lib "Amplifier_Operational")
+				(part "LM358")
+				(description "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "dual opamp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "f8235eeb-47ad-45a3-9d89-64c90e856255" "8c1f85c2-0904-4ebd-8d7c-10740ca2a899"
+				"7121f1d3-798b-4b85-9da0-baae114d5286"
+			)
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+					)
+				)
+				(unit
+					(name "B")
+					(pins
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+					)
+				)
+				(unit
+					(name "C")
+					(pins
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U2")
+			(value "TL072")
+			(footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
+			(datasheet "http://www.ti.com/lit/ds/symlink/tl071.pdf")
+			(description "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8")
+			(fields
+				(field
+					(name "Footprint") "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
+				(field
+					(name "Datasheet") "http://www.ti.com/lit/ds/symlink/tl071.pdf")
+				(field
+					(name "Description") "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8")
+			)
+			(libsource
+				(lib "Amplifier_Operational")
+				(part "TL072")
+				(description "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "dual opamp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "acfa187c-4282-4806-b318-7674596f4958" "adaef869-4548-4465-a5b9-b6e22126fa05"
+				"5052cbf6-5d2d-42a6-b251-af6cdeb1feca"
+			)
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+					)
+				)
+				(unit
+					(name "B")
+					(pins
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+					)
+				)
+				(unit
+					(name "C")
+					(pins
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "Amplifier_Operational")
+			(part "LM358")
+			(description "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8")
+			(docs "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf")
+			(footprints
+				(fp "SOIC*3.9x4.9mm*P1.27mm*")
+				(fp "DIP*W7.62mm*")
+				(fp "TO*99*")
+				(fp "OnSemi*Micro8*")
+				(fp "TSSOP*3x3mm*P0.65mm*")
+				(fp "TSSOP*4.4x3mm*P0.65mm*")
+				(fp "MSOP*3x3mm*P0.65mm*")
+				(fp "SSOP*3.9x4.9mm*P0.635mm*")
+				(fp "LFCSP*2x2mm*P0.5mm*")
+				(fp "*SIP*")
+				(fp "SOIC*5.3x6.2mm*P1.27mm*")
+			)
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "LM358")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf")
+				(field
+					(name "Description") "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "output")
+				)
+				(pin
+					(num "2")
+					(name "-")
+					(type "input")
+				)
+				(pin
+					(num "3")
+					(name "+")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "V-")
+					(type "power_in")
+				)
+				(pin
+					(num "5")
+					(name "+")
+					(type "input")
+				)
+				(pin
+					(num "6")
+					(name "-")
+					(type "input")
+				)
+				(pin
+					(num "7")
+					(name "")
+					(type "output")
+				)
+				(pin
+					(num "8")
+					(name "V+")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "Amplifier_Operational")
+			(part "TL072")
+			(description "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8")
+			(docs "http://www.ti.com/lit/ds/symlink/tl071.pdf")
+			(footprints
+				(fp "SOIC*3.9x4.9mm*P1.27mm*")
+				(fp "DIP*W7.62mm*")
+				(fp "TO*99*")
+				(fp "OnSemi*Micro8*")
+				(fp "TSSOP*3x3mm*P0.65mm*")
+				(fp "TSSOP*4.4x3mm*P0.65mm*")
+				(fp "MSOP*3x3mm*P0.65mm*")
+				(fp "SSOP*3.9x4.9mm*P0.635mm*")
+				(fp "LFCSP*2x2mm*P0.5mm*")
+				(fp "*SIP*")
+				(fp "SOIC*5.3x6.2mm*P1.27mm*")
+			)
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "TL072")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "http://www.ti.com/lit/ds/symlink/tl071.pdf")
+				(field
+					(name "Description") "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "output")
+				)
+				(pin
+					(num "2")
+					(name "-")
+					(type "input")
+				)
+				(pin
+					(num "3")
+					(name "+")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "V-")
+					(type "power_in")
+				)
+				(pin
+					(num "5")
+					(name "+")
+					(type "input")
+				)
+				(pin
+					(num "6")
+					(name "-")
+					(type "input")
+				)
+				(pin
+					(num "7")
+					(name "")
+					(type "output")
+				)
+				(pin
+					(num "8")
+					(name "V+")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "Connector_Audio")
+			(part "AudioJack2")
+			(description "Audio Jack, 2 Poles (Mono / TS)")
+			(footprints
+				(fp "Jack*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "AudioJack2")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Audio Jack, 2 Poles (Mono / TS)")
+			)
+			(pins
+				(pin
+					(num "S")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "T")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Connector_Audio")
+			(part "AudioJack2_SwitchT")
+			(description "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)")
+			(footprints
+				(fp "Jack*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "AudioJack2_SwitchT")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)")
+			)
+			(pins
+				(pin
+					(num "S")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "T")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "TN")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Connector_Generic")
+			(part "Conn_02x05_Odd_Even")
+			(description "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(footprints
+				(fp "Connector*:*_2x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_02x05_Odd_Even")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "Pin_3")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "Pin_4")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "Pin_5")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "Pin_6")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "Pin_7")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "Pin_8")
+					(type "passive")
+				)
+				(pin
+					(num "9")
+					(name "Pin_9")
+					(type "passive")
+				)
+				(pin
+					(num "10")
+					(name "Pin_10")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "C")
+			(description "Unpolarized capacitor")
+			(footprints
+				(fp "C_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "C")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "C_Polarized_Small")
+			(description "Polarized capacitor, small symbol")
+			(footprints
+				(fp "CP_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "C_Polarized_Small")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Polarized capacitor, small symbol")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "C_Small")
+			(description "Unpolarized capacitor, small symbol")
+			(footprints
+				(fp "C_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "C_Small")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor, small symbol")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "R")
+			(description "Resistor")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "R")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "R_Potentiometer")
+			(description "Potentiometer")
+			(footprints
+				(fp "Potentiometer*")
+			)
+			(fields
+				(field
+					(name "Reference") "RV")
+				(field
+					(name "Value") "R_Potentiometer")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Potentiometer")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "3")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "R_Potentiometer_Trim")
+			(description "Trim-potentiometer")
+			(footprints
+				(fp "Potentiometer*")
+			)
+			(fields
+				(field
+					(name "Reference") "RV")
+				(field
+					(name "Value") "R_Potentiometer_Trim")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Trim-potentiometer")
+				(field
+					(name "Sim.Device") "R")
+				(field
+					(name "Sim.Type") "POT")
+				(field
+					(name "Sim.Pins") "1=r0 2=wiper 3=r1")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "3")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Diode")
+			(part "1N4148")
+			(description "100V 0.15A standard switching diode, DO-35")
+			(docs "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf")
+			(footprints
+				(fp "D*DO?35*")
+			)
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "1N4148")
+				(field
+					(name "Footprint") "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
+				(field
+					(name "Datasheet") "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf")
+				(field
+					(name "Description") "100V 0.15A standard switching diode, DO-35")
+				(field
+					(name "Sim.Device") "D")
+				(field
+					(name "Sim.Pins") "1=K 2=A")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "K")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Switch")
+			(part "SW_SPDT")
+			(description "Switch, single pole double throw")
+			(fields
+				(field
+					(name "Reference") "SW")
+				(field
+					(name "Value") "SW_SPDT")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Switch, single pole double throw")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "A")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "B")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "C")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Transistor_BJT")
+			(part "BC857")
+			(description "0.1A Ic, 45V Vce, PNP Transistor, SOT-23")
+			(docs "https://www.onsemi.com/pub/Collateral/BC860-D.pdf")
+			(footprints
+				(fp "SOT?23*")
+			)
+			(fields
+				(field
+					(name "Reference") "Q")
+				(field
+					(name "Value") "BC857")
+				(field
+					(name "Footprint") "Package_TO_SOT_SMD:SOT-23")
+				(field
+					(name "Datasheet") "https://www.onsemi.com/pub/Collateral/BC860-D.pdf")
+				(field
+					(name "Description") "0.1A Ic, 45V Vce, PNP Transistor, SOT-23")
+				(field
+					(name "Sim.Device") "PNP")
+				(field
+					(name "Sim.Pins") "1=B 2=E 3=C")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "B")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "E")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "C")
+					(type "passive")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "Amplifier_Operational")
+			(uri "${KICAD10_SYMBOL_DIR}/Amplifier_Operational.kicad_sym")
+		)
+		(library
+			(logical "Connector_Audio")
+			(uri "${KICAD10_SYMBOL_DIR}/Connector_Audio.kicad_sym")
+		)
+		(library
+			(logical "Connector_Generic")
+			(uri "${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym")
+		)
+		(library
+			(logical "Device")
+			(uri "${KICAD10_SYMBOL_DIR}/Device.kicad_sym")
+		)
+		(library
+			(logical "Diode")
+			(uri "${KICAD10_SYMBOL_DIR}/Diode.kicad_sym")
+		)
+		(library
+			(logical "Switch")
+			(uri "${KICAD10_SYMBOL_DIR}/Switch.kicad_sym")
+		)
+		(library
+			(logical "Transistor_BJT")
+			(uri "${KICAD10_SYMBOL_DIR}/Transistor_BJT.kicad_sym")
+		)
+	)
+	(nets
+		(net
+			(code "1")
+			(name "+12V")
+			(class "Default")
+			(node
+				(ref "C2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C4")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C6")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R13")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R14")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R4")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "RV3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "8")
+				(pinfunction "V+_8")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U2")
+				(pin "8")
+				(pinfunction "V+_8")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "2")
+			(name "-12V")
+			(class "Default")
+			(node
+				(ref "C3")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C7")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "10")
+				(pinfunction "Pin_10_10")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "9")
+				(pinfunction "Pin_9_9")
+				(pintype "passive")
+			)
+			(node
+				(ref "RV3")
+				(pin "3")
+				(pinfunction "3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "4")
+				(pinfunction "V-_4")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "3")
+			(name "GND")
+			(class "Default")
+			(node
+				(ref "C2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C3")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C4")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C5")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C6")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C7")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "S")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "TN")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "4")
+				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "5")
+				(pinfunction "Pin_5_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "6")
+				(pinfunction "Pin_6_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "7")
+				(pinfunction "Pin_7_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "8")
+				(pinfunction "Pin_8_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "S")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "TN")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "S")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "S")
+				(pintype "passive")
+			)
+			(node
+				(ref "R11")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R15")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R20")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R3")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R5")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R7")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "4")
+				(pinfunction "V-_4")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U2")
+				(pin "3")
+				(pinfunction "+_3")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "4")
+			(name "Net-(C1-Pad1)")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "T")
+				(pintype "passive")
+			)
+			(node
+				(ref "R1")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "5")
+			(name "Net-(D1-A)")
+			(class "Default")
+			(node
+				(ref "D1")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "6")
+			(name "Net-(D1-K)")
+			(class "Default")
+			(node
+				(ref "D1")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R3")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "5")
+				(pinfunction "+_5")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "7")
+			(name "Net-(D2-A)")
+			(class "Default")
+			(node
+				(ref "D2")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "D3")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R10")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "8")
+			(name "Net-(D2-K)")
+			(class "Default")
+			(node
+				(ref "D2")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "RV1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "9")
+			(name "Net-(D3-A)")
+			(class "Default")
+			(node
+				(ref "D3")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "RV2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "10")
+			(name "Net-(J3-PadT)")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "T")
+				(pintype "passive")
+			)
+			(node
+				(ref "R8")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "11")
+			(name "Net-(J4-PadT)")
+			(class "Default")
+			(node
+				(ref "J4")
+				(pin "T")
+				(pintype "passive")
+			)
+			(node
+				(ref "R21")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "12")
+			(name "Net-(J5-PadT)")
+			(class "Default")
+			(node
+				(ref "J5")
+				(pin "T")
+				(pintype "passive")
+			)
+			(node
+				(ref "R22")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "13")
+			(name "Net-(Q1-B)")
+			(class "Default")
+			(node
+				(ref "Q1")
+				(pin "1")
+				(pinfunction "B_1")
+				(pintype "input")
+			)
+			(node
+				(ref "R11")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R8")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "14")
+			(name "Net-(Q1-C)")
+			(class "Default")
+			(node
+				(ref "Q1")
+				(pin "3")
+				(pinfunction "C_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R13")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R18")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "15")
+			(name "Net-(Q1-E)")
+			(class "Default")
+			(node
+				(ref "Q1")
+				(pin "2")
+				(pinfunction "E_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q2")
+				(pin "2")
+				(pinfunction "E_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R12")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "16")
+			(name "Net-(Q2-B)")
+			(class "Default")
+			(node
+				(ref "Q2")
+				(pin "1")
+				(pinfunction "B_1")
+				(pintype "input")
+			)
+			(node
+				(ref "R15")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R16")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "17")
+			(name "Net-(Q2-C)")
+			(class "Default")
+			(node
+				(ref "Q2")
+				(pin "3")
+				(pinfunction "C_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R14")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R17")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "18")
+			(name "Net-(R10-Pad1)")
+			(class "Default")
+			(node
+				(ref "R10")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "7")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "19")
+			(name "Net-(R12-Pad1)")
+			(class "Default")
+			(node
+				(ref "R12")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R9")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "1")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "20")
+			(name "Net-(R16-Pad2)")
+			(class "Default")
+			(node
+				(ref "R16")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "RV3")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "21")
+			(name "Net-(R19-Pad2)")
+			(class "Default")
+			(node
+				(ref "R19")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R22")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "7")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "22")
+			(name "Net-(SW1-A)")
+			(class "Default")
+			(node
+				(ref "R1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "23")
+			(name "Net-(SW1-C)")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "3")
+				(pinfunction "C_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "24")
+			(name "Net-(U1A-+)")
+			(class "Default")
+			(node
+				(ref "C5")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "RV1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "RV1")
+				(pin "3")
+				(pinfunction "3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "RV2")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "RV2")
+				(pin "3")
+				(pinfunction "3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "3")
+				(pinfunction "+_3")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "25")
+			(name "Net-(U1A--)")
+			(class "Default")
+			(node
+				(ref "R21")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R6")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "1")
+				(pintype "output")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "-_2")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "26")
+			(name "Net-(U1B--)")
+			(class "Default")
+			(node
+				(ref "R4")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R5")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "6")
+				(pinfunction "-_6")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "27")
+			(name "Net-(U2A--)")
+			(class "Default")
+			(node
+				(ref "R6")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R7")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R9")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "2")
+				(pinfunction "-_2")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "28")
+			(name "Net-(U2B-+)")
+			(class "Default")
+			(node
+				(ref "R17")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R20")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "5")
+				(pinfunction "+_5")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "29")
+			(name "Net-(U2B--)")
+			(class "Default")
+			(node
+				(ref "R18")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R19")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "6")
+				(pinfunction "-_6")
+				(pintype "input")
+			)
+		)
+	)
+)
