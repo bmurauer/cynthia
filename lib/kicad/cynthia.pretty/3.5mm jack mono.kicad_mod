@@ -7,7 +7,7 @@
 		(at -4 7 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "5387a465-1b96-4878-bc54-458bdce633c8")
+		(uuid "22cf2ac5-218c-41c1-9be3-d1c5e1e5fe02")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 4 7 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "e837c498-bbc5-4979-9755-ebdb384eabf1")
+		(uuid "2ec66738-ca0d-4277-80a0-ee1ed9ddc6cb")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "6466b04a-b525-4c4c-bc11-649d533ac4a2")
+		(uuid "fa731cc0-96c0-444a-b8a4-4c1608c6b51b")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "6a410813-6600-4580-aa02-4e232501e7c9")
+		(uuid "ed7b60c3-a574-4a1a-a1f8-0a2b88376f06")
 		(effects
 			(font
 				(size 1 1)
@@ -64,13 +64,13 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "6c1c59f0-6de0-460b-b6de-7879e14d4205")
+		(uuid "c98dfb7c-2ba9-45f5-9331-ec005497a967")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 5 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "14fca92f-f844-43ae-8be2-514bd385228f")
+		(uuid "04747289-c8c6-477a-8eb8-304fe2898d00")
 		(effects
 			(font
 				(size 1 1)
@@ -85,7 +85,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.5)
-		(uuid "954d66bc-b754-4ec0-a774-2b1c4e7f8f3c")
+		(uuid "0aa01b71-2616-4cd6-a771-b01ae33b1e82")
 	)
 	(pad "S" thru_hole roundrect
 		(at 4.7 0.6 90)
@@ -94,7 +94,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.5)
-		(uuid "f97234cd-56e0-48a8-94e8-0785a6b22fad")
+		(uuid "837a25d4-8313-4ed0-835c-5c9b0cad0fa7")
 	)
 	(pad "T" thru_hole roundrect
 		(at 0 -4.8)
@@ -103,7 +103,18 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.5)
-		(uuid "1f954ba8-562e-4075-a42d-510f9d63a075")
+		(uuid "06386673-5f2c-43ee-ae30-6f4dd3c4cedd")
 	)
 	(embedded_fonts no)
+	(model "/home/benjamin/git/cynthia/lib/kicad/3d_models/3.5mm_jack_socket.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

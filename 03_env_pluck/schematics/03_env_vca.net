@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/home/benjamin/git/cynthia/03_env_pluck/schematics/03_env_vca.kicad_sch")
-		(date "2026-06-28T17:51:25")
+		(date "2026-06-28T18:07:04")
 		(tool "Eeschema 10.0.3")
 		(sheet
 			(number "1")
@@ -109,7 +109,7 @@
 			)
 		)
 		(comp
-			(ref "C3")
+			(ref "C2")
 			(value "50uF")
 			(footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
 			(description "Polarized capacitor, small symbol")
@@ -163,7 +163,7 @@
 			)
 		)
 		(comp
-			(ref "C4")
+			(ref "C3")
 			(value "50uF")
 			(footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
 			(description "Polarized capacitor, small symbol")
@@ -217,7 +217,7 @@
 			)
 		)
 		(comp
-			(ref "C5")
+			(ref "C4")
 			(value "100nF")
 			(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
 			(description "Unpolarized capacitor, small symbol")
@@ -271,7 +271,7 @@
 			)
 		)
 		(comp
-			(ref "C7")
+			(ref "C5")
 			(value "1uF")
 			(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
 			(fields
@@ -325,7 +325,7 @@
 			)
 		)
 		(comp
-			(ref "C9")
+			(ref "C6")
 			(value "100nF")
 			(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
 			(description "Unpolarized capacitor, small symbol")
@@ -379,7 +379,7 @@
 			)
 		)
 		(comp
-			(ref "C10")
+			(ref "C7")
 			(value "100nF")
 			(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
 			(description "Unpolarized capacitor, small symbol")
@@ -433,7 +433,7 @@
 			)
 		)
 		(comp
-			(ref "D2")
+			(ref "D1")
 			(value "1N4148")
 			(footprint "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
 			(description "Diode")
@@ -499,7 +499,7 @@
 			)
 		)
 		(comp
-			(ref "D5")
+			(ref "D2")
 			(value "1N4148")
 			(footprint "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
 			(description "Diode")
@@ -565,7 +565,7 @@
 			)
 		)
 		(comp
-			(ref "D6")
+			(ref "D3")
 			(value "1N4148")
 			(footprint "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
 			(description "Diode")
@@ -632,7 +632,7 @@
 		)
 		(comp
 			(ref "J1")
-			(value "gate in 1")
+			(value "gate in")
 			(footprint "cynthia:3.5mm jack mono switched")
 			(description "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)")
 			(fields
@@ -670,6 +670,63 @@
 				(tstamps "/")
 			)
 			(tstamps "e9a7a6a9-ea3f-4557-919f-abdbd27acecd")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "S")
+						)
+						(pin
+							(num "T")
+						)
+						(pin
+							(num "TN")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "signal in")
+			(footprint "cynthia:3.5mm jack mono switched")
+			(description "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)")
+			(fields
+				(field
+					(name "Footprint") "cynthia:3.5mm jack mono switched")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)")
+			)
+			(libsource
+				(lib "Connector_Audio")
+				(part "AudioJack2_SwitchT")
+				(description "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "audio jack receptacle mono headphones phone TS connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Jack*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "0c80be62-8e8e-40ad-800f-9b3b2fbf126d")
 			(units
 				(unit
 					(name "A")
@@ -767,117 +824,6 @@
 		)
 		(comp
 			(ref "J4")
-			(value "signal in")
-			(footprint "cynthia:3.5mm jack mono switched")
-			(description "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)")
-			(fields
-				(field
-					(name "Footprint") "cynthia:3.5mm jack mono switched")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)")
-			)
-			(libsource
-				(lib "Connector_Audio")
-				(part "AudioJack2_SwitchT")
-				(description "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)")
-			)
-			(property
-				(name "Sheetname")
-				(value "03_env_vca")
-			)
-			(property
-				(name "Sheetfile")
-				(value "03_env_vca.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "audio jack receptacle mono headphones phone TS connector")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Jack*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "0c80be62-8e8e-40ad-800f-9b3b2fbf126d")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "S")
-						)
-						(pin
-							(num "T")
-						)
-						(pin
-							(num "TN")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "J5")
-			(value "Env out 1")
-			(footprint "cynthia:3.5mm jack mono")
-			(description "Audio Jack, 2 Poles (Mono / TS)")
-			(fields
-				(field
-					(name "Footprint") "cynthia:3.5mm jack mono")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Audio Jack, 2 Poles (Mono / TS)")
-			)
-			(libsource
-				(lib "Connector_Audio")
-				(part "AudioJack2")
-				(description "Audio Jack, 2 Poles (Mono / TS)")
-			)
-			(property
-				(name "Sheetname")
-				(value "03_env_vca")
-			)
-			(property
-				(name "Sheetfile")
-				(value "03_env_vca.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "audio jack receptacle mono phone headphone TS connector")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Jack*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "9e614766-2248-4c30-b3c3-fb1efd04ee16")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "S")
-						)
-						(pin
-							(num "T")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "J7")
 			(value "Signal out")
 			(footprint "cynthia:3.5mm jack mono")
 			(description "Audio Jack, 2 Poles (Mono / TS)")
@@ -916,6 +862,60 @@
 				(tstamps "/")
 			)
 			(tstamps "d0738242-37bb-42a4-8301-c3a138ff0ea8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "S")
+						)
+						(pin
+							(num "T")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J5")
+			(value "env out")
+			(footprint "cynthia:3.5mm jack mono")
+			(description "Audio Jack, 2 Poles (Mono / TS)")
+			(fields
+				(field
+					(name "Footprint") "cynthia:3.5mm jack mono")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Audio Jack, 2 Poles (Mono / TS)")
+			)
+			(libsource
+				(lib "Connector_Audio")
+				(part "AudioJack2")
+				(description "Audio Jack, 2 Poles (Mono / TS)")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "audio jack receptacle mono phone headphone TS connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Jack*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9e614766-2248-4c30-b3c3-fb1efd04ee16")
 			(units
 				(unit
 					(name "A")
@@ -1072,384 +1072,6 @@
 			(ref "R1")
 			(value "100k")
 			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
-			(fields
-				(field
-					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description")
-				)
-			)
-			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "Sheetname")
-				(value "03_env_vca")
-			)
-			(property
-				(name "Sheetfile")
-				(value "03_env_vca.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "c1ea0901-5ae4-4322-affd-2beb6fff9f34")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R3")
-			(value "100k")
-			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
-			(fields
-				(field
-					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description")
-				)
-			)
-			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "Sheetname")
-				(value "03_env_vca")
-			)
-			(property
-				(name "Sheetfile")
-				(value "03_env_vca.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "820eb757-d490-4deb-bb7e-55697c6424ad")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R6")
-			(value "100k")
-			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
-			(fields
-				(field
-					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description")
-				)
-			)
-			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "Sheetname")
-				(value "03_env_vca")
-			)
-			(property
-				(name "Sheetfile")
-				(value "03_env_vca.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "a835525e-4fa0-4a0c-af95-97aba44fc849")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R9")
-			(value "82k")
-			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
-			(fields
-				(field
-					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description")
-				)
-			)
-			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "Sheetname")
-				(value "03_env_vca")
-			)
-			(property
-				(name "Sheetfile")
-				(value "03_env_vca.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "51d5e82d-e748-43fd-bef3-4df357ca0e25")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R10")
-			(value "18k")
-			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
-			(fields
-				(field
-					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description")
-				)
-			)
-			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "Sheetname")
-				(value "03_env_vca")
-			)
-			(property
-				(name "Sheetfile")
-				(value "03_env_vca.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "33fd889c-bcc8-45ed-a9db-29dd6a7cc83e")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R12")
-			(value "560R")
-			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
-			(fields
-				(field
-					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description")
-				)
-			)
-			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "Sheetname")
-				(value "03_env_vca")
-			)
-			(property
-				(name "Sheetfile")
-				(value "03_env_vca.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "173262ab-c381-4de3-bc1e-fc2de2d4329c")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R14")
-			(value "1k")
-			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
-			(fields
-				(field
-					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description")
-				)
-			)
-			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "Sheetname")
-				(value "03_env_vca")
-			)
-			(property
-				(name "Sheetfile")
-				(value "03_env_vca.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "476d09da-a58e-4b7b-ba6a-4d1dd079ba55")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R15")
-			(value "100k")
-			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
 			(description "Resistor")
 			(fields
 				(field
@@ -1501,7 +1123,7 @@
 			)
 		)
 		(comp
-			(ref "R16")
+			(ref "R2")
 			(value "100k")
 			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
 			(description "Resistor")
@@ -1555,7 +1177,7 @@
 			)
 		)
 		(comp
-			(ref "R17")
+			(ref "R3")
 			(value "100k")
 			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
 			(description "Resistor")
@@ -1609,7 +1231,7 @@
 			)
 		)
 		(comp
-			(ref "R18")
+			(ref "R4")
 			(value "82k")
 			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
 			(description "Resistor")
@@ -1663,7 +1285,61 @@
 			)
 		)
 		(comp
-			(ref "R19")
+			(ref "R5")
+			(value "100k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "c1ea0901-5ae4-4322-affd-2beb6fff9f34")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R6")
 			(value "100R")
 			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
 			(description "Resistor")
@@ -1717,7 +1393,7 @@
 			)
 		)
 		(comp
-			(ref "R20")
+			(ref "R7")
 			(value "10k")
 			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
 			(description "Resistor")
@@ -1771,7 +1447,61 @@
 			)
 		)
 		(comp
-			(ref "R21")
+			(ref "R8")
+			(value "100k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "820eb757-d490-4deb-bb7e-55697c6424ad")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R9")
 			(value "20k")
 			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
 			(description "Resistor")
@@ -1825,7 +1555,7 @@
 			)
 		)
 		(comp
-			(ref "R22")
+			(ref "R10")
 			(value "20k")
 			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
 			(description "Resistor")
@@ -1879,7 +1609,7 @@
 			)
 		)
 		(comp
-			(ref "R23")
+			(ref "R11")
 			(value "100R")
 			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
 			(description "Resistor")
@@ -1933,7 +1663,7 @@
 			)
 		)
 		(comp
-			(ref "R24")
+			(ref "R12")
 			(value "100k")
 			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
 			(description "Resistor")
@@ -1987,7 +1717,7 @@
 			)
 		)
 		(comp
-			(ref "R25")
+			(ref "R13")
 			(value "10k")
 			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
 			(description "Resistor")
@@ -2041,7 +1771,7 @@
 			)
 		)
 		(comp
-			(ref "R26")
+			(ref "R14")
 			(value "10k")
 			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
 			(description "Resistor")
@@ -2095,7 +1825,169 @@
 			)
 		)
 		(comp
-			(ref "R27")
+			(ref "R15")
+			(value "100k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a835525e-4fa0-4a0c-af95-97aba44fc849")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R16")
+			(value "82k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "51d5e82d-e748-43fd-bef3-4df357ca0e25")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R17")
+			(value "18k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "33fd889c-bcc8-45ed-a9db-29dd6a7cc83e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R18")
 			(value "100k")
 			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
 			(description "Resistor")
@@ -2149,7 +2041,7 @@
 			)
 		)
 		(comp
-			(ref "R28")
+			(ref "R19")
 			(value "100k")
 			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
 			(description "Resistor")
@@ -2203,7 +2095,61 @@
 			)
 		)
 		(comp
-			(ref "R29")
+			(ref "R20")
+			(value "560R")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "173262ab-c381-4de3-bc1e-fc2de2d4329c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R21")
 			(value "1k")
 			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
 			(description "Resistor")
@@ -2257,41 +2203,23 @@
 			)
 		)
 		(comp
-			(ref "RV3")
-			(value "1M")
-			(footprint "cynthia:potientiometer")
-			(description "attack")
+			(ref "R22")
+			(value "1k")
+			(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
 			(fields
 				(field
-					(name "Sim.Device") "R")
-				(field
-					(name "Sim.Type") "POT")
-				(field
-					(name "Sim.Pins") "1=r0 2=wiper 3=r1")
-				(field
-					(name "Footprint") "cynthia:potientiometer")
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "attack")
+					(name "Description")
+				)
 			)
 			(libsource
 				(lib "Device")
-				(part "R_Potentiometer")
-				(description "Potentiometer")
-			)
-			(property
-				(name "Sim.Device")
-				(value "R")
-			)
-			(property
-				(name "Sim.Type")
-				(value "POT")
-			)
-			(property
-				(name "Sim.Pins")
-				(value "1=r0 2=wiper 3=r1")
+				(part "R")
+				(description "Resistor")
 			)
 			(property
 				(name "Sheetname")
@@ -2303,26 +2231,23 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "resistor variable")
+				(value "R res resistor")
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "Potentiometer*")
+				(value "R_*")
 			)
 			(sheetpath
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "850ed1cf-68db-4663-a096-938fb36da9a7")
+			(tstamps "476d09da-a58e-4b7b-ba6a-4d1dd079ba55")
 			(units
 				(unit
 					(name "A")
 					(pins
 						(pin
 							(num "1")
-						)
-						(pin
-							(num "3")
 						)
 						(pin
 							(num "2")
@@ -2332,82 +2257,7 @@
 			)
 		)
 		(comp
-			(ref "RV4")
-			(value "1M")
-			(footprint "cynthia:potientiometer")
-			(description "release")
-			(fields
-				(field
-					(name "Sim.Device") "R")
-				(field
-					(name "Sim.Type") "POT")
-				(field
-					(name "Sim.Pins") "1=r0 2=wiper 3=r1")
-				(field
-					(name "Footprint") "cynthia:potientiometer")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "release")
-			)
-			(libsource
-				(lib "Device")
-				(part "R_Potentiometer")
-				(description "Potentiometer")
-			)
-			(property
-				(name "Sim.Device")
-				(value "R")
-			)
-			(property
-				(name "Sim.Type")
-				(value "POT")
-			)
-			(property
-				(name "Sim.Pins")
-				(value "1=r0 2=wiper 3=r1")
-			)
-			(property
-				(name "Sheetname")
-				(value "03_env_vca")
-			)
-			(property
-				(name "Sheetfile")
-				(value "03_env_vca.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "resistor variable")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Potentiometer*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "886cd2c2-e687-4459-8420-ec0cdb181e11")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "3")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "RV5")
+			(ref "RV1")
 			(value "100k")
 			(footprint "cynthia:trimmer")
 			(description "Trim-potentiometer")
@@ -2482,6 +2332,156 @@
 			)
 		)
 		(comp
+			(ref "RV2")
+			(value "1M")
+			(footprint "cynthia:potientiometer")
+			(description "attack")
+			(fields
+				(field
+					(name "Sim.Device") "R")
+				(field
+					(name "Sim.Type") "POT")
+				(field
+					(name "Sim.Pins") "1=r0 2=wiper 3=r1")
+				(field
+					(name "Footprint") "cynthia:potientiometer")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "attack")
+			)
+			(libsource
+				(lib "Device")
+				(part "R_Potentiometer")
+				(description "Potentiometer")
+			)
+			(property
+				(name "Sim.Device")
+				(value "R")
+			)
+			(property
+				(name "Sim.Type")
+				(value "POT")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "1=r0 2=wiper 3=r1")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "resistor variable")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Potentiometer*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "850ed1cf-68db-4663-a096-938fb36da9a7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "RV3")
+			(value "1M")
+			(footprint "cynthia:potientiometer")
+			(description "release")
+			(fields
+				(field
+					(name "Sim.Device") "R")
+				(field
+					(name "Sim.Type") "POT")
+				(field
+					(name "Sim.Pins") "1=r0 2=wiper 3=r1")
+				(field
+					(name "Footprint") "cynthia:potientiometer")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "release")
+			)
+			(libsource
+				(lib "Device")
+				(part "R_Potentiometer")
+				(description "Potentiometer")
+			)
+			(property
+				(name "Sim.Device")
+				(value "R")
+			)
+			(property
+				(name "Sim.Type")
+				(value "POT")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "1=r0 2=wiper 3=r1")
+			)
+			(property
+				(name "Sheetname")
+				(value "03_env_vca")
+			)
+			(property
+				(name "Sheetfile")
+				(value "03_env_vca.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "resistor variable")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Potentiometer*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "886cd2c2-e687-4459-8420-ec0cdb181e11")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "SW1")
 			(value "Pluck / AD 1")
 			(footprint "cynthia:switch")
@@ -2535,23 +2535,23 @@
 			)
 		)
 		(comp
-			(ref "U2")
-			(value "LM358")
+			(ref "U1")
+			(value "TL072")
 			(footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
-			(datasheet "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf")
-			(description "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8")
+			(datasheet "http://www.ti.com/lit/ds/symlink/tl071.pdf")
+			(description "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8")
 			(fields
 				(field
 					(name "Footprint") "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
 				(field
-					(name "Datasheet") "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf")
+					(name "Datasheet") "http://www.ti.com/lit/ds/symlink/tl071.pdf")
 				(field
-					(name "Description") "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8")
+					(name "Description") "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8")
 			)
 			(libsource
 				(lib "Amplifier_Operational")
-				(part "LM358")
-				(description "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8")
+				(part "TL072")
+				(description "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8")
 			)
 			(property
 				(name "Sheetname")
@@ -2573,8 +2573,8 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "8c1f85c2-0904-4ebd-8d7c-10740ca2a899" "f8235eeb-47ad-45a3-9d89-64c90e856255"
-				"7121f1d3-798b-4b85-9da0-baae114d5286"
+			(tstamps "adaef869-4548-4465-a5b9-b6e22126fa05" "acfa187c-4282-4806-b318-7674596f4958"
+				"5052cbf6-5d2d-42a6-b251-af6cdeb1feca"
 			)
 			(units
 				(unit
@@ -2619,23 +2619,23 @@
 			)
 		)
 		(comp
-			(ref "U3")
-			(value "TL072")
+			(ref "U2")
+			(value "LM358")
 			(footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
-			(datasheet "http://www.ti.com/lit/ds/symlink/tl071.pdf")
-			(description "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8")
+			(datasheet "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf")
+			(description "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8")
 			(fields
 				(field
 					(name "Footprint") "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
 				(field
-					(name "Datasheet") "http://www.ti.com/lit/ds/symlink/tl071.pdf")
+					(name "Datasheet") "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf")
 				(field
-					(name "Description") "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8")
+					(name "Description") "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8")
 			)
 			(libsource
 				(lib "Amplifier_Operational")
-				(part "TL072")
-				(description "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8")
+				(part "LM358")
+				(description "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8")
 			)
 			(property
 				(name "Sheetname")
@@ -2657,8 +2657,8 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "adaef869-4548-4465-a5b9-b6e22126fa05" "acfa187c-4282-4806-b318-7674596f4958"
-				"5052cbf6-5d2d-42a6-b251-af6cdeb1feca"
+			(tstamps "f8235eeb-47ad-45a3-9d89-64c90e856255" "8c1f85c2-0904-4ebd-8d7c-10740ca2a899"
+				"7121f1d3-798b-4b85-9da0-baae114d5286"
 			)
 			(units
 				(unit
@@ -3126,6 +3126,10 @@
 				)
 				(field
 					(name "Description") "Diode")
+				(field
+					(name "Sim.Device") "D")
+				(field
+					(name "Sim.Pins") "1=K 2=A")
 			)
 			(pins
 				(pin
@@ -3375,17 +3379,17 @@
 			(name "+12V")
 			(class "Default")
 			(node
-				(ref "C3")
+				(ref "C2")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "C5")
+				(ref "C4")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "C9")
+				(ref "C6")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -3402,13 +3406,13 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R21")
-				(pin "2")
+				(ref "R10")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "R22")
-				(pin "1")
+				(ref "R16")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -3417,19 +3421,19 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "RV5")
+				(ref "RV1")
 				(pin "1")
 				(pinfunction "1_1")
 				(pintype "passive")
 			)
 			(node
-				(ref "U2")
+				(ref "U1")
 				(pin "8")
 				(pinfunction "V+_8")
 				(pintype "power_in")
 			)
 			(node
-				(ref "U3")
+				(ref "U2")
 				(pin "8")
 				(pinfunction "V+_8")
 				(pintype "power_in")
@@ -3440,13 +3444,13 @@
 			(name "-12V")
 			(class "Default")
 			(node
-				(ref "C10")
-				(pin "1")
+				(ref "C3")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "C4")
-				(pin "2")
+				(ref "C7")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -3462,13 +3466,13 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "RV5")
+				(ref "RV1")
 				(pin "3")
 				(pinfunction "3_3")
 				(pintype "passive")
 			)
 			(node
-				(ref "U3")
+				(ref "U1")
 				(pin "4")
 				(pinfunction "V-_4")
 				(pintype "power_in")
@@ -3479,18 +3483,18 @@
 			(name "GND")
 			(class "Default")
 			(node
-				(ref "C10")
+				(ref "C2")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
 				(ref "C3")
-				(pin "2")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "C4")
-				(pin "1")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -3499,13 +3503,13 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "C7")
-				(pin "2")
+				(ref "C6")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "C9")
-				(pin "1")
+				(ref "C7")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -3515,6 +3519,16 @@
 			)
 			(node
 				(ref "J1")
+				(pin "TN")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "S")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
 				(pin "TN")
 				(pintype "passive")
 			)
@@ -3560,66 +3574,56 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "J4")
-				(pin "TN")
-				(pintype "passive")
-			)
-			(node
 				(ref "J5")
 				(pin "S")
 				(pintype "passive")
 			)
 			(node
-				(ref "J7")
-				(pin "S")
+				(ref "R11")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "R10")
+				(ref "R15")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "R16")
+				(ref "R17")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "R19")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R23")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R28")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "R3")
+				(ref "R2")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
 				(ref "R6")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R8")
 				(pin "1")
 				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "3")
+				(pinfunction "+_3")
+				(pintype "input")
 			)
 			(node
 				(ref "U2")
 				(pin "4")
 				(pinfunction "V-_4")
 				(pintype "power_in")
-			)
-			(node
-				(ref "U3")
-				(pin "3")
-				(pinfunction "+_3")
-				(pintype "input")
 			)
 		)
 		(net
@@ -3637,17 +3641,17 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R1")
+				(ref "R5")
 				(pin "1")
 				(pintype "passive")
 			)
 		)
 		(net
 			(code "5")
-			(name "Net-(D2-A)")
+			(name "Net-(D1-A)")
 			(class "Default")
 			(node
-				(ref "D2")
+				(ref "D1")
 				(pin "2")
 				(pinfunction "A_2")
 				(pintype "passive")
@@ -3661,16 +3665,16 @@
 		)
 		(net
 			(code "6")
-			(name "Net-(D2-K)")
+			(name "Net-(D1-K)")
 			(class "Default")
 			(node
-				(ref "D2")
+				(ref "D1")
 				(pin "1")
 				(pinfunction "K_1")
 				(pintype "passive")
 			)
 			(node
-				(ref "R6")
+				(ref "R15")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -3683,34 +3687,51 @@
 		)
 		(net
 			(code "7")
-			(name "Net-(D5-A)")
+			(name "Net-(D2-A)")
 			(class "Default")
 			(node
-				(ref "D5")
+				(ref "D2")
 				(pin "2")
 				(pinfunction "A_2")
 				(pintype "passive")
 			)
 			(node
-				(ref "D6")
+				(ref "D3")
 				(pin "1")
 				(pinfunction "K_1")
 				(pintype "passive")
 			)
 			(node
-				(ref "R12")
+				(ref "R20")
 				(pin "2")
 				(pintype "passive")
 			)
 		)
 		(net
 			(code "8")
-			(name "Net-(D5-K)")
+			(name "Net-(D2-K)")
 			(class "Default")
 			(node
-				(ref "D5")
+				(ref "D2")
 				(pin "1")
 				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "RV2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "9")
+			(name "Net-(D3-A)")
+			(class "Default")
+			(node
+				(ref "D3")
+				(pin "2")
+				(pinfunction "A_2")
 				(pintype "passive")
 			)
 			(node
@@ -3721,24 +3742,22 @@
 			)
 		)
 		(net
-			(code "9")
-			(name "Net-(D6-A)")
+			(code "10")
+			(name "Net-(J2-PadT)")
 			(class "Default")
 			(node
-				(ref "D6")
-				(pin "2")
-				(pinfunction "A_2")
+				(ref "J2")
+				(pin "T")
 				(pintype "passive")
 			)
 			(node
-				(ref "RV4")
+				(ref "R3")
 				(pin "1")
-				(pinfunction "1_1")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "10")
+			(code "11")
 			(name "Net-(J4-PadT)")
 			(class "Default")
 			(node
@@ -3747,13 +3766,13 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R17")
-				(pin "1")
+				(ref "R21")
+				(pin "2")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "11")
+			(code "12")
 			(name "Net-(J5-PadT)")
 			(class "Default")
 			(node
@@ -3762,22 +3781,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R14")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "12")
-			(name "Net-(J7-PadT)")
-			(class "Default")
-			(node
-				(ref "J7")
-				(pin "T")
-				(pintype "passive")
-			)
-			(node
-				(ref "R29")
+				(ref "R22")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -3793,12 +3797,12 @@
 				(pintype "input")
 			)
 			(node
-				(ref "R17")
+				(ref "R3")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "R19")
+				(ref "R6")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -3814,12 +3818,12 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R21")
+				(ref "R14")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "R26")
+				(ref "R9")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -3841,7 +3845,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R20")
+				(ref "R7")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -3857,12 +3861,12 @@
 				(pintype "input")
 			)
 			(node
-				(ref "R23")
+				(ref "R11")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "R24")
+				(ref "R12")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -3878,33 +3882,54 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R22")
+				(ref "R10")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "R25")
+				(ref "R13")
 				(pin "2")
 				(pintype "passive")
 			)
 		)
 		(net
 			(code "18")
-			(name "Net-(R12-Pad1)")
+			(name "Net-(R4-Pad2)")
 			(class "Default")
 			(node
-				(ref "R12")
+				(ref "R4")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R7")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "U2")
-				(pin "7")
+				(ref "U1")
+				(pin "1")
 				(pintype "output")
 			)
 		)
 		(net
 			(code "19")
+			(name "Net-(R12-Pad2)")
+			(class "Default")
+			(node
+				(ref "R12")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "RV1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "20")
 			(name "Net-(R18-Pad2)")
 			(class "Default")
 			(node
@@ -3913,48 +3938,27 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "R21")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "7")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "21")
+			(name "Net-(R20-Pad1)")
+			(class "Default")
+			(node
 				(ref "R20")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "U3")
-				(pin "1")
-				(pintype "output")
-			)
-		)
-		(net
-			(code "20")
-			(name "Net-(R24-Pad2)")
-			(class "Default")
-			(node
-				(ref "R24")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "RV5")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "21")
-			(name "Net-(R27-Pad2)")
-			(class "Default")
-			(node
-				(ref "R27")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R29")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U3")
+				(ref "U2")
 				(pin "7")
 				(pintype "output")
 			)
@@ -3969,7 +3973,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R3")
+				(ref "R8")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -3985,7 +3989,7 @@
 			(name "Net-(SW1-C)")
 			(class "Default")
 			(node
-				(ref "R1")
+				(ref "R5")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -3998,33 +4002,101 @@
 		)
 		(net
 			(code "24")
-			(name "Net-(U2A-+)")
+			(name "Net-(U1A--)")
 			(class "Default")
 			(node
-				(ref "C7")
+				(ref "R1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R4")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "RV3")
+				(ref "U1")
+				(pin "2")
+				(pinfunction "-_2")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "25")
+			(name "Net-(U1B-+)")
+			(class "Default")
+			(node
+				(ref "R13")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R19")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "5")
+				(pinfunction "+_5")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "26")
+			(name "Net-(U1B--)")
+			(class "Default")
+			(node
+				(ref "R14")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R18")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "6")
+				(pinfunction "-_6")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "27")
+			(name "Net-(U2A-+)")
+			(class "Default")
+			(node
+				(ref "C5")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "RV2")
 				(pin "2")
 				(pinfunction "2_2")
 				(pintype "passive")
 			)
 			(node
-				(ref "RV3")
+				(ref "RV2")
 				(pin "3")
 				(pinfunction "3_3")
 				(pintype "passive")
 			)
 			(node
-				(ref "RV4")
+				(ref "RV3")
 				(pin "2")
 				(pinfunction "2_2")
 				(pintype "passive")
 			)
 			(node
-				(ref "RV4")
+				(ref "RV3")
 				(pin "3")
 				(pinfunction "3_3")
 				(pintype "passive")
@@ -4037,16 +4109,37 @@
 			)
 		)
 		(net
-			(code "25")
-			(name "Net-(U2A--)")
+			(code "28")
+			(name "Net-(U2B--)")
 			(class "Default")
 			(node
-				(ref "R14")
+				(ref "R16")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "R15")
+				(ref "R17")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "6")
+				(pinfunction "-_6")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "29")
+			(name "env")
+			(class "Default")
+			(node
+				(ref "R1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R22")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -4059,95 +4152,6 @@
 				(ref "U2")
 				(pin "2")
 				(pinfunction "-_2")
-				(pintype "input")
-			)
-		)
-		(net
-			(code "26")
-			(name "Net-(U2B--)")
-			(class "Default")
-			(node
-				(ref "R10")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R9")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U2")
-				(pin "6")
-				(pinfunction "-_6")
-				(pintype "input")
-			)
-		)
-		(net
-			(code "27")
-			(name "Net-(U3A--)")
-			(class "Default")
-			(node
-				(ref "R15")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R16")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R18")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U3")
-				(pin "2")
-				(pinfunction "-_2")
-				(pintype "input")
-			)
-		)
-		(net
-			(code "28")
-			(name "Net-(U3B-+)")
-			(class "Default")
-			(node
-				(ref "R25")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R28")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "U3")
-				(pin "5")
-				(pinfunction "+_5")
-				(pintype "input")
-			)
-		)
-		(net
-			(code "29")
-			(name "Net-(U3B--)")
-			(class "Default")
-			(node
-				(ref "R26")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R27")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U3")
-				(pin "6")
-				(pinfunction "-_6")
 				(pintype "input")
 			)
 		)

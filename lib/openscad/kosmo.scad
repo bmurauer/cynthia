@@ -1,7 +1,9 @@
 panelHeight = 197;
-thickness = 2.5;
+panelHeightER = 128.5;
+thickness = 2;
 mountHoleDiameter = 3.0;
 jackHoleDiameter = 9.1;
+jack35HoleDiameter = 6;
 ledHoleDiameter = 5;
 pushButtonHoleDiameter = 7;
 potHoleDiameter = 7;
@@ -27,6 +29,8 @@ module pcbHolders(distance) {
   pcbHolder(width-5, panelHeight/2 + distance/2 - 5);
   pcbHolder(width-5, panelHeight/2 - distance/2 - 5);
 }
+
+function hp(x) = x * 5.08 - 0.3;
 
 module pcbHolder(x, y){
   pcbHole = 3;
@@ -75,6 +79,22 @@ module kosmoMountHoles(width, height) {
   punchHole((width-5), (height-5), mountHoleDiameter,true);
 }
 
+// Eurorack mounting hole.
+//   x, y      : hole center position (panel coordinates)
+//   d         : hole diameter (3.2 default = M3 clearance, slightly oversize)
+//   slot      : horizontal slot length for tolerance (0 = plain round hole)
+//   depth     : cut depth; leave default to punch fully through any panel thickness
+module euroRackMountHole(x, y, d = 3.2, slot = 0, depth = 100) {
+    translate([x, y, -depth/2])
+        hull() {
+            // two cylinders spaced by `slot` make an obround (stadium) slot;
+            // slot = 0 collapses to a single round hole
+            for (dx = [-slot/2, slot/2])
+                translate([dx, 0, 0])
+                    cylinder(h = depth, d = d, $fn = 32);
+        }
+}
+
 
 module punchHole(x, y, holeSize,chamfer=false){
   translate([x, y, -1]){
@@ -117,13 +137,23 @@ module pot(x, y) {
       }
     }
   }
-  echo(concat("pot at ", x, y));
+}
+
+module potSm(x, y) {
+  translate([x, y , 0]) {
+    punchHole(0, 0, potHoleDiameter);
+  }
 }
 
 module jack(x, y){
   punchHole(x, y, jackHoleDiameter);
     echo(concat("Jack at", x, y));
 }
+module jack35(x, y){
+  punchHole(x, y, jack35HoleDiameter);
+    echo(concat("Jack at", x, y));
+}
+
 
 module panel(width) {
   difference() {
@@ -131,4 +161,8 @@ module panel(width) {
     kosmoMountHoles(width, panelHeight);
   }
 }
+module panelER(width) {
+   cube([width, panelHeightER, thickness]);
+}
+
 

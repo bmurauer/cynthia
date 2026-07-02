@@ -7,7 +7,7 @@
 		(at -4 7 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "4657141d-c8ad-4082-8883-50203f2cfb80")
+		(uuid "25e70bf0-8482-4c81-9ad0-d82c44b04ad3")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 4 7 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "4aab7ece-fe49-44ca-97f1-ff261d6a364b")
+		(uuid "402e29e9-9726-487d-b5d2-5fffba195c19")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "7bcbc344-7c84-4a92-97d2-8d066dbbdf06")
+		(uuid "25136b06-80ba-4903-9a45-a0edf8f2c68a")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "c24f3636-d273-4e3e-b5d3-9ce5c1acd21d")
+		(uuid "7fd6550a-a33b-4e0c-bcfb-74fb046943c9")
 		(effects
 			(font
 				(size 1 1)
@@ -64,13 +64,13 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "7b576aa5-ed8d-4f19-8f82-abc11ae7b9c7")
+		(uuid "abdc8893-2bab-4ec0-bdca-253d75910d30")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 5 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "a4f45ac0-4511-4ba1-94a7-e9d5bc3d7e20")
+		(uuid "c754b938-2f9e-476e-894d-94d533e17ac9")
 		(effects
 			(font
 				(size 1 1)
@@ -85,7 +85,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.5)
-		(uuid "a1d70d97-b7b1-486d-a137-709b402c3292")
+		(uuid "4fe8bb5c-66d0-473c-94d3-9f51ca0920ea")
 	)
 	(pad "S" thru_hole roundrect
 		(at 4.7 0.6 90)
@@ -94,7 +94,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.5)
-		(uuid "dcf03b92-224e-4bbf-ab83-dfabc7600546")
+		(uuid "520d5a56-a646-4524-ae77-90cf9cc2f379")
 	)
 	(pad "T" thru_hole roundrect
 		(at 0 -4.8)
@@ -103,7 +103,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.5)
-		(uuid "cecbe3a3-efc0-47d6-b66d-4ed01e9dbfcf")
+		(uuid "41f26c53-ab4a-4405-b8f8-6e6995cd3c38")
 	)
 	(pad "TN" thru_hole roundrect
 		(at 0 3.3)
@@ -112,7 +112,18 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.5)
-		(uuid "4968608f-746b-4d90-a48f-6c49449c5718")
+		(uuid "bbc439ca-0682-4375-938b-be10b63f200e")
 	)
 	(embedded_fonts no)
+	(model "/home/benjamin/git/cynthia/lib/kicad/3d_models/3.5mm_jack_socket.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

@@ -1,13 +1,13 @@
 (footprint "potientiometer"
-	(version 20241229)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at -4.5 9.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "881acc54-73dc-4da5-95fb-66c990cd763d")
+		(uuid "6a80827d-1268-4ca6-bec9-cea19d8384d4")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 6.5 9.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "86130020-385e-47a4-93f2-699e9af23b4b")
+		(uuid "5749c671-2999-4064-a8fd-81ab0f83ebe3")
 		(effects
 			(font
 				(size 1 1)
@@ -33,7 +33,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "a00254fe-14e7-44be-af9b-4bb25dfaa396")
+		(uuid "859d814b-aa18-4ce8-8111-d73dc9eb81a6")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(at -6.9 -6.8 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "a2222646-20d1-4979-9caa-ea98a6be4ac6")
+		(uuid "64db379e-bfc6-4b25-9360-731ee89aa83b")
 		(effects
 			(font
 				(size 1 1)
@@ -55,6 +55,7 @@
 		)
 	)
 	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_rect
 		(start -6.75 -6)
 		(end 6.75 8.5)
@@ -64,13 +65,13 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "cffaa592-425a-458b-a3b4-e87f92c405e5")
+		(uuid "3407ff11-5860-441c-bce3-1ffc3c98955c")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 -4.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "c1bad4f8-154d-489a-a39e-6e0035e78bc3")
+		(uuid "4b4736f7-cd33-4add-8e4d-0088c1fead70")
 		(effects
 			(font
 				(size 1 1)
@@ -84,7 +85,7 @@
 		(drill 2)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "240363f2-6b18-477a-9810-8f367e432ec3")
+		(uuid "f57b5215-b9bb-497f-a807-e0ff6e908dd1")
 	)
 	(pad "" thru_hole circle
 		(at 4.5 0)
@@ -92,7 +93,7 @@
 		(drill 2)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "53e89aa7-5284-4925-934d-73801456e025")
+		(uuid "ecb8a7af-5d21-430b-80aa-71ea6288f5c5")
 	)
 	(pad "1" thru_hole circle
 		(at -2.54 7)
@@ -100,7 +101,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "71d48ccc-6514-4d7a-b23c-b06d17395e98")
+		(uuid "c0d861c3-014d-41d4-b7ce-e5677ed32a31")
 	)
 	(pad "2" thru_hole circle
 		(at 0 7)
@@ -108,7 +109,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "e953b7ee-be64-4464-babd-569b738d14a9")
+		(uuid "dccb705a-953f-41ae-9deb-6566969dea9c")
 	)
 	(pad "3" thru_hole circle
 		(at 2.54 7)
@@ -116,7 +117,18 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "71d2a8f1-b7f9-4670-ad0d-6233eedd3af8")
+		(uuid "c17b2b13-2953-4f37-8fd6-3d91b9d11225")
 	)
 	(embedded_fonts no)
+	(model "/home/benjamin/git/cynthia/lib/kicad/3d_models/pot.step"
+		(offset
+			(xyz 0 0 4.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -180)
+		)
+	)
 )
