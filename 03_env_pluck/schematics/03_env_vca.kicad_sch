@@ -1339,175 +1339,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Audio:AudioJack2"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "AudioJack2"
-				(at 0 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Audio Jack, 2 Poles (Mono / TS)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "audio jack receptacle mono phone headphone TS connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Jack*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "AudioJack2_0_1"
-				(rectangle
-					(start -3.81 0)
-					(end -2.54 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -2.54 3.81)
-					(end 2.54 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0.635 -0.635) (xy 1.27 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy -0.635 2.54) (xy -0.635 0) (xy -1.27 -0.635) (xy -1.905 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "AudioJack2_1_1"
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "T"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector_Audio:AudioJack2_SwitchT"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4426,6 +4257,14 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f8e94506-3334-4802-a85f-b90d08942d6f")
+	)
+	(no_connect
+		(at 182.88 31.75)
+		(uuid "34b8f7cf-3124-40dd-8173-7a92ffa857d0")
+	)
+	(no_connect
+		(at 139.7 81.28)
+		(uuid "956dd782-83b9-4f8f-893a-de2fcf242100")
 	)
 	(wire
 		(pts
@@ -9473,7 +9312,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:AudioJack2")
+		(lib_id "Connector_Audio:AudioJack2_SwitchT")
 		(at 187.96 34.29 180)
 		(unit 1)
 		(body_style 1)
@@ -9503,7 +9342,7 @@
 				)
 			)
 		)
-		(property "Footprint" "cynthia:3.5mm jack mono"
+		(property "Footprint" "cynthia:3.5mm jack mono switched"
 			(at 187.96 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -9525,7 +9364,7 @@
 				)
 			)
 		)
-		(property "Description" "Audio Jack, 2 Poles (Mono / TS)"
+		(property "Description" "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)"
 			(at 187.96 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -9541,6 +9380,9 @@
 		)
 		(pin "T"
 			(uuid "70b72811-3419-4bc8-b390-3ee05cd2369c")
+		)
+		(pin "TN"
+			(uuid "4c6c501a-3122-40f0-ae12-3469696929cd")
 		)
 		(instances
 			(project "03_env_vca"
@@ -10925,7 +10767,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:AudioJack2")
+		(lib_id "Connector_Audio:AudioJack2_SwitchT")
 		(at 144.78 83.82 180)
 		(unit 1)
 		(body_style 1)
@@ -10955,7 +10797,7 @@
 				)
 			)
 		)
-		(property "Footprint" "cynthia:3.5mm jack mono"
+		(property "Footprint" "cynthia:3.5mm jack mono switched"
 			(at 144.78 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -10977,7 +10819,7 @@
 				)
 			)
 		)
-		(property "Description" "Audio Jack, 2 Poles (Mono / TS)"
+		(property "Description" "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)"
 			(at 144.78 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -10993,6 +10835,9 @@
 		)
 		(pin "T"
 			(uuid "6757f1b9-0f3d-4190-b138-0955440c1b1c")
+		)
+		(pin "TN"
+			(uuid "45f31b7f-f81a-4c33-9d43-36fc595b09aa")
 		)
 		(instances
 			(project "03_env_vca"
