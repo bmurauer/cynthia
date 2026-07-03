@@ -7,7 +7,7 @@
 		(at -4 7 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "25e70bf0-8482-4c81-9ad0-d82c44b04ad3")
+		(uuid "3e95eaf4-3f12-49e2-a169-e5772c179b9b")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 4 7 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "402e29e9-9726-487d-b5d2-5fffba195c19")
+		(uuid "affdb35a-be10-46ef-8dde-0be126320374")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "25136b06-80ba-4903-9a45-a0edf8f2c68a")
+		(uuid "9b4cbab2-bf67-47ad-8f20-78f8e6e6ccc9")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "7fd6550a-a33b-4e0c-bcfb-74fb046943c9")
+		(uuid "92d57b96-53f9-4c07-9c28-44b94ec9ac31")
 		(effects
 			(font
 				(size 1 1)
@@ -64,13 +64,13 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "abdc8893-2bab-4ec0-bdca-253d75910d30")
+		(uuid "6f3260c7-b0a4-4c1b-bc8c-eb11f8bc1f97")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 5 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "c754b938-2f9e-476e-894d-94d533e17ac9")
+		(uuid "f9e363fe-b2ec-482a-9841-5c22147f095e")
 		(effects
 			(font
 				(size 1 1)
@@ -80,39 +80,39 @@
 	)
 	(pad "S" thru_hole roundrect
 		(at -4.7 0.6 90)
-		(size 4 2)
-		(drill oval 2.7 0.7)
+		(size 3.5 2)
+		(drill oval 2.5 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.5)
-		(uuid "4fe8bb5c-66d0-473c-94d3-9f51ca0920ea")
+		(uuid "9e571ead-411f-48af-b6dc-0eb89d7dda94")
 	)
 	(pad "S" thru_hole roundrect
 		(at 4.7 0.6 90)
-		(size 4 2)
-		(drill oval 2.7 0.7)
+		(size 2.5 2)
+		(drill oval 1.5 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.5)
-		(uuid "520d5a56-a646-4524-ae77-90cf9cc2f379")
+		(uuid "80554e57-e04b-44cb-bebc-45cb19901036")
 	)
 	(pad "T" thru_hole roundrect
-		(at 0 -4.8)
-		(size 3.7 1.7)
-		(drill oval 2.7 0.7)
+		(at 0 -4.9)
+		(size 3.5 1.5)
+		(drill oval 2.5 0.5)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.5)
-		(uuid "41f26c53-ab4a-4405-b8f8-6e6995cd3c38")
+		(uuid "80b76a4f-23a6-41e9-9f06-a9c5fc679a04")
 	)
 	(pad "TN" thru_hole roundrect
 		(at 0 3.3)
-		(size 3.7 1.7)
-		(drill oval 2.7 0.7)
+		(size 3.5 1.5)
+		(drill oval 2.5 0.5)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.5)
-		(uuid "bbc439ca-0682-4375-938b-be10b63f200e")
+		(uuid "2913a2a5-6ef0-490a-a259-da24d40e695e")
 	)
 	(embedded_fonts no)
 	(model "/home/benjamin/git/cynthia/lib/kicad/3d_models/3.5mm_jack_socket.step"
@@ -123,7 +123,7 @@
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -0 -0 -180)
 		)
 	)
 )

@@ -7,7 +7,7 @@
 		(at -3.1 3.4 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "18c06287-3bc0-40e1-8cf9-bc1eadc3e7bb")
+		(uuid "02df7031-7026-4e3c-9bbb-11a8f91d12f1")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 4.7 3.4 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "334c1da9-53ea-42b6-add0-a3213f2584ea")
+		(uuid "a10f267e-c8f3-4100-bac9-b512be7d3110")
 		(effects
 			(font
 				(size 1 1)
@@ -33,7 +33,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "43f299da-dae5-4bdc-ba79-bebeb4e41316")
+		(uuid "e4a2cbd9-0785-4a45-aeb4-833b3464f78e")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(at 0 -3.3 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "ff28e362-853c-4339-bd17-bf447f1ee23b")
+		(uuid "91093a8a-0ce9-41c4-af4a-b67d9182aae4")
 		(effects
 			(font
 				(size 1 1)
@@ -64,7 +64,7 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "7d974478-64af-4b74-94e8-8e4f85496405")
+		(uuid "1225dc96-f0b7-4739-b152-99e37b8e0c4d")
 	)
 	(fp_circle
 		(center -4.25 -1.75)
@@ -75,7 +75,7 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "f595f236-0e48-4654-b80b-bab65b838cd3")
+		(uuid "19ae8ec4-be21-40c2-af70-d4b138b6c1f2")
 	)
 	(pad "1" thru_hole circle
 		(at -2.54 0)
@@ -83,7 +83,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "44e306c5-bccc-436d-b407-6dbab6957374")
+		(uuid "d37aaf35-50b0-46a0-a244-71cd10a5b767")
 	)
 	(pad "2" thru_hole circle
 		(at 0 0)
@@ -91,7 +91,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "0037e25b-0012-4e25-9492-c8e0bc6f66a7")
+		(uuid "d6f6c61d-c8a7-484c-9fd2-1803ae5afcef")
 	)
 	(pad "3" thru_hole circle
 		(at 2.54 0)
@@ -99,7 +99,18 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "038e8546-63a6-49ea-a51f-28aaeb77d861")
+		(uuid "44c5c0b3-85f6-4489-b2ec-635aa522c66b")
 	)
 	(embedded_fonts no)
+	(model "/home/benjamin/git/cynthia/lib/kicad/3d_models/trimmer.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )
