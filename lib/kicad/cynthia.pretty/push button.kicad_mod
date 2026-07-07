@@ -1,0 +1,109 @@
+(footprint "push button"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 6.477 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "7adcc277-4b05-46b7-8ba9-b66f2e2b0efd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Untitled"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "feffcd9e-d6ee-4e69-aa44-e5925aa74a39")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a8ac41a3-cc4f-4448-a407-f9403dc4ca55")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5ca37a0e-d6b5-412f-abbf-825d8bb7f494")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center 0 0)
+		(end 5 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "c4bedef3-bb7b-47d1-bc03-d27686c950a6")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "5ba63c27-b100-47a3-9274-666426ce72d3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole oval
+		(at 0 -2)
+		(size 3.7 2.2)
+		(drill oval 2.7 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "4b6da6dc-5ae5-4d0d-9258-7467cccf28af")
+	)
+	(pad "2" thru_hole oval
+		(at 0 2)
+		(size 3.7 2.2)
+		(drill oval 2.7 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "568923b4-92ba-4504-a066-c270b6b05201")
+	)
+	(embedded_fonts no)
+	(model "/home/benjamin/git/cynthia/lib/kicad/3d_models/push_button.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 90)
+		)
+	)
+)

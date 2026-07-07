@@ -9,260 +9,6 @@
 		(rev "2")
 	)
 	(lib_symbols
-		(symbol "+12V_5"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+12V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+12V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+12V_5_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+12V_5_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "-12V_4"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "-12V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"-12V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "-12V_4_0_0"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "-12V_4_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy 0.762 1.27) (xy 0 2.54) (xy -0.762 1.27) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Amplifier_Operational:TL072"
 			(pin_names
 				(offset 0.127)
@@ -4090,6 +3836,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:-12V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "-12V"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"-12V\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "-12V_0_0"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "-12V_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy 0.762 1.27) (xy 0 2.54) (xy -0.762 1.27) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -4452,6 +4313,12 @@
 		(uuid "6d3cec8b-ac40-4c50-9ec2-194a3f48ae04")
 	)
 	(junction
+		(at 96.52 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6f216071-ba85-4039-a5ce-b7234ecb8cc4")
+	)
+	(junction
 		(at 176.53 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4498,12 +4365,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9c1d2349-739b-4b4e-8f24-2020937db4cb")
-	)
-	(junction
-		(at 96.52 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9edd6557-2e51-45cb-b546-1a3f454d2be5")
 	)
 	(junction
 		(at 93.98 66.04)
@@ -6103,16 +5964,6 @@
 	)
 	(wire
 		(pts
-			(xy 254 53.34) (xy 252.73 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fae9ad18-ebbb-4468-9d0e-fe705ad284ec")
-	)
-	(wire
-		(pts
 			(xy 132.08 72.39) (xy 132.08 76.2)
 		)
 		(stroke
@@ -6176,7 +6027,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 151.13 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -6587,7 +6438,7 @@
 				)
 			)
 		)
-		(property "Footprint" "cynthia:switch"
+		(property "Footprint" "cynthia:switch_spdt"
 			(at 241.3 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -6609,7 +6460,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Switch, single pole double throw"
 			(at 241.3 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -6751,7 +6602,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W6.5mm_P5.00mm"
 			(at 177.4952 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -6773,7 +6624,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 176.53 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -6910,7 +6761,7 @@
 				)
 			)
 		)
-		(property "Footprint" "cynthia:switch"
+		(property "Footprint" "cynthia:switch_spdt"
 			(at 81.28 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -6932,7 +6783,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Switch, single pole double throw"
 			(at 81.28 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -7072,7 +6923,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "cynthia:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 198.12 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -7193,7 +7044,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 144.78 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -7491,7 +7342,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical"
+		(property "Footprint" "cynthia:Eurorack Header"
 			(at 26.67 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -7668,7 +7519,6 @@
 		)
 	)
 	(symbol
-		(lib_name "-12V_4")
 		(lib_id "power:-12V")
 		(at 77.47 191.77 180)
 		(unit 1)
@@ -7824,6 +7674,121 @@
 		)
 	)
 	(symbol
+		(lib_id "Amplifier_Operational:TL074")
+		(at 88.9 90.17 0)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "286dffd2-f9bb-4612-a821-1d217d326c33")
+		(property "Reference" "U1"
+			(at 87.376 88.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL074"
+			(at 87.884 91.186 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cynthia:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 87.63 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 90.17 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
+			(at 88.9 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "d39e3c44-53a5-439c-b4c6-65766a9c3122")
+		)
+		(pin "13"
+			(uuid "8d0cee62-881c-431e-acf0-7769c2167427")
+		)
+		(pin "1"
+			(uuid "61d1efdb-0978-4fe5-9c85-1144e1c4d16c")
+		)
+		(pin "9"
+			(uuid "69dcb3a6-9140-4205-a53d-807a4befd057")
+		)
+		(pin "2"
+			(uuid "22e7c785-3a6e-40e3-9a2b-47ae2c71b327")
+		)
+		(pin "7"
+			(uuid "a14d2993-1c7e-48d3-a031-5e19b1c38e2a")
+		)
+		(pin "8"
+			(uuid "d653fffb-bac1-44d2-979b-a0acf8ca6d97")
+		)
+		(pin "3"
+			(uuid "1a8769ec-b50d-4fe8-b7c8-0023bd1405f9")
+		)
+		(pin "6"
+			(uuid "13f11cb7-000e-4d67-8e0c-6ae632b2a63d")
+		)
+		(pin "12"
+			(uuid "4a8553fe-e165-4bab-b727-7f7e195966a5")
+		)
+		(pin "11"
+			(uuid "26606cd4-1ca6-4cb6-8212-f185dc5b39ac")
+		)
+		(pin "10"
+			(uuid "9332846a-f691-4f56-b263-09b8763b7613")
+		)
+		(pin "4"
+			(uuid "dfea92f4-585b-4496-b97b-4f9b07024634")
+		)
+		(pin "14"
+			(uuid "69dd3fdb-1918-45e1-98cf-5f7991b86beb")
+		)
+		(instances
+			(project "13_dual_env"
+				(path "/4e0852a3-014c-4794-96b1-becb913625e2"
+					(reference "U1")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 205.74 62.23 0)
 		(mirror x)
@@ -7879,7 +7844,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 205.74 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -7906,7 +7871,6 @@
 		)
 	)
 	(symbol
-		(lib_name "-12V_4")
 		(lib_id "power:-12V")
 		(at 45.72 191.77 180)
 		(unit 1)
@@ -8045,7 +8009,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 144.78 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -8067,122 +8031,6 @@
 				(path "/4e0852a3-014c-4794-96b1-becb913625e2"
 					(reference "C8")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:TL074")
-		(at 49.53 96.52 0)
-		(unit 3)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "30477745-d773-47b7-8077-e9139eaa58c7")
-		(property "Reference" "U1"
-			(at 49.53 86.36 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TL074"
-			(at 49.53 88.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 48.26 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 50.8 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
-			(at 49.53 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "d39e3c44-53a5-439c-b4c6-65766a9c3122")
-		)
-		(pin "13"
-			(uuid "8d0cee62-881c-431e-acf0-7769c2167427")
-		)
-		(pin "1"
-			(uuid "61d1efdb-0978-4fe5-9c85-1144e1c4d16c")
-		)
-		(pin "9"
-			(uuid "1a156083-db83-40b9-ae33-eca2a1990b40")
-		)
-		(pin "2"
-			(uuid "22e7c785-3a6e-40e3-9a2b-47ae2c71b327")
-		)
-		(pin "7"
-			(uuid "a14d2993-1c7e-48d3-a031-5e19b1c38e2a")
-		)
-		(pin "8"
-			(uuid "83d568fa-0cb5-423e-a7c5-114b973a3c18")
-		)
-		(pin "3"
-			(uuid "1a8769ec-b50d-4fe8-b7c8-0023bd1405f9")
-		)
-		(pin "6"
-			(uuid "13f11cb7-000e-4d67-8e0c-6ae632b2a63d")
-		)
-		(pin "12"
-			(uuid "4a8553fe-e165-4bab-b727-7f7e195966a5")
-		)
-		(pin "11"
-			(uuid "26606cd4-1ca6-4cb6-8212-f185dc5b39ac")
-		)
-		(pin "10"
-			(uuid "f5714167-5386-49d2-b910-2324f55183fa")
-		)
-		(pin "4"
-			(uuid "dfea92f4-585b-4496-b97b-4f9b07024634")
-		)
-		(pin "14"
-			(uuid "69dd3fdb-1918-45e1-98cf-5f7991b86beb")
-		)
-		(instances
-			(project "13_dual_env"
-				(path "/4e0852a3-014c-4794-96b1-becb913625e2"
-					(reference "U1")
-					(unit 3)
 				)
 			)
 		)
@@ -8425,7 +8273,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 151.13 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -8669,7 +8517,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 33.02 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -8727,7 +8575,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "cynthia:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 105.41 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -8761,46 +8609,46 @@
 			)
 		)
 		(pin "5"
-			(uuid "d39e3c44-53a5-439c-b4c6-65766a9c3122")
+			(uuid "d39e3c44-53a5-439c-b4c6-65766a9c3123")
 		)
 		(pin "13"
-			(uuid "8d0cee62-881c-431e-acf0-7769c2167427")
+			(uuid "8d0cee62-881c-431e-acf0-7769c2167428")
 		)
 		(pin "1"
-			(uuid "61d1efdb-0978-4fe5-9c85-1144e1c4d16c")
+			(uuid "61d1efdb-0978-4fe5-9c85-1144e1c4d16d")
 		)
 		(pin "9"
-			(uuid "1a156083-db83-40b9-ae33-eca2a1990b40")
+			(uuid "1a156083-db83-40b9-ae33-eca2a1990b41")
 		)
 		(pin "2"
-			(uuid "22e7c785-3a6e-40e3-9a2b-47ae2c71b327")
+			(uuid "22e7c785-3a6e-40e3-9a2b-47ae2c71b328")
 		)
 		(pin "7"
-			(uuid "a14d2993-1c7e-48d3-a031-5e19b1c38e2a")
+			(uuid "a14d2993-1c7e-48d3-a031-5e19b1c38e2b")
 		)
 		(pin "8"
-			(uuid "83d568fa-0cb5-423e-a7c5-114b973a3c18")
+			(uuid "83d568fa-0cb5-423e-a7c5-114b973a3c19")
 		)
 		(pin "3"
-			(uuid "1a8769ec-b50d-4fe8-b7c8-0023bd1405f9")
+			(uuid "1a8769ec-b50d-4fe8-b7c8-0023bd1405fa")
 		)
 		(pin "6"
-			(uuid "13f11cb7-000e-4d67-8e0c-6ae632b2a63d")
+			(uuid "13f11cb7-000e-4d67-8e0c-6ae632b2a63e")
 		)
 		(pin "12"
-			(uuid "4a8553fe-e165-4bab-b727-7f7e195966a5")
+			(uuid "4a8553fe-e165-4bab-b727-7f7e195966a6")
 		)
 		(pin "11"
-			(uuid "26606cd4-1ca6-4cb6-8212-f185dc5b39ac")
+			(uuid "26606cd4-1ca6-4cb6-8212-f185dc5b39ad")
 		)
 		(pin "10"
-			(uuid "f5714167-5386-49d2-b910-2324f55183fa")
+			(uuid "f5714167-5386-49d2-b910-2324f55183fb")
 		)
 		(pin "4"
-			(uuid "dfea92f4-585b-4496-b97b-4f9b07024634")
+			(uuid "dfea92f4-585b-4496-b97b-4f9b07024635")
 		)
 		(pin "14"
-			(uuid "69dd3fdb-1918-45e1-98cf-5f7991b86beb")
+			(uuid "69dd3fdb-1918-45e1-98cf-5f7991b86bec")
 		)
 		(instances
 			(project "13_dual_env"
@@ -9187,7 +9035,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 52.07 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -9266,7 +9114,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 52.07 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -9373,7 +9221,6 @@
 		)
 	)
 	(symbol
-		(lib_name "-12V_4")
 		(lib_id "power:-12V")
 		(at 97.79 191.77 180)
 		(unit 1)
@@ -9564,7 +9411,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "cynthia:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 219.71 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -9598,28 +9445,28 @@
 			)
 		)
 		(pin "2"
-			(uuid "9bdc2486-b2e9-4b8d-b23f-ba9381c4b090")
+			(uuid "9bdc2486-b2e9-4b8d-b23f-ba9381c4b091")
 		)
 		(pin "4"
-			(uuid "597abb6f-d188-4ded-bf11-9a844c0b59b1")
+			(uuid "597abb6f-d188-4ded-bf11-9a844c0b59b2")
 		)
 		(pin "7"
-			(uuid "9fac415f-dc76-4781-a234-dc68ee870d23")
+			(uuid "9fac415f-dc76-4781-a234-dc68ee870d24")
 		)
 		(pin "8"
-			(uuid "2aa5c544-d971-4818-9e29-1d6288fe9b4a")
+			(uuid "2aa5c544-d971-4818-9e29-1d6288fe9b4b")
 		)
 		(pin "6"
-			(uuid "c3cbc5fa-6864-49dd-b2ff-3b44b99ed325")
+			(uuid "c3cbc5fa-6864-49dd-b2ff-3b44b99ed326")
 		)
 		(pin "3"
-			(uuid "c73cbb21-d08a-4538-ad9c-1912aef7f8cb")
+			(uuid "c73cbb21-d08a-4538-ad9c-1912aef7f8cc")
 		)
 		(pin "5"
-			(uuid "1f2000bf-fbd9-4df5-89fa-d2c30374cf34")
+			(uuid "1f2000bf-fbd9-4df5-89fa-d2c30374cf35")
 		)
 		(pin "1"
-			(uuid "af1821b1-a4de-4e2b-ae1c-a89565ae21a4")
+			(uuid "af1821b1-a4de-4e2b-ae1c-a89565ae21a5")
 		)
 		(instances
 			(project "13_dual_env"
@@ -9869,7 +9716,6 @@
 		)
 	)
 	(symbol
-		(lib_name "+12V_5")
 		(lib_id "power:+12V")
 		(at 77.47 157.48 0)
 		(unit 1)
@@ -10000,7 +9846,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 118.11 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -10106,7 +9952,6 @@
 		)
 	)
 	(symbol
-		(lib_name "+12V_5")
 		(lib_id "power:+12V")
 		(at 97.79 157.48 0)
 		(unit 1)
@@ -10240,7 +10085,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 45.72 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -10321,7 +10166,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 151.13 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -10674,7 +10519,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "cynthia:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 66.04 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -10708,46 +10553,46 @@
 			)
 		)
 		(pin "5"
-			(uuid "d39e3c44-53a5-439c-b4c6-65766a9c3122")
+			(uuid "d39e3c44-53a5-439c-b4c6-65766a9c3124")
 		)
 		(pin "13"
-			(uuid "8d0cee62-881c-431e-acf0-7769c2167427")
+			(uuid "8d0cee62-881c-431e-acf0-7769c2167429")
 		)
 		(pin "1"
-			(uuid "61d1efdb-0978-4fe5-9c85-1144e1c4d16c")
+			(uuid "61d1efdb-0978-4fe5-9c85-1144e1c4d16e")
 		)
 		(pin "9"
-			(uuid "1a156083-db83-40b9-ae33-eca2a1990b40")
+			(uuid "1a156083-db83-40b9-ae33-eca2a1990b42")
 		)
 		(pin "2"
-			(uuid "22e7c785-3a6e-40e3-9a2b-47ae2c71b327")
+			(uuid "22e7c785-3a6e-40e3-9a2b-47ae2c71b329")
 		)
 		(pin "7"
-			(uuid "a14d2993-1c7e-48d3-a031-5e19b1c38e2a")
+			(uuid "a14d2993-1c7e-48d3-a031-5e19b1c38e2c")
 		)
 		(pin "8"
-			(uuid "83d568fa-0cb5-423e-a7c5-114b973a3c18")
+			(uuid "83d568fa-0cb5-423e-a7c5-114b973a3c1a")
 		)
 		(pin "3"
-			(uuid "1a8769ec-b50d-4fe8-b7c8-0023bd1405f9")
+			(uuid "1a8769ec-b50d-4fe8-b7c8-0023bd1405fb")
 		)
 		(pin "6"
-			(uuid "13f11cb7-000e-4d67-8e0c-6ae632b2a63d")
+			(uuid "13f11cb7-000e-4d67-8e0c-6ae632b2a63f")
 		)
 		(pin "12"
-			(uuid "4a8553fe-e165-4bab-b727-7f7e195966a5")
+			(uuid "4a8553fe-e165-4bab-b727-7f7e195966a7")
 		)
 		(pin "11"
-			(uuid "26606cd4-1ca6-4cb6-8212-f185dc5b39ac")
+			(uuid "26606cd4-1ca6-4cb6-8212-f185dc5b39ae")
 		)
 		(pin "10"
-			(uuid "f5714167-5386-49d2-b910-2324f55183fa")
+			(uuid "f5714167-5386-49d2-b910-2324f55183fc")
 		)
 		(pin "4"
-			(uuid "dfea92f4-585b-4496-b97b-4f9b07024634")
+			(uuid "dfea92f4-585b-4496-b97b-4f9b07024636")
 		)
 		(pin "14"
-			(uuid "69dd3fdb-1918-45e1-98cf-5f7991b86beb")
+			(uuid "69dd3fdb-1918-45e1-98cf-5f7991b86bed")
 		)
 		(instances
 			(project "13_dual_env"
@@ -11023,7 +10868,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "cynthia:switch_dpdt"
 			(at 146.05 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -11165,7 +11010,6 @@
 		)
 	)
 	(symbol
-		(lib_name "+12V_5")
 		(lib_id "power:+12V")
 		(at 45.72 157.48 0)
 		(unit 1)
@@ -11283,7 +11127,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "cynthia:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 78.74 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -11317,46 +11161,46 @@
 			)
 		)
 		(pin "5"
-			(uuid "d39e3c44-53a5-439c-b4c6-65766a9c3122")
+			(uuid "d39e3c44-53a5-439c-b4c6-65766a9c3125")
 		)
 		(pin "13"
-			(uuid "8d0cee62-881c-431e-acf0-7769c2167427")
+			(uuid "8d0cee62-881c-431e-acf0-7769c216742a")
 		)
 		(pin "1"
-			(uuid "61d1efdb-0978-4fe5-9c85-1144e1c4d16c")
+			(uuid "61d1efdb-0978-4fe5-9c85-1144e1c4d16f")
 		)
 		(pin "9"
-			(uuid "1a156083-db83-40b9-ae33-eca2a1990b40")
+			(uuid "1a156083-db83-40b9-ae33-eca2a1990b43")
 		)
 		(pin "2"
-			(uuid "22e7c785-3a6e-40e3-9a2b-47ae2c71b327")
+			(uuid "22e7c785-3a6e-40e3-9a2b-47ae2c71b32a")
 		)
 		(pin "7"
-			(uuid "a14d2993-1c7e-48d3-a031-5e19b1c38e2a")
+			(uuid "a14d2993-1c7e-48d3-a031-5e19b1c38e2d")
 		)
 		(pin "8"
-			(uuid "83d568fa-0cb5-423e-a7c5-114b973a3c18")
+			(uuid "83d568fa-0cb5-423e-a7c5-114b973a3c1b")
 		)
 		(pin "3"
-			(uuid "1a8769ec-b50d-4fe8-b7c8-0023bd1405f9")
+			(uuid "1a8769ec-b50d-4fe8-b7c8-0023bd1405fc")
 		)
 		(pin "6"
-			(uuid "13f11cb7-000e-4d67-8e0c-6ae632b2a63d")
+			(uuid "13f11cb7-000e-4d67-8e0c-6ae632b2a640")
 		)
 		(pin "12"
-			(uuid "4a8553fe-e165-4bab-b727-7f7e195966a5")
+			(uuid "4a8553fe-e165-4bab-b727-7f7e195966a8")
 		)
 		(pin "11"
-			(uuid "26606cd4-1ca6-4cb6-8212-f185dc5b39ac")
+			(uuid "26606cd4-1ca6-4cb6-8212-f185dc5b39af")
 		)
 		(pin "10"
-			(uuid "f5714167-5386-49d2-b910-2324f55183fa")
+			(uuid "f5714167-5386-49d2-b910-2324f55183fd")
 		)
 		(pin "4"
-			(uuid "dfea92f4-585b-4496-b97b-4f9b07024634")
+			(uuid "dfea92f4-585b-4496-b97b-4f9b07024637")
 		)
 		(pin "14"
-			(uuid "69dd3fdb-1918-45e1-98cf-5f7991b86beb")
+			(uuid "69dd3fdb-1918-45e1-98cf-5f7991b86bee")
 		)
 		(instances
 			(project "13_dual_env"
@@ -11449,6 +11293,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=B 2=E 3=C"
+			(at 156.21 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" "VBIC"
 			(at 156.21 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -11851,6 +11706,121 @@
 		)
 	)
 	(symbol
+		(lib_id "Amplifier_Operational:TL074")
+		(at 49.53 96.52 0)
+		(unit 4)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b8a9c13b-507b-4f6c-88aa-aa8b83b84726")
+		(property "Reference" "U1"
+			(at 48.26 94.996 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL074"
+			(at 48.26 97.536 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cynthia:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 48.26 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 50.8 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
+			(at 49.53 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "d39e3c44-53a5-439c-b4c6-65766a9c3126")
+		)
+		(pin "13"
+			(uuid "c6ed1361-c623-4eaf-acb9-f2ef66664a9b")
+		)
+		(pin "1"
+			(uuid "61d1efdb-0978-4fe5-9c85-1144e1c4d170")
+		)
+		(pin "9"
+			(uuid "1a156083-db83-40b9-ae33-eca2a1990b44")
+		)
+		(pin "2"
+			(uuid "22e7c785-3a6e-40e3-9a2b-47ae2c71b32b")
+		)
+		(pin "7"
+			(uuid "a14d2993-1c7e-48d3-a031-5e19b1c38e2e")
+		)
+		(pin "8"
+			(uuid "83d568fa-0cb5-423e-a7c5-114b973a3c1c")
+		)
+		(pin "3"
+			(uuid "1a8769ec-b50d-4fe8-b7c8-0023bd1405fd")
+		)
+		(pin "6"
+			(uuid "13f11cb7-000e-4d67-8e0c-6ae632b2a641")
+		)
+		(pin "12"
+			(uuid "0195aa8e-0048-4e6a-ab8c-d6e9ff4093f7")
+		)
+		(pin "11"
+			(uuid "26606cd4-1ca6-4cb6-8212-f185dc5b39b0")
+		)
+		(pin "10"
+			(uuid "f5714167-5386-49d2-b910-2324f55183fe")
+		)
+		(pin "4"
+			(uuid "dfea92f4-585b-4496-b97b-4f9b07024638")
+		)
+		(pin "14"
+			(uuid "4222ea26-2e9e-4d77-a48e-63e1f9df68c1")
+		)
+		(instances
+			(project "13_dual_env"
+				(path "/4e0852a3-014c-4794-96b1-becb913625e2"
+					(reference "U1")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 93.98 69.85 0)
 		(mirror x)
@@ -11906,7 +11876,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 93.98 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -12264,7 +12234,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 261.62 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -12370,122 +12340,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:TL074")
-		(at 88.9 90.17 0)
-		(unit 4)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ca4b2e9a-8f68-4253-a1a8-53f979d51b60")
-		(property "Reference" "U1"
-			(at 88.9 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TL074"
-			(at 88.9 82.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 87.63 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 90.17 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
-			(at 88.9 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "d39e3c44-53a5-439c-b4c6-65766a9c3122")
-		)
-		(pin "13"
-			(uuid "8d0cee62-881c-431e-acf0-7769c2167427")
-		)
-		(pin "1"
-			(uuid "61d1efdb-0978-4fe5-9c85-1144e1c4d16c")
-		)
-		(pin "9"
-			(uuid "1a156083-db83-40b9-ae33-eca2a1990b40")
-		)
-		(pin "2"
-			(uuid "22e7c785-3a6e-40e3-9a2b-47ae2c71b327")
-		)
-		(pin "7"
-			(uuid "a14d2993-1c7e-48d3-a031-5e19b1c38e2a")
-		)
-		(pin "8"
-			(uuid "83d568fa-0cb5-423e-a7c5-114b973a3c18")
-		)
-		(pin "3"
-			(uuid "1a8769ec-b50d-4fe8-b7c8-0023bd1405f9")
-		)
-		(pin "6"
-			(uuid "13f11cb7-000e-4d67-8e0c-6ae632b2a63d")
-		)
-		(pin "12"
-			(uuid "4a8553fe-e165-4bab-b727-7f7e195966a5")
-		)
-		(pin "11"
-			(uuid "26606cd4-1ca6-4cb6-8212-f185dc5b39ac")
-		)
-		(pin "10"
-			(uuid "f5714167-5386-49d2-b910-2324f55183fa")
-		)
-		(pin "4"
-			(uuid "dfea92f4-585b-4496-b97b-4f9b07024634")
-		)
-		(pin "14"
-			(uuid "69dd3fdb-1918-45e1-98cf-5f7991b86beb")
-		)
-		(instances
-			(project "13_dual_env"
-				(path "/4e0852a3-014c-4794-96b1-becb913625e2"
-					(reference "U1")
-					(unit 4)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 144.78 55.88 0)
 		(unit 1)
@@ -12565,7 +12419,6 @@
 		)
 	)
 	(symbol
-		(lib_name "-12V_4")
 		(lib_id "power:-12V")
 		(at 229.87 81.28 0)
 		(mirror x)
@@ -12678,7 +12531,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "cynthia:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 100.33 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -12712,28 +12565,28 @@
 			)
 		)
 		(pin "2"
-			(uuid "9bdc2486-b2e9-4b8d-b23f-ba9381c4b090")
+			(uuid "9bdc2486-b2e9-4b8d-b23f-ba9381c4b092")
 		)
 		(pin "4"
-			(uuid "597abb6f-d188-4ded-bf11-9a844c0b59b1")
+			(uuid "597abb6f-d188-4ded-bf11-9a844c0b59b3")
 		)
 		(pin "7"
-			(uuid "9fac415f-dc76-4781-a234-dc68ee870d23")
+			(uuid "9fac415f-dc76-4781-a234-dc68ee870d25")
 		)
 		(pin "8"
-			(uuid "2aa5c544-d971-4818-9e29-1d6288fe9b4a")
+			(uuid "2aa5c544-d971-4818-9e29-1d6288fe9b4c")
 		)
 		(pin "6"
-			(uuid "c3cbc5fa-6864-49dd-b2ff-3b44b99ed325")
+			(uuid "c3cbc5fa-6864-49dd-b2ff-3b44b99ed327")
 		)
 		(pin "3"
-			(uuid "c73cbb21-d08a-4538-ad9c-1912aef7f8cb")
+			(uuid "c73cbb21-d08a-4538-ad9c-1912aef7f8cd")
 		)
 		(pin "5"
-			(uuid "1f2000bf-fbd9-4df5-89fa-d2c30374cf34")
+			(uuid "1f2000bf-fbd9-4df5-89fa-d2c30374cf36")
 		)
 		(pin "1"
-			(uuid "af1821b1-a4de-4e2b-ae1c-a89565ae21a4")
+			(uuid "af1821b1-a4de-4e2b-ae1c-a89565ae21a6")
 		)
 		(instances
 			(project "13_dual_env"
@@ -12800,7 +12653,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 33.02 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -13084,7 +12937,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 151.13 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -13309,7 +13162,7 @@
 		(dnp no)
 		(uuid "e13dadaf-f05e-4ed4-9d0e-f26515e1bfc1")
 		(property "Reference" "R7"
-			(at 49.276 89.662 90)
+			(at 50.546 85.598 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13350,7 +13203,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 50.8 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -13429,7 +13282,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 104.14 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -13487,7 +13340,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "cynthia:push button"
 			(at 50.8 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -13768,7 +13621,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 219.71 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -13849,7 +13702,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 52.07 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -14021,7 +13874,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 251.46 95.25 0)
 			(hide yes)
 			(show_name no)
