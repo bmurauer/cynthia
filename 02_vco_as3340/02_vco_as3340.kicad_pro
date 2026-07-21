@@ -8,7 +8,7 @@
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
-        "board_outline_line_width": 0.1,
+        "board_outline_line_width": 0.05,
         "copper_line_width": 0.2,
         "copper_text_italic": false,
         "copper_text_size_h": 1.5,
@@ -32,22 +32,22 @@
         "fab_text_size_v": 1.0,
         "fab_text_thickness": 0.15,
         "fab_text_upright": false,
-        "other_line_width": 0.15,
+        "other_line_width": 0.1,
         "other_text_italic": false,
         "other_text_size_h": 1.0,
         "other_text_size_v": 1.0,
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 0.6,
-          "width": 1.95
+          "drill": 0.8,
+          "height": 1.6,
+          "width": 1.6
         },
-        "silk_line_width": 0.15,
+        "silk_line_width": 0.1,
         "silk_text_italic": false,
         "silk_text_size_h": 1.0,
         "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.15,
+        "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
           "border_display_style": 2,
@@ -61,9 +61,9 @@
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
           "min_clearance": 0.0,
-          "min_island_area": 9.99999999996,
+          "min_island_area": 10.0,
           "min_thickness": 0.25,
-          "pad_connection": 3,
+          "pad_connection": 1,
           "remove_islands": 0,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
@@ -143,7 +143,7 @@
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.0,
+        "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
@@ -157,8 +157,6 @@
         "min_track_width": 0.0,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_clearance": 0.0,
-        "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -243,7 +241,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "2"
+      "sch_revision": ""
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -440,7 +438,6 @@
     "rule_severities": {
       "bus_definition_conflict": "error",
       "bus_entry_needed": "error",
-      "bus_label_syntax": "error",
       "bus_to_bus_conflict": "error",
       "bus_to_net_conflict": "error",
       "conflicting_netclasses": "error",
@@ -494,7 +491,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "13_dual_env.kicad_pro",
+    "filename": "02_vco_as3340.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -512,10 +509,10 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
+        "track_width": 0.2,
         "tuning_profile": "",
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 6
       }
     ],
@@ -531,7 +528,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "../gerber/rev. 2/",
+      "plot": "../gerber/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -562,13 +559,13 @@
       "exclude_dnp": false,
       "fields_ordered": [
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Reference",
           "name": "Reference",
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Value",
           "name": "Value",
           "show": true
@@ -596,12 +593,36 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": false,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -635,19 +656,10 @@
       "version": 1
     },
     "net_format_name": "",
-    "ngspice": {
-      "fix_include_paths": true,
-      "fix_passive_vals": false,
-      "meta": {
-        "version": 0
-      },
-      "model_mode": 4,
-      "workbook_filename": ""
-    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
-    "spice_adjust_passive_values": false,
+    "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
@@ -658,18 +670,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "13_dual_env.kicad_sch",
-        "name": "13_dual_env",
-        "uuid": "4e0852a3-014c-4794-96b1-becb913625e2"
+        "filename": "02_vco_as3340.kicad_sch",
+        "name": "02_vco_as3340",
+        "uuid": "7bf3d2ed-8bab-4c92-b1a7-3c419691fd96"
       }
     ],
-    "used_designators": "Q1-4,U1-4,SW1-4,RV2-5,R5-7,R9,R15-28,J1-2,J5-6,D1-8,C5,C8-13,#PWR1-4,#PWR9,#PWR12,#PWR16-45",
+    "used_designators": "#PWR4,#PWR15-16,#PWR26-27,#PWR50-62,Q1-2,RV1-5,SW1-2,C7-8,C15-16,D3-4,R49-50,TP5-8,#FLG1,#FLG3",
     "variants": []
   },
   "sheets": [
     [
-      "4e0852a3-014c-4794-96b1-becb913625e2",
-      "13_dual_env"
+      "7bf3d2ed-8bab-4c92-b1a7-3c419691fd96",
+      "02_vco_as3340"
     ]
   ],
   "text_variables": {},
