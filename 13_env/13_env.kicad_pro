@@ -494,7 +494,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "13_dual_env.kicad_pro",
+    "filename": "13_env.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -658,18 +658,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "13_dual_env.kicad_sch",
-        "name": "13_dual_env",
+        "filename": "13_env.kicad_sch",
+        "name": "13_env",
         "uuid": "4e0852a3-014c-4794-96b1-becb913625e2"
       }
     ],
-    "used_designators": "Q1-4,U1-4,SW1-4,RV2-5,R5-7,R9,R15-28,J1-2,J5-6,D1-8,D11-12,C5,C8-13,#PWR1-4,#PWR9,#PWR12,#PWR16-45",
+    "used_designators": "#PWR1-4,#PWR9,#PWR12,#PWR16-45,C5,C8-13,D1-8,D11-12,J1-2,J5-6,R5-7,R9,R15-28,RV2-5,SW1-4,U1-4,Q1-4",
     "variants": []
   },
   "sheets": [
     [
       "4e0852a3-014c-4794-96b1-becb913625e2",
-      "13_dual_env"
+      "13_env"
     ]
   ],
   "text_variables": {},
