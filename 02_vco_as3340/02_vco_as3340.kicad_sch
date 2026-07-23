@@ -5049,7 +5049,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 222.25) (xy 111.76 222.25)
+			(xy 95.25 222.25) (xy 111.76 222.25)
 		)
 		(stroke
 			(width 0)
@@ -7688,7 +7688,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 105.41 219.71 0)
+		(at 92.71 219.71 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -7700,7 +7700,7 @@
 		(fields_autoplaced yes)
 		(uuid "06e4ae9c-5c65-42b9-9528-a35c388145a8")
 		(property "Reference" "#PWR054"
-			(at 105.41 223.52 0)
+			(at 92.71 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7711,7 +7711,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 105.41 214.63 0)
+			(at 92.71 214.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7721,7 +7721,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 105.41 219.71 0)
+			(at 92.71 219.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7732,7 +7732,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 105.41 219.71 0)
+			(at 92.71 219.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7743,7 +7743,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 105.41 219.71 0)
+			(at 92.71 219.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8097,7 +8097,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Potentiometer_Small")
-		(at 105.41 222.25 0)
+		(at 92.71 222.25 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -8108,7 +8108,7 @@
 		(dnp no)
 		(uuid "0b9797be-d3cc-4c1a-979a-7bc028db8858")
 		(property "Reference" "RV1"
-			(at 103.886 224.536 0)
+			(at 91.186 224.536 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8119,7 +8119,7 @@
 			)
 		)
 		(property "Value" "250k"
-			(at 103.886 221.996 0)
+			(at 91.186 221.996 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8130,7 +8130,7 @@
 			)
 		)
 		(property "Footprint" "cynthia:potientiometer"
-			(at 105.41 222.25 0)
+			(at 92.71 222.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8141,7 +8141,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 105.41 222.25 0)
+			(at 92.71 222.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8152,7 +8152,7 @@
 			)
 		)
 		(property "Description" "PWM Offset"
-			(at 103.886 219.456 0)
+			(at 91.186 219.456 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8163,7 +8163,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 105.41 222.25 0)
+			(at 92.71 222.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8174,7 +8174,7 @@
 			)
 		)
 		(property "Sim.Type" "POT"
-			(at 105.41 222.25 0)
+			(at 92.71 222.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8185,7 +8185,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=r0 2=wiper 3=r1"
-			(at 105.41 222.25 0)
+			(at 92.71 222.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8892,7 +8892,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "cynthia:C SMD 0805"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 128.27 151.13 90)
 			(hide yes)
 			(show_name no)
@@ -10524,7 +10524,7 @@
 	)
 	(symbol
 		(lib_id "power:-12V")
-		(at 105.41 224.79 180)
+		(at 92.71 224.79 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10535,7 +10535,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d9c29aa-d26e-4f3a-b969-97286494f58f")
 		(property "Reference" "#PWR04"
-			(at 105.41 227.33 0)
+			(at 92.71 227.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10546,7 +10546,7 @@
 			)
 		)
 		(property "Value" "-12V"
-			(at 105.41 229.87 0)
+			(at 92.71 229.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10556,7 +10556,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 105.41 224.79 0)
+			(at 92.71 224.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10567,7 +10567,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 105.41 224.79 0)
+			(at 92.71 224.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10578,7 +10578,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"-12V\""
-			(at 105.41 224.79 0)
+			(at 92.71 224.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21769,7 +21769,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "cynthia:C SMD 0805"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 128.27 158.75 90)
 			(hide yes)
 			(show_name no)
