@@ -2876,7 +2876,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "04412eb3-9927-4b2b-b734-16ce28974e4e")
-		(property "Reference" "#PWR0178"
+		(property "Reference" "#PWR06"
 			(at 118.11 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -2936,7 +2936,7 @@
 		(instances
 			(project "15_oct_vca_mixer"
 				(path "/f3e49307-da6e-4072-8a49-1bd21abcb0da"
-					(reference "#PWR0178")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -2954,7 +2954,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "068319c6-3ac4-4986-9a85-b7dfc1444791")
-		(property "Reference" "C32"
+		(property "Reference" "C4"
 			(at 105.41 180.3399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3018,7 +3018,7 @@
 		(instances
 			(project "15_oct_vca_mixer"
 				(path "/f3e49307-da6e-4072-8a49-1bd21abcb0da"
-					(reference "C32")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -3458,7 +3458,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "51983daa-1fbb-45ab-b1ca-5aabb793282c")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR08"
 			(at 147.32 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -3519,7 +3519,7 @@
 		(instances
 			(project "15_oct_vca_mixer"
 				(path "/f3e49307-da6e-4072-8a49-1bd21abcb0da"
-					(reference "#PWR05")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -3891,7 +3891,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8164fd77-dca9-4056-8fc4-1cb21e1466f5")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR09"
 			(at 181.61 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -3952,7 +3952,7 @@
 		(instances
 			(project "15_oct_vca_mixer"
 				(path "/f3e49307-da6e-4072-8a49-1bd21abcb0da"
-					(reference "#PWR06")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -4067,7 +4067,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "87f21ea6-015c-4af4-b070-80410e532207")
+		(uuid "87f21ea6-015c-4af4-b070-80410e532208")
 		(property "Reference" "U1"
 			(at 119.38 176.5299 0)
 			(show_name no)
@@ -4124,28 +4124,28 @@
 			)
 		)
 		(pin "7"
-			(uuid "0d5dfa84-1afb-4a44-b0f0-05882b0c445c")
+			(uuid "0d5dfa84-1afb-4a44-b0f0-05882b0c445d")
 		)
 		(pin "2"
-			(uuid "403ce37e-d828-4256-906c-d93e5af684ff")
+			(uuid "403ce37e-d828-4256-906c-d93e5af68500")
 		)
 		(pin "5"
-			(uuid "f2af5816-c21e-4caa-8c63-ba0243181163")
+			(uuid "f2af5816-c21e-4caa-8c63-ba0243181164")
 		)
 		(pin "3"
-			(uuid "e7eaf3f2-3a7f-460d-9906-3741274958f3")
+			(uuid "e7eaf3f2-3a7f-460d-9906-3741274958f4")
 		)
 		(pin "1"
-			(uuid "4fdbaf92-d05b-4089-87da-a359e5276ae0")
+			(uuid "4fdbaf92-d05b-4089-87da-a359e5276ae1")
 		)
 		(pin "6"
-			(uuid "6e68e03f-95bc-4b99-bad6-17ece22f0fc2")
+			(uuid "6e68e03f-95bc-4b99-bad6-17ece22f0fc3")
 		)
 		(pin "4"
-			(uuid "9d54f1f5-cbac-463b-8525-7df0fe8c548e")
+			(uuid "9d54f1f5-cbac-463b-8525-7df0fe8c548f")
 		)
 		(pin "8"
-			(uuid "776d7ebb-d305-4b20-a63b-abb8e3fc6151")
+			(uuid "776d7ebb-d305-4b20-a63b-abb8e3fc6152")
 		)
 		(instances
 			(project "15_oct_vca_mixer"
@@ -4465,7 +4465,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a545e019-2ea3-4b38-868f-3ae9c20dab8f")
-		(property "Reference" "#PWR0179"
+		(property "Reference" "#PWR07"
 			(at 118.11 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -4525,7 +4525,7 @@
 		(instances
 			(project "15_oct_vca_mixer"
 				(path "/f3e49307-da6e-4072-8a49-1bd21abcb0da"
-					(reference "#PWR0179")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -4543,7 +4543,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c2cf9f27-b1c1-4f41-838c-474de4579a02")
-		(property "Reference" "#PWR0177"
+		(property "Reference" "#PWR04"
 			(at 97.79 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -4604,7 +4604,7 @@
 		(instances
 			(project "15_oct_vca_mixer"
 				(path "/f3e49307-da6e-4072-8a49-1bd21abcb0da"
-					(reference "#PWR0177")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -4701,7 +4701,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d5b5d71a-0e97-427b-bac4-ec095c3dbc97")
-		(property "Reference" "C31"
+		(property "Reference" "C3"
 			(at 105.41 172.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4765,7 +4765,7 @@
 		(instances
 			(project "15_oct_vca_mixer"
 				(path "/f3e49307-da6e-4072-8a49-1bd21abcb0da"
-					(reference "C31")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -4783,7 +4783,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "de457e26-fe0d-4d65-be90-1a92fa9ee3b5")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR05"
 			(at 109.22 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -4844,7 +4844,7 @@
 		(instances
 			(project "15_oct_vca_mixer"
 				(path "/f3e49307-da6e-4072-8a49-1bd21abcb0da"
-					(reference "#PWR04")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -5092,28 +5092,28 @@
 			)
 		)
 		(pin "7"
-			(uuid "0d5dfa84-1afb-4a44-b0f0-05882b0c445d")
+			(uuid "0d5dfa84-1afb-4a44-b0f0-05882b0c445e")
 		)
 		(pin "2"
-			(uuid "403ce37e-d828-4256-906c-d93e5af68500")
+			(uuid "403ce37e-d828-4256-906c-d93e5af68501")
 		)
 		(pin "5"
-			(uuid "f2af5816-c21e-4caa-8c63-ba0243181164")
+			(uuid "f2af5816-c21e-4caa-8c63-ba0243181165")
 		)
 		(pin "3"
-			(uuid "e7eaf3f2-3a7f-460d-9906-3741274958f4")
+			(uuid "e7eaf3f2-3a7f-460d-9906-3741274958f5")
 		)
 		(pin "1"
-			(uuid "4fdbaf92-d05b-4089-87da-a359e5276ae1")
+			(uuid "4fdbaf92-d05b-4089-87da-a359e5276ae2")
 		)
 		(pin "6"
-			(uuid "6e68e03f-95bc-4b99-bad6-17ece22f0fc3")
+			(uuid "6e68e03f-95bc-4b99-bad6-17ece22f0fc4")
 		)
 		(pin "4"
-			(uuid "9d54f1f5-cbac-463b-8525-7df0fe8c548f")
+			(uuid "9d54f1f5-cbac-463b-8525-7df0fe8c5490")
 		)
 		(pin "8"
-			(uuid "776d7ebb-d305-4b20-a63b-abb8e3fc6152")
+			(uuid "776d7ebb-d305-4b20-a63b-abb8e3fc6153")
 		)
 		(instances
 			(project "15_oct_vca_mixer"
