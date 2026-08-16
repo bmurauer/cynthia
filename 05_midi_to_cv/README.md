@@ -85,6 +85,19 @@ Provisioning and calibration of a card's EEPROM happens in two stages from an
 external computer via the core's REPL CLI: (1) provisioning (type, MIDI channel,
 notes), and (2) calibration (DAC trim), only where needed.
 
+**Message length and framing**: because `DATA` ripples through every chip on
+every card in series (not just once per card), the total bus-wide message length
+is the sum of every individual chip's register width across the whole bus - a
+melodic voice card contributes 24 bits per DAC channel write plus 8 bits for its
+gate register; a percussion-without-velocity card contributes only its 74HC595's
+8 bits. Data for the chip furthest from the core must be sent first, since
+everything sent after it pushes it one hop further down the chain. Because
+`LATCH` is common to every chip and each chip only keeps whatever is in its own
+register at that instant, **every message must carry the full, current state of
+every gate and CV channel on the bus** - there is no such thing as a partial/delta
+update, particularly for the 74HC595 gate registers, which have no concept of
+"leave this bit alone."
+
 ## Workflow
 
 1. On startup, the core scans the I²C bus and builds an in-memory table of
@@ -96,6 +109,37 @@ notes), and (2) calibration (DAC trim), only where needed.
    sends it down the chain. Closing a gate is just another such update (core-timed
    note-off or envelope logic) - cards have no local timer.
 
+## Component Notes
+
+**DACs**: Analog Devices AD5686/AD5684 (quad, 16-/12-bit) and their dual siblings
+AD5689/AD5687 (16-/12-bit) - "nanoDAC+" family. These genuinely support hardware
+daisy-chain: past the first 24 clock pulses, data ripples straight through the
+input shift register and out the `SDO` pin, so `SDO -> next chip's SDIN` with
+`SCLK`/`SYNC` (our `LATCH`) common to all - matches the bus directly. Since the
+core applies per-card calibration in software, chip-level absolute accuracy
+doesn't matter much - resolution and monotonicity do. 12-bit (AD5684/AD5687) is
+plenty for velocity (MIDI velocity is only 7-bit anyway); 16-bit (AD5686/AD5689)
+is worth it on 1V/oct if smooth portamento/pitch-bend matters. Candidate mapping:
+
+- Melodic voice (1V/oct + velocity, 2ch): AD5687 or AD5689 (dual)
+- Percussion w/ velocity (4ch): AD5684 or AD5686 (quad)
+
+All four share the same daisy-chain protocol and pinout family, so mixing
+resolution tiers by card type is fine. Get the **TSSOP-16** package, not the 3x3mm
+LFCSP variant - the LFCSP has no external leads and needs hot air/reflow, a bad
+first SMD part. Note the `SDO` pin is shared between daisy-chain pass-through and
+a software-invoked readback mode - firmware must never issue a readback command
+mid-chain. These DACs run off a single 2.7-5.5V logic supply with an internal
+2.5V reference (output only swings to ~5V), so each channel still needs a small
+downstream op-amp stage to scale/offset into the final CV range - fits alongside
+the local ±12V regulation each card already has.
+
+**Gates**: 74HC595 shift register, one per card. Has its own genuine daisy-chain
+pin (`SER` in, `Q7'`/`SER OUT` out) plus `SHCP`/`STCP` mapping directly onto the
+bus's `SCLK`/`LATCH`. SOIC-16, cheap, 1.27mm pin pitch - a forgiving first SMD
+part. One chip covers all 4 gates on a percussion card (4 bits spare); one bit of
+it covers the melodic voice's single gate.
+
 ## Open Questions
 
 - **Polyphony / voice allocation**: not yet decided how notes are allocated across
@@ -106,4 +150,12 @@ notes), and (2) calibration (DAC trim), only where needed.
 - **DAC/driver IC selection**: expansion cards are passive (no local MCU), so the
   SPI chain is a genuine hardware shift-register cascade. Need DAC/driver ICs per
   card type that natively support daisy-chain (SDO shift-out) operation, or a
-  discrete shift register (e.g. 74HC595) ahead of parts that don't.
+  discrete shift register (e.g. 74HC595) ahead of parts that don't. Candidate
+  parts noted under "Component Notes" below.
+- **Multi-channel-per-chip updates within one MIDI event**: needs a datasheet
+  check on the chosen DAC - if a single physical chip's shift register can only
+  hold one channel's command per `LATCH` pulse (likely, given a 24-bit register
+  and one-channel-per-frame addressing), then updating two channels on the same
+  chip (e.g. a melodic voice card's 1V/oct and velocity both changing on note-on)
+  needs two full bus-wide shift+latch passes back-to-back, not one. Affects
+  achievable update rate/latency once the card count grows.
