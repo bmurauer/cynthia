@@ -152,10 +152,16 @@ it covers the melodic voice's single gate.
   card type that natively support daisy-chain (SDO shift-out) operation, or a
   discrete shift register (e.g. 74HC595) ahead of parts that don't. Candidate
   parts noted under "Component Notes" below.
-- **Multi-channel-per-chip updates within one MIDI event**: needs a datasheet
-  check on the chosen DAC - if a single physical chip's shift register can only
-  hold one channel's command per `LATCH` pulse (likely, given a 24-bit register
-  and one-channel-per-frame addressing), then updating two channels on the same
-  chip (e.g. a melodic voice card's 1V/oct and velocity both changing on note-on)
-  needs two full bus-wide shift+latch passes back-to-back, not one. Affects
-  achievable update rate/latency once the card count grows.
+- **Multi-channel-per-chip updates within one MIDI event**: this is general
+  behavior of any true shift-register daisy chain, not specific to whichever DAC
+  we pick - a fixed-width shift register only ever holds the last N bits shifted
+  in before `LATCH`, so one physical chip can only accept one channel's command
+  per latch pulse. Updating two channels on the same chip (e.g. a melodic voice
+  card's 1V/oct and velocity both changing on note-on) needs two full bus-wide
+  shift+latch passes back-to-back, not one. Affects achievable update
+  rate/latency once the card count grows. Alternative worth considering: use
+  single-channel daisy-chainable DACs (one chip per CV signal) instead of
+  packing multiple channels into one dual/quad chip - avoids the multi-pass
+  problem entirely, at the cost of more chips/board space per card. Would need
+  to confirm the single-channel sibling in whichever family we pick still
+  exposes `SDO` for daisy-chaining.
