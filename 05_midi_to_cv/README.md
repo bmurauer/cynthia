@@ -25,13 +25,18 @@ output. Card types identified so far:
 - **Percussion with velocity**: 4 gates, 4 velocity CVs.
 - **Percussion without velocity**: 4 gates only.
 
-Each card carries:
+Cards are passive - there is no local microcontroller. All intelligence
+(applying calibration, deciding note-to-card assignment, gate timing) lives on the
+core; each card carries only:
 
-- A small local MCU. Besides driving CV/gate outputs, it acts as the SPI relay
-  stage in the daisy chain (see "The Interface/Bus"), and owns the I²C EEPROM
-  access described below.
+- SPI-shiftable DAC/driver hardware (see "The Interface/Bus" for why this needs to
+  support genuine hardware daisy-chaining) that turns the calibrated codes/gate
+  bits the core already computed into CV/gate output. Percussion-without-velocity
+  channels are pure digital (gate bits only), so those don't need a DAC at all.
 - An I²C EEPROM storing: card type, DAC calibration data, the notes it plays (for
-  percussion cards), and the MIDI channel it should respond to.
+  percussion cards), and the MIDI channel it should respond to. Read (and, for
+  provisioning/calibration, written) directly by the core over the shared I²C bus -
+  no card-side logic needed to serve it.
 - Local ±12V-to-logic regulation — only raw ±12V is distributed over the bus, each
   card regulates what it needs locally.
 
@@ -56,11 +61,15 @@ Core and expansion cards are connected by a ribbon cable bus carrying:
 
 **On the SPI data line specifically**: this is a true shift-register-style chain,
 not addressed SPI with individual chip-selects. `SCLK` and `LATCH` are common to
-every card, but `DATA` is not - each card's MCU receives `DATA_IN`, consumes the
-slice of the message meant for it, and re-transmits the remainder out `DATA_OUT`
-to the next card. So every expansion card needs two bus headers (in and out), wired
-straight through for power/`SCLK`/`LATCH`/I²C, but *not* straight through for the
-data pin.
+every card, but `DATA` is not - each card's DAC/driver hardware shifts `DATA_IN`
+through its own register and re-outputs whatever fell off the far end on
+`DATA_OUT`, feeding the next card. This is done entirely in hardware (no card-side
+MCU), which means the DAC/driver ICs used need to genuinely support daisy-chain
+operation (a real SDO-style shift-out pin) - or, for cards/channels without a
+suitable off-the-shelf daisy-chainable part, a discrete shift register (e.g.
+74HC595) ahead of the DAC/gate transistor. Every expansion card needs two bus
+headers (in and out), wired straight through for power/`SCLK`/`LATCH`/I²C, but
+*not* straight through for the data pin.
 
 Connector recommendation: keyed, shrouded 2.54mm IDC box headers (2x5 or 2x7),
 matching the connector family already used for the eurorack power bus - familiar
@@ -79,11 +88,13 @@ notes), and (2) calibration (DAC trim), only where needed.
 ## Workflow
 
 1. On startup, the core scans the I²C bus and builds an in-memory table of
-   connected expansion cards (type, MIDI channel, notes).
+   connected expansion cards (type, MIDI channel, notes, DAC calibration data).
 2. MIDI messages from all input ports are read by one loop. For each message, the
    table is checked for a card that can process it.
-3. A single SPI message covering all expansion cards is assembled and sent down the
-   chain each time.
+3. The core applies that card's calibration to compute the exact DAC codes/gate
+   bits needed, assembles a single SPI message covering all expansion cards, and
+   sends it down the chain. Closing a gate is just another such update (core-timed
+   note-off or envelope logic) - cards have no local timer.
 
 ## Open Questions
 
@@ -92,7 +103,7 @@ notes), and (2) calibration (DAC trim), only where needed.
   assignment, voice stealing, ...).
 - **Gate voltage standard**: leaning 0/+5V (more common in commercial modules than
   the 0/+10V used in `kosmo_poly_midi_2_cv`), not yet fixed.
-- **Per-card MCU vs. discrete daisy-chainable DAC**: current assumption is a small
-  MCU per expansion card (needed anyway for EEPROM/calibration), acting as the SPI
-  relay stage. Worth a look at DAC ICs with native SPI daisy-chain (SDO) support as
-  an alternative if a card type turns out not to need any other local intelligence.
+- **DAC/driver IC selection**: expansion cards are passive (no local MCU), so the
+  SPI chain is a genuine hardware shift-register cascade. Need DAC/driver ICs per
+  card type that natively support daisy-chain (SDO shift-out) operation, or a
+  discrete shift register (e.g. 74HC595) ahead of parts that don't.
