@@ -214,7 +214,8 @@ output, not a particular vendor):
 Caveat on octal parts: one shift register serving 8 channels interacts with the
 per-latch update question, so re-check `LDAC` behaviour if going that route.
 
-**Gates**: 74HC595 shift register, one per card. Has its own genuine daisy-chain
+**Gates**: 74HC595 shift register (plain HC, **not** HCT - see "Logic rail" below
+for why), one per card. Has its own genuine daisy-chain
 pin (`SER` in, `Q7'` out), a shift clock (`SRCLK`) that maps onto the bus `SCLK`,
 and a storage-register clock (`RCLK`) that maps onto the bus `LDAC` - see "Output
 commit" above for why those two roles are genuinely the same signal. SOIC-16,
@@ -268,16 +269,55 @@ pair of pull-ups at the core, none on the expansion cards. With 8 devices plus a
 metre of ribbon the bus also approaches the 400pF I²C ceiling, so run it at
 standard 100kHz; it is a one-time boot scan, speed is irrelevant.
 
-**Logic rail / level shifting - needs deciding before layout.** The Pico's GPIOs
-are 3.3V and **not 5V tolerant**, so I²C must be pulled up to 3.3V. Since each
-card regulates locally there is a real hazard of a card pulling I²C to its own 5V
-rail and damaging the core - worth making explicit in the card design rules. The
-same issue hits SPI in the other direction: a **74HC595 running at 5V needs
-V_IH >= 3.5V**, so a 3.3V Pico driving it sits *below threshold* and is
-unreliable. Fix is either to run the 595s at 3.3V (and get 0-3.3V gates, which the
-output stage has to scale anyway) or to use **74HCT595** at 5V - TTL thresholds,
-V_IH = 2.0V, accepts 3.3V logic directly. If the cards run 5V logic, specify the
-HCT variant rather than HC.
+**Logic rail: 3.3V for everything on the card.** None of the three digital parts
+is a hard 5V part, so this is straightforward:
+
+| Part | Supply range | At 3.3V |
+|---|---|---|
+| 74HC595 | 2.0 - 6.0V | OK |
+| AD5686R family | 2.7 - 5.5V | OK |
+| 24AA32A | 1.7 - 5.5V | OK |
+
+3.3V is the right choice rather than merely a tolerable one. Both buses originate
+at a 3.3V Pico, and 5V CMOS parts need V_IH >= 3.5V (0.7 x VDD) to read a logic
+high - a 3.3V drive sits just below that. A 5V design would need level shifting on
+*every* bus signal including bidirectional I²C. At 3.3V the problem does not
+exist. Note this means the **plain 74HC595, not 74HCT595** - HCT is specified
+4.5-5.5V and cannot run at 3.3V. (HCT is only relevant for the gate output buffer
+below, which does sit on 5V.)
+
+**Rule: never mix supply voltages inside the SPI chain.** Because `DATA` ripples
+chip-to-chip, a 5V chip's output feeding a 3.3V chip's input exceeds that chip's
+absolute maximum rating (VDD + 0.3V) and can damage it. This rules out the
+tempting hybrid of "HCT595 at 5V for native 5V gates, DAC at 3.3V" - the 595's 5V
+`Q7'` would land on the next card's 3.3V DAC input. Every chip in the chain stays
+on the same rail.
+
+Two consequences:
+
+1. **DAC output tops out at ~2.5V.** The internal reference is 2.5V and the
+   gain-of-2 setting (0-5V span) needs a supply above 3.3V, so at 3.3V only
+   gain-of-1 is usable. Not a problem - the op-amp output stage runs on ±12V and
+   scales to the final CV range, it just needs slightly more gain. Confirm against
+   the datasheet when the exact part is chosen.
+2. **Gates come out at 0-3.3V** and need one small stage to reach the gate
+   standard. This sits *outside* the SPI chain so the mixing rule does not apply.
+   Either a **74HCT244 on a 5V rail** (accepts 3.3V input natively - exactly what
+   HCT is for, non-inverting, 8 gates per chip) or **one 2N7002 + pull-up per
+   gate** (no extra rail needed, but inverting, so firmware flips the bit).
+
+Suggested rail plan - cascade the regulators rather than dropping 12V straight to
+3.3V:
+
+```
++12V ---> 5V LDO ---> 3.3V LDO ---> DAC, EEPROM, 74HC595
+             `----------------------> 74HCT244 gate buffer (if used)
+±12V ------------------------------> op-amp output stages
+```
+
+The 3.3V regulator then drops only 1.7V instead of 8.7V. A direct 12V->3.3V LDO at
+~20mA burns ~174mW and runs warm in a small package - avoidable for the cost of
+one extra regulator.
 
 **Clock edge mismatch between the two part types** - worth knowing before the
 first prototype. The DAC samples `SDIN` on the **falling** SCLK edge and shifts
@@ -356,10 +396,9 @@ constraint at any card count this system is likely to reach.
 - **DAC -> 595 clock edge race**: see "Clock edge mismatch" under Component Notes.
   Expected to work, but needs scope confirmation on the first prototype since it
   is a hold-time margin question that cannot be fixed by slowing the bus down.
-- **Card logic rail: 3.3V or 5V?** Affects part selection and layout, so worth
-  settling early. 3.3V throughout is simplest (no level shifting anywhere, matches
-  the Pico directly) but gives 0-3.3V gates that the output stage must scale. 5V
-  logic needs 74**HCT**595 rather than HC to accept the Pico's 3.3V drive, and
-  needs a firm rule that I²C is never pulled up above 3.3V - the Pico is not 5V
-  tolerant. See "Logic rail / level shifting" under Component Notes. Interacts
-  with the gate voltage standard question above.
+- **~~Card logic rail: 3.3V or 5V?~~** - resolved: **3.3V for every chip on the
+  card**. None of the three digital parts is 5V-only, and 3.3V avoids level
+  shifting on both buses. Uses plain 74HC595 (not HCT, which is 4.5-5.5V only).
+  Gates emerge at 0-3.3V and are level-shifted in a final output stage, which is
+  where the still-open gate voltage standard gets applied. See "Logic rail" under
+  Component Notes.
