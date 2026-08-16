@@ -140,6 +140,38 @@ bus's `SCLK`/`LATCH`. SOIC-16, cheap, 1.27mm pin pitch - a forgiving first SMD
 part. One chip covers all 4 gates on a percussion card (4 bits spare); one bit of
 it covers the melodic voice's single gate.
 
+## SPI Timing
+
+Worked example: 3 melodic voice cards + 1 percussion-with-velocity card + 1
+percussion-without-velocity card. Using the per-card bit costs above (24 bits per
+DAC channel write, 8 bits per 74HC595 gate register):
+
+| Card | Contents | Bits |
+|---|---|---|
+| Melodic voice x3 | (2x24) + 8 = 56 bits each | 168 |
+| Percussion w/ velocity x1 | (4x24) + 8 | 104 |
+| Percussion w/o velocity x1 | 8 | 8 |
+| **Total** | | **280 bits** |
+
+`SCLK` is shared, so the slowest device on the bus caps the rate - likely the
+74HC595 (~25-30MHz typical ceiling) rather than the DACs (50MHz). Shift time for
+280 bits:
+
+| SCLK | Time |
+|---|---|
+| 1MHz (conservative, ribbon-safe) | 280us |
+| 4MHz | 70us |
+| 10MHz | 28us |
+| 25MHz | 11.2us |
+
+For context, a single 3-byte MIDI message takes ~0.96ms to arrive over a
+31.25kbit/s DIN cable - even at a conservative 1MHz `SCLK`, updating this whole
+5-card bus (280us) is 3-4x faster than the MIDI message that triggered it. Even
+the pessimistic two-full-passes case (560us) stays comfortably under 1ms, and
+scaling to the max 8-card bus, all melodic voices (448 bits), is still under
+0.5ms at 1MHz. SPI bus bandwidth is not expected to be a real constraint at any
+card count this system is likely to reach.
+
 ## Open Questions
 
 - **Polyphony / voice allocation**: not yet decided how notes are allocated across
@@ -152,16 +184,18 @@ it covers the melodic voice's single gate.
   card type that natively support daisy-chain (SDO shift-out) operation, or a
   discrete shift register (e.g. 74HC595) ahead of parts that don't. Candidate
   parts noted under "Component Notes" below.
-- **Multi-channel-per-chip updates within one MIDI event**: this is general
-  behavior of any true shift-register daisy chain, not specific to whichever DAC
-  we pick - a fixed-width shift register only ever holds the last N bits shifted
-  in before `LATCH`, so one physical chip can only accept one channel's command
-  per latch pulse. Updating two channels on the same chip (e.g. a melodic voice
-  card's 1V/oct and velocity both changing on note-on) needs two full bus-wide
-  shift+latch passes back-to-back, not one. Affects achievable update
-  rate/latency once the card count grows. Alternative worth considering: use
-  single-channel daisy-chainable DACs (one chip per CV signal) instead of
-  packing multiple channels into one dual/quad chip - avoids the multi-pass
-  problem entirely, at the cost of more chips/board space per card. Would need
-  to confirm the single-channel sibling in whichever family we pick still
-  exposes `SDO` for daisy-chaining.
+- **Multi-channel-per-chip updates within one MIDI event**: precision daisy-chain
+  DACs typically decouple "load a channel's input register" (governed by the
+  shift/frame-sync line, same total-bit accounting as elsewhere in this doc) from
+  "apply input register to output" (a separate, dedicated `LDAC` signal that can
+  commit every channel of every chip on the bus simultaneously with one pulse).
+  If the chosen part supports this, one shift phase (one write-to-input-register
+  frame per channel/gate-register that needs a new value, no-op frames for the
+  rest) followed by a single shared `LDAC` pulse should cover a whole MIDI event,
+  including same-chip multi-channel writes - no multi-pass needed. This likely
+  means the bus needs a 4th shared signal (frame-sync/shift-clock-boundary vs.
+  true `LDAC`/output-commit may need to be separate wires, not one `LATCH`).
+  Needs a real datasheet check once a part is chosen to confirm daisy-chain +
+  `LDAC` interaction. Even in the pessimistic case where this doesn't pan out and
+  two full bus-wide passes are needed, see "SPI Timing" below - it isn't a
+  bandwidth problem either way.
