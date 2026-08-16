@@ -153,24 +153,66 @@ the 74HC595 gate registers, which have no concept of "leave this bit alone."
 AD5689/AD5687 (16-/12-bit) - "nanoDAC+" family. These genuinely support hardware
 daisy-chain: past the first 24 clock pulses, data ripples straight through the
 input shift register and out the `SDO` pin, so `SDO -> next chip's SDIN` with
-`SCLK`/`SYNC`/`LDAC` common to all - matches the bus directly. Since the
-core applies per-card calibration in software, chip-level absolute accuracy
-doesn't matter much - resolution and monotonicity do. 12-bit (AD5684/AD5687) is
-plenty for velocity (MIDI velocity is only 7-bit anyway); 16-bit (AD5686/AD5689)
-is worth it on 1V/oct if smooth portamento/pitch-bend matters. Candidate mapping:
+`SCLK`/`SYNC`/`LDAC` common to all - matches the bus directly.
 
-- Melodic voice (1V/oct + velocity, 2ch): AD5687 or AD5689 (dual)
-- Percussion w/ velocity (4ch): AD5684 or AD5686 (quad)
+Note the **`R` suffix matters**: the plain AD5686/AD5684/AD5689/AD5687 are
+*external*-reference parts. The internal 2.5V reference is only on the `R`
+versions (AD5686R etc.). Either buy the `R` part or budget for a separate
+precision reference chip.
+
+Since the core applies per-card calibration in software, chip-level *static*
+accuracy doesn't matter much - calibration absorbs it. What calibration cannot
+absorb is **drift**, so reference tempco is the spec that actually survives this
+architecture. It matters per channel type:
+
+- **1V/oct**: tempco is a gain error, so it scales with output voltage. At
+  0.833mV per cent, over a 20°C warm-up on a 5V span: 50ppm/°C gives ~6 cents of
+  drift (audible on a sustained interval), 2ppm/°C gives ~0.25 cents. This is the
+  one channel that justifies a precision reference.
+- **Velocity / percussion accent**: tempco is irrelevant - a 0.1% gain drift on a
+  velocity level is inaudible, and MIDI velocity is only 7-bit anyway. No need for
+  a precision part here.
+
+Resolution splits the same way: 12-bit (AD5684/AD5687) is plenty for velocity;
+16-bit (AD5686/AD5689) is worth it on 1V/oct if smooth portamento/pitch-bend
+matters. Candidate mapping:
+
+- Melodic voice (1V/oct + velocity, 2ch): AD5687R or AD5689R (dual)
+- Percussion w/ velocity (4ch): AD5684R or AD5686R (quad)
 
 All four share the same daisy-chain protocol and pinout family, so mixing
 resolution tiers by card type is fine. Get the **TSSOP-16** package, not the 3x3mm
 LFCSP variant - the LFCSP has no external leads and needs hot air/reflow, a bad
 first SMD part. Note the `SDO` pin is shared between daisy-chain pass-through and
 a software-invoked readback mode - firmware must never issue a readback command
-mid-chain. These DACs run off a single 2.7-5.5V logic supply with an internal
-2.5V reference (output only swings to ~5V), so each channel still needs a small
-downstream op-amp stage to scale/offset into the final CV range - fits alongside
-the local ±12V regulation each card already has.
+mid-chain. These DACs run off a single 2.7-5.5V logic supply and (on the `R`
+parts) a 2.5V reference, so the output only swings to ~5V - each channel still
+needs a small downstream op-amp stage to scale/offset into the final CV range,
+which fits alongside the local ±12V regulation each card already has.
+
+**Parts that will NOT work here**: any DAC without a real cascade data output.
+Notably the **MCP4822** - a common, cheap hobbyist choice - is an 8-pin part whose
+pins are all spoken for (`VDD`, `VSS`, `CS`, `SCK`, `SDI`, `LDAC`, `VOUTA`,
+`VOUTB`). There is no `SDO`, so it cannot be daisy-chained and needs one `CS` line
+per chip back to the core, which this bus deliberately does not provide. Much of
+the apparent price gap between it and the AD parts is this - commodity endpoint
+DAC vs chainable precision DAC, different market segments rather than the same
+part with a markup. The rest is resolution, laser trim / INL testing, and (on `R`
+parts) the on-chip reference.
+
+**Cheaper chainable alternatives worth pricing** (the constraint is a real cascade
+output, not a particular vendor):
+
+- **TLV5610** (TI): 8-channel 12-bit, explicit cascade data output, and **16-bit**
+  words (4 control + 12 data) rather than 24 - shorter frames shorten every bus
+  message. Eight channels could cover a whole percussion-with-velocity card.
+- **DAC8568** (TI): octal 16-bit with internal 2.5V 2ppm/°C reference. Octal
+  packaging may work out cheaper per channel than duals.
+- **MAX5715**: quad 12-bit, but be skeptical - its "daisy-chain" reference is an
+  active-low `RDY` *handshake*, not a shift-through `SDO`. Verify before use.
+
+Caveat on octal parts: one shift register serving 8 channels interacts with the
+per-latch update question, so re-check `LDAC` behaviour if going that route.
 
 **Gates**: 74HC595 shift register, one per card. Has its own genuine daisy-chain
 pin (`SER` in, `Q7'` out), a shift clock (`SRCLK`) that maps onto the bus `SCLK`,
