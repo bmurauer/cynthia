@@ -222,6 +222,63 @@ cheap, 1.27mm pin pitch - a forgiving first SMD part. One chip covers all 4 gate
 on a percussion card (4 bits spare); one bit of it covers the melodic voice's
 single gate.
 
+**EEPROM**: Microchip **24AA32A** (or 24LC32A), SOIC-8. 32 kbit, full A0/A1/A2
+addressing for 8 devices, 32-byte page, 5ms max write cycle, 1M cycles endurance.
+24AA32A is 1.7-5.5V, 24LC32A is 2.5-5.5V - both work at 3.3V, 24AA is the safer
+pick. SOIC-8 is the same solderability class as the 74HC595.
+
+**Watch the capacity/address-pin trap in the 24Cxx family** - mid-size parts steal
+address pins for internal block select, so capacity going up makes addressing
+*worse* before it recovers:
+
+| Part | Capacity | Usable address pins | Max devices |
+|---|---|---|---|
+| 24C02 | 2 kbit | A0, A1, A2 | **8** OK |
+| 24C04 | 4 kbit | A1, A2 (A0 = NC) | 4 - no |
+| 24C08 | 8 kbit | A2 only | 2 - no |
+| 24C16 | 16 kbit | none | **1** - no |
+| 24C32 and up | 32 kbit+ | A0, A1, A2 | **8** OK |
+
+The 32kbit-and-up parts recover full addressing because they use 2-byte word
+addressing and no longer borrow pins. A 24C16 would work perfectly with one card
+and die the moment a second is added. Do not "split the difference" into the
+4/8/16 kbit dead zone.
+
+Capacity needed is far less than 32 kbit - budgeting generously (magic/version 4B,
+type 1B, MIDI channel 1B, note map 4B, a 10-point 1V/oct calibration table at
+2B/point/channel, CRC 2B) still lands under 128 bytes, so even a 2 kbit 24AA02
+would do. 32 kbit is recommended anyway: near-identical cost, keeps full
+addressability, and leaves room for a serial number, build date or richer
+calibration data later.
+
+Wiring notes: tie `WP` to GND (the core writes during provisioning/calibration
+over the REPL, so write protection must be off - do *not* put it on a jumper, that
+would force physically touching the card to reprovision). Tie A0/A1/A2
+definitively high or low via the solder jumpers; floating address pins are
+undefined. Firmware notes: 32 kbit parts use a **2-byte** word address (2 kbit
+parts use 1 byte - different transaction format); page writes wrap within a
+32-byte page rather than spilling into the next, so writes must not cross page
+boundaries; poll for ACK after a write to respect the 5ms cycle.
+
+**I²C pull-ups belong on the core only - never per card.** With 4.7k on each of 8
+cards the effective pull-up is ~590 ohm, below the ~1k minimum needed to sink 3mA
+and still hold V_OL under 0.4V at 3.3V. That bus would be out of spec in a way
+that might work with two cards and fail at six - a miserable thing to debug. One
+pair of pull-ups at the core, none on the expansion cards. With 8 devices plus a
+metre of ribbon the bus also approaches the 400pF I²C ceiling, so run it at
+standard 100kHz; it is a one-time boot scan, speed is irrelevant.
+
+**Logic rail / level shifting - needs deciding before layout.** The Pico's GPIOs
+are 3.3V and **not 5V tolerant**, so I²C must be pulled up to 3.3V. Since each
+card regulates locally there is a real hazard of a card pulling I²C to its own 5V
+rail and damaging the core - worth making explicit in the card design rules. The
+same issue hits SPI in the other direction: a **74HC595 running at 5V needs
+V_IH >= 3.5V**, so a 3.3V Pico driving it sits *below threshold* and is
+unreliable. Fix is either to run the 595s at 3.3V (and get 0-3.3V gates, which the
+output stage has to scale anyway) or to use **74HCT595** at 5V - TTL thresholds,
+V_IH = 2.0V, accepts 3.3V logic directly. If the cards run 5V logic, specify the
+HCT variant rather than HC.
+
 **Clock edge mismatch between the two part types** - worth knowing before the
 first prototype. The DAC samples `SDIN` on the **falling** SCLK edge and shifts
 `SDO` out on the **rising** edge; the 74HC595 samples `SER` on the **rising**
@@ -299,3 +356,10 @@ constraint at any card count this system is likely to reach.
 - **DAC -> 595 clock edge race**: see "Clock edge mismatch" under Component Notes.
   Expected to work, but needs scope confirmation on the first prototype since it
   is a hold-time margin question that cannot be fixed by slowing the bus down.
+- **Card logic rail: 3.3V or 5V?** Affects part selection and layout, so worth
+  settling early. 3.3V throughout is simplest (no level shifting anywhere, matches
+  the Pico directly) but gives 0-3.3V gates that the output stage must scale. 5V
+  logic needs 74**HCT**595 rather than HC to accept the Pico's 3.3V drive, and
+  needs a firm rule that I²C is never pulled up above 3.3V - the Pico is not 5V
+  tolerant. See "Logic rail / level shifting" under Component Notes. Interacts
+  with the gate voltage standard question above.
