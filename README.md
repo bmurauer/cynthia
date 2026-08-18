@@ -21,6 +21,29 @@ Every project should at least contain:
 Some modules have additional subfolders with sound samples or Arduino source code.
 
 
+## Collective BOM
+
+`tools/collective_bom.py` collects the parts of all numbered (eurorack) modules
+into a single markdown BOM, so that everything can be ordered in one go.
+The KOSMO modules are not included.
+
+```bash
+tools/collective_bom.py                  # all modules, markdown on stdout
+tools/collective_bom.py 01 03            # only these modules
+tools/collective_bom.py -o BOM.md        # write to a file
+tools/collective_bom.py --refs           # add the reference designators
+tools/collective_bom.py --boards 2       # quantities for two sets of boards
+```
+
+It reads the `*.net` netlists, which are exported from KiCad via
+`File > Export > Netlist` (KiCad format).
+Modules without a netlist are listed at the end of the document instead of
+being silently dropped.
+Test points and parts marked DNP or "exclude from BOM" are skipped, and
+footprints of the same physical package are merged (a `cynthia:R SMD 0805` and
+a `Resistor_SMD:R_0805_...` resistor end up on the same line); the merges are
+documented in the generated document.
+
 ## Case, PSU, and Bus Boards
 
 I made my own case, following the guide from [Look Mum No Computer](https://www.youtube.com/watch?v=4T6J-K8_yk4).
