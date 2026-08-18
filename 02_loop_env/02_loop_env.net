@@ -1415,10 +1415,10 @@
 		)
 		(comp
 			(ref "Q1")
-			(value "BC858")
+			(value "BC857")
 			(footprint "Package_TO_SOT_SMD:SOT-23")
 			(datasheet "https://www.onsemi.com/pub/Collateral/BC860-D.pdf")
-			(description "0.1A Ic, 30V Vce, PNP Transistor, SOT-23")
+			(description "0.1A Ic, 45V Vce, PNP Transistor, SOT-23")
 			(fields
 				(field
 					(name "Sim.Device") "PNP")
@@ -1429,12 +1429,12 @@
 				(field
 					(name "Datasheet") "https://www.onsemi.com/pub/Collateral/BC860-D.pdf")
 				(field
-					(name "Description") "0.1A Ic, 30V Vce, PNP Transistor, SOT-23")
+					(name "Description") "0.1A Ic, 45V Vce, PNP Transistor, SOT-23")
 			)
 			(libsource
 				(lib "Transistor_BJT")
-				(part "BC858")
-				(description "0.1A Ic, 30V Vce, PNP Transistor, SOT-23")
+				(part "BC857")
+				(description "0.1A Ic, 45V Vce, PNP Transistor, SOT-23")
 			)
 			(property
 				(name "Sim.Device")
@@ -1559,10 +1559,10 @@
 		)
 		(comp
 			(ref "Q3")
-			(value "BC858")
+			(value "BC857")
 			(footprint "Package_TO_SOT_SMD:SOT-23")
 			(datasheet "https://www.onsemi.com/pub/Collateral/BC860-D.pdf")
-			(description "0.1A Ic, 30V Vce, PNP Transistor, SOT-23")
+			(description "0.1A Ic, 45V Vce, PNP Transistor, SOT-23")
 			(fields
 				(field
 					(name "Sim.Device") "PNP")
@@ -1573,12 +1573,12 @@
 				(field
 					(name "Datasheet") "https://www.onsemi.com/pub/Collateral/BC860-D.pdf")
 				(field
-					(name "Description") "0.1A Ic, 30V Vce, PNP Transistor, SOT-23")
+					(name "Description") "0.1A Ic, 45V Vce, PNP Transistor, SOT-23")
 			)
 			(libsource
 				(lib "Transistor_BJT")
-				(part "BC858")
-				(description "0.1A Ic, 30V Vce, PNP Transistor, SOT-23")
+				(part "BC857")
+				(description "0.1A Ic, 45V Vce, PNP Transistor, SOT-23")
 			)
 			(property
 				(name "Sim.Device")
@@ -4094,8 +4094,8 @@
 		)
 		(libpart
 			(lib "Transistor_BJT")
-			(part "BC858")
-			(description "0.1A Ic, 30V Vce, PNP Transistor, SOT-23")
+			(part "BC857")
+			(description "0.1A Ic, 45V Vce, PNP Transistor, SOT-23")
 			(docs "https://www.onsemi.com/pub/Collateral/BC860-D.pdf")
 			(footprints
 				(fp "SOT?23*")
@@ -4104,13 +4104,13 @@
 				(field
 					(name "Reference") "Q")
 				(field
-					(name "Value") "BC858")
+					(name "Value") "BC857")
 				(field
 					(name "Footprint") "Package_TO_SOT_SMD:SOT-23")
 				(field
 					(name "Datasheet") "https://www.onsemi.com/pub/Collateral/BC860-D.pdf")
 				(field
-					(name "Description") "0.1A Ic, 30V Vce, PNP Transistor, SOT-23")
+					(name "Description") "0.1A Ic, 45V Vce, PNP Transistor, SOT-23")
 				(field
 					(name "Sim.Device") "PNP")
 				(field

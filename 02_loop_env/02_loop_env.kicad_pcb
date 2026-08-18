@@ -8980,7 +8980,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "BC858"
+		(property "Value" "BC857"
 			(at 0 -2.4 0)
 			(layer "B.Fab")
 			(uuid "e2e35710-d7d7-470e-8929-cc4f2cbab97f")
@@ -9004,7 +9004,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "0.1A Ic, 30V Vce, PNP Transistor, SOT-23"
+		(property "Description" "0.1A Ic, 45V Vce, PNP Transistor, SOT-23"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -14086,7 +14086,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "BC858"
+		(property "Value" "BC857"
 			(at 0 -2.4 0)
 			(layer "B.Fab")
 			(uuid "a2af7995-08f9-4ace-855e-d2ffbc604f8f")
@@ -14110,7 +14110,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "0.1A Ic, 30V Vce, PNP Transistor, SOT-23"
+		(property "Description" "0.1A Ic, 45V Vce, PNP Transistor, SOT-23"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
