@@ -5337,7 +5337,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "1N4148WS"
 			(at 0.1 -1.9 270)
 			(layer "B.Fab")
 			(uuid "56e832ab-c4aa-440e-8989-150ba27c379e")
@@ -7657,7 +7657,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "BC848"
+		(property "Value" "BC847"
 			(at 0 -2.4 0)
 			(layer "B.Fab")
 			(uuid "21aff675-2f4b-40fe-ad8c-cb09c3ea7624")
@@ -7681,7 +7681,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "0.1A Ic, 30V Vce, NPN Transistor, SOT-23"
+		(property "Description" "0.1A Ic, 45V Vce, NPN Transistor, SOT-23"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -8073,7 +8073,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "BC848"
+		(property "Value" "BC847"
 			(at 0 -2.4 0)
 			(layer "B.Fab")
 			(uuid "7b4770e5-a235-4631-acbf-0e60084db893")
@@ -8097,7 +8097,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "0.1A Ic, 30V Vce, NPN Transistor, SOT-23"
+		(property "Description" "0.1A Ic, 45V Vce, NPN Transistor, SOT-23"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -8667,7 +8667,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "1N4148WS"
 			(at 0.1 -1.9 90)
 			(layer "B.Fab")
 			(uuid "02725fc8-0cd5-430f-a2cd-024aa6ea6fa4")
@@ -10216,7 +10216,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "1N4148WS"
 			(at 0.1 -1.9 0)
 			(layer "B.Fab")
 			(uuid "926672de-d1db-43ff-a62f-68b564d9774f")
@@ -12640,7 +12640,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "1N4148WS"
 			(at 0.1 -1.9 0)
 			(layer "B.Fab")
 			(uuid "be4e8534-91c6-45ec-9291-af53e37f5124")
@@ -13281,7 +13281,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "1N4148WS"
 			(at 0.1 -1.9 0)
 			(layer "B.Fab")
 			(uuid "f981fd25-67be-4e39-9497-36d5c36638e1")
@@ -14502,7 +14502,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "1N4148"
+		(property "Value" "1N4148WS"
 			(at 0.1 -1.9 90)
 			(layer "B.Fab")
 			(uuid "8c2d8af3-ff0d-4bef-9668-d4dccd660851")

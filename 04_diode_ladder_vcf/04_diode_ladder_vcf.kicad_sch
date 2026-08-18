@@ -2600,7 +2600,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_BJT:BC848"
+		(symbol "Transistor_BJT:BC847"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -2621,7 +2621,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "BC848"
+			(property "Value" "BC847"
 				(at 5.08 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2657,7 +2657,7 @@
 					(justify left)
 				)
 			)
-			(property "Description" "0.1A Ic, 30V Vce, NPN Transistor, SOT-23"
+			(property "Description" "0.1A Ic, 45V Vce, NPN Transistor, SOT-23"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2712,7 +2712,7 @@
 					)
 				)
 			)
-			(symbol "BC848_0_1"
+			(symbol "BC847_0_1"
 				(polyline
 					(pts
 						(xy -2.54 0) (xy 0.635 0)
@@ -2749,7 +2749,7 @@
 					)
 				)
 			)
-			(symbol "BC848_1_1"
+			(symbol "BC847_1_1"
 				(polyline
 					(pts
 						(xy 0.635 0.635) (xy 2.54 2.54)
@@ -7205,7 +7205,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC848")
+		(lib_id "Transistor_BJT:BC847")
 		(at 156.21 133.35 0)
 		(mirror y)
 		(unit 1)
@@ -7227,7 +7227,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BC848"
+		(property "Value" "BC847"
 			(at 151.13 134.6199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7263,7 +7263,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "0.1A Ic, 30V Vce, NPN Transistor, SOT-23"
+		(property "Description" "0.1A Ic, 45V Vce, NPN Transistor, SOT-23"
 			(at 156.21 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -9850,7 +9850,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC848")
+		(lib_id "Transistor_BJT:BC847")
 		(at 121.92 133.35 0)
 		(unit 1)
 		(body_style 1)
@@ -9872,7 +9872,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BC848"
+		(property "Value" "BC847"
 			(at 127 134.6199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9908,7 +9908,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "0.1A Ic, 30V Vce, NPN Transistor, SOT-23"
+		(property "Description" "0.1A Ic, 45V Vce, NPN Transistor, SOT-23"
 			(at 121.92 133.35 0)
 			(hide yes)
 			(show_name no)

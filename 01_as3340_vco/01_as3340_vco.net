@@ -974,7 +974,7 @@
 		)
 		(comp
 			(ref "D1")
-			(value "1N4148")
+			(value "1N4148WS")
 			(footprint "Diode_SMD:D_SOD-323_HandSoldering")
 			(description "Diode, small symbol")
 			(fields
@@ -1040,7 +1040,7 @@
 		)
 		(comp
 			(ref "D2")
-			(value "1N4148")
+			(value "1N4148WS")
 			(footprint "Diode_SMD:D_SOD-323_HandSoldering")
 			(description "Diode, small symbol")
 			(fields
