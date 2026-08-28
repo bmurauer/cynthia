@@ -1,7 +1,7 @@
 #05: MIDI to CV
 
 This is a multi-board MIDI-to-CV system: one **conductor** module reads MIDI from
-several DIN inputs and broadcasts it to a chain of **players**, each of which is an
+several TRS inputs and broadcasts it to a chain of **players**, each of which is an
 independent module that turns the messages it cares about into CV/gate signals. The
 number and type of players is flexible, so the system can be grown or reconfigured
 after the initial build.
@@ -15,7 +15,8 @@ message is its business.
 
 - RP2040, in the form of a **Pico module soldered onto a carrier PCB** via its
   castellated edges (see Component Notes for why not a bare chip).
-- 3-4 DIN MIDI inputs; some wired to hardware UARTs, some read via software serial.
+- 3-4 **3.5mm TRS** MIDI inputs, each on its own optically isolated input stage
+  (see below); some wired to hardware UARTs, some read via software serial.
 - Parses every input. Clock, start and stop messages are **handled locally** and are
   not forwarded; everything else is broadcast onto the player bus.
 - Clock/start/stop are only honoured from **one designated input jack**, so a second
@@ -23,6 +24,107 @@ message is its business.
 - Exposes a USB REPL CLI for diagnostics (the Pico module brings its own USB
   connector). This is no longer used to provision players - they configure
   themselves.
+
+### MIDI input stage: TRS, polarity-agnostic
+
+Inputs are 3.5mm TRS rather than DIN-5. The decision is driven by panel economics:
+
+| | DIN-5 | 3.5mm TRS |
+|---|---|---|
+| Panel cutout | ~14-16mm | 6mm |
+| Practical column width | ~4HP (6HP to mount comfortably) | 2HP |
+| Vertical pitch | ~22mm | ~12-15mm |
+| Depth behind panel | 15-25mm | ~10mm |
+
+Four DIN jacks fill a full-height column on their own, pushing the clock/run/reset
+outputs into a second column and the module to 8-10HP; four TRS jacks take 60mm of
+one 2HP column and leave room for those outputs in the same column, landing around
+4HP. A full-height DIN column would also put the PCB at ~110mm, through the <=100mm
+cost cliff. DIN-5 cables are additionally stiff and heavy in a dense case.
+
+The tradeoff is honest: DIN would need fewer adapters *today* for the current
+controller collection. But an adapter is a one-time purchase that then lives on the
+end of that cable permanently, whereas panel width is paid forever.
+
+**Both TRS wiring conventions are accepted.** TRS MIDI exists in two incompatible
+polarities - Type A (the MMA standard) and Type B (Arturia, Novation, IK) - which
+differ by swapping tip and ring, i.e. by reversing the direction of the current
+loop. The input stage handles either, so cable type never has to be checked:
+
+```
+MIDI_TIP  ------+--------------------,
+                |                    |
+              [LED1 >|]          [|< LED2]      <- inverse-parallel, inside U1
+                |                    |
+MIDI_RING --R1--+--------------------'
+```
+
+A **TLP2662** (Toshiba, 2-channel, open-collector, 10 MBd, 2.7-5.5V) provides both
+LEDs and both output transistors in one 8-pin package. The two input LEDs are wired
+inverse-parallel across tip and ring, so whichever way loop current flows, one of
+them conducts. The two open-collector outputs are wired-OR onto a single pull-up,
+so the node goes low when either channel is lit.
+
+Why this part suits the design:
+
+- **Open-collector outputs** - required, since the two outputs are tied together.
+  A totem-pole part would short two drivers against each other here.
+- **2.7-5.5V supply** - runs directly on the conductor's 3.3V rail.
+- **10 MBd** against MIDI's 31.25 kbaud is ~300x headroom. The classic 6N138 is
+  genuinely marginal for MIDI edge rates; this is not.
+- **Inverting output is correct, not a problem.** MIDI is current-on = logic 0, so
+  idle = no current = LED off = pull-up holds the line high = UART idle high. The
+  output feeds an MCU RX pin directly with no software inversion.
+- **No reverse-protection diode needed.** The classic circuit needs a 1N4148 across
+  the LED; here each LED's antiparallel partner clamps reverse voltage to ~1.4V,
+  well inside the LED reverse rating.
+- Gull-wing SO-8-style package, hand-solderable, stocked at LCSC (C5381897).
+
+Design notes for layout:
+
+- **Verify I_FLH before committing.** The part is characterised at I_F = 10mA, but
+  the loop delivers only about (5V - 1.7V) / (220R sender + 220R receiver) = 7.5mA.
+  10mA is very likely the test condition for the quoted propagation delays rather
+  than the switching threshold, but this needs confirming against the datasheet. If
+  the guaranteed I_FLH is near 7mA, drop the receiver-side resistor to ~100R for
+  ~10.3mA. Do not short it out - that gives ~15mA, inside the LED rating but
+  needlessly hot. This matters because a marginal design fails intermittently on
+  whichever input has the longest cable or weakest sender.
+- **Check the anode/cathode pin mapping against the datasheet.** This is the one
+  wiring error that fails silently: the inverse-parallel connection needs
+  anode1+cathode2 on one node and cathode1+anode2 on the other. Tying anode1 to
+  anode2 instead puts the LEDs in parallel, which works perfectly on Type A and
+  dies on Type B - a fault only discovered when an Arturia device is plugged in.
+- **Pull-up**: 2.2k-4.7k rather than 10k. At MIDI rates 10k is harmless (~300ns
+  rise against a 32us bit) but it is a high-impedance node in a case full of
+  switching supplies.
+- **Leave the sleeve unconnected.** Both types use sleeve = MIDI pin 2 (shield),
+  which per spec is bonded at the source end only. Tying it to module ground
+  creates a ground loop and partly defeats the isolation.
+- **Decoupling**: 100nF ceramic right at the supply pins, optionally with a bulk
+  1uF alongside.
+- One TLP2662 per input - both channels are consumed by the bidirectional trick, so
+  3-4 inputs means 3-4 parts.
+
+Because every input jack now looks identical, the designated clock/start/stop jack
+needs a panel label or its own LED. A mixed DIN/TRS layout would have made it
+self-evident; this does not.
+
+### USB host input - considered, deferred
+
+The RP2040 can act as a USB MIDI *host*, which would let a USB-only controller plug
+straight into the conductor and remove an external conversion box from the setup.
+This is proven rather than speculative: `Pico-PIO-USB` bit-bangs a full-speed host
+port on two GPIOs using PIO0 and core 1, `rppicomidi/usb_midi_host` provides the
+TinyUSB MIDI host driver, and the Pico's *native* USB stays free for the REPL
+because TinyUSB can run the device stack on native USB and the host stack on PIO
+simultaneously. Wiring is a USB-A jack to two GPIOs with 22R series resistors.
+
+Deferred for now. The blocking issue is VBUS power: USB allows up to 500mA, and a
+12V->5V LDO would dissipate far too much at that current, so it needs a buck
+converter plus a polyfuse against a shorted device. That plus the firmware surface
+is real added complexity immediately after a deliberate simplification pass. Worth
+revisiting as a v2; a footprint could be laid out now and left unpopulated.
 
 ## Players
 
@@ -146,6 +248,10 @@ or a hotplate. Soldering a Pico down by its castellated edges is trivial by
 comparison, and brings flash, crystal and a USB connector with it. The cost is board
 area and vertical space behind the panel.
 
+**MIDI input optocoupler**: **TLP2662**, one per input - full selection reasoning,
+wiring and the two things to verify before layout are under "MIDI input stage"
+above.
+
 **Player MCU**: **STM32G030F6P6** in TSSOP-20 (6.4 x 4.4mm) is the candidate -
 hand-solderable, around $1.50 in ones, 64MHz Cortex-M0+, 32KB flash, 8KB SRAM. Pin
 budget is comfortable for both player types:
@@ -209,12 +315,13 @@ over its Pico USB connector as usual.
 
 ## Latency and Bandwidth
 
-A 3-byte MIDI message takes ~0.96ms to arrive over a 31.25kbit/s DIN cable. That
-inbound time dominates everything downstream:
+A 3-byte MIDI message takes ~0.96ms to arrive over a 31.25kbit/s MIDI cable (the
+wire protocol is the same whether the connector is TRS or DIN). That inbound time
+dominates everything downstream:
 
 | Stage | Time |
 |---|---|
-| Inbound DIN message (3 bytes @ 31250) | ~0.96ms |
+| Inbound MIDI message (3 bytes @ 31250) | ~0.96ms |
 | Conductor parse and re-serialise | microseconds |
 | Broadcast on bus (3 bytes @ 250000) | ~0.12ms |
 | Player parse + DAC write | microseconds |
@@ -272,3 +379,9 @@ ever needed again.
 - **Conductor clock outputs**: assumed that "handles clock/start/stop" means the
   conductor carries its own clock / run / reset output jacks on its panel. Needs
   confirming - it also decides how much panel space the conductor needs.
+- **TLP2662 I_FLH margin**: the loop supplies ~7.5mA against a part characterised
+  at 10mA. Needs a datasheet check of the guaranteed switching threshold before
+  layout; if it is near 7mA, drop the receiver-side resistor to ~100R. See "MIDI
+  input stage".
+- **Designated clock jack marking**: all TRS inputs look alike, so the clock/start/
+  stop jack needs a label or dedicated LED. Decide which when the panel is laid out.
