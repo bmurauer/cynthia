@@ -69,7 +69,12 @@ Why this part suits the design:
 
 - **Open-collector outputs** - required, since the two outputs are tied together.
   A totem-pole part would short two drivers against each other here.
-- **2.7-5.5V supply** - runs directly on the conductor's 3.3V rail.
+- **2.7-5.5V supply** - runs directly on the conductor's 3.3V rail. The part also
+  works at 5V, but there's no reason to: the datasheet shows ICCH/ICCL, VOL and
+  propagation delay are essentially unchanged between 3.3V and 5V operation, and the
+  open-collector output feeds an RP2040 UART RX pin directly - RP2040 GPIOs are not
+  5V-tolerant, so the safe choice is to keep the whole thing on 3.3V rather than
+  pull the output up to 5V and rely on getting the pull-up wiring right every time.
 - **10 MBd** against MIDI's 31.25 kbaud is ~300x headroom. The classic 6N138 is
   genuinely marginal for MIDI edge rates; this is not.
 - **Inverting output is correct, not a problem.** MIDI is current-on = logic 0, so
@@ -82,14 +87,14 @@ Why this part suits the design:
 
 Design notes for layout:
 
-- **Verify I_FLH before committing.** The part is characterised at I_F = 10mA, but
-  the loop delivers only about (5V - 1.7V) / (220R sender + 220R receiver) = 7.5mA.
-  10mA is very likely the test condition for the quoted propagation delays rather
-  than the switching threshold, but this needs confirming against the datasheet. If
-  the guaranteed I_FLH is near 7mA, drop the receiver-side resistor to ~100R for
-  ~10.3mA. Do not short it out - that gives ~15mA, inside the LED rating but
-  needlessly hot. This matters because a marginal design fails intermittently on
-  whichever input has the longest cable or weakest sender.
+- **I_FLH margin - checked against the datasheet, comfortable.** The loop delivers
+  only about (5V - 1.7V) / (220R sender + 220R receiver) = 7.5mA, against a part
+  characterised at I_F = 10mA for the quoted propagation delays. The Recommended
+  Operating Conditions table gives the actually relevant numbers: input on-state
+  current 6-15mA, and worst-case guaranteed threshold current (I_FHL, max) 5.0mA.
+  The loop's 7.5mA sits inside the recommended range and clears the worst-case
+  threshold with ~50% margin. The receiver-side resistor does not need to drop to
+  ~100R.
 - **Check the anode/cathode pin mapping against the datasheet.** This is the one
   wiring error that fails silently: the inverse-parallel connection needs
   anode1+cathode2 on one node and cathode1+anode2 on the other. Tying anode1 to
@@ -248,6 +253,19 @@ or a hotplate. Soldering a Pico down by its castellated edges is trivial by
 comparison, and brings flash, crystal and a USB connector with it. The cost is board
 area and vertical space behind the panel.
 
+**Conductor power**: the Eurorack power header on this board carries only +12V,
+-12V and GND - no +5V, unlike the full 16-pin spec. -12V is pass-through only,
+wired straight to the player bus header; nothing on the conductor consumes it
+locally. +12V feeds a local linear regulator, **NCP1117ST50T3G** (SOT-223, fixed
+5.0V, 800mA), into the Pico's `VSYS` pin - a named-brand part rather than a generic
+"AMS1117" clone, and a forgiving first SMD regulator to hand-solder (big gull-wing
+pins) before moving on to the finer-pitch parts. At an estimated ~150mA (Pico plus
+3-4 TLP2662s, reflected through the Pico's own onboard regulator) and a 7V drop,
+that's roughly 1W of dissipation - near the top of what a bare SOT-223 shrugs off,
+so give the tab a copper pour with thermal vias rather than a bare pad. The Pico's
+own onboard regulator then supplies 3.3V, which is reused directly for the
+TLP2662(s) rather than adding a second 3.3V regulator.
+
 **MIDI input optocoupler**: **TLP2662**, one per input - full selection reasoning,
 wiring and the two things to verify before layout are under "MIDI input stage"
 above.
@@ -379,9 +397,5 @@ ever needed again.
 - **Conductor clock outputs**: assumed that "handles clock/start/stop" means the
   conductor carries its own clock / run / reset output jacks on its panel. Needs
   confirming - it also decides how much panel space the conductor needs.
-- **TLP2662 I_FLH margin**: the loop supplies ~7.5mA against a part characterised
-  at 10mA. Needs a datasheet check of the guaranteed switching threshold before
-  layout; if it is near 7mA, drop the receiver-side resistor to ~100R. See "MIDI
-  input stage".
 - **Designated clock jack marking**: all TRS inputs look alike, so the clock/start/
   stop jack needs a label or dedicated LED. Decide which when the panel is laid out.
