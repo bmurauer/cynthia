@@ -424,175 +424,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Audio:AudioJack2"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "AudioJack2"
-				(at 0 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Audio Jack, 2 Poles (Mono / TS)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "audio jack receptacle mono phone headphone TS connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Jack*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "AudioJack2_0_1"
-				(rectangle
-					(start -3.81 0)
-					(end -2.54 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -2.54 3.81)
-					(end 2.54 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0.635 -0.635) (xy 1.27 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy -0.635 2.54) (xy -0.635 0) (xy -1.27 -0.635) (xy -1.905 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "AudioJack2_1_1"
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "T"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector_Audio:AudioJack3"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3378,6 +3209,177 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "cynthia:3.5mm thonk jack socket mono switched"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 4.064 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "cynthia:3.5mm thonk jack socket mono switched"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "3.5mm thonk jack socket mono switched_0_1"
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy 1.778 1.27) (xy 1.27 0.762) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -1.27) (xy 2.032 -1.27) (xy 2.032 1.016) (xy 1.778 0.762) (xy 2.032 1.016) (xy 2.286 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "3.5mm thonk jack socket mono switched_1_1"
+				(rectangle
+					(start -3.81 1.905)
+					(end -2.54 -1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type color)
+						(color 255 229 191 1)
+					)
+				)
+				(rectangle
+					(start -2.54 2.54)
+					(end 2.54 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type color)
+						(color 255 255 194 1)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 5.08 1.27 180)
+					(length 2.54)
+					(name "T"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "T"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 5.08 -1.27 180)
+					(length 2.54)
+					(name "TN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "TN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+12V"
 			(power global)
 			(pin_numbers
@@ -4266,6 +4268,10 @@
 		(uuid "3424c13d-a569-4f8d-a6b6-f5339c1dd364")
 	)
 	(no_connect
+		(at 213.36 120.65)
+		(uuid "36d07f3b-901e-4abb-bdc2-659374ba37ec")
+	)
+	(no_connect
 		(at 102.87 99.06)
 		(uuid "3758c45d-ff09-4333-b2e2-2f9a064eec5e")
 	)
@@ -4314,6 +4320,10 @@
 		(uuid "778e45b3-dab4-4e95-a3ca-d63cbdd05903")
 	)
 	(no_connect
+		(at 213.36 99.06)
+		(uuid "7dc210ad-1892-42eb-a755-dcbceae0406f")
+	)
+	(no_connect
 		(at 102.87 124.46)
 		(uuid "7e1c76c2-74ed-405f-9a11-12de0eec92a3")
 	)
@@ -4332,6 +4342,10 @@
 	(no_connect
 		(at 148.59 111.76)
 		(uuid "ad1e35a2-8470-4986-b206-891e29c29e0e")
+	)
+	(no_connect
+		(at 213.36 78.74)
+		(uuid "b639bb40-90da-4a3d-8f82-6b95ea140cc7")
 	)
 	(no_connect
 		(at 102.87 114.3)
@@ -4920,146 +4934,6 @@
 			(type default)
 		)
 		(uuid "fc2d1a24-566f-47cb-8d1a-ae3ed68fc67f")
-	)
-	(label "unconnected-(A1-GPIO26_ADC0-Pad31)_1"
-		(at 148.59 121.92 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "07a06064-92e4-400f-9989-bd0648c368fd")
-	)
-	(label "unconnected-(A1-GPIO27_ADC1-Pad32)_1"
-		(at 148.59 124.46 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2110c6fc-ac8f-48a9-9eb3-409c6b5dd283")
-	)
-	(label "unconnected-(A1-GPIO17-Pad22)_1"
-		(at 148.59 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "27bbdf34-edf7-4522-904b-2ec565d479c5")
-	)
-	(label "unconnected-(A1-GPIO12-Pad16)_1"
-		(at 102.87 124.46 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3996945c-46f4-4809-bc42-44c78e1e341d")
-	)
-	(label "unconnected-(A1-GPIO21-Pad27)_1"
-		(at 148.59 109.22 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4fd938a3-597c-4530-9163-73507898f042")
-	)
-	(label "unconnected-(A1-GPIO1-Pad2)_1"
-		(at 102.87 96.52 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7786dc46-242e-42b4-bdf3-1a6fbd287f40")
-	)
-	(label "unconnected-(A1-GPIO7-Pad10)_1"
-		(at 102.87 111.76 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7aa34d1c-d333-4d56-ac11-6c4f4282cfd6")
-	)
-	(label "unconnected-(A1-GPIO0-Pad1)_1"
-		(at 102.87 93.98 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "818a0912-a531-49d8-88ce-7bf5e60421bb")
-	)
-	(label "unconnected-(A1-GPIO8-Pad11)_1"
-		(at 102.87 114.3 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "adb9223e-76a3-458e-b4ea-9a680482b963")
-	)
-	(label "unconnected-(A1-GPIO14-Pad19)_1"
-		(at 102.87 129.54 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c12ca77d-553b-4587-914c-df009f5a7fb0")
-	)
-	(label "unconnected-(A1-GPIO2-Pad4)_1"
-		(at 102.87 99.06 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c3721dea-6088-4205-b0f8-d5ba92c4cb45")
-	)
-	(label "unconnected-(A1-RUN-Pad30)_1"
-		(at 102.87 86.36 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c5c70cd2-903a-466c-8c47-2ee01187682a")
-	)
-	(label "unconnected-(A1-GPIO15-Pad20)_1"
-		(at 102.87 132.08 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "cd8cc617-fb9e-4c25-a996-c3700893fa40")
-	)
-	(label "unconnected-(A1-GPIO22-Pad29)_1"
-		(at 148.59 111.76 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e182bb7b-0352-4f63-9f57-1660bd5a3854")
 	)
 	(global_label "RUN"
 		(shape output)
@@ -5855,7 +5729,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74hct125.pdf?ts=1788702330811"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74ahct125.pdf"
 			(at 190.5 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -5935,6 +5809,85 @@
 				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
 					(reference "U2")
 					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 218.44 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0cb7ee8c-89fb-4b09-a19e-a6a382a6b77a")
+		(property "Reference" "#PWR039"
+			(at 218.44 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 218.44 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Module:RaspberryPi_Pico_Common_Unspecified"
+			(at 218.44 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 218.44 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "657b7faa-8170-481d-af89-8cc6b45e3dba")
+		)
+		(instances
+			(project "05_midi_to_cv_conductor"
+				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
+					(reference "#PWR039")
+					(unit 1)
 				)
 			)
 		)
@@ -6095,6 +6048,85 @@
 			(project "05_midi_to_cv_conductor"
 				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 218.44 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1267b520-4d6b-4e77-a032-4030b9a78018")
+		(property "Reference" "#PWR037"
+			(at 218.44 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 218.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Module:RaspberryPi_Pico_Common_Unspecified"
+			(at 218.44 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 218.44 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4cf71443-410b-4d37-b0db-db976aa83b7b")
+		)
+		(instances
+			(project "05_midi_to_cv_conductor"
+				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -6350,8 +6382,9 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:AudioJack2")
-		(at 218.44 118.11 180)
+		(lib_id "cynthia:3.5mm thonk jack socket mono switched")
+		(at 218.44 77.47 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6359,10 +6392,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "264f58c7-f7bf-4366-b72a-3e18e63c0675")
-		(property "Reference" "J7"
-			(at 223.52 117.4749 0)
+		(uuid "1e8a4c66-9510-44fc-950a-3b3e52a4051f")
+		(property "Reference" "J4"
+			(at 223.52 77.4699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6372,19 +6404,18 @@
 				(justify right)
 			)
 		)
-		(property "Value" "AudioJack2"
-			(at 223.52 120.0149 0)
+		(property "Value" ""
+			(at 218.44 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "cynthia:3.5mm jack mono"
-			(at 218.44 118.11 0)
+		(property "Footprint" "cynthia:3.5mm thonk jack socket mono switched"
+			(at 218.44 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6395,7 +6426,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 218.44 118.11 0)
+			(at 218.44 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6405,9 +6436,8 @@
 				)
 			)
 		)
-		(property "Description" "Audio Jack, 2 Poles (Mono / TS)"
-			(at 218.44 118.11 0)
-			(hide yes)
+		(property "Description" "Clock"
+			(at 218.44 73.152 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6415,12 +6445,98 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "TN"
+			(uuid "25cdbe03-5773-40db-a4f2-d8034d76e104")
 		)
 		(pin "T"
-			(uuid "3bee5197-1450-48f9-88c5-d77c2fc18d7a")
+			(uuid "4820d17f-df1d-481c-8a30-3befef3d1fb7")
 		)
 		(pin "S"
-			(uuid "235ce1b9-d1d1-43e6-8968-db2cd0115a8a")
+			(uuid "4802df85-d243-4b22-9bc1-dab3e2ee5487")
+		)
+		(instances
+			(project "05_midi_to_cv_conductor"
+				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "cynthia:3.5mm thonk jack socket mono switched")
+		(at 218.44 119.38 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "22da0382-5088-40f7-99b9-8779d376af8a")
+		(property "Reference" "J7"
+			(at 223.52 119.3799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" ""
+			(at 218.44 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cynthia:3.5mm thonk jack socket mono switched"
+			(at 218.44 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Reset"
+			(at 218.44 114.808 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "TN"
+			(uuid "d6563566-7534-46ed-a25c-8a74daa9bc14")
+		)
+		(pin "T"
+			(uuid "3284bd81-16a4-4bf9-978c-54681b37d6f4")
+		)
+		(pin "S"
+			(uuid "10fbff52-6800-4c8a-9b57-9990676a0ac2")
 		)
 		(instances
 			(project "05_midi_to_cv_conductor"
@@ -6504,6 +6620,85 @@
 			(project "05_midi_to_cv_conductor"
 				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 218.44 102.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "32d031f6-5706-492b-97fc-f69311c8613a")
+		(property "Reference" "#PWR038"
+			(at 218.44 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 218.44 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Module:RaspberryPi_Pico_Common_Unspecified"
+			(at 218.44 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 218.44 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4fdc282e-c9dd-4960-8320-b93754390f43")
+		)
+		(instances
+			(project "05_midi_to_cv_conductor"
+				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -7392,85 +7587,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 213.36 99.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6c1e5202-970c-4b41-8afe-99b7bd7d22f6")
-		(property "Reference" "#PWR038"
-			(at 213.36 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 213.36 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Module:RaspberryPi_Pico_Common_Unspecified"
-			(at 213.36 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 213.36 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 213.36 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e8dc5a67-8072-47d1-a543-6a311272a50b")
-		)
-		(instances
-			(project "05_midi_to_cv_conductor"
-				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
-					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 69.85 166.37 0)
 		(unit 1)
 		(body_style 1)
@@ -7744,88 +7860,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:AudioJack2")
-		(at 218.44 96.52 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7ba5d109-b88c-4246-a6c0-8695a20fd951")
-		(property "Reference" "J6"
-			(at 223.52 95.8849 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "AudioJack2"
-			(at 223.52 98.4249 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "cynthia:3.5mm jack mono"
-			(at 218.44 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 218.44 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Audio Jack, 2 Poles (Mono / TS)"
-			(at 218.44 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "T"
-			(uuid "3479b018-8db7-4046-8431-a9c82e6a8922")
-		)
-		(pin "S"
-			(uuid "7cfc776b-ca17-44fb-9d61-01fa2b7fc1c4")
-		)
-		(instances
-			(project "05_midi_to_cv_conductor"
-				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
-					(reference "J6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Audio:AudioJack3")
 		(at 29.21 134.62 0)
 		(mirror x)
@@ -7954,7 +7988,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74hct125.pdf?ts=1788702330811"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74ahct125.pdf"
 			(at 190.5 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -7988,46 +8022,46 @@
 			)
 		)
 		(pin "9"
-			(uuid "15491cb6-db90-4357-b1ed-42f07ec1da23")
+			(uuid "15491cb6-db90-4357-b1ed-42f07ec1da24")
 		)
 		(pin "7"
-			(uuid "f51eb35a-aabb-4ebf-ad35-29ae8bf3e22e")
+			(uuid "f51eb35a-aabb-4ebf-ad35-29ae8bf3e22f")
 		)
 		(pin "10"
-			(uuid "d533687e-8140-4880-8461-ce34ec149cb5")
+			(uuid "d533687e-8140-4880-8461-ce34ec149cb6")
 		)
 		(pin "5"
-			(uuid "b78e07b5-84e6-4a84-bd05-1b69d76cbd34")
+			(uuid "b78e07b5-84e6-4a84-bd05-1b69d76cbd35")
 		)
 		(pin "11"
-			(uuid "48bee69b-fe00-4b19-b955-41e2845b7ddd")
+			(uuid "48bee69b-fe00-4b19-b955-41e2845b7dde")
 		)
 		(pin "13"
-			(uuid "1ae23b0a-f83a-4900-9dfb-cdc9bbd74a1d")
+			(uuid "1ae23b0a-f83a-4900-9dfb-cdc9bbd74a1e")
 		)
 		(pin "4"
-			(uuid "b2741180-61a2-4dcb-90f7-2b493fce9ea2")
+			(uuid "b2741180-61a2-4dcb-90f7-2b493fce9ea3")
 		)
 		(pin "1"
-			(uuid "ba829a04-f3c1-4519-9eeb-a19ba2fd3974")
+			(uuid "ba829a04-f3c1-4519-9eeb-a19ba2fd3975")
 		)
 		(pin "12"
-			(uuid "2efbd00c-a506-4b1c-aa45-9a9e4cf856f3")
+			(uuid "2efbd00c-a506-4b1c-aa45-9a9e4cf856f4")
 		)
 		(pin "2"
-			(uuid "c6c90308-bf5c-4194-96ab-e01e8b76457a")
+			(uuid "c6c90308-bf5c-4194-96ab-e01e8b76457b")
 		)
 		(pin "8"
-			(uuid "fd4f318b-fb83-44ef-93bc-d8f0228ee974")
+			(uuid "fd4f318b-fb83-44ef-93bc-d8f0228ee975")
 		)
 		(pin "3"
-			(uuid "3d5af618-85dd-483c-be41-9f314a31f908")
+			(uuid "3d5af618-85dd-483c-be41-9f314a31f909")
 		)
 		(pin "14"
-			(uuid "1d02deed-b77d-4e87-8d64-6755d8ad65b0")
+			(uuid "1d02deed-b77d-4e87-8d64-6755d8ad65b1")
 		)
 		(pin "6"
-			(uuid "d094dcc7-d793-471a-9890-5b9ec558b211")
+			(uuid "d094dcc7-d793-471a-9890-5b9ec558b212")
 		)
 		(instances
 			(project "05_midi_to_cv_conductor"
@@ -8270,85 +8304,6 @@
 			(project "05_midi_to_cv_conductor"
 				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
 					(reference "#PWR032")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 213.36 78.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "993ae6bc-f116-448c-9b19-1854889c7c7b")
-		(property "Reference" "#PWR037"
-			(at 213.36 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 213.36 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Module:RaspberryPi_Pico_Common_Unspecified"
-			(at 213.36 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 213.36 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 213.36 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "27f5e4e3-cc7d-4a6f-a075-bbfb0749a30b")
-		)
-		(instances
-			(project "05_midi_to_cv_conductor"
-				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
-					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -8884,7 +8839,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74hct125.pdf?ts=1788702330811"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74ahct125.pdf"
 			(at 190.5 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -8918,46 +8873,46 @@
 			)
 		)
 		(pin "9"
-			(uuid "15491cb6-db90-4357-b1ed-42f07ec1da23")
+			(uuid "15491cb6-db90-4357-b1ed-42f07ec1da25")
 		)
 		(pin "7"
-			(uuid "f51eb35a-aabb-4ebf-ad35-29ae8bf3e22e")
+			(uuid "f51eb35a-aabb-4ebf-ad35-29ae8bf3e230")
 		)
 		(pin "10"
-			(uuid "d533687e-8140-4880-8461-ce34ec149cb5")
+			(uuid "d533687e-8140-4880-8461-ce34ec149cb7")
 		)
 		(pin "5"
-			(uuid "b78e07b5-84e6-4a84-bd05-1b69d76cbd34")
+			(uuid "b78e07b5-84e6-4a84-bd05-1b69d76cbd36")
 		)
 		(pin "11"
-			(uuid "48bee69b-fe00-4b19-b955-41e2845b7ddd")
+			(uuid "48bee69b-fe00-4b19-b955-41e2845b7ddf")
 		)
 		(pin "13"
-			(uuid "1ae23b0a-f83a-4900-9dfb-cdc9bbd74a1d")
+			(uuid "1ae23b0a-f83a-4900-9dfb-cdc9bbd74a1f")
 		)
 		(pin "4"
-			(uuid "b2741180-61a2-4dcb-90f7-2b493fce9ea2")
+			(uuid "b2741180-61a2-4dcb-90f7-2b493fce9ea4")
 		)
 		(pin "1"
-			(uuid "ba829a04-f3c1-4519-9eeb-a19ba2fd3974")
+			(uuid "ba829a04-f3c1-4519-9eeb-a19ba2fd3976")
 		)
 		(pin "12"
-			(uuid "2efbd00c-a506-4b1c-aa45-9a9e4cf856f3")
+			(uuid "2efbd00c-a506-4b1c-aa45-9a9e4cf856f5")
 		)
 		(pin "2"
-			(uuid "c6c90308-bf5c-4194-96ab-e01e8b76457a")
+			(uuid "c6c90308-bf5c-4194-96ab-e01e8b76457c")
 		)
 		(pin "8"
-			(uuid "fd4f318b-fb83-44ef-93bc-d8f0228ee974")
+			(uuid "fd4f318b-fb83-44ef-93bc-d8f0228ee976")
 		)
 		(pin "3"
-			(uuid "3d5af618-85dd-483c-be41-9f314a31f908")
+			(uuid "3d5af618-85dd-483c-be41-9f314a31f90a")
 		)
 		(pin "14"
-			(uuid "1d02deed-b77d-4e87-8d64-6755d8ad65b0")
+			(uuid "1d02deed-b77d-4e87-8d64-6755d8ad65b2")
 		)
 		(pin "6"
-			(uuid "d094dcc7-d793-471a-9890-5b9ec558b211")
+			(uuid "d094dcc7-d793-471a-9890-5b9ec558b213")
 		)
 		(instances
 			(project "05_midi_to_cv_conductor"
@@ -9041,88 +8996,6 @@
 			(project "05_midi_to_cv_conductor"
 				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
 					(reference "#PWR029")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Audio:AudioJack2")
-		(at 218.44 76.2 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a393d0e7-5426-49ae-a33e-4ab75bfe7ced")
-		(property "Reference" "J4"
-			(at 223.52 75.5649 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "AudioJack2"
-			(at 223.52 78.1049 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "cynthia:3.5mm jack mono"
-			(at 218.44 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 218.44 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Audio Jack, 2 Poles (Mono / TS)"
-			(at 218.44 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "T"
-			(uuid "fd03d4db-9fcb-42e1-8c70-112e91341fc0")
-		)
-		(pin "S"
-			(uuid "0d795d82-a9fe-4797-ad67-8464564d113e")
-		)
-		(instances
-			(project "05_midi_to_cv_conductor"
-				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
-					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -9251,7 +9124,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74hct125.pdf?ts=1788702330811"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74ahct125.pdf"
 			(at 132.08 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -9285,46 +9158,46 @@
 			)
 		)
 		(pin "9"
-			(uuid "15491cb6-db90-4357-b1ed-42f07ec1da23")
+			(uuid "15491cb6-db90-4357-b1ed-42f07ec1da26")
 		)
 		(pin "7"
-			(uuid "f51eb35a-aabb-4ebf-ad35-29ae8bf3e22e")
+			(uuid "f51eb35a-aabb-4ebf-ad35-29ae8bf3e231")
 		)
 		(pin "10"
-			(uuid "d533687e-8140-4880-8461-ce34ec149cb5")
+			(uuid "d533687e-8140-4880-8461-ce34ec149cb8")
 		)
 		(pin "5"
-			(uuid "b78e07b5-84e6-4a84-bd05-1b69d76cbd34")
+			(uuid "b78e07b5-84e6-4a84-bd05-1b69d76cbd37")
 		)
 		(pin "11"
-			(uuid "48bee69b-fe00-4b19-b955-41e2845b7ddd")
+			(uuid "48bee69b-fe00-4b19-b955-41e2845b7de0")
 		)
 		(pin "13"
-			(uuid "1ae23b0a-f83a-4900-9dfb-cdc9bbd74a1d")
+			(uuid "1ae23b0a-f83a-4900-9dfb-cdc9bbd74a20")
 		)
 		(pin "4"
-			(uuid "b2741180-61a2-4dcb-90f7-2b493fce9ea2")
+			(uuid "b2741180-61a2-4dcb-90f7-2b493fce9ea5")
 		)
 		(pin "1"
-			(uuid "ba829a04-f3c1-4519-9eeb-a19ba2fd3974")
+			(uuid "ba829a04-f3c1-4519-9eeb-a19ba2fd3977")
 		)
 		(pin "12"
-			(uuid "2efbd00c-a506-4b1c-aa45-9a9e4cf856f3")
+			(uuid "2efbd00c-a506-4b1c-aa45-9a9e4cf856f6")
 		)
 		(pin "2"
-			(uuid "c6c90308-bf5c-4194-96ab-e01e8b76457a")
+			(uuid "c6c90308-bf5c-4194-96ab-e01e8b76457d")
 		)
 		(pin "8"
-			(uuid "fd4f318b-fb83-44ef-93bc-d8f0228ee974")
+			(uuid "fd4f318b-fb83-44ef-93bc-d8f0228ee977")
 		)
 		(pin "3"
-			(uuid "3d5af618-85dd-483c-be41-9f314a31f908")
+			(uuid "3d5af618-85dd-483c-be41-9f314a31f90b")
 		)
 		(pin "14"
-			(uuid "1d02deed-b77d-4e87-8d64-6755d8ad65b0")
+			(uuid "1d02deed-b77d-4e87-8d64-6755d8ad65b3")
 		)
 		(pin "6"
-			(uuid "d094dcc7-d793-471a-9890-5b9ec558b211")
+			(uuid "d094dcc7-d793-471a-9890-5b9ec558b214")
 		)
 		(instances
 			(project "05_midi_to_cv_conductor"
@@ -9689,8 +9562,9 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 213.36 120.65 0)
+		(lib_id "cynthia:3.5mm thonk jack socket mono switched")
+		(at 218.44 97.79 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9698,11 +9572,20 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c22571af-61ba-410f-8b61-5e40e9ad691d")
-		(property "Reference" "#PWR039"
-			(at 213.36 127 0)
-			(hide yes)
+		(uuid "b73724f6-b987-438c-9a96-146a1a0b5a6e")
+		(property "Reference" "J6"
+			(at 223.52 97.7899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" ""
+			(at 218.44 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9711,19 +9594,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 213.36 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Module:RaspberryPi_Pico_Common_Unspecified"
-			(at 213.36 120.65 0)
+		(property "Footprint" "cynthia:3.5mm thonk jack socket mono switched"
+			(at 218.44 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9734,7 +9606,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 213.36 120.65 0)
+			(at 218.44 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9744,9 +9616,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 213.36 120.65 0)
-			(hide yes)
+		(property "Description" "Run"
+			(at 218.44 93.472 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9755,13 +9626,19 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "a982a11f-6805-4817-9933-fecf2029f94d")
+		(pin "TN"
+			(uuid "efee4bcd-9124-484f-b3bb-448759efdc5e")
+		)
+		(pin "T"
+			(uuid "da1791e7-b4e5-4b50-b0cd-c3e0a21327f9")
+		)
+		(pin "S"
+			(uuid "707f8549-6c5f-46e5-bc05-0058cb3034be")
 		)
 		(instances
 			(project "05_midi_to_cv_conductor"
 				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
-					(reference "#PWR039")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -9878,7 +9755,7 @@
 				)
 			)
 		)
-		(property "Footprint" "cynthia:Shrouded Header 8 pins"
+		(property "Footprint" "4ms_Connector:Pins_2x04_2.54mm_TH"
 			(at 212.725 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -10294,7 +10171,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74hct125.pdf?ts=1788702330811"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74ahct125.pdf"
 			(at 190.5 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -10328,46 +10205,46 @@
 			)
 		)
 		(pin "9"
-			(uuid "15491cb6-db90-4357-b1ed-42f07ec1da23")
+			(uuid "15491cb6-db90-4357-b1ed-42f07ec1da27")
 		)
 		(pin "7"
-			(uuid "f51eb35a-aabb-4ebf-ad35-29ae8bf3e22e")
+			(uuid "f51eb35a-aabb-4ebf-ad35-29ae8bf3e232")
 		)
 		(pin "10"
-			(uuid "d533687e-8140-4880-8461-ce34ec149cb5")
+			(uuid "d533687e-8140-4880-8461-ce34ec149cb9")
 		)
 		(pin "5"
-			(uuid "b78e07b5-84e6-4a84-bd05-1b69d76cbd34")
+			(uuid "b78e07b5-84e6-4a84-bd05-1b69d76cbd38")
 		)
 		(pin "11"
-			(uuid "48bee69b-fe00-4b19-b955-41e2845b7ddd")
+			(uuid "48bee69b-fe00-4b19-b955-41e2845b7de1")
 		)
 		(pin "13"
-			(uuid "1ae23b0a-f83a-4900-9dfb-cdc9bbd74a1d")
+			(uuid "1ae23b0a-f83a-4900-9dfb-cdc9bbd74a21")
 		)
 		(pin "4"
-			(uuid "b2741180-61a2-4dcb-90f7-2b493fce9ea2")
+			(uuid "b2741180-61a2-4dcb-90f7-2b493fce9ea6")
 		)
 		(pin "1"
-			(uuid "ba829a04-f3c1-4519-9eeb-a19ba2fd3974")
+			(uuid "ba829a04-f3c1-4519-9eeb-a19ba2fd3978")
 		)
 		(pin "12"
-			(uuid "2efbd00c-a506-4b1c-aa45-9a9e4cf856f3")
+			(uuid "2efbd00c-a506-4b1c-aa45-9a9e4cf856f7")
 		)
 		(pin "2"
-			(uuid "c6c90308-bf5c-4194-96ab-e01e8b76457a")
+			(uuid "c6c90308-bf5c-4194-96ab-e01e8b76457e")
 		)
 		(pin "8"
-			(uuid "fd4f318b-fb83-44ef-93bc-d8f0228ee974")
+			(uuid "fd4f318b-fb83-44ef-93bc-d8f0228ee978")
 		)
 		(pin "3"
-			(uuid "3d5af618-85dd-483c-be41-9f314a31f908")
+			(uuid "3d5af618-85dd-483c-be41-9f314a31f90c")
 		)
 		(pin "14"
-			(uuid "1d02deed-b77d-4e87-8d64-6755d8ad65b0")
+			(uuid "1d02deed-b77d-4e87-8d64-6755d8ad65b4")
 		)
 		(pin "6"
-			(uuid "d094dcc7-d793-471a-9890-5b9ec558b211")
+			(uuid "d094dcc7-d793-471a-9890-5b9ec558b215")
 		)
 		(instances
 			(project "05_midi_to_cv_conductor"
