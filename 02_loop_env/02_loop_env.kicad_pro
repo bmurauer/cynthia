@@ -596,12 +596,42 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Type",
+          "name": "Sim.Type",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": false,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -663,7 +693,7 @@
         "uuid": "4e0852a3-014c-4794-96b1-becb913625e2"
       }
     ],
-    "used_designators": "H1,#FLG1-3,#PWR1-45,C1-13,D1-12,J1-3,J5-6,TP1-2,R1-28,RV1-5,SW1-4,U1-4,Q1-4",
+    "used_designators": "H1,#FLG1-3,R_E3,#PWR1-45,C1-13,D1-12,J1-3,J5-6,TP1-2,R1-28,RV1-5,SW1-4,U1-4,Q1-4",
     "variants": []
   },
   "sheets": [
