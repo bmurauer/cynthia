@@ -147,7 +147,7 @@ calibration all happen on the player's own MCU. Each player carries:
 - An **STM32G0** MCU (see Component Notes).
 - A DAC on a short private SPI bus, plus an op-amp output stage to scale into the
   final CV range. Percussion-without-velocity players skip the DAC entirely.
-- A **MIDI learn button and LED** for configuration.
+- A **MIDI learn button** for configuration.
 - Local ±12V-to-3.3V regulation - only raw ±12V is distributed over the bus.
 - A small **SWD header** for firmware updates.
 
@@ -157,9 +157,8 @@ height constraint.
 ### Configuration by MIDI learn
 
 Players are configured in place, with no config bus and no central provisioning.
-Press the learn button, the LED blinks, and the next note-on captures its channel
-and note number. Percussion players cycle through their four slots on repeated
-presses. The result is written to a dedicated page of the STM32G0's internal flash.
+Press the learn button and the next note-on captures its channel and note number.
+Percussion players cycle through their four slots on repeated presses. The result is written to a dedicated page of the STM32G0's internal flash.
 
 Flash erase granularity on the G0 is 2KB, which is coarse, but configuration writes
 happen a handful of times in a module's life so wear is a non-issue. One reserved
@@ -274,10 +273,10 @@ above.
 hand-solderable, around $1.50 in ones, 64MHz Cortex-M0+, 32KB flash, 8KB SRAM. Pin
 budget is comfortable for both player types:
 
-| Player type | UART RX | SPI | Gates | Button | LED | Total GPIO |
-|---|---|---|---|---|---|---|
-| Melodic voice | 1 | 3 | 1 | 1 | 1 | 7 |
-| Percussion w/ velocity | 1 | 3 | 4 | 1 | 1 | 10 |
+| Player type | UART RX | SPI | Gates | Button | Total GPIO |
+|---|---|---|---|---|---|
+| Melodic voice | 1 | 3 | 1 | 1 | 6 |
+| Percussion w/ velocity | 1 | 3 | 4 | 1 | 9 |
 
 TSSOP-20 leaves roughly 14 usable pins after power, SWD and NRST, so both fit with
 room to spare. Larger packages (LQFP-32, UFQFPN-28) exist in the same family if a
@@ -310,9 +309,10 @@ are happy, and the whole digital side matches the Pico natively with no level
 shifting on the bus.
 
 Gates therefore emerge at 0-3.3V and need one small output stage to reach the gate
-standard. Either a **74HCT244 on a 5V rail** (TTL thresholds accept 3.3V input
-directly, non-inverting, 8 gates per chip) or **one 2N7002 plus a pull-up per gate**
-(no extra rail, but inverting, so firmware flips the bit).
+standard, fixed at **0/+5V** (more common in commercial modules than the 0/+10V used
+in `kosmo_poly_midi_2_cv`). Either a **74HCT244 on a 5V rail** (TTL thresholds accept
+3.3V input directly, non-inverting, 8 gates per chip) or **one 2N7002 plus a 5V
+pull-up per gate** (no extra rail, but inverting, so firmware flips the bit).
 
 Suggested rails, cascading rather than dropping 12V straight to 3.3V:
 
@@ -392,8 +392,6 @@ ever needed again.
   trimmer, matching existing practice in `kosmo_poly_midi_2_cv`. A software
   calibration in flash is possible, but with no measurement path a player cannot
   calibrate itself, so a human adjusting a trimmer is the pragmatic answer.
-- **Gate voltage standard**: leaning 0/+5V (more common in commercial modules than
-  the 0/+10V used in `kosmo_poly_midi_2_cv`), not yet fixed.
 - **Conductor clock outputs**: assumed that "handles clock/start/stop" means the
   conductor carries its own clock / run / reset output jacks on its panel. Needs
   confirming - it also decides how much panel space the conductor needs.
