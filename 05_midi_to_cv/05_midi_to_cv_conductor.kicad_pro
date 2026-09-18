@@ -673,7 +673,7 @@
         "uuid": "635df8d2-30ad-49c7-b857-ac73a548999a"
       }
     ],
-    "used_designators": "U1-2,R1-9,J1-7,IC1-3,A1,C1-9,D1-3,H1,#FLG1-5,#PWR1-39",
+    "used_designators": "U1-2,R1-9,J1-13,IC1-3,A1,C1-9,D1-3,H1,#FLG1-5,#PWR1-41",
     "variants": []
   },
   "sheets": [
@@ -682,16 +682,8 @@
       "05_midi_to_cv_conductor"
     ],
     [
-      "c8efcd09-957b-4e2f-8782-6a98e78db6d8",
-      "midi input"
-    ],
-    [
-      "b6389724-593a-49cb-968c-b38a0b504519",
-      "midi input1"
-    ],
-    [
-      "9f769644-55b0-43f2-ab95-8e1baf68e5f5",
-      "midi input2"
+      "3797abe7-9acb-490a-8f43-011e95dedf83",
+      "ui"
     ]
   ],
   "text_variables": {},
