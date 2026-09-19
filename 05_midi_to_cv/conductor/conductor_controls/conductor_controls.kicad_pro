@@ -240,7 +240,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "0.1"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -488,7 +488,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "player_drum_velocity.kicad_pro",
+    "filename": "conductor_controls.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -656,18 +656,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "player_drum_velocity.kicad_sch",
-        "name": "player_drum_velocity",
-        "uuid": "56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
+        "filename": "conductor_controls.kicad_sch",
+        "name": "Root",
+        "uuid": "c8b84ee8-da66-4afc-a596-179089b16155"
       }
     ],
-    "used_designators": "SW1-2,RV1,R1-13,Q1-2,U1-7,C1-10,D3,#FLG1-8,J1-7,#PWR1-42",
+    "used_designators": "R1-9,IC1-3,C1-3,#FLG1-2,J1-11,#PWR1-19,#PWR26,#PWR40-41",
     "variants": []
   },
   "sheets": [
     [
-      "56a398e6-7b9d-4862-a4a8-33772f6f7ce2",
-      "player_drum_velocity"
+      "c8b84ee8-da66-4afc-a596-179089b16155",
+      "Root"
     ]
   ],
   "text_variables": {},

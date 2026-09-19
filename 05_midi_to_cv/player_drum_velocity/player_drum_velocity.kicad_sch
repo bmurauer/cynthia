@@ -3200,7 +3200,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "cynthia:3.5mm thonk jack socket mono switched"
+		(symbol "cynthia:3.5mm jack mono switched"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -3263,7 +3263,7 @@
 					)
 				)
 			)
-			(symbol "3.5mm thonk jack socket mono switched_0_1"
+			(symbol "3.5mm jack mono switched_0_1"
 				(polyline
 					(pts
 						(xy 2.54 1.27) (xy 1.778 1.27) (xy 1.27 0.762) (xy 0.762 1.27)
@@ -3289,7 +3289,7 @@
 					)
 				)
 			)
-			(symbol "3.5mm thonk jack socket mono switched_1_1"
+			(symbol "3.5mm jack mono switched_1_1"
 				(rectangle
 					(start -3.81 1.905)
 					(end -2.54 -1.905)
@@ -5069,7 +5069,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0280055d-e49e-472e-b8cf-6239e2b9dc49")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR027"
 			(at 172.72 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -5130,7 +5130,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR08")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -5148,7 +5148,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "03458fb4-e2f0-4d73-a51e-11de60b6087c")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR014"
 			(at 83.82 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -5209,7 +5209,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR015")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -5227,7 +5227,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "064e8094-839f-4d25-bf66-9571412acc3a")
-		(property "Reference" "C7"
+		(property "Reference" "C6"
 			(at 120.65 182.8799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5302,7 +5302,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "C7")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -5320,7 +5320,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "09c9b86b-0476-447c-83af-5a1f879796d3")
-		(property "Reference" "#FLG06"
+		(property "Reference" "#FLG03"
 			(at 54.61 178.435 0)
 			(hide yes)
 			(show_name no)
@@ -5381,7 +5381,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#FLG06")
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -5399,7 +5399,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1627a626-a96e-4f0e-acbb-5b0c62505c74")
-		(property "Reference" "R10"
+		(property "Reference" "R5"
 			(at 228.6 26.67 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5461,7 +5461,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "R10")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -5479,7 +5479,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "16db67f1-2013-41e7-9000-a77398d80d09")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR010"
 			(at 54.61 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -5540,7 +5540,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR026")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -5558,7 +5558,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1bd3c41a-56f5-4e96-921b-53eab6b2b391")
-		(property "Reference" "U5"
+		(property "Reference" "U1"
 			(at 210.82 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5638,7 +5638,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "U5")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -5656,7 +5656,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1fb14ee0-4763-4462-bd2a-1a97e1b9416f")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR026"
 			(at 172.72 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -5716,7 +5716,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR034")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -5734,7 +5734,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2019d913-f209-48fe-9688-211332d5fccd")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR02"
 			(at 19.05 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -5794,7 +5794,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR029")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -5812,7 +5812,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "215e6838-9204-4867-b79a-3b985579e170")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR033"
 			(at 241.3 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -5873,7 +5873,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR041")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -5891,7 +5891,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "250c58e9-caa5-489d-ad1b-1a02b4fef7f3")
-		(property "Reference" "C10"
+		(property "Reference" "C2"
 			(at 22.86 156.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5966,7 +5966,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "C10")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -5984,7 +5984,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "291c5fb2-1d99-4b64-a73b-f54a7dcf4a66")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR025"
 			(at 156.21 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -6045,7 +6045,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR022")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -6063,7 +6063,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a272697-d727-4dc4-9793-0c815aba9fd0")
-		(property "Reference" "R6"
+		(property "Reference" "R7"
 			(at 228.6 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6125,7 +6125,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "R6")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -6143,7 +6143,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2de63bb6-9260-4ff0-b89e-eb1be15078b3")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR08"
 			(at 40.64 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -6204,7 +6204,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR025")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -6222,7 +6222,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "39a29803-c7f2-4db9-8453-73e09efc778c")
-		(property "Reference" "R12"
+		(property "Reference" "R3"
 			(at 185.42 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6284,7 +6284,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "R12")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -6302,7 +6302,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3f2fc3d2-91d4-4fde-bc81-341701a543e2")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR012"
 			(at 63.5 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -6362,7 +6362,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR014")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -6380,7 +6380,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4663c008-1bb3-4cfb-a3b4-86092a2a92f9")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR019"
 			(at 116.84 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -6440,7 +6440,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR020")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -6458,7 +6458,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4679118e-d495-4046-832e-e8cdf0a78746")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR017"
 			(at 104.14 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -6519,7 +6519,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR039")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -6615,7 +6615,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "49ab9563-0610-402d-bb94-0d5725d11500")
-		(property "Reference" "#FLG04"
+		(property "Reference" "#FLG02"
 			(at 31.75 180.975 0)
 			(hide yes)
 			(show_name no)
@@ -6676,7 +6676,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#FLG04")
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -6694,7 +6694,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "534722c8-c260-406f-a65a-86324919d70f")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR029"
 			(at 175.26 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -6755,7 +6755,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR011")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -6773,7 +6773,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "557f71af-f18b-4fe8-8259-8abe93dde3b5")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR022"
 			(at 152.4 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -6834,7 +6834,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR07")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -6852,7 +6852,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "57d35aac-988e-4657-ad47-f9dd1ebfb31f")
-		(property "Reference" "U5"
+		(property "Reference" "U1"
 			(at 34.29 152.3999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6934,7 +6934,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "U5")
+					(reference "U1")
 					(unit 3)
 				)
 			)
@@ -6952,7 +6952,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5802c2ed-cdd2-4487-a7c8-ce331a9b26e5")
-		(property "Reference" "J1"
+		(property "Reference" "J2"
 			(at 42.545 17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7023,7 +7023,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "J1")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -7041,7 +7041,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "59ceb419-351d-41f6-807f-491b8e46a9fb")
-		(property "Reference" "C1"
+		(property "Reference" "C8"
 			(at 162.56 67.31 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7103,14 +7103,14 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "C1")
+					(reference "C8")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "cynthia:3.5mm thonk jack socket mono switched")
+		(lib_id "cynthia:3.5mm jack mono switched")
 		(at 241.3 34.29 0)
 		(mirror y)
 		(unit 1)
@@ -7120,10 +7120,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5f07f859-f150-4f98-aa47-415376688e72")
-		(property "Reference" "J2"
-			(at 246.38 33.0199 0)
+		(property "Reference" "J3"
+			(at 246.38 34.2899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7166,14 +7165,13 @@
 			)
 		)
 		(property "Description" "GATE 1"
-			(at 246.38 35.5599 0)
+			(at 252.476 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(pin "S"
@@ -7188,7 +7186,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "J2")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -7206,7 +7204,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "604811d9-23fc-4dc2-bd08-222500ea5047")
-		(property "Reference" "#FLG05"
+		(property "Reference" "#FLG01"
 			(at 30.48 178.435 0)
 			(hide yes)
 			(show_name no)
@@ -7267,14 +7265,14 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#FLG05")
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "cynthia:3.5mm thonk jack socket mono switched")
+		(lib_id "cynthia:3.5mm jack mono switched")
 		(at 241.3 52.07 0)
 		(mirror y)
 		(unit 1)
@@ -7284,10 +7282,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "66991314-9100-42ec-bca1-b612173f3416")
-		(property "Reference" "J6"
-			(at 246.38 50.7999 0)
+		(property "Reference" "J4"
+			(at 246.38 52.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7330,14 +7327,13 @@
 			)
 		)
 		(property "Description" "GATE 2"
-			(at 246.38 53.3399 0)
+			(at 252.476 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(pin "S"
@@ -7352,7 +7348,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "J6")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -7448,7 +7444,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69544fb7-c5d2-44b8-be7d-fcbb2a3efed4")
-		(property "Reference" "U1"
+		(property "Reference" "U2"
 			(at 56.7533 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7567,7 +7563,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "U1")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -7805,7 +7801,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "723c0d2c-ee93-42f5-89f6-0197935d96f4")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR016"
 			(at 102.87 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -7866,14 +7862,14 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR017")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "cynthia:3.5mm thonk jack socket mono switched")
+		(lib_id "cynthia:3.5mm jack mono switched")
 		(at 241.3 99.06 0)
 		(mirror y)
 		(unit 1)
@@ -7884,7 +7880,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7acd2e63-278c-420b-bd84-da84ec66784c")
-		(property "Reference" "J3"
+		(property "Reference" "J6"
 			(at 246.38 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7928,7 +7924,7 @@
 			)
 		)
 		(property "Description" "VELOCITY 2"
-			(at 250.952 101.346 0)
+			(at 254.254 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7949,7 +7945,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "J3")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -7967,7 +7963,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7bb7f0dd-7350-469e-b725-37a696abbae3")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR024"
 			(at 156.21 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -8027,7 +8023,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR021")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -8045,7 +8041,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "880367bf-2aab-4fe8-9365-c5cabf6ac58e")
-		(property "Reference" "R8"
+		(property "Reference" "R1"
 			(at 163.83 31.75 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8107,7 +8103,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "R8")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -8125,7 +8121,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "887fa84a-36a3-4f95-8a1c-1684f8d6fdb7")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR030"
 			(at 196.85 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -8185,7 +8181,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR042")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -8203,7 +8199,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8afa60ca-bac1-45b1-87bd-743d5ba89819")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR03"
 			(at 19.05 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -8264,7 +8260,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR030")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -8282,7 +8278,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8d458fef-66f7-4628-8b21-80d256f00027")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR07"
 			(at 33.02 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -8342,7 +8338,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR010")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -8360,7 +8356,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92aed057-5925-4b14-abe6-aa0bc4be6323")
-		(property "Reference" "U2"
+		(property "Reference" "U4"
 			(at 137.16 173.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8425,7 +8421,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "U2")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -8443,7 +8439,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9476bc64-25af-4497-ad5c-e85cba811dd4")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR013"
 			(at 63.5 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -8504,7 +8500,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR016")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -8522,7 +8518,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "956dfcce-4de0-4630-ab11-2d874eedc828")
-		(property "Reference" "C6"
+		(property "Reference" "C5"
 			(at 105.41 182.4481 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8597,7 +8593,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "C6")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -8615,7 +8611,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "96bc6a91-1760-451b-9d46-b8f59f459298")
-		(property "Reference" "R13"
+		(property "Reference" "R4"
 			(at 194.31 39.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8679,14 +8675,14 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "R13")
+					(reference "R4")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "cynthia:3.5mm thonk jack socket mono switched")
+		(lib_id "cynthia:3.5mm jack mono switched")
 		(at 241.3 71.12 0)
 		(mirror y)
 		(unit 1)
@@ -8697,7 +8693,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a16a2ee9-c1c0-4bb9-9bde-b1176cfbe4d8")
-		(property "Reference" "J4"
+		(property "Reference" "J5"
 			(at 246.38 71.1199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8741,7 +8737,7 @@
 			)
 		)
 		(property "Description" "VELOCITY 1"
-			(at 248.92 73.152 0)
+			(at 255.016 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8762,7 +8758,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "J4")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -8780,7 +8776,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a4d3d5cd-1839-4f03-a4b3-4b93aa717f4e")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR018"
 			(at 116.84 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -8841,7 +8837,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR040")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -8859,7 +8855,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a67d5e45-be44-46cc-a969-34ff15dff1d9")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR021"
 			(at 137.16 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -8920,7 +8916,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR019")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -8938,7 +8934,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a7591035-0cab-4576-8060-7e6634f6432e")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR05"
 			(at 19.05 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -8998,7 +8994,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR06")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -9016,7 +9012,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a8ab8ed9-dfa2-45ef-bdb0-c1ef3d0080b6")
-		(property "Reference" "J5"
+		(property "Reference" "J1"
 			(at 43.18 173.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9143,7 +9139,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "J5")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -9161,7 +9157,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b186fe9b-da3b-4506-b663-b8763e3f42d3")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR09"
 			(at 54.61 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -9221,7 +9217,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR024")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -9239,7 +9235,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b1c39da5-eb7e-4898-aa7b-55a941e49bbb")
-		(property "Reference" "C9"
+		(property "Reference" "C1"
 			(at 22.86 148.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9314,7 +9310,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "C9")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -9332,7 +9328,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b538be0f-9d34-47ed-82b2-40c1f1d7260f")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR031"
 			(at 196.85 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -9393,7 +9389,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR012")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -9411,7 +9407,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b9f00b64-0984-4f9c-87bd-b7bc951455a5")
-		(property "Reference" "U5"
+		(property "Reference" "U1"
 			(at 210.82 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9491,7 +9487,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "U5")
+					(reference "U1")
 					(unit 2)
 				)
 			)
@@ -9509,7 +9505,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bbca79e3-90c8-4256-9985-e05c407052f6")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR032"
 			(at 241.3 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -9570,7 +9566,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR038")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -9588,7 +9584,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bc0b3b74-6534-4fc0-a324-3d1ebe7a9f19")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR01"
 			(at 13.97 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -9649,7 +9645,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR033")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -9667,7 +9663,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bc316367-596a-4a6c-b908-92e45ed69329")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR034"
 			(at 241.3 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -9728,7 +9724,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR036")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -9829,7 +9825,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bd45e945-8958-4ec8-bb76-36828e6454bc")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR020"
 			(at 116.84 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -9890,7 +9886,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR023")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -9908,7 +9904,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be0024e9-dd52-4807-8334-01f9598fa285")
-		(property "Reference" "U4"
+		(property "Reference" "U5"
 			(at 174.8633 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9990,7 +9986,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "U4")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -10008,7 +10004,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c401ee31-ed88-4d9f-9f5c-58ad9405f49f")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR04"
 			(at 19.05 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -10068,7 +10064,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR027")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -10086,7 +10082,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4ccaf49-6da9-4beb-8c9d-471566ce1dde")
-		(property "Reference" "R5"
+		(property "Reference" "R8"
 			(at 228.6 91.44 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10148,7 +10144,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "R5")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -10166,7 +10162,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c705306d-f3d9-4289-ae71-79a9d4a59126")
-		(property "Reference" "C4"
+		(property "Reference" "C7"
 			(at 160.02 182.8799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10241,7 +10237,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "C4")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -10259,7 +10255,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cc15ebaa-b38a-4051-a3c1-41dc0740a4be")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR06"
 			(at 33.02 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -10319,7 +10315,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR032")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -10337,7 +10333,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cf1810e1-5670-4f20-b7ac-002669b98e66")
-		(property "Reference" "R11"
+		(property "Reference" "R6"
 			(at 228.6 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10399,7 +10395,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "R11")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -10417,7 +10413,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d7f6e5a0-3968-4f25-b284-ebe715642125")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR015"
 			(at 102.87 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -10477,7 +10473,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR018")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -10495,7 +10491,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d8f842e5-8366-4d8d-af1e-e7c9a7b7e066")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR028"
 			(at 175.26 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -10555,7 +10551,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR035")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -10573,7 +10569,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dddcacf8-7508-4855-ac67-8bc4a54e3980")
-		(property "Reference" "R9"
+		(property "Reference" "R2"
 			(at 172.72 26.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10637,7 +10633,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "R9")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -10655,7 +10651,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e169ab2d-6898-4392-9d24-1ba89d830cc0")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR035"
 			(at 241.3 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -10716,7 +10712,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR037")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -10734,7 +10730,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e2dc1b65-9181-4f74-b518-68ec6ae07dc3")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR011"
 			(at 54.61 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -10794,7 +10790,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR028")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -10812,7 +10808,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e55c6396-44bb-4365-90d6-54b68e77b6c1")
-		(property "Reference" "C8"
+		(property "Reference" "C3"
 			(at 44.45 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10887,7 +10883,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "C8")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -10905,7 +10901,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e770ad12-74a3-45d6-8860-5c1e7bed7305")
-		(property "Reference" "C5"
+		(property "Reference" "C4"
 			(at 66.04 182.4481 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10980,7 +10976,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "C5")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -10998,7 +10994,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ee2a95ab-f7b8-465d-b67f-e3eda8ebfb4a")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR023"
 			(at 152.4 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -11059,7 +11055,7 @@
 		(instances
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
-					(reference "#PWR09")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)

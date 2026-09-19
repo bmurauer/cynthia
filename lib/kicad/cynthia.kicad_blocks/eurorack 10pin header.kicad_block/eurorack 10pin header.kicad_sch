@@ -2,7 +2,7 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid "635df8d2-30ad-49c7-b857-ac73a548999a")
+	(uuid "9da90fdc-557b-46e9-a958-1de885f21d16")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_02x05_Odd_Even"
@@ -1227,86 +1227,80 @@
 		)
 	)
 	(junction
-		(at 53.34 168.91)
+		(at 140.97 146.05)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2032f466-8a3b-47a9-8d0a-7637cc2d02f2")
 	)
 	(junction
-		(at 66.04 161.29)
+		(at 153.67 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2c94ecc1-17dc-42ca-950b-01418d0a2f37")
 	)
 	(junction
-		(at 66.04 166.37)
+		(at 153.67 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3e4b5747-cd93-484b-806c-2c3d9ff53316")
 	)
 	(junction
-		(at 86.36 171.45)
+		(at 173.99 148.59)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5b5fe72b-afa7-44a1-98a1-f3841ba37224")
 	)
 	(junction
-		(at 66.04 171.45)
+		(at 153.67 148.59)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "66f0e5da-06f4-4adf-8f98-49992485d4b5")
 	)
 	(junction
-		(at 91.44 171.45)
+		(at 179.07 148.59)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "875aef87-9060-4887-9610-7081b35a694f")
 	)
 	(junction
-		(at 91.44 161.29)
+		(at 179.07 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8f01b894-6198-4c67-8bf1-c7bc4307199e")
 	)
 	(junction
-		(at 74.8933 161.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "958e9d6e-fae8-4774-bc6b-354f2ed87748")
-	)
-	(junction
-		(at 69.85 166.37)
+		(at 157.48 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "99d519ba-5167-495b-b198-23c7a63b1d19")
 	)
 	(junction
-		(at 53.34 166.37)
+		(at 140.97 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9bd237eb-16c5-47d2-9fd0-4d6daa3407ae")
 	)
 	(junction
-		(at 66.04 168.91)
+		(at 153.67 146.05)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a2186fe1-43eb-4639-af7a-86b8b7d46c82")
 	)
 	(junction
-		(at 91.44 166.37)
+		(at 179.07 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b785dd56-7b9b-4811-a0ae-e30259a43636")
 	)
 	(junction
-		(at 86.36 161.29)
+		(at 173.99 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f6ef912d-3fa0-46e0-8b95-670490ba0c11")
 	)
 	(wire
 		(pts
-			(xy 66.04 166.37) (xy 69.85 166.37)
+			(xy 153.67 143.51) (xy 157.48 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1316,7 +1310,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 158.75) (xy 66.04 161.29)
+			(xy 153.67 135.89) (xy 153.67 138.43)
 		)
 		(stroke
 			(width 0)
@@ -1326,7 +1320,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 171.45) (xy 82.55 171.45)
+			(xy 173.99 148.59) (xy 170.18 148.59)
 		)
 		(stroke
 			(width 0)
@@ -1336,7 +1330,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 166.37) (xy 91.44 166.37)
+			(xy 157.48 143.51) (xy 179.07 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1346,7 +1340,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 161.29) (xy 82.55 161.29)
+			(xy 173.99 138.43) (xy 170.18 138.43)
 		)
 		(stroke
 			(width 0)
@@ -1356,7 +1350,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 171.45) (xy 74.93 171.45)
+			(xy 153.67 148.59) (xy 162.56 148.59)
 		)
 		(stroke
 			(width 0)
@@ -1366,7 +1360,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 166.37) (xy 53.34 168.91)
+			(xy 140.97 143.51) (xy 140.97 146.05)
 		)
 		(stroke
 			(width 0)
@@ -1376,17 +1370,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.8933 161.29) (xy 74.93 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6548143d-5798-4afa-84d2-954d1250c4dd")
-	)
-	(wire
-		(pts
-			(xy 66.04 173.99) (xy 66.04 171.45)
+			(xy 153.67 151.13) (xy 153.67 148.59)
 		)
 		(stroke
 			(width 0)
@@ -1396,7 +1380,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 163.83) (xy 53.34 166.37)
+			(xy 140.97 140.97) (xy 140.97 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1406,7 +1390,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 168.91) (xy 66.04 168.91)
+			(xy 140.97 146.05) (xy 153.67 146.05)
 		)
 		(stroke
 			(width 0)
@@ -1416,7 +1400,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 166.37) (xy 66.04 168.91)
+			(xy 153.67 143.51) (xy 153.67 146.05)
 		)
 		(stroke
 			(width 0)
@@ -1426,7 +1410,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 163.83) (xy 66.04 166.37)
+			(xy 153.67 140.97) (xy 153.67 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1436,7 +1420,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 171.45) (xy 86.36 171.45)
+			(xy 179.07 148.59) (xy 173.99 148.59)
 		)
 		(stroke
 			(width 0)
@@ -1446,7 +1430,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 173.99) (xy 66.04 173.99)
+			(xy 140.97 151.13) (xy 153.67 151.13)
 		)
 		(stroke
 			(width 0)
@@ -1456,7 +1440,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 158.75) (xy 66.04 158.75)
+			(xy 140.97 135.89) (xy 153.67 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1466,7 +1450,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 161.29) (xy 74.8933 161.29)
+			(xy 153.67 138.43) (xy 162.56 138.43)
 		)
 		(stroke
 			(width 0)
@@ -1476,7 +1460,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 171.45) (xy 53.34 173.99)
+			(xy 140.97 148.59) (xy 140.97 151.13)
 		)
 		(stroke
 			(width 0)
@@ -1486,7 +1470,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 161.29) (xy 53.34 158.75)
+			(xy 140.97 138.43) (xy 140.97 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1496,7 +1480,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 161.29) (xy 86.36 161.29)
+			(xy 179.07 138.43) (xy 173.99 138.43)
 		)
 		(stroke
 			(width 0)
@@ -1506,7 +1490,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_Small_US")
-		(at 91.44 163.83 0)
+		(at 179.07 140.97 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1517,7 +1501,7 @@
 		(fields_autoplaced yes)
 		(uuid "0b34f4a6-4b65-4926-bd02-2ba9c9755e50")
 		(property "Reference" "C1"
-			(at 93.98 162.1281 0)
+			(at 181.61 139.2681 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1528,7 +1512,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 93.98 164.6681 0)
+			(at 181.61 141.8081 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1538,8 +1522,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
-			(at 91.44 163.83 0)
+		(property "Footprint" "cynthia:CP_Radial_D6.3mm_P2.50mm"
+			(at 179.07 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1550,7 +1534,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 163.83 0)
+			(at 179.07 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1561,7 +1545,18 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, small US symbol"
-			(at 91.44 163.83 0)
+			(at 179.07 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "capacitor/THT/other"
+			(at 179.07 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1584,7 +1579,7 @@
 					(unit 1)
 				)
 			)
-			(project "05_midi_to_cv_conductor"
+			(project "conductor_main"
 				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
 					(reference "C1")
 					(unit 1)
@@ -1600,7 +1595,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 86.36 171.45 180)
+		(at 173.99 148.59 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1611,7 +1606,7 @@
 		(fields_autoplaced yes)
 		(uuid "0b5ada2d-b62d-4faf-ac83-6402040be36d")
 		(property "Reference" "#FLG03"
-			(at 86.36 173.355 0)
+			(at 173.99 150.495 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1622,7 +1617,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 86.36 176.53 0)
+			(at 173.99 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1633,7 +1628,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 171.45 0)
+			(at 173.99 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1644,7 +1639,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 171.45 0)
+			(at 173.99 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1655,7 +1650,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 86.36 171.45 0)
+			(at 173.99 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1675,7 +1670,7 @@
 					(unit 1)
 				)
 			)
-			(project "05_midi_to_cv_conductor"
+			(project "conductor_main"
 				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
 					(reference "#FLG03")
 					(unit 1)
@@ -1691,87 +1686,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N5819WS")
-		(at 78.7033 161.29 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "157c706b-f16b-4920-bab5-75b44f4cc696")
-		(property "Reference" "D2"
-			(at 79.0208 154.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1N5819HW-7-F"
-			(at 79.0208 157.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 78.7033 156.845 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 78.7033 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "40V 600mV@1A 1A SOD-123 Schottky Barrier Diodes"
-			(at 78.7033 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "e53d5217-6945-4862-8289-cec19813009f")
-		)
-		(pin "1"
-			(uuid "4f966d7d-89c7-443c-b67a-f9254fbcbf24")
-		)
-		(instances
-			(project "05_midi_to_cv_conductor"
-				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1N5819WS")
-		(at 78.74 171.45 0)
+		(at 166.37 148.59 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1782,7 +1697,7 @@
 		(fields_autoplaced yes)
 		(uuid "400aa32a-c1ef-4606-aa85-2670797a7639")
 		(property "Reference" "D1"
-			(at 78.4225 165.1 0)
+			(at 166.0525 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1792,7 +1707,7 @@
 			)
 		)
 		(property "Value" "1N5819HW-7-F"
-			(at 78.4225 167.64 0)
+			(at 166.0525 144.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1802,7 +1717,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 78.74 175.895 0)
+			(at 166.37 153.035 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1812,8 +1727,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 78.74 171.45 0)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
+			(at 166.37 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1823,8 +1738,8 @@
 				)
 			)
 		)
-		(property "Description" "40V 600mV@1A 1A SOD-123 Schottky Barrier Diodes"
-			(at 78.74 171.45 0)
+		(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
+			(at 166.37 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1841,7 +1756,7 @@
 			(uuid "86f815a7-6945-4810-b6de-de308a82cfe1")
 		)
 		(instances
-			(project "05_midi_to_cv_conductor"
+			(project "conductor_main"
 				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
 					(reference "D1")
 					(unit 1)
@@ -1850,8 +1765,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N5819WS")
+		(at 166.37 138.43 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "65d17fcb-5325-4ea6-a51e-9b38a38e0aa5")
+		(property "Reference" "D2"
+			(at 166.6875 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5819HW-7-F"
+			(at 166.6875 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 166.37 133.985 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
+			(at 166.37 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
+			(at 166.37 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "63a41818-aaf8-4670-897a-44ab54848de4")
+		)
+		(pin "1"
+			(uuid "46b53448-3c0b-408a-a05a-3c6cb605a61a")
+		)
+		(instances
+			(project "conductor_main"
+				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 69.85 166.37 0)
+		(at 157.48 143.51 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1861,8 +1856,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6f5aab91-dec9-443b-b595-d8333e20f8f0")
-		(property "Reference" "#PWR01"
-			(at 69.85 172.72 0)
+		(property "Reference" "#PWR03"
+			(at 157.48 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1873,7 +1868,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 69.85 171.45 0)
+			(at 157.48 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1884,7 +1879,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 166.37 0)
+			(at 157.48 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1895,7 +1890,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 166.37 0)
+			(at 157.48 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1906,7 +1901,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 69.85 166.37 0)
+			(at 157.48 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1926,7 +1921,7 @@
 					(unit 1)
 				)
 			)
-			(project "05_midi_to_cv_conductor"
+			(project "conductor_main"
 				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
 					(reference "#PWR01")
 					(unit 1)
@@ -1942,7 +1937,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_Small_US")
-		(at 91.44 168.91 0)
+		(at 179.07 146.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1953,7 +1948,7 @@
 		(fields_autoplaced yes)
 		(uuid "703d9ab8-1c03-41e1-a6b3-76d3a61a5d43")
 		(property "Reference" "C2"
-			(at 93.98 167.2081 0)
+			(at 181.61 144.3481 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1964,7 +1959,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 93.98 169.7481 0)
+			(at 181.61 146.8881 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1974,8 +1969,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
-			(at 91.44 168.91 0)
+		(property "Footprint" "cynthia:CP_Radial_D6.3mm_P2.50mm"
+			(at 179.07 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1986,7 +1981,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 168.91 0)
+			(at 179.07 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1997,7 +1992,18 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, small US symbol"
-			(at 91.44 168.91 0)
+			(at 179.07 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "capacitor/THT/other"
+			(at 179.07 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2020,7 +2026,7 @@
 					(unit 1)
 				)
 			)
-			(project "05_midi_to_cv_conductor"
+			(project "conductor_main"
 				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
 					(reference "C2")
 					(unit 1)
@@ -2036,7 +2042,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 86.36 161.29 0)
+		(at 173.99 138.43 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2047,7 +2053,7 @@
 		(fields_autoplaced yes)
 		(uuid "9a2a8315-51d7-4329-91e1-c35808f41992")
 		(property "Reference" "#FLG02"
-			(at 86.36 159.385 0)
+			(at 173.99 136.525 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2058,7 +2064,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 86.36 156.21 0)
+			(at 173.99 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2069,7 +2075,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 161.29 0)
+			(at 173.99 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2080,7 +2086,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 161.29 0)
+			(at 173.99 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2091,7 +2097,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 86.36 161.29 0)
+			(at 173.99 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2111,7 +2117,7 @@
 					(unit 1)
 				)
 			)
-			(project "05_midi_to_cv_conductor"
+			(project "conductor_main"
 				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
 					(reference "#FLG02")
 					(unit 1)
@@ -2127,7 +2133,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x05_Odd_Even")
-		(at 58.42 166.37 0)
+		(at 146.05 143.51 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2138,7 +2144,7 @@
 		(fields_autoplaced yes)
 		(uuid "9b9d683e-ad51-4a49-8772-0288642e220b")
 		(property "Reference" "H1"
-			(at 59.69 154.94 0)
+			(at 147.32 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2148,7 +2154,7 @@
 			)
 		)
 		(property "Value" "Eurorack 10 pin header"
-			(at 59.69 157.48 0)
+			(at 147.32 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2158,7 +2164,7 @@
 			)
 		)
 		(property "Footprint" "cynthia:Eurorack Header"
-			(at 58.42 166.37 0)
+			(at 146.05 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2169,7 +2175,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 166.37 0)
+			(at 146.05 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2180,7 +2186,18 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 58.42 166.37 0)
+			(at 146.05 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "connector/pin_header_socket"
+			(at 146.05 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2227,7 +2244,7 @@
 					(unit 1)
 				)
 			)
-			(project "05_midi_to_cv_conductor"
+			(project "conductor_main"
 				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
 					(reference "H1")
 					(unit 1)
@@ -2243,7 +2260,7 @@
 	)
 	(symbol
 		(lib_id "power:-12V")
-		(at 91.44 171.45 180)
+		(at 179.07 148.59 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2253,8 +2270,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ecc636c-7b7d-4528-a17e-6436999a8a99")
-		(property "Reference" "#PWR03"
-			(at 91.44 167.64 0)
+		(property "Reference" "#PWR05"
+			(at 179.07 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2265,7 +2282,7 @@
 			)
 		)
 		(property "Value" "-12V"
-			(at 91.44 176.53 0)
+			(at 179.07 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2275,7 +2292,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 171.45 0)
+			(at 179.07 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2286,7 +2303,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 171.45 0)
+			(at 179.07 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2297,7 +2314,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"-12V\""
-			(at 91.44 171.45 0)
+			(at 179.07 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2317,7 +2334,7 @@
 					(unit 1)
 				)
 			)
-			(project "05_midi_to_cv_conductor"
+			(project "conductor_main"
 				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
 					(reference "#PWR03")
 					(unit 1)
@@ -2333,7 +2350,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 91.44 161.29 0)
+		(at 179.07 138.43 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2343,8 +2360,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "edcf8882-8d7f-4919-becf-b036a4b0bb38")
-		(property "Reference" "#PWR02"
-			(at 91.44 165.1 0)
+		(property "Reference" "#PWR04"
+			(at 179.07 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2355,7 +2372,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 91.44 156.21 0)
+			(at 179.07 133.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2365,7 +2382,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 161.29 0)
+			(at 179.07 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2376,7 +2393,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 161.29 0)
+			(at 179.07 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2387,7 +2404,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 91.44 161.29 0)
+			(at 179.07 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2407,7 +2424,7 @@
 					(unit 1)
 				)
 			)
-			(project "05_midi_to_cv_conductor"
+			(project "conductor_main"
 				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
 					(reference "#PWR02")
 					(unit 1)
@@ -2421,126 +2438,4 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 69.85 166.37 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f6635d7b-9874-4593-bbe4-f51fe58bd6f0")
-		(property "Reference" "#FLG01"
-			(at 69.85 164.465 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 69.85 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 69.85 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 69.85 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 69.85 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "93d2706f-8ecd-4509-a313-b3d79fc79671")
-		)
-		(instances
-			(project "13_env"
-				(path "/4e0852a3-014c-4794-96b1-becb913625e2"
-					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-			(project "05_midi_to_cv_conductor"
-				(path "/635df8d2-30ad-49c7-b857-ac73a548999a"
-					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-			(project "02_vco_as3340"
-				(path "/7bf3d2ed-8bab-4c92-b1a7-3c419691fd96"
-					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(group "Eurorack 10-pin header"
-		(uuid "c3310b5c-2509-482d-ace0-c739a0f9c8be")
-		(lib_id "cynthia:Eurorack 10-pin header")
-		(members "0b34f4a6-4b65-4926-bd02-2ba9c9755e50" "0b5ada2d-b62d-4faf-ac83-6402040be36d"
-			"0e3a8193-2857-451a-9d02-73a1a41e6d1d" "134120b1-aca7-415e-852a-a26a15d14b25"
-			"2032f466-8a3b-47a9-8d0a-7637cc2d02f2" "2988fab1-f63a-46cd-b577-bfceb7a14a2f"
-			"29e7b369-6ce3-4a2a-9e91-a8be2f40d496" "2c94ecc1-17dc-42ca-950b-01418d0a2f37"
-			"3c494a7f-c331-4ef8-892e-6fcf64da2b08" "3e4b5747-cd93-484b-806c-2c3d9ff53316"
-			"4e686d7c-97e6-459a-85ab-b2464c7ddb23" "5b5fe72b-afa7-44a1-98a1-f3841ba37224"
-			"6233580d-7fc0-467f-9bd3-2370aa808bca" "66f0e5da-06f4-4adf-8f98-49992485d4b5"
-			"6928ef4a-a09e-4a39-b4ea-073a8c28a8f9" "6f5aab91-dec9-443b-b595-d8333e20f8f0"
-			"703d9ab8-1c03-41e1-a6b3-76d3a61a5d43" "7d1b362e-1dcc-4aa3-88b9-efd79a7ee5b1"
-			"875aef87-9060-4887-9610-7081b35a694f" "8f01b894-6198-4c67-8bf1-c7bc4307199e"
-			"99d519ba-5167-495b-b198-23c7a63b1d19" "9a2a8315-51d7-4329-91e1-c35808f41992"
-			"9b455995-f6da-4ea0-9be1-636a735bc1a7" "9b9d683e-ad51-4a49-8772-0288642e220b"
-			"9bd237eb-16c5-47d2-9fd0-4d6daa3407ae" "9ecc636c-7b7d-4528-a17e-6436999a8a99"
-			"a010bda2-5c3d-4cd6-b92e-015db336c164" "a2186fe1-43eb-4639-af7a-86b8b7d46c82"
-			"b785dd56-7b9b-4811-a0ae-e30259a43636" "b7a6be66-51df-4eea-b46a-ed0005a25b9e"
-			"d43640ea-70ce-4fe7-8421-ce3846159785" "d5e99cab-271e-4ddc-96dd-6ebdaddbb645"
-			"e0a1ffbb-2893-4868-8056-dfbbba2885da" "e7aafec8-b3c0-41fe-8a27-749c2d81f082"
-			"ead91120-d916-40af-9836-9443cb106260" "edcf8882-8d7f-4919-becf-b036a4b0bb38"
-			"f254b7ea-c8ac-4619-9ae8-d918c07cfc05" "f6635d7b-9874-4593-bbe4-f51fe58bd6f0"
-			"f6ef912d-3fa0-46e0-8b95-670490ba0c11" "fc2d1a24-566f-47cb-8d1a-ae3ed68fc67f"
-		)
-	)
-	(sheet_instances
-		(path "/"
-			(page "1")
-		)
-	)
-	(embedded_fonts no)
 )

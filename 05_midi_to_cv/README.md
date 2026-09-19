@@ -25,6 +25,30 @@ message is its business.
   connector). This is no longer used to provision players - they configure
   themselves.
 
+### Two boards: conductor_main + conductor_controls
+
+The conductor is built as two separate PCBs rather than one, to save 2HP of
+module width: **conductor_controls** carries the TRS MIDI input stages and the
+CLOCK/RUN/RESET output jacks (everything that has to sit directly behind the
+front panel), and **conductor_main** carries the Pico, the 12V-to-5V-to-3.3V
+regulation, and the SN74HCT125 buffer that level-shifts CLOCK/RUN/RESET from
+3.3V logic up to the 0/+5V eurorack standard before they cross to the controls
+board.
+
+The two boards are linked by two headers:
+
+- An 8-pin bus carrying +3.3V, GND, RUN, RESET, CLOCK and the three raw MIDI_n
+  UART lines (this is board-to-board wiring only, distinct from the
+  `MIDI_TX`/"Midi Fast Bus" header described below that broadcasts to players).
+- A second, 4-pin header wired to GND on both ends, added purely for
+  mechanical stability between the two boards rather than to carry any signal.
+  Since both boards already share a single ground plane/reference through the
+  8-pin bus's own GND pin, this is not expected to cause any issues - it adds a
+  second, low-impedance ground return between the boards rather than a
+  meaningful loop. This would only be worth revisiting if a high-frequency or
+  otherwise sensitive signal ever needed to cross between the boards, which
+  isn't the case here.
+
 ### MIDI input stage: TRS, polarity-agnostic
 
 Inputs are 3.5mm TRS rather than DIN-5. The decision is driven by panel economics:
@@ -95,11 +119,6 @@ Design notes for layout:
   The loop's 7.5mA sits inside the recommended range and clears the worst-case
   threshold with ~50% margin. The receiver-side resistor does not need to drop to
   ~100R.
-- **Check the anode/cathode pin mapping against the datasheet.** This is the one
-  wiring error that fails silently: the inverse-parallel connection needs
-  anode1+cathode2 on one node and cathode1+anode2 on the other. Tying anode1 to
-  anode2 instead puts the LEDs in parallel, which works perfectly on Type A and
-  dies on Type B - a fault only discovered when an Arturia device is plugged in.
 - **Pull-up**: 2.2k-4.7k rather than 10k. At MIDI rates 10k is harmless (~300ns
   rise against a 32us bit) but it is a high-impedance node in a case full of
   switching supplies.
@@ -138,7 +157,13 @@ outputs. It receives the whole broadcast stream and filters it down to the
 channel and notes it has learned. Player types identified so far:
 
 - **Melodic voice**: gate, 1V/oct, velocity.
-- **Percussion with velocity**: 4 gates, 4 velocity CVs.
+- **Percussion with velocity**: 2 gates, 2 velocity CVs. Originally planned as a
+  4-channel card; built as 2 channels instead, each with its own learn button (see
+  below), because the PCB was already cramped at 2 channels and going to 4 would
+  have meant either a shared/cycling learn button or a daughter board, both of
+  which were rejected for now. If 2 channels per card proves impractical in
+  practice, the note-learning method will need to change before this scales back
+  up to 4.
 - **Percussion without velocity**: 4 gates only (no DAC needed).
 
 Everything is local: note handling, gate timing, velocity scaling, and 1V/oct
@@ -147,7 +172,10 @@ calibration all happen on the player's own MCU. Each player carries:
 - An **STM32G0** MCU (see Component Notes).
 - A DAC on a short private SPI bus, plus an op-amp output stage to scale into the
   final CV range. Percussion-without-velocity players skip the DAC entirely.
-- A **MIDI learn button** for configuration.
+- A **MIDI learn button** for configuration - one per channel, so a
+  multi-channel player (e.g. the 2-channel percussion card) can learn each
+  channel's MIDI channel *and* note independently rather than sharing one
+  button across channels.
 - Local ±12V-to-3.3V regulation - only raw ±12V is distributed over the bus.
 - A small **SWD header** for firmware updates.
 
@@ -157,8 +185,12 @@ height constraint.
 ### Configuration by MIDI learn
 
 Players are configured in place, with no config bus and no central provisioning.
-Press the learn button and the next note-on captures its channel and note number.
-Percussion players cycle through their four slots on repeated presses. The result is written to a dedicated page of the STM32G0's internal flash.
+Press a channel's learn button and the next note-on captures that channel's MIDI
+channel *and* note number. The percussion-with-velocity player has one button per
+channel (2, currently) rather than a single button cycling through slots, so each
+channel can be aimed at any channel/note combination independently and there is no
+need to press-and-count through a cycle. The result is written to a dedicated page
+of the STM32G0's internal flash.
 
 Flash erase granularity on the G0 is 2KB, which is coarse, but configuration writes
 happen a handful of times in a module's life so wear is a non-issue. One reserved
@@ -273,10 +305,10 @@ above.
 hand-solderable, around $1.50 in ones, 64MHz Cortex-M0+, 32KB flash, 8KB SRAM. Pin
 budget is comfortable for both player types:
 
-| Player type | UART RX | SPI | Gates | Button | Total GPIO |
+| Player type | UART RX | SPI | Gates | Learn buttons | Total GPIO |
 |---|---|---|---|---|---|
 | Melodic voice | 1 | 3 | 1 | 1 | 6 |
-| Percussion w/ velocity | 1 | 3 | 4 | 1 | 9 |
+| Percussion w/ velocity | 1 | 3 | 2 | 2 | 8 |
 
 TSSOP-20 leaves roughly 14 usable pins after power, SWD and NRST, so both fit with
 room to spare. Larger packages (LQFP-32, UFQFPN-28) exist in the same family if a
