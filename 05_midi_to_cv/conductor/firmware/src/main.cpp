@@ -14,7 +14,7 @@
 constexpr uint8_t kPinMidi1Rx = 4;
 constexpr uint8_t kPinMidi2Rx = 5;
 constexpr uint8_t kPinMidi3Rx = 6;
-constexpr uint8_t kPinMidiTx = 16;
+constexpr uint8_t kPinMid3iTx = 16;
 constexpr uint8_t kPinReset = 18;
 constexpr uint8_t kPinRun = 19;
 constexpr uint8_t kPinClock = 20;
@@ -28,7 +28,6 @@ constexpr uint8_t kClockSourceInput = 1; // MIDI_1
 constexpr uint32_t kBusBaud = 250000; // 8x 31250, see README "Baud rate"
 constexpr uint32_t kClockPulseUs = 1000; // CLOCK trigger width
 constexpr uint32_t kResetPulseMs = 5;    // RESET trigger width
-constexpr uint32_t kActivityLedMs = 20;
 
 // Transport-message-to-jack mapping is an assumption, not spelled out in
 // the module README - confirm/adjust if it doesn't match expectations:
@@ -49,15 +48,9 @@ MIDI_CREATE_INSTANCE(SerialPIO, midiSerial3, MIDI3);
 bool running = false;
 uint32_t clockPulseUntilUs = 0;
 uint32_t resetPulseUntilMs = 0;
-uint32_t activityLedUntilMs = 0;
 
 uint32_t messagesIn[3] = {0, 0, 0};
 uint32_t messagesForwarded = 0;
-
-void flashActivityLed() {
-  digitalWrite(LED_BUILTIN, HIGH);
-  activityLedUntilMs = millis() + kActivityLedMs;
-}
 
 void pulseClock() {
   digitalWrite(kPinClock, HIGH);
@@ -120,7 +113,6 @@ void forwardChannelMessage(midi::MidiType type, midi::Channel channel, byte data
   if (dataBytes == 2) MidiTxPort.write(data2 & 0x7F);
 
   messagesForwarded++;
-  flashActivityLed();
 }
 
 template <typename MidiInterfaceType>
@@ -128,7 +120,6 @@ void pumpInput(MidiInterfaceType &midi, uint8_t inputNumber) {
   if (!midi.read()) return;
 
   messagesIn[inputNumber - 1]++;
-  flashActivityLed();
 
   midi::MidiType type = midi.getType();
 
@@ -212,11 +203,9 @@ void setup() {
   pinMode(kPinClock, OUTPUT);
   pinMode(kPinRun, OUTPUT);
   pinMode(kPinReset, OUTPUT);
-  pinMode(LED_BUILTIN, OUTPUT);
   digitalWrite(kPinClock, LOW);
   digitalWrite(kPinRun, LOW);
   digitalWrite(kPinReset, LOW);
-  digitalWrite(LED_BUILTIN, LOW);
 
   Serial.begin(115200); // USB CDC REPL; baud is a formality over USB
 
@@ -252,9 +241,5 @@ void loop() {
   if (resetPulseUntilMs != 0 && nowMs >= resetPulseUntilMs) {
     digitalWrite(kPinReset, LOW);
     resetPulseUntilMs = 0;
-  }
-  if (activityLedUntilMs != 0 && nowMs >= activityLedUntilMs) {
-    digitalWrite(LED_BUILTIN, LOW);
-    activityLedUntilMs = 0;
   }
 }
