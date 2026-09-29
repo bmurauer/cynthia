@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/home/benjamin/git/cynthia/05_midi_to_cv/player_melodic/player_melodic.kicad_sch")
-		(date "2026-09-29T20:18:46")
+		(date "2026-09-29T20:59:19")
 		(tool "Eeschema 10.0.6")
 		(sheet
 			(number "1")
@@ -531,13 +531,13 @@
 		(comp
 			(ref "D1")
 			(value "LED")
-			(footprint "LED_THT:LED_D5.0mm-4_RGB")
+			(footprint "LED_THT:LED_D5.0mm")
 			(description "Light emitting diode")
 			(fields
 				(field
 					(name "Sim.Pins") "1=K 2=A")
 				(field
-					(name "Footprint") "LED_THT:LED_D5.0mm-4_RGB")
+					(name "Footprint") "LED_THT:LED_D5.0mm")
 				(field
 					(name "Datasheet")
 				)
