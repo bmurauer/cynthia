@@ -4324,7 +4324,7 @@
 		)
 	)
 	(junction
-		(at 104.14 58.42)
+		(at 30.48 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0e7cece2-064f-4ab7-83c9-6b34181dad1f")
@@ -4360,7 +4360,7 @@
 		(uuid "5b5fe72b-afa7-44a1-98a1-f3841ba37224")
 	)
 	(junction
-		(at 104.14 55.88)
+		(at 30.48 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "61bdc70f-e79d-431e-97f1-082598e7de03")
@@ -4414,7 +4414,7 @@
 		(uuid "a2186fe1-43eb-4639-af7a-86b8b7d46c82")
 	)
 	(junction
-		(at 104.14 53.34)
+		(at 30.48 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b580a446-3e8b-4383-8065-5918387cd0ae")
@@ -4573,7 +4573,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 58.42) (xy 104.14 62.23)
+			(xy 30.48 34.29) (xy 30.48 38.1)
 		)
 		(stroke
 			(width 0)
@@ -4723,7 +4723,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 50.8) (xy 104.14 53.34)
+			(xy 30.48 26.67) (xy 30.48 29.21)
 		)
 		(stroke
 			(width 0)
@@ -4843,7 +4843,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 53.34) (xy 104.14 53.34)
+			(xy 27.94 29.21) (xy 30.48 29.21)
 		)
 		(stroke
 			(width 0)
@@ -4863,7 +4863,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 50.8) (xy 104.14 50.8)
+			(xy 27.94 26.67) (xy 30.48 26.67)
 		)
 		(stroke
 			(width 0)
@@ -4933,7 +4933,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 53.34) (xy 104.14 58.42)
+			(xy 30.48 29.21) (xy 30.48 34.29)
 		)
 		(stroke
 			(width 0)
@@ -4943,7 +4943,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 55.88) (xy 104.14 55.88)
+			(xy 27.94 31.75) (xy 30.48 31.75)
 		)
 		(stroke
 			(width 0)
@@ -5003,7 +5003,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 58.42) (xy 104.14 58.42)
+			(xy 27.94 34.29) (xy 30.48 34.29)
 		)
 		(stroke
 			(width 0)
@@ -5112,7 +5112,7 @@
 		(uuid "fc2d1a24-566f-47cb-8d1a-ae3ed68fc67f")
 	)
 	(global_label "MIDI_2"
-		(shape input)
+		(shape output)
 		(at 147.32 86.36 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5136,7 +5136,7 @@
 		)
 	)
 	(global_label "MIDI_3"
-		(shape input)
+		(shape output)
 		(at 147.32 88.9 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5160,7 +5160,7 @@
 		)
 	)
 	(global_label "RUN"
-		(shape output)
+		(shape input)
 		(at 147.32 76.2 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5208,7 +5208,7 @@
 		)
 	)
 	(global_label "RESET"
-		(shape output)
+		(shape input)
 		(at 147.32 78.74 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5256,7 +5256,7 @@
 		)
 	)
 	(global_label "MIDI_1"
-		(shape input)
+		(shape output)
 		(at 147.32 83.82 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5280,7 +5280,7 @@
 		)
 	)
 	(global_label "CLOCK"
-		(shape output)
+		(shape input)
 		(at 147.32 81.28 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6198,7 +6198,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 104.14 62.23 0)
+		(at 30.48 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6209,7 +6209,7 @@
 		(fields_autoplaced yes)
 		(uuid "1573a25b-c4e1-4021-b6ca-a9f221c89bbd")
 		(property "Reference" "#PWR08"
-			(at 104.14 68.58 0)
+			(at 30.48 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6220,7 +6220,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 104.14 67.31 0)
+			(at 30.48 43.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6230,7 +6230,7 @@
 			)
 		)
 		(property "Footprint" "Module:RaspberryPi_Pico_Common_Unspecified"
-			(at 104.14 62.23 0)
+			(at 30.48 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6241,7 +6241,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 62.23 0)
+			(at 30.48 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6252,7 +6252,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 104.14 62.23 0)
+			(at 30.48 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9517,7 +9517,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Pin")
-		(at 96.52 53.34 0)
+		(at 22.86 29.21 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9528,7 +9528,7 @@
 		(fields_autoplaced yes)
 		(uuid "fd034e04-d432-46d9-aa6d-ed44831b27be")
 		(property "Reference" "J1"
-			(at 97.155 45.72 0)
+			(at 23.495 21.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9538,7 +9538,7 @@
 			)
 		)
 		(property "Value" "ui_top"
-			(at 97.155 48.26 0)
+			(at 23.495 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9548,7 +9548,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 96.52 53.34 0)
+			(at 22.86 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9559,7 +9559,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 53.34 0)
+			(at 22.86 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9570,7 +9570,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 96.52 53.34 0)
+			(at 22.86 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

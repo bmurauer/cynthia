@@ -192,6 +192,11 @@ channel can be aimed at any channel/note combination independently and there is 
 need to press-and-count through a cycle. The result is written to a dedicated page
 of the STM32G0's internal flash.
 
+The melodic player learns only the channel - the note number means nothing for a
+pitch output. Until it has learned one, it listens on all channels. While armed,
+its panel LED (D1, on MCU pin 16) blinks and the gate stays closed; pressing learn
+again cancels and keeps the previous channel. Firmware is in `player_melodic/firmware`.
+
 Flash erase granularity on the G0 is 2KB, which is coarse, but configuration writes
 happen a handful of times in a module's life so wear is a non-issue. One reserved
 page is plenty.
@@ -322,11 +327,20 @@ whole market is available.
 
 Default recommendation: **MCP4822** - 8-pin SOIC, cheap, dual 12-bit, internal
 2.048V reference. There is already working code for this part family in
-`kosmo/kosmo_modular_midi_2_cv/code/src/10_modular_midi_2_cv.cpp`: the
-`0x1000`/`0x9000` command words and the `NOTE_SF` scaling carry over directly, as
-does that file's note that the output "will need to be amplified by 1.77X for the
-standard 1V/octave". At 3.3V only gain-of-1 is usable (0-2.048V out), which is
-exactly what that code already assumes, with the op-amp stage scaling up.
+`kosmo/kosmo_modular_midi_2_cv/code/src/10_modular_midi_2_cv.cpp`, but its command
+words do **not** carry over: `0x1000`/`0x9000` leave the `~GA` bit (bit 13) clear,
+which selects the DAC's **2x** gain (0-4.096V). That needs a supply above 4.096V
+and clips on the players' 3.3V rail. At 3.3V only 1x gain is usable (0-2.0475V,
+0.5mV per LSB), i.e. command words `0x3000` (channel A) / `0xB000` (channel B), with
+the op-amp stage scaling up to 1V/oct. The kosmo `NOTE_SF` scaling does not carry
+over either, since it assumes 1mV per LSB.
+
+On the melodic player that stage is U1A, non-inverting, with gain
+1 + (R7 + RV1) / R3 = 1 + (18k + 0-5k) / 10k = 2.8-3.3x. The firmware scales for
+RV1 at mid-travel (3.05x), leaving about ±8% trim - enough for the MCP4822's gain
+error plus resistor tolerance. Full scale is about 6.2V, i.e. 75 notes (C1-D7).
+The obvious shortcut of making RV1 span the whole 1x-3x range was rejected: one
+cent is ~0.06% of gain, which a single-turn trimmer covering 1x-3x cannot resolve.
 
 One tradeoff worth knowing: reference tempco shows up as a gain error on 1V/oct and
 scales with output voltage. At 0.833mV per cent, a 20°C warm-up gives roughly 6

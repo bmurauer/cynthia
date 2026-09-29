@@ -1356,6 +1356,207 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -4331,10 +4532,6 @@
 		(uuid "1a1ee508-2951-45d1-be7d-d0defca5c423")
 	)
 	(no_connect
-		(at 104.14 105.41)
-		(uuid "1edc4404-751c-4bc9-8977-24a34d41ff86")
-	)
-	(no_connect
 		(at 215.9 39.37)
 		(uuid "23c03af9-c9a0-4707-a8bd-987a69ed0260")
 	)
@@ -4359,16 +4556,8 @@
 		(uuid "9802dea6-7555-4645-89ac-460be6cb6e72")
 	)
 	(no_connect
-		(at 104.14 100.33)
-		(uuid "9d9a36bf-74f5-408a-8990-b1b323cf8de3")
-	)
-	(no_connect
 		(at 110.49 153.67)
 		(uuid "a5406bbc-25dd-44dd-ab78-eda8946792ed")
-	)
-	(no_connect
-		(at 104.14 102.87)
-		(uuid "ab3987f7-3157-4962-b465-3ae3b7d719a1")
 	)
 	(no_connect
 		(at 104.14 82.55)
@@ -4427,6 +4616,16 @@
 			(type default)
 		)
 		(uuid "18dda1e0-c9f9-4a56-a3a0-85e731600283")
+	)
+	(wire
+		(pts
+			(xy 143.51 116.84) (xy 143.51 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b835694-9365-45e4-8733-5441429e4032")
 	)
 	(wire
 		(pts
@@ -4507,6 +4706,16 @@
 			(type default)
 		)
 		(uuid "39adca21-a6b7-4e55-b489-e038319dc0c5")
+	)
+	(wire
+		(pts
+			(xy 143.51 127) (xy 143.51 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39e0d80f-f1e5-49f6-9b3f-c4a183759857")
 	)
 	(wire
 		(pts
@@ -4750,6 +4959,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 102.87) (xy 104.14 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "904fbf02-50c0-421f-8b9f-5ff5866eeaaf")
+	)
+	(wire
+		(pts
 			(xy 125.73 100.33) (xy 139.7 100.33)
 		)
 		(stroke
@@ -4880,6 +5099,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 116.84) (xy 143.51 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c373c4dd-0683-4dec-94c0-e66ae093f770")
+	)
+	(wire
+		(pts
 			(xy 165.1 72.39) (xy 182.88 72.39)
 		)
 		(stroke
@@ -4890,7 +5119,17 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 82.55) (xy 191.77 82.55)
+			(xy 190.5 82.55) (xy 191.77 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1692b56-5e3d-430c-84d9-143cb25855e1")
+	)
+	(wire
+		(pts
+			(xy 179.07 82.55) (xy 182.88 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4997,6 +5236,16 @@
 			(type default)
 		)
 		(uuid "e61f463d-74da-4d0c-9f82-efc4adf2ab9e")
+	)
+	(wire
+		(pts
+			(xy 123.19 102.87) (xy 123.19 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed0c77f9-f444-4815-8b39-9678f36bb9e9")
 	)
 	(wire
 		(pts
@@ -6730,7 +6979,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "5k"
 			(at 195.58 88.9 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6763,7 +7012,7 @@
 			)
 		)
 		(property "Description" "fine-tune"
-			(at 190.5 85.344 90)
+			(at 203.454 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7298,6 +7547,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 143.51 128.27 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "56be983e-ecf9-4838-bf05-1b93f62202a5")
+		(property "Reference" "#PWR033"
+			(at 143.51 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 143.51 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 143.51 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "498cd0a1-4d55-443c-8089-9805881bd2cb")
+		)
+		(instances
+			(project "player_melodic"
+				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Amplifier_Operational:TL072")
 		(at 76.2 147.32 0)
 		(unit 3)
@@ -7567,6 +7895,97 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 127 116.84 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5ab875fe-8a73-4031-b123-b118d2d9cff4")
+		(property "Reference" "D1"
+			(at 128.5875 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 128.5875 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D5.0mm-4_RGB"
+			(at 127 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 127 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 127 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3c8322a4-6bf4-4744-b431-82722671e4b8")
+		)
+		(pin "1"
+			(uuid "919daa16-16d2-44b8-ade0-686e965b3b6b")
+		)
+		(instances
+			(project "player_melodic"
+				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 104.14 146.05 0)
 		(unit 1)
@@ -7719,6 +8138,88 @@
 			(project "player_melodic"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 143.51 123.19 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "63a36284-36fc-4748-a31a-b082adaa0a3e")
+		(property "Reference" "R8"
+			(at 140.97 121.9199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 140.97 124.4599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "cynthia:R SMD  0805"
+			(at 141.732 123.19 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 143.51 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8ef0dcfa-d1fc-4520-844f-f5122d45370d")
+		)
+		(pin "1"
+			(uuid "3fe16306-2674-4068-9b52-59c3cbd57779")
+		)
+		(instances
+			(project "player_melodic"
+				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -9008,6 +9509,85 @@
 			(project "player_melodic"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 186.69 82.55 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b2ec3a10-4d80-4199-861f-3e936bafc517")
+		(property "Reference" "R7"
+			(at 186.69 85.598 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "18k"
+			(at 186.69 88.138 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cynthia:R SMD  0805"
+			(at 186.69 80.772 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 186.69 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "fe707067-cdd4-4fcb-b7ef-9e6a3c0c9cf8")
+		)
+		(pin "1"
+			(uuid "d0e20426-bd9b-4510-b7cd-086209cdf2a3")
+		)
+		(instances
+			(project "player_melodic"
+				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
+					(reference "R7")
 					(unit 1)
 				)
 			)

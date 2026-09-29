@@ -14,7 +14,7 @@
 constexpr uint8_t kPinMidi1Rx = 4;
 constexpr uint8_t kPinMidi2Rx = 5;
 constexpr uint8_t kPinMidi3Rx = 6;
-constexpr uint8_t kPinMid3iTx = 16;
+constexpr uint8_t kPinMidi3Tx = 16;
 constexpr uint8_t kPinReset = 18;
 constexpr uint8_t kPinRun = 19;
 constexpr uint8_t kPinClock = 20;
