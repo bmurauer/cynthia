@@ -5651,7 +5651,7 @@
 		(uuid "03a2727e-be30-421c-b197-d755e077dafc")
 		(at 9 94.25 -90)
 		(property "Reference" "J3"
-			(at -2.54 -8.382 90)
+			(at -5.25 -6.75 0)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "9a2afa7c-120e-4dd1-a69d-1eda9141b431")
@@ -5817,7 +5817,7 @@
 		(descr "tactile push button, 6x6mm e.g. PHAP33xx series, height=8.5mm")
 		(tags "tact sw push 6mm")
 		(property "Reference" "SW1"
-			(at 3.25 2 90)
+			(at -2.5 -2.25 180)
 			(layer "B.SilkS")
 			(uuid "4f3911f7-f43c-4f40-b5b4-297fa28fe453")
 			(effects
@@ -7712,7 +7712,7 @@
 		(uuid "943130b5-7c25-4aae-bec2-1a2be2f63f22")
 		(at 9 16 -90)
 		(property "Reference" "J5"
-			(at -2.54 -8.382 90)
+			(at 5.5 -0.25 0)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "e326aeea-9fdf-4166-b337-09eb46bd7a44")
@@ -9646,7 +9646,7 @@
 		(uuid "dc15bcfe-578a-4f67-ad1d-5cab969a31c2")
 		(at 8.984 6 -90)
 		(property "Reference" "J4"
-			(at -2.54 -8.382 90)
+			(at -3.25 6.734 270)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "5227a26b-09f5-4457-9bd2-00cd71dc0ae7")

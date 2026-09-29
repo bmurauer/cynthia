@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/home/benjamin/git/cynthia/05_midi_to_cv/player_drum_velocity/player_drum_velocity.kicad_sch")
-		(date "2026-09-29T20:14:46")
+		(date "2026-09-29T21:07:36")
 		(tool "Eeschema 10.0.6")
 		(sheet
 			(number "1")
@@ -514,6 +514,66 @@
 				(tstamps "/")
 			)
 			(tstamps "59ceb419-351d-41f6-807f-491b8e46a9fb")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D1")
+			(value "LED")
+			(footprint "LED_THT:LED_D5.0mm")
+			(description "Light emitting diode")
+			(fields
+				(field
+					(name "Sim.Pins") "1=K 2=A")
+				(field
+					(name "Footprint") "LED_THT:LED_D5.0mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Light emitting diode")
+			)
+			(libsource
+				(lib "Device")
+				(part "LED")
+				(description "Light emitting diode")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "1=K 2=A")
+			)
+			(property
+				(name "Sheetname")
+				(value "player_drum_velocity")
+			)
+			(property
+				(name "Sheetfile")
+				(value "player_drum_velocity.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "LED diode")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "LED* LED_SMD:* LED_THT:*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "5095da7c-8b38-4852-b93e-94b2377d10a9")
 			(units
 				(unit
 					(name "A")
@@ -1454,6 +1514,60 @@
 			)
 		)
 		(comp
+			(ref "R9")
+			(value "4.7k")
+			(footprint "cynthia:R SMD  0805")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "cynthia:R SMD  0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "player_drum_velocity")
+			)
+			(property
+				(name "Sheetfile")
+				(value "player_drum_velocity.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "8debc4b4-7ac5-4c7a-a094-70a75a8d839c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "SW1")
 			(value "SW_Push")
 			(footprint "Button_Switch_THT:SW_PUSH_6mm_H8.5mm")
@@ -1489,56 +1603,6 @@
 				(tstamps "/")
 			)
 			(tstamps "494d1b36-ede9-48dd-9e7b-4de2c860a32a")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "SW2")
-			(value "SW_Push")
-			(footprint "Button_Switch_THT:SW_PUSH_6mm_H8.5mm")
-			(description "LEARN 2")
-			(fields
-				(field
-					(name "Footprint") "Button_Switch_THT:SW_PUSH_6mm_H8.5mm")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "LEARN 2")
-			)
-			(libsource
-				(lib "Switch")
-				(part "SW_Push")
-				(description "Push button switch, generic, two pins")
-			)
-			(property
-				(name "Sheetname")
-				(value "player_drum_velocity")
-			)
-			(property
-				(name "Sheetfile")
-				(value "player_drum_velocity.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "switch normally-open pushbutton push-button")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "69232580-c8b9-40a0-9858-3b4a9e21da02")
 			(units
 				(unit
 					(name "A")
@@ -2188,6 +2252,44 @@
 				(pin
 					(num "2")
 					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "LED")
+			(description "Light emitting diode")
+			(footprints
+				(fp "LED*")
+				(fp "LED_SMD:*")
+				(fp "LED_THT:*")
+			)
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "LED")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Light emitting diode")
+				(field
+					(name "Sim.Pins") "1=K 2=A")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "K")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A")
 					(type "passive")
 				)
 			)
@@ -2910,13 +3012,12 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "SW1")
-				(pin "2")
-				(pinfunction "2_2")
+				(ref "R9")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "SW2")
+				(ref "SW1")
 				(pin "2")
 				(pinfunction "2_2")
 				(pintype "passive")
@@ -2954,6 +3055,39 @@
 		)
 		(net
 			(code "7")
+			(name "Net-(D1-A)")
+			(class "Default")
+			(node
+				(ref "D1")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "8")
+				(pinfunction "PA1_8")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "8")
+			(name "Net-(D1-K)")
+			(class "Default")
+			(node
+				(ref "D1")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R9")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "9")
 			(name "Net-(J3-PadT)")
 			(class "Default")
 			(node
@@ -2969,7 +3103,7 @@
 			)
 		)
 		(net
-			(code "8")
+			(code "10")
 			(name "Net-(J4-PadT)")
 			(class "Default")
 			(node
@@ -2985,7 +3119,7 @@
 			)
 		)
 		(net
-			(code "9")
+			(code "11")
 			(name "Net-(J5-PadT)")
 			(class "Default")
 			(node
@@ -3001,7 +3135,7 @@
 			)
 		)
 		(net
-			(code "10")
+			(code "12")
 			(name "Net-(J6-PadT)")
 			(class "Default")
 			(node
@@ -3017,7 +3151,7 @@
 			)
 		)
 		(net
-			(code "11")
+			(code "13")
 			(name "Net-(Q1-B)")
 			(class "Default")
 			(node
@@ -3033,7 +3167,7 @@
 			)
 		)
 		(net
-			(code "12")
+			(code "14")
 			(name "Net-(Q1-C)")
 			(class "Default")
 			(node
@@ -3054,7 +3188,7 @@
 			)
 		)
 		(net
-			(code "13")
+			(code "15")
 			(name "Net-(Q2-B)")
 			(class "Default")
 			(node
@@ -3070,7 +3204,7 @@
 			)
 		)
 		(net
-			(code "14")
+			(code "16")
 			(name "Net-(Q2-C)")
 			(class "Default")
 			(node
@@ -3091,7 +3225,7 @@
 			)
 		)
 		(net
-			(code "15")
+			(code "17")
 			(name "Net-(U1A-+)")
 			(class "Default")
 			(node
@@ -3108,7 +3242,7 @@
 			)
 		)
 		(net
-			(code "16")
+			(code "18")
 			(name "Net-(U1A--)")
 			(class "Default")
 			(node
@@ -3129,7 +3263,7 @@
 			)
 		)
 		(net
-			(code "17")
+			(code "19")
 			(name "Net-(U1B-+)")
 			(class "Default")
 			(node
@@ -3146,7 +3280,7 @@
 			)
 		)
 		(net
-			(code "18")
+			(code "20")
 			(name "Net-(U1B--)")
 			(class "Default")
 			(node
@@ -3167,7 +3301,7 @@
 			)
 		)
 		(net
-			(code "19")
+			(code "21")
 			(name "Net-(U2-PA0)")
 			(class "Default")
 			(node
@@ -3184,24 +3318,7 @@
 			)
 		)
 		(net
-			(code "20")
-			(name "Net-(U2-PA1)")
-			(class "Default")
-			(node
-				(ref "SW2")
-				(pin "1")
-				(pinfunction "1_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U2")
-				(pin "8")
-				(pinfunction "PA1_8")
-				(pintype "bidirectional")
-			)
-		)
-		(net
-			(code "21")
+			(code "22")
 			(name "Net-(U2-PA2)")
 			(class "Default")
 			(node
@@ -3217,7 +3334,7 @@
 			)
 		)
 		(net
-			(code "22")
+			(code "23")
 			(name "Net-(U2-PA3)")
 			(class "Default")
 			(node
@@ -3233,7 +3350,7 @@
 			)
 		)
 		(net
-			(code "23")
+			(code "24")
 			(name "Net-(U2-PA4)")
 			(class "Default")
 			(node
@@ -3250,7 +3367,7 @@
 			)
 		)
 		(net
-			(code "24")
+			(code "25")
 			(name "Net-(U2-PA5)")
 			(class "Default")
 			(node
@@ -3267,7 +3384,7 @@
 			)
 		)
 		(net
-			(code "25")
+			(code "26")
 			(name "Net-(U2-PA7)")
 			(class "Default")
 			(node
@@ -3284,7 +3401,7 @@
 			)
 		)
 		(net
-			(code "26")
+			(code "27")
 			(name "RESET")
 			(class "Default")
 			(node
@@ -3301,7 +3418,7 @@
 			)
 		)
 		(net
-			(code "27")
+			(code "28")
 			(name "SWD CLOCK")
 			(class "Default")
 			(node
@@ -3318,7 +3435,7 @@
 			)
 		)
 		(net
-			(code "28")
+			(code "29")
 			(name "SWD DATA")
 			(class "Default")
 			(node
@@ -3335,7 +3452,7 @@
 			)
 		)
 		(net
-			(code "29")
+			(code "30")
 			(name "unconnected-(J1-Pin_7-Pad7)")
 			(class "Default")
 			(node
@@ -3346,7 +3463,7 @@
 			)
 		)
 		(net
-			(code "30")
+			(code "31")
 			(name "unconnected-(J1-Pin_8-Pad8)")
 			(class "Default")
 			(node
@@ -3357,7 +3474,7 @@
 			)
 		)
 		(net
-			(code "31")
+			(code "32")
 			(name "unconnected-(J3-PadTN)")
 			(class "Default")
 			(node
@@ -3368,7 +3485,7 @@
 			)
 		)
 		(net
-			(code "32")
+			(code "33")
 			(name "unconnected-(J4-PadTN)")
 			(class "Default")
 			(node
@@ -3379,7 +3496,7 @@
 			)
 		)
 		(net
-			(code "33")
+			(code "34")
 			(name "unconnected-(J5-PadTN)")
 			(class "Default")
 			(node
@@ -3390,7 +3507,7 @@
 			)
 		)
 		(net
-			(code "34")
+			(code "35")
 			(name "unconnected-(J6-PadTN)")
 			(class "Default")
 			(node
@@ -3401,7 +3518,7 @@
 			)
 		)
 		(net
-			(code "35")
+			(code "36")
 			(name "unconnected-(U2-PA6-Pad13)")
 			(class "Default")
 			(node
@@ -3412,18 +3529,18 @@
 			)
 		)
 		(net
-			(code "36")
+			(code "37")
 			(name "unconnected-(U2-PA8{slash}PB0{slash}PB1{slash}PB2-Pad15)")
 			(class "Default")
 			(node
 				(ref "U2")
 				(pin "15")
 				(pinfunction "PA8/PB0/PB1/PB2_15")
-				(pintype "bidirectional+no_connect")
+				(pintype "bidirectional")
 			)
 		)
 		(net
-			(code "37")
+			(code "38")
 			(name "unconnected-(U2-PA9{slash}PA11-Pad16)")
 			(class "Default")
 			(node
@@ -3434,7 +3551,7 @@
 			)
 		)
 		(net
-			(code "38")
+			(code "39")
 			(name "unconnected-(U2-PA10{slash}PA12-Pad17)")
 			(class "Default")
 			(node
@@ -3445,7 +3562,7 @@
 			)
 		)
 		(net
-			(code "39")
+			(code "40")
 			(name "unconnected-(U2-PB3{slash}PB4{slash}PB5{slash}PB6-Pad20)")
 			(class "Default")
 			(node
@@ -3456,7 +3573,7 @@
 			)
 		)
 		(net
-			(code "40")
+			(code "41")
 			(name "unconnected-(U2-PB9{slash}PC14-Pad2)")
 			(class "Default")
 			(node
@@ -3467,7 +3584,7 @@
 			)
 		)
 		(net
-			(code "41")
+			(code "42")
 			(name "unconnected-(U2-PC15-Pad3)")
 			(class "Default")
 			(node
