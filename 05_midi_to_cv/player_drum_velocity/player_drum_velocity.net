@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/home/benjamin/git/cynthia/05_midi_to_cv/player_drum_velocity/player_drum_velocity.kicad_sch")
-		(date "2026-09-29T21:07:36")
+		(date "2026-09-30T19:56:10")
 		(tool "Eeschema 10.0.6")
 		(sheet
 			(number "1")
@@ -1571,7 +1571,7 @@
 			(ref "SW1")
 			(value "SW_Push")
 			(footprint "Button_Switch_THT:SW_PUSH_6mm_H8.5mm")
-			(description "LEARN 1")
+			(description "LEARN")
 			(fields
 				(field
 					(name "Footprint") "Button_Switch_THT:SW_PUSH_6mm_H8.5mm")
@@ -1579,7 +1579,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "LEARN 1")
+					(name "Description") "LEARN")
 			)
 			(libsource
 				(lib "Switch")

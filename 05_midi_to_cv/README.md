@@ -157,13 +157,12 @@ outputs. It receives the whole broadcast stream and filters it down to the
 channel and notes it has learned. Player types identified so far:
 
 - **Melodic voice**: gate, 1V/oct, velocity.
-- **Percussion with velocity**: 2 gates, 2 velocity CVs. Originally planned as a
-  4-channel card; built as 2 channels instead, each with its own learn button (see
-  below), because the PCB was already cramped at 2 channels and going to 4 would
-  have meant either a shared/cycling learn button or a daughter board, both of
-  which were rejected for now. If 2 channels per card proves impractical in
-  practice, the note-learning method will need to change before this scales back
-  up to 4.
+- **Percussion with velocity**: 2 gates, 2 velocity CVs, each output answering
+  its own note on one shared MIDI channel. Originally planned as a 4-channel card;
+  built as 2 channels because the PCB was already cramped at 2, and going to 4
+  would have meant a daughter board. It was also first drawn with one learn button
+  per output, but that was dropped in favour of a single button plus a panel LED,
+  learning both notes in sequence (see below), since the board was already full.
 - **Percussion without velocity**: 4 gates only (no DAC needed).
 
 Everything is local: note handling, gate timing, velocity scaling, and 1V/oct
@@ -172,10 +171,8 @@ calibration all happen on the player's own MCU. Each player carries:
 - An **STM32G0** MCU (see Component Notes).
 - A DAC on a short private SPI bus, plus an op-amp output stage to scale into the
   final CV range. Percussion-without-velocity players skip the DAC entirely.
-- A **MIDI learn button** for configuration - one per channel, so a
-  multi-channel player (e.g. the 2-channel percussion card) can learn each
-  channel's MIDI channel *and* note independently rather than sharing one
-  button across channels.
+- A single **MIDI learn button** and a **panel LED** for configuration, even on
+  the 2-output percussion player, which learns its notes in sequence.
 - Local ±12V-to-3.3V regulation - only raw ±12V is distributed over the bus.
 - A small **SWD header** for firmware updates.
 
@@ -185,17 +182,37 @@ height constraint.
 ### Configuration by MIDI learn
 
 Players are configured in place, with no config bus and no central provisioning.
-Press a channel's learn button and the next note-on captures that channel's MIDI
-channel *and* note number. The percussion-with-velocity player has one button per
-channel (2, currently) rather than a single button cycling through slots, so each
-channel can be aimed at any channel/note combination independently and there is no
-need to press-and-count through a cycle. The result is written to a dedicated page
-of the STM32G0's internal flash.
+Press the learn button and the player captures what it needs from the next
+note-on(s): the MIDI channel, plus note numbers where the outputs are per-note. The
+result is written to a dedicated page of the STM32G0's internal flash. Pressing
+learn again while armed cancels and keeps the previous settings.
 
 The melodic player learns only the channel - the note number means nothing for a
 pitch output. Until it has learned one, it listens on all channels. While armed,
-its panel LED (D1, on MCU pin 16) blinks and the gate stays closed; pressing learn
-again cancels and keeps the previous channel. Firmware is in `player_melodic/firmware`.
+its panel LED (D1, on MCU pin 16) blinks and the gate stays closed. Firmware is in
+`player_melodic/firmware`.
+
+The percussion-with-velocity player learns one channel and two notes with its
+single button:
+
+1. Press learn: the LED single-blinks, and the player listens on all channels.
+2. The first note-on sets the shared MIDI channel and output 1's note. The LED
+   switches to a double blink.
+3. The next note-on **on that same channel** sets output 2's note, and both are
+   saved; the LED lights solidly for half a second to confirm. Note-offs (including
+   the first note's own) are ignored while learning, and both steps may learn the
+   same note, so one pad can fire both outputs.
+
+Nothing is saved until both notes are in, and re-aiming one output means learning
+both again - acceptable for now, and the hardware leaves room for a different
+scheme in firmware if it isn't. Until it has learned anything, the player listens
+on all channels for the General MIDI kick (36) and snare (38).
+
+Its gates don't simply follow the note as the melodic gate does: each is held open
+for at least 10ms, since pads and sequencers often send the note-off within a
+millisecond or two, and a note-on while the gate is still open drops it for 1ms
+first, so the connected module retriggers during fast rolls. Firmware is in
+`player_drum_velocity/firmware`.
 
 Flash erase granularity on the G0 is 2KB, which is coarse, but configuration writes
 happen a handful of times in a module's life so wear is a non-issue. One reserved
@@ -310,10 +327,10 @@ above.
 hand-solderable, around $1.50 in ones, 64MHz Cortex-M0+, 32KB flash, 8KB SRAM. Pin
 budget is comfortable for both player types:
 
-| Player type | UART RX | SPI | Gates | Learn buttons | Total GPIO |
-|---|---|---|---|---|---|
-| Melodic voice | 1 | 3 | 1 | 1 | 6 |
-| Percussion w/ velocity | 1 | 3 | 2 | 2 | 8 |
+| Player type | UART RX | SPI | Gates | Learn button | LED | Total GPIO |
+|---|---|---|---|---|---|---|
+| Melodic voice | 1 | 3 | 1 | 1 | 1 | 7 |
+| Percussion w/ velocity | 1 | 3 | 2 | 1 | 1 | 8 |
 
 TSSOP-20 leaves roughly 14 usable pins after power, SWD and NRST, so both fit with
 room to spare. Larger packages (LQFP-32, UFQFPN-28) exist in the same family if a
