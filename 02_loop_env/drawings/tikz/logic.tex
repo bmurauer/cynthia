@@ -1,0 +1,70 @@
+% Logic: gate input, cycle Schmitt, EOC, MODE switch. Reference designators follow 02_loop_env.net.
+% Render: tools/render_tikz.sh 02_loop_env/drawings/tikz/logic.tex
+\documentclass[border=8pt]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\usetikzlibrary{backgrounds,calc}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.8, diodes/scale=0.7}
+\begin{document}
+\begin{circuitikz}[font=\sffamily\small, show background rectangle,
+                   background rectangle/.style={fill=white}]
+  \tikzset{pin/.style={font=\sffamily\scriptsize, text=gray},
+           note/.style={font=\sffamily\scriptsize, align=left}}
+
+  % ---------------- gate comparator U1A ----------------
+  \node[op amp, noinv input up] (g) at (0,0) {\scriptsize U1A};
+  \node[pin, above left]  at (g.+)   {3};
+  \node[pin, below left]  at (g.-)   {2};
+  \node[pin, above right] at (g.out) {1};
+  \draw (g.+) -- ++(-0.8,0) coordinate (gp);
+  \draw (gp) to[short, *-] ++(0,1.4) coordinate (gf) to[R, l=R5 2.2\,M$\Omega$] (gf -| g.out) -- (g.out);
+  \draw (gp) to[R, l_=R2 100\,k$\Omega$] ++(-4.0,0) coordinate (gn);
+  \draw (gn) to[R, l_=R1 100\,k$\Omega$, *-] ++(0,-2.2) node[ground]{};
+  \draw (gn) -- ++(0,1.4) to[push button, l=SW1 manual gate] ++(0,1.6) node[vcc]{+12\,V};
+  \draw (gn) to[D, l_=D1, invert] ++(-2.2,0) to[short, -o] ++(-0.8,0) node[left]{J1 GATE in};
+  \draw (g.-) -- ++(-0.8,0) coordinate (gr);
+  \draw (gr) to[R, l_=R4 9.1\,k$\Omega$, *-] ++(0,-2.2) node[ground]{};
+  \node[note, anchor=west] at ($(gr)+(0.2,-1.0)$) {0.96\,V};
+  \draw (gr) to[R, l_=R3 100\,k$\Omega$] ++(-2.2,0) node[left]{+12\,V};
+  \draw (g.out) to[short, -*] ++(1.2,0) coordinate (G) node[above]{G};
+  \node[note, anchor=north] at ($(g.out)+(0.6,-0.9)$) {on $\approx$2.0\,V, off $\approx$1.2\,V\\(at J1, incl. D1)};
+
+  % ---------------- cycle Schmitt U1B ----------------
+  \node[op amp, noinv input up] (s) at (0,-7.2) {\scriptsize U1B};
+  \node[pin, above left]  at (s.+)   {5};
+  \node[pin, below left]  at (s.-)   {6};
+  \node[pin, above right] at (s.out) {7};
+  \draw (s.+) -- ++(-0.8,0) coordinate (th);
+  \draw (th) to[R, l_=R7 47\,k$\Omega$, *-] ++(-2.6,0) node[ground]{};
+  \draw (th) -- ++(0,1.3) coordinate (th2) to[R, l_=R6 160\,k$\Omega$, *-] ++(-2.6,0) node[left]{+12\,V};
+  \draw (th2) -- ++(0,1.3) coordinate (th3) to[R, l=R10 150\,k$\Omega$] (th3 -| s.out) -- (s.out);
+  \draw (s.-) -- ++(-0.8,0) coordinate (x);
+  \draw (x) to[R, l=R9 10\,k$\Omega$, *-] ++(-2.6,0) node[left]{CAP\_BUF};
+  \draw (x) -- ++(0,-1.6) to[R, l=R8 10\,k$\Omega$] ++(-2.6,0) to[D, l=D2, invert] ++(-2.0,0) coordinate (pbin);
+  \node[spdt, xscale=-1, anchor=in] (pb) at (pbin) {};
+  \node[pin, above] at (pb.in) {5};
+  \draw (pb.out 1) -- ++(-0.5,0) node[left]{G};
+  \node[pin, above] at (pb.out 1) {6};
+  \draw (pb.out 2) -- ++(-0.3,0) node[left, note]{n.c.};
+  \node[pin, below] at (pb.out 2) {4};
+  \node[note, anchor=south] at ($(pb.center)+(0,0.7)$) {SW2 pole B};
+  \node[note, anchor=north west] at ($(x)+(-5.4,-2.3)$) {gate mode: G high forces Q low,\\so EOC fires at the end of the release};
+  \draw (s.out) to[short, -*] ++(1.2,0) coordinate (Q) node[above]{Q};
+  \node[note, anchor=north west] at ($(s.out)+(1.6,-0.4)$) {thresholds on C\_T: 4.0\,V / 0.23\,V\\(OUT at max LEVEL: 8.0\,V / 0.46\,V)};
+
+  % EOC
+  \draw (Q) -- ++(0,-2.6) to[D, l=D5] ++(2.0,0) to[R, l=R13 1\,k$\Omega$] ++(2.4,0) coordinate (eo);
+  \draw (eo) to[R, l=R15 100\,k$\Omega$, *-] ++(0,-2) node[ground]{};
+  \draw (eo) to[short, -o] ++(1.2,0) node[right]{J2 EOC out};
+
+  % ---------------- MODE pole A -> S ----------------
+  \node[spdt, xscale=-1, anchor=out 1] (pa) at ($(G)+(3.2,-2.6)$) {};
+  \draw (G) -| ($(pa.out 1)+(-1.0,0)$) -- (pa.out 1);
+  \draw (Q) -| ($(pa.out 2)+(-1.6,0)$) -- (pa.out 2);
+  \node[pin, above] at (pa.out 1) {3};
+  \node[pin, below] at (pa.out 2) {1};
+  \node[pin, above] at (pa.in) {2};
+  \node[note, anchor=south] at ($(pa.center)+(0,0.5)$) {SW2 pole A};
+  \draw (pa.in) to[short, -o] ++(1.4,0) node[right]{S};
+  \node[note, anchor=north west] at ($(pa.in)+(0.2,-0.4)$) {gate mode (shown): S = G\\loop mode: S = Q};
+\end{circuitikz}
+\end{document}

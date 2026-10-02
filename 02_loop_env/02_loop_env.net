@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/home/benjamin/git/cynthia/02_loop_env/02_loop_env.kicad_sch")
-		(date "2026-10-02T17:30:55")
+		(date "2026-10-02T21:13:24")
 		(tool "Eeschema 10.0.6")
 		(sheet
 			(number "1")
@@ -3619,60 +3619,6 @@
 			)
 		)
 		(comp
-			(ref "R32")
-			(value "1k")
-			(footprint "cynthia:R SMD  0805")
-			(description "Resistor")
-			(fields
-				(field
-					(name "Footprint") "cynthia:R SMD  0805")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Resistor")
-			)
-			(libsource
-				(lib "Device")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "Sheetname")
-				(value "02_loop_env")
-			)
-			(property
-				(name "Sheetfile")
-				(value "02_loop_env.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "4b5114f0-e801-40f3-925f-a5c05e9266d1")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
 			(ref "R33")
 			(value "100k")
 			(footprint "cynthia:R SMD  0805")
@@ -4216,7 +4162,7 @@
 			(ref "RV1")
 			(value "5k")
 			(footprint "cynthia:potientiometer")
-			(description "Potentiometer")
+			(description "SHAPE")
 			(fields
 				(field
 					(name "Sim.Device") "R")
@@ -4230,7 +4176,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Potentiometer")
+					(name "Description") "SHAPE")
 			)
 			(libsource
 				(lib "Device")
@@ -4291,7 +4237,7 @@
 			(ref "RV2")
 			(value "10k")
 			(footprint "cynthia:potientiometer")
-			(description "Potentiometer")
+			(description "ATTACK")
 			(fields
 				(field
 					(name "Sim.Device") "R")
@@ -4305,7 +4251,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Potentiometer")
+					(name "Description") "ATTACK")
 			)
 			(libsource
 				(lib "Device")
@@ -4366,7 +4312,7 @@
 			(ref "RV3")
 			(value "10k")
 			(footprint "cynthia:potientiometer")
-			(description "Potentiometer")
+			(description "RELEASE")
 			(fields
 				(field
 					(name "Sim.Device") "R")
@@ -4380,7 +4326,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Potentiometer")
+					(name "Description") "RELEASE")
 			)
 			(libsource
 				(lib "Device")
@@ -4441,7 +4387,7 @@
 			(ref "RV4")
 			(value "10k")
 			(footprint "cynthia:potientiometer")
-			(description "Potentiometer")
+			(description "GAIN")
 			(fields
 				(field
 					(name "Sim.Device") "R")
@@ -4455,7 +4401,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Potentiometer")
+					(name "Description") "GAIN")
 			)
 			(libsource
 				(lib "Device")
@@ -4809,7 +4755,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "bf6345c8-8a32-4f87-a31c-cd33d946fbba" "c2541c03-51ce-49aa-a0a5-86618beaea72"
+			(tstamps "c2541c03-51ce-49aa-a0a5-86618beaea72" "bf6345c8-8a32-4f87-a31c-cd33d946fbba"
 				"5b3bba1f-3219-454b-94c6-2fe8ab780ae2"
 			)
 			(units
@@ -4893,8 +4839,8 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "e293711d-a793-4c8d-8663-ac5a4b763b6b" "71a70f0a-8c5e-4dc8-a45b-4d71a7aa0c8b"
-				"c9ec1139-e7c7-419b-ab15-6f3fb22a2a56" "0cbf101d-3c2e-4297-9bd9-f975e9f44911"
+			(tstamps "e293711d-a793-4c8d-8663-ac5a4b763b6b" "0cbf101d-3c2e-4297-9bd9-f975e9f44911"
+				"c9ec1139-e7c7-419b-ab15-6f3fb22a2a56" "71a70f0a-8c5e-4dc8-a45b-4d71a7aa0c8b"
 				"012b0b9e-f886-4cd9-ac29-b8f0f9ab3e41"
 			)
 			(units
@@ -5097,16 +5043,13 @@
 					(uuid "/f6635d7b-9874-4593-bbe4-f51fe58bd6f0")
 				)
 				(member
-					(uuid "/9ecc636c-7b7d-4528-a17e-6436999a8a99")
-				)
-				(member
-					(uuid "/9b9d683e-ad51-4a49-8772-0288642e220b")
-				)
-				(member
-					(uuid "/9a2a8315-51d7-4329-91e1-c35808f41992")
+					(uuid "/ee7051f4-e18f-4c75-a471-ed818b9842e0")
 				)
 				(member
 					(uuid "/edcf8882-8d7f-4919-becf-b036a4b0bb38")
+				)
+				(member
+					(uuid "/6ced661a-a388-4d8b-ba3b-95766197e14d")
 				)
 				(member
 					(uuid "/0b5ada2d-b62d-4faf-ac83-6402040be36d")
@@ -5115,16 +5058,19 @@
 					(uuid "/0b34f4a6-4b65-4926-bd02-2ba9c9755e50")
 				)
 				(member
-					(uuid "/6ced661a-a388-4d8b-ba3b-95766197e14d")
-				)
-				(member
 					(uuid "/6f5aab91-dec9-443b-b595-d8333e20f8f0")
 				)
 				(member
 					(uuid "/703d9ab8-1c03-41e1-a6b3-76d3a61a5d43")
 				)
 				(member
-					(uuid "/ee7051f4-e18f-4c75-a471-ed818b9842e0")
+					(uuid "/9a2a8315-51d7-4329-91e1-c35808f41992")
+				)
+				(member
+					(uuid "/9ecc636c-7b7d-4528-a17e-6436999a8a99")
+				)
+				(member
+					(uuid "/9b9d683e-ad51-4a49-8772-0288642e220b")
 				)
 			)
 		)
@@ -7196,28 +7142,6 @@
 		)
 		(net
 			(code "36")
-			(name "Net-(R32-Pad2)")
-			(class "Default")
-			(node
-				(ref "R32")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "RV4")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "RV4")
-				(pin "3")
-				(pinfunction "3_3")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "37")
 			(name "Net-(SW2A-C)")
 			(class "Default")
 			(node
@@ -7244,7 +7168,7 @@
 			)
 		)
 		(net
-			(code "38")
+			(code "37")
 			(name "Net-(SW3-A)")
 			(class "Default")
 			(node
@@ -7271,7 +7195,7 @@
 			)
 		)
 		(net
-			(code "39")
+			(code "38")
 			(name "Net-(SW3-C)")
 			(class "Default")
 			(node
@@ -7292,7 +7216,7 @@
 			)
 		)
 		(net
-			(code "40")
+			(code "39")
 			(name "Net-(U1A-+)")
 			(class "Default")
 			(node
@@ -7313,7 +7237,7 @@
 			)
 		)
 		(net
-			(code "41")
+			(code "40")
 			(name "Net-(U1A--)")
 			(class "Default")
 			(node
@@ -7334,7 +7258,7 @@
 			)
 		)
 		(net
-			(code "42")
+			(code "41")
 			(name "Net-(U1B-+)")
 			(class "Default")
 			(node
@@ -7360,7 +7284,7 @@
 			)
 		)
 		(net
-			(code "43")
+			(code "42")
 			(name "Net-(U1B--)")
 			(class "Default")
 			(node
@@ -7381,7 +7305,7 @@
 			)
 		)
 		(net
-			(code "44")
+			(code "43")
 			(name "Net-(U3A--)")
 			(class "Default")
 			(node
@@ -7412,7 +7336,7 @@
 			)
 		)
 		(net
-			(code "45")
+			(code "44")
 			(name "Net-(U3B--)")
 			(class "Default")
 			(node
@@ -7443,7 +7367,7 @@
 			)
 		)
 		(net
-			(code "46")
+			(code "45")
 			(name "Net-(U4B--)")
 			(class "Default")
 			(node
@@ -7475,7 +7399,7 @@
 			)
 		)
 		(net
-			(code "47")
+			(code "46")
 			(name "Net-(U4C--)")
 			(class "Default")
 			(node
@@ -7484,8 +7408,15 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R32")
-				(pin "1")
+				(ref "RV4")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "RV4")
+				(pin "3")
+				(pinfunction "3_3")
 				(pintype "passive")
 			)
 			(node
@@ -7496,7 +7427,7 @@
 			)
 		)
 		(net
-			(code "48")
+			(code "47")
 			(name "Net-(U4D--)")
 			(class "Default")
 			(node
@@ -7517,7 +7448,7 @@
 			)
 		)
 		(net
-			(code "49")
+			(code "48")
 			(name "Net-(U5A-+)")
 			(class "Default")
 			(node
@@ -7549,7 +7480,7 @@
 			)
 		)
 		(net
-			(code "50")
+			(code "49")
 			(name "Net-(U5A--)")
 			(class "Default")
 			(node
@@ -7570,7 +7501,7 @@
 			)
 		)
 		(net
-			(code "51")
+			(code "50")
 			(name "unconnected-(J2-PadTN)")
 			(class "Default")
 			(node
@@ -7581,7 +7512,7 @@
 			)
 		)
 		(net
-			(code "52")
+			(code "51")
 			(name "unconnected-(J6-PadTN)")
 			(class "Default")
 			(node
@@ -7592,7 +7523,7 @@
 			)
 		)
 		(net
-			(code "53")
+			(code "52")
 			(name "unconnected-(SW2B-A-Pad4)")
 			(class "Default")
 			(node
@@ -7603,7 +7534,7 @@
 			)
 		)
 		(net
-			(code "54")
+			(code "53")
 			(name "unconnected-(U5-Pad1)")
 			(class "Default")
 			(node
@@ -7613,7 +7544,7 @@
 			)
 		)
 		(net
-			(code "55")
+			(code "54")
 			(name "unconnected-(U5-Pad5)")
 			(class "Default")
 			(node
@@ -7623,7 +7554,7 @@
 			)
 		)
 		(net
-			(code "56")
+			(code "55")
 			(name "unconnected-(U5-Pad7)")
 			(class "Default")
 			(node
@@ -7633,7 +7564,7 @@
 			)
 		)
 		(net
-			(code "57")
+			(code "56")
 			(name "unconnected-(U5-Pad8)")
 			(class "Default")
 			(node
@@ -7643,7 +7574,7 @@
 			)
 		)
 		(net
-			(code "58")
+			(code "57")
 			(name "unconnected-(U5-Pad9)")
 			(class "Default")
 			(node
@@ -7653,7 +7584,7 @@
 			)
 		)
 		(net
-			(code "59")
+			(code "58")
 			(name "unconnected-(U5-Pad10)")
 			(class "Default")
 			(node
@@ -7663,7 +7594,7 @@
 			)
 		)
 		(net
-			(code "60")
+			(code "59")
 			(name "unconnected-(U5A-DIODE_BIAS-Pad15)")
 			(class "Default")
 			(node
@@ -7674,7 +7605,7 @@
 			)
 		)
 		(net
-			(code "61")
+			(code "60")
 			(name "unconnected-(U5C-+-Pad3)")
 			(class "Default")
 			(node
@@ -7685,7 +7616,7 @@
 			)
 		)
 		(net
-			(code "62")
+			(code "61")
 			(name "unconnected-(U5C---Pad4)")
 			(class "Default")
 			(node
@@ -7696,7 +7627,7 @@
 			)
 		)
 		(net
-			(code "63")
+			(code "62")
 			(name "unconnected-(U5C-DIODE_BIAS-Pad2)")
 			(class "Default")
 			(node

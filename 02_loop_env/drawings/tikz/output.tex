@@ -1,0 +1,61 @@
+% Output stage: gain/LEVEL, inverter, normal/inverted switch, LED driver. Reference designators follow 02_loop_env.net.
+% Render: tools/render_tikz.sh 02_loop_env/drawings/tikz/output.tex
+\documentclass[border=8pt]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\usetikzlibrary{backgrounds,calc}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.8, diodes/scale=0.7}
+\begin{document}
+\begin{circuitikz}[font=\sffamily\small, show background rectangle,
+                   background rectangle/.style={fill=white}]
+  \tikzset{pin/.style={font=\sffamily\scriptsize, text=gray}}
+
+  % U4C: non-inverting, gain 1 + RV4/R31 = 1..2
+  \node[op amp, noinv input up] (g) at (0,0) {\scriptsize U4C};
+  \node[pin, above left]  at (g.+)   {10};
+  \node[pin, below left]  at (g.-)   {9};
+  \node[pin, above right] at (g.out) {8};
+  \draw (g.+) -- ++(-1.2,0) node[left]{CAP\_BUF};
+  \draw (g.-) -- ++(-0.4,0) coordinate (gm) -- ++(0,-2.2) coordinate (fb);
+  \draw (fb) to[R, l_=R31 10\,k$\Omega$, *-] ++(0,-2) node[ground]{};
+  \draw (fb) to[vR, l={RV4 10\,k$\Omega$ LEVEL}] (fb -| g.out) -- (g.out);
+  \node[font=\sffamily\scriptsize, align=center, anchor=north] at ($(fb)!.5!(fb -| g.out)+(0.5,-0.5)$) {wiper tied to the pin 9 end\\gain 1.0 \ldots\ 2.0};
+  \draw (g.out) to[short, -*] ++(2.2,0) coordinate (vo);
+
+  % U4D: inverter
+  \node[op amp, anchor=-] (iv) at ($(vo)+(2.6,-3.4)$) {\scriptsize U4D};
+  \node[pin, above left]  at (iv.-)   {13};
+  \node[pin, below left]  at (iv.+)   {12};
+  \node[pin, above right] at (iv.out) {14};
+  \draw (vo) |- ++(0,-1) to[R, l=R33 100\,k$\Omega$] (vo |- iv.-) -- (iv.-);
+  \draw (iv.+) -- ++(-0.4,0) node[ground]{};
+  \draw ($(iv.-)+(-0.4,0)$) node[circ]{} |- ++(0,1.4) coordinate (fi)
+        to[R, l=R36 100\,k$\Omega$] (fi -| iv.out) -- (iv.out);
+
+  % SW3 normal / inverted
+  \node[spdt, xscale=-1, anchor=out 1] (sw) at ($(vo)+(4.6,0)$) {};
+  \draw (vo) -- (sw.out 1);
+  \node[pin, above] at (sw.out 1) {1};
+  \draw (iv.out) -- ++(0.6,0) |- (sw.out 2);
+  \node[pin, below] at (sw.out 2) {3};
+  \node[above=12pt, font=\sffamily\scriptsize, align=center] at (sw.center) {SW3\\normal / inverted};
+  \draw (sw.in) to[short, -*] ++(0.8,0) coordinate (so);
+  \node[pin, above] at (sw.in) {2};
+  \draw (so) to[R, l=R40 1\,k$\Omega$, -o] ++(3,0) node[right]{J6 OUT};
+
+  % LED driver: complementary emitter follower Q5/Q4 -> R39 -> bicolour LED pair
+  \draw (so) -- ++(0,-3.0) coordinate (b5) to[short, *-] ++(0,-1.8) coordinate (b4);
+  \node[npn, anchor=B] (q5) at ($(b5)+(0.6,0)$) {};
+  \node[pnp, anchor=B] (q4) at ($(b4)+(0.6,0)$) {};
+  \draw (b5) -- (q5.B);
+  \draw (b4) -- (q4.B);
+  \node[right] at (q5.text) {\scriptsize Q5 BC847};
+  \node[right] at (q4.text) {\scriptsize Q4 BC857};
+  \draw (q5.C) -- ++(0,0.2) node[vcc]{+12\,V};
+  \draw (q4.C) -- ++(0,-0.2) node[vee]{$-$12\,V};
+  \draw (q5.E) -- (q4.E);
+  \draw ($(q5.E)!.5!(q4.E)$) node[circ]{} to[R, l=R39 1\,k$\Omega$] ++(3.0,0) coordinate (led);
+  \draw (led) to[led, l_=D10, *-] ++(0,-2) coordinate (lg) node[ground]{};
+  \draw (led) -- ++(1.6,0) to[led, l=D9, invert] ++(0,-2) -- (lg);
+  \node[font=\sffamily\scriptsize, align=left, anchor=west] at ($(led)+(2.6,-1)$) {bicolour LED:\\D10 lights for positive,\\D9 for negative output};
+\end{circuitikz}
+\end{document}

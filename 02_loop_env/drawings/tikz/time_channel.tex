@@ -1,0 +1,58 @@
+% Attack time channel (the release channel is identical, see note). Reference designators follow 02_loop_env.net.
+% Render: tools/render_tikz.sh 02_loop_env/drawings/tikz/time_channel.tex
+\documentclass[border=8pt]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\usetikzlibrary{backgrounds,calc}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.8, diodes/scale=0.7}
+\begin{document}
+\begin{circuitikz}[font=\sffamily\small, show background rectangle,
+                   background rectangle/.style={fill=white}]
+  \tikzset{pin/.style={font=\sffamily\scriptsize, text=gray}}
+
+  % summer U3A
+  \node[op amp] (u) at (0,0) {\scriptsize U3A};
+  \node[pin, above left] at (u.-) {2};
+  \node[pin, below left] at (u.+) {3};
+  \node[pin, above right] at (u.out) {1};
+  \draw (u.+) -- ++(-0.4,0) node[ground]{};
+  \draw (u.-) -- ++(-1.0,0) coordinate (sj);
+  \draw (sj) to[short, *-] ++(0,1.6) to[R, l=R29 82\,k$\Omega$] (u.out |- {$(sj)+(0,1.6)$}) -- (u.out);
+
+  % inputs into the summing junction
+  \draw (sj) to[R, l_=R23 100\,k$\Omega$] ++(-2.8,0) coordinate (w);
+  \draw (sj) to[short, -*] ++(0,-2.0) coordinate (cvn)
+        to[R, l=R24 100\,k$\Omega$] ++(-2.8,0) to[short, -o] ++(-1.6,0) node[left]{J3 ATTACK CV};
+  \draw (cvn) -- ++(0,-1.6) to[R, l=R27 1.5\,M$\Omega$] ++(-2.8,0) -- ++(-1.6,0) node[left]{+12\,V};
+  % pot RV2 as divider: GND (pin 1, CCW) .. -12V (pin 3, CW), wiper pin 2
+  \draw ($(w)+(-1.6,1.4)$) node[ground, yscale=-1]{} node[left=6pt, font=\sffamily\scriptsize]{GND (pin 1, CCW)}
+        to[pR, n=pot, l_={RV2 10\,k$\Omega$ ATTACK}] ++(0,-2.8) node[below, font=\sffamily\scriptsize]{$-$12\,V (pin 3, CW)};
+  \draw (pot.wiper) -- (w);
+  % base divider
+  \draw (u.out) to[R, l=R34 15\,k$\Omega$, -*] ++(2.6,0) coordinate (base);
+  \draw (base) to[R, l=R37 510\,$\Omega$] ++(0,-2.2) node[ground]{};
+  \draw (base) -- ++(0,1.4) node[above, align=center, font=\sffamily\scriptsize]{BASE\_ATTACK\\from R18 (attack kill)};
+
+  % matched pair Q2 (BCM857BS)
+  \draw (base) -- ++(0.8,0) node[pnp, anchor=B] (qa) {};
+  \node[right] at (qa.text) {\scriptsize Q2A};
+  \draw (qa.E) -- ++(0,0.3) coordinate (ea);
+  \node[pnp, xscale=-1, anchor=E] (qb) at ($(ea)+(2.2,-0.3)$) {};
+  \node[left] at (qb.text) {\scriptsize Q2B};
+  \draw (ea) -- (qb.E |- ea) coordinate (eb) -- (qb.E);
+  \node[circ] at ($(ea)!.5!(eb)$) {};
+  \draw ($(ea)!.5!(eb)$) to[R, l=R41 7.5\,k$\Omega$] ++(0,2.0) node[vcc]{+12\,V};
+  \draw (qb.B) -- ++(0.4,0) node[ground]{};
+  \draw (qb.C) -- ++(0,-0.4) node[ground]{};
+  \draw (qa.C) to[short, -o] ++(0,-1.6) node[below]{$I_{ABC}$ (U5 pin 16)};
+  \node[pin, above] at ($(qa.B)+(-0.2,0)$) {2};
+  \node[pin, right] at (qa.C) {6};
+  \node[pin, left] at (qa.E) {1};
+  \node[pin, above] at ($(qb.B)+(0.2,0)$) {5};
+  \node[pin, left] at (qb.C) {3};
+  \node[pin, right] at (qb.E) {4};
+
+  \node[font=\sffamily\scriptsize, align=left, anchor=north west] at (-9,-5.2)
+    {Release channel: identical, with U3B (pins 6/5/7), RV3, J4, R25/R26/R28/R30, R35, R38, R42, Q3;\\
+     its base node BASE\_RELEASE is fed by R17 (release kill). Both Q1 collectors (pin 6) join at $I_{ABC}$.};
+\end{circuitikz}
+\end{document}

@@ -1,0 +1,44 @@
+% Stage enables: S switches one time channel off. Reference designators follow 02_loop_env.net.
+% Render: tools/render_tikz.sh 02_loop_env/drawings/tikz/enables.tex
+\documentclass[border=8pt]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\usetikzlibrary{backgrounds,calc}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.8, diodes/scale=0.7}
+\begin{document}
+\begin{circuitikz}[font=\sffamily\small, show background rectangle,
+                   background rectangle/.style={fill=white}]
+  \tikzset{pin/.style={font=\sffamily\scriptsize, text=gray},
+           note/.style={font=\sffamily\scriptsize, align=left}}
+
+  \draw (0,0) node[left]{S} to[short, o-*] (1.2,0) coordinate (s);
+  \node[note, anchor=north west] at (-0.6,-0.3) {from SW2 pole A\\($\pm$9.6\,V)};
+
+  % to the target network
+  \draw (s) -- ++(0,1.6) to[short, -o] ++(6.0,0) node[right]{R16 (target network, core)};
+
+  % release kill
+  \draw (s) to[D, l=D6] ++(2.0,0) to[R, l=R17 10\,k$\Omega$] ++(2.6,0) to[short, -o] ++(1.4,0)
+        node[right]{BASE\_RELEASE};
+  \node[note, anchor=south west] at (8.4,0.3) {S high (rise): lifts BASE\_RELEASE $\approx$0.4\,V,\\release current off};
+
+  % inverter Q1
+  \draw (s) -- ++(0,-3.6) to[R, l=R11 100\,k$\Omega$] ++(2.4,0) coordinate (qb);
+  \draw (qb) to[R, l_=R12 22\,k$\Omega$, *-] ++(0,-2.0) node[ground]{};
+  \node[npn, anchor=B] (q1) at ($(qb)+(0.6,0)$) {};
+  \draw (qb) -- (q1.B);
+  \node[right] at (q1.text) {\scriptsize Q1 BC847};
+  \node[pin, above] at ($(q1.B)+(-0.2,0)$) {1};
+  \node[pin, right] at (q1.E) {2};
+  \node[pin, right] at (q1.C) {3};
+  \draw (q1.E) -- ++(0,-0.3) node[ground]{};
+  \draw (q1.C) to[short, -*] ++(0,0.5) coordinate (sb);
+  \draw (sb) -- ++(0,0.0);
+  \draw (sb) to[R, l_=R14 4.7\,k$\Omega$] ++(-2.6,0) node[left]{+12\,V};
+  \node[note, above] at ($(sb)+(0.3,0.15)$) {$\overline{\mathrm{S}}$};
+
+  % attack kill
+  \draw (sb) to[D, l=D7] ++(2.0,0) to[R, l=R18 4.7\,k$\Omega$] ++(2.6,0) to[short, -o] ++(1.4,0)
+        node[right]{BASE\_ATTACK};
+  \node[note, anchor=west] at ($(sb)+(6.3,-0.9)$) {S low (fall): Q1 off, $\overline{\mathrm{S}}$ pulled up by R14,\\lifts BASE\_ATTACK $\approx$0.5\,V, attack current off};
+\end{circuitikz}
+\end{document}

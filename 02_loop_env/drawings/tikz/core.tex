@@ -1,0 +1,66 @@
+% Core: target network, shape pot, OTA, timing cap, clamp and buffer.
+% Reference designators and pin numbers follow 02_loop_env.net.
+% Render: tools/render_tikz.sh 02_loop_env/drawings/tikz/core.tex
+\documentclass[border=8pt]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\usetikzlibrary{backgrounds}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.8, diodes/scale=0.7}
+\begin{document}
+\begin{circuitikz}[font=\sffamily\small, show background rectangle,
+                   background rectangle/.style={fill=white}]
+  \tikzset{pin/.style={font=\sffamily\scriptsize, text=gray}}
+
+  % ---------------- OTA U5 (half B) ----------------
+  \node[op amp, noinv input up] (ota) at (0,0) {\scriptsize U5};
+  \node[pin, above left]  at (ota.+)   {14};
+  \node[pin, below left]  at (ota.-)   {13};
+  \node[pin, above right] at (ota.out) {12};
+  \node[font=\sffamily\scriptsize, align=center] at ($(ota.center)+(0.1,1.1)$) {LM13700\\(OTA)};
+
+  % ---------------- target network ----------------
+  \draw (ota.+) -- ++(-1.4,0) coordinate (np) to[short, -*] ++(-3.2,0) coordinate (T);
+  \draw (T) to[R, l=R19 56\,k$\Omega$, *-] ++(0,2) node[vcc]{+12\,V};
+  \draw (T) to[R, l=R20 18\,k$\Omega$] ++(0,-2) node[ground]{};
+  \draw (T) to[R, l_=R16 39\,k$\Omega$] ++(-3.6,0) coordinate (S);
+  \node[left] at (S) {S};
+  \node[font=\sffamily\scriptsize, align=left, anchor=north west] at ($(S)+(-0.3,-0.5)$) {target: +4.56\,V (S high)\\\phantom{target: }$-$0.41\,V (S low)};
+
+  % ---------------- shape pot between OTA inputs ----------------
+  \draw (ota.-) -- ++(-0.6,0) coordinate (nn);
+  \draw (np) to[vR, l_=RV1 5\,k$\Omega$ (log), *-] ++(0,-3.2)
+             to[R, l_=R21 220\,$\Omega$] ++(0,-1.8) coordinate (bot);
+  \draw (nn) to[short, *-*] (nn |- bot) -- (bot);
+  \draw (nn |- bot) to[R, l_=R22 10\,k$\Omega$] ++(2.6,0) node[right]{CAP\_BUF};
+  \node[font=\sffamily\scriptsize, align=right, anchor=east] at ($(np)+(-0.9,-2.6)$) {SHAPE\\CCW = exp\\CW = lin};
+
+  % ---------------- I_ABC from the time channels
+  \draw (ota.down) to[short, -o] ++(0,-1.4) node[below, align=center]{$I_{ABC}$\\\scriptsize (Q2/Q3 pin 6)};
+  \node[pin, left] at ($(ota.down)+(0,-0.5)$) {16};
+
+  % ---------------- timing cap, clamp, buffer ----------------
+  \draw (ota.out) -- ++(1.0,0) coordinate (cn) to[short, *-] ++(2.6,0) coordinate (ct);
+  \draw (ct) to[C, l_=C11 100\,nF film, *-] ++(0,-2.2) node[ground]{};
+  % clamp U4A
+  \node[op amp, noinv input up, anchor=-] (cl) at ($(cn)+(0.4,1.6)$) {\scriptsize U4A};
+  \node[pin, above left]  at (cl.+)   {3};
+  \node[pin, below left]  at (cl.-)   {2};
+  \node[pin, above right] at (cl.out) {1};
+  \draw (cl.-) -| (cn);
+  \draw (cl.+) -- ++(-0.4,0) node[ground]{};
+  \draw (cl.out) -| ($(ct)+(0.6,0)$) coordinate (dtop);
+  \draw (cl.out -| dtop) to[D, l=D8 BAS416] (dtop |- ct);
+  \node[circ] at (dtop |- ct) {};
+  % buffer U4B
+  \draw (ct) -- ++(1.6,0) coordinate (bin);
+  \node[op amp, noinv input up, anchor=+] (buf) at (bin) {\scriptsize U4B};
+  \node[pin, above left]  at (buf.+)   {5};
+  \node[pin, below left]  at (buf.-)   {6};
+  \node[pin, above right] at (buf.out) {7};
+  \draw (buf.-) -- ++(-0.3,0) |- ++(0,-0.8) -| ($(buf.out)+(0.3,0)$) coordinate (bo);
+  \draw (buf.out) to[short, -o] ++(1.2,0) node[right]{CAP\_BUF};
+
+  \node[font=\sffamily\scriptsize, align=left, anchor=north west] at (-9.5,-6.8)
+       {Supplies: U5 pin 11 = +12\,V, pin 6 = $-$12\,V; U4 pin 4 = +12\,V, pin 11 = $-$12\,V; 100\,nF decoupling at each IC.\\
+        Diode bias pins 2/15 and the second OTA half: leave open (or tie pins 3/4 to GND).};
+\end{circuitikz}
+\end{document}
