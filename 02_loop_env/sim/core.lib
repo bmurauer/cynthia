@@ -1,0 +1,23 @@
+* ---- behavioural TL07x: GBW 3MHz, output swing +/-(rail-1.5) ----
+.subckt OPA inp inn out
+G1 0 n1 inp inn 1m
+R1 n1 0 100Meg
+C1 n1 0 53p
+D1 n1 hi DCL
+D2 lo n1 DCL
+Vhi hi 0 {SAT}
+Vlo lo 0 {-SAT}
+Bo out 0 V = V(n1)
+.model DCL D(IS=1e-12 N=0.5)
+.ends
+* ---- behavioural LM13700 half: Iout = Iabc*tanh(Vd/2Vt); bias = Iabc/1250 ----
+.subckt OTA p n out abc
+Vabc abc 0 DC -10.3
+Bout 0 out I = max(I(Vabc),0)*tanh((V(p)-V(n)-{VOS})/0.0517)
+Bbp p 0 I = max(I(Vabc),0)/1250
+Bbn n 0 I = max(I(Vabc),0)/1250*1.1
+.ends
+.model BC857 PNP(IS=1.8e-14 BF=290 VAF=30 IKF=0.08 NF=1)
+.model BC847 NPN(IS=1.8e-14 BF=290 VAF=60 IKF=0.08 NF=1)
+.model D4148 D(IS=2.5e-9 N=1.75 RS=0.6 CJO=4p)
+.model DLL D(IS=1e-14 N=1.0 RS=1 CJO=2p)
