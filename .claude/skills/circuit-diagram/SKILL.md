@@ -21,6 +21,10 @@ and only then show or reference it.
   Never invent designators when a netlist exists; mention when a drawing shows
   a proposal that is not in the schematic yet.
 - Pin numbers: small grey labels next to the pin (`pin` style in the template).
+- Modules split into several boards have per-board designators (two different
+  "R1"s). Draw main-board parts in black and the other board's parts with
+  `\cb{...}` (blue; macro in the template), say so in a legend note, and name
+  the board-to-board connector pin where a net crosses (e.g. "via J4/J2 pin 7").
 - Net names that leave the drawing (e.g. `CAP_BUF`, `S`) as plain text at a wire end.
 - Short notes (formulas, warnings like "never connect pin 16 to GND directly")
   as `\scriptsize` text nodes near the relevant part.
@@ -42,6 +46,7 @@ and only then show or reference it.
 \usepackage[RPvoltages]{circuitikz}
 \usetikzlibrary{backgrounds,calc}
 \ctikzset{resistors/scale=0.8, capacitors/scale=0.8, diodes/scale=0.7}
+\newcommand{\cb}[1]{\textcolor{blue!55!black}{#1}}  % part on the other (control) board
 \begin{document}
 \begin{circuitikz}[font=\sffamily\small, show background rectangle,
                    background rectangle/.style={fill=white}]

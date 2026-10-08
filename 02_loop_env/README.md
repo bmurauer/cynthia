@@ -47,12 +47,19 @@ Times are set by I_ABC via an exponential converter, so linear pots give a log f
 The cap runs at 0..~4.5V (LM13700 output cannot swing to 10V on real ±12V rails); the output stage scales it by 1..2 (LEVEL).
 
 ### Circuit
-Schematics drawn from `02_loop_env.net` with circuitikz (sources in [`drawings/tikz/`](drawings/tikz/),
-render with `tools/render_tikz.sh 02_loop_env/drawings/tikz`). The KiCad schematic is the reference for values;
+The module is split into two boards, each its own KiCad project:
+- `main_board/`: Eurorack header, protection, all of the timing, core and logic SMD parts.
+- `control_board/`: pots, jacks, switches, LEDs, and the output stage; clamps to the front panel.
+
+They connect via two 8-pin rows (control J4/J5 ↔ main J2/J1, same pin numbers; `tools/netlist.py 02 --connectors`).
+Reference designators are per board, so the drawings show main-board parts in black and control-board parts in blue.
+
+Schematics drawn from `main_board.net` / `control_board.net` with circuitikz (sources in [`drawings/tikz/`](drawings/tikz/),
+render with `tools/render_tikz.sh 02_loop_env/drawings/tikz`). The KiCad schematics are the reference for values;
 the notes below explain the non-obvious choices.
 
-ICs: U1, U3 TL072, U4 TL074 (all 8 sections used), U5 LM13700 (one half used, second half spare, e.g. for a VCA later).
-Rails: ±12V nominal.
+ICs: main U1 LM13700 (one half used, second half spare, e.g. for a VCA later), main U2–U4 TL072, control U1 TL072
+(all op-amp sections used). Rails: ±12V nominal; the control board gets them from the main board after the protection diodes.
 
 #### Time channels
 ![attack time channel](drawings/tikz/time_channel.svg)
@@ -67,28 +74,28 @@ Rails: ±12V nominal.
 ![stage enables](drawings/tikz/enables.svg)
 
 - Lifting a BASE node by ≳0.4V switches that channel's current off; every extra 0.1V cuts its leakage ~50×.
-- R18 is smaller than R17 because S̄ is pulled up through R14 (weak source), while S comes straight from an op-amp.
+- R16 is smaller than R15 because S̄ is pulled up through R13 (weak source), while S comes straight from an op-amp.
 
 #### Core
 ![core](drawings/tikz/core.svg)
 
 - C11 must be **film or C0G**, not X7R (voltage coefficient bends the linear ramp).
-- D8 must be **low-leakage** (BAS416): at the slowest setting C11 is charged with only ~27nA.
-- U4A + D8 form an ideal diode that holds C11 at ≥0V, so the release can aim below zero (crisp end, robust to OTA offset)
+- D6 must be **low-leakage** (BAS416): at the slowest setting C11 is charged with only ~27nA.
+- U4A + D6 form an ideal diode that holds C11 at ≥0V, so the release can aim below zero (crisp end, robust to OTA offset)
   while the output still rests at exactly 0V.
 - Leave the LM13700 diode-bias pins (2, 15) open; the design uses the bare differential input.
 
 #### Output
 ![output stage](drawings/tikz/output.svg)
 
-- RV4's wiper is tied to the pin-9 end, so a lifted wiper fails safe at maximum gain (2.0) instead of opening the feedback loop.
+- RV4's wiper is tied to the U1 pin-2 end (control board), so a lifted wiper fails safe at maximum gain (2.0) instead of opening the feedback loop.
 - Gain 1.0..2.0: gate-mode hold 4.6..9.1V; inverted output 0..−9.1V.
 
 #### Logic
 ![logic](drawings/tikz/logic.svg)
 
-- R5 gives U1A hysteresis so slow or noisy gate edges cannot retrigger.
-- D2 makes the gate forcing one-way: without it, a low gate would drag U1B(−) below the lower threshold and fire EOC at the start of the release.
+- R5 gives U2B hysteresis so slow or noisy gate edges cannot retrigger.
+- D3 makes the gate forcing one-way: without it, a low gate would drag U2A(−) below the lower threshold and fire EOC at the start of the release.
 - Pluck (gate-to-trigger) would be a modification of the gate input, not of the core.
 
 ### Simulated performance
