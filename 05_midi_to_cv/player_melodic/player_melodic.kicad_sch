@@ -4,6 +4,10 @@
 	(generator_version "10.0")
 	(uuid "56a398e6-7b9d-4862-a4a8-33772f6f7ce2")
 	(paper "A4")
+	(title_block
+		(title "#02 Player: Melodic")
+		(rev "2")
+	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:TL072"
 			(pin_names
@@ -4416,6 +4420,12 @@
 		(uuid "12f893ed-a8f6-468f-87c0-081f3ae48466")
 	)
 	(junction
+		(at 182.88 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "13fe8b87-7e74-47cd-bcb1-3a6fa722e619")
+	)
+	(junction
 		(at 176.53 146.05)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4536,6 +4546,14 @@
 		(uuid "23c03af9-c9a0-4707-a8bd-987a69ed0260")
 	)
 	(no_connect
+		(at 104.14 105.41)
+		(uuid "2e84f048-4c85-4ac0-9d0d-6ac423390e89")
+	)
+	(no_connect
+		(at 104.14 100.33)
+		(uuid "375a32b3-7966-48d7-a74f-94e4ec48f415")
+	)
+	(no_connect
 		(at 53.34 85.09)
 		(uuid "598879b8-6c5b-4469-9758-c8ed81cd2fa7")
 	)
@@ -4606,6 +4624,16 @@
 			(type default)
 		)
 		(uuid "09b5d050-e678-4fd9-8664-f4418718ecb4")
+	)
+	(wire
+		(pts
+			(xy 195.58 110.49) (xy 198.12 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d83b09a-3b9b-4f07-9737-f64dd3178cea")
 	)
 	(wire
 		(pts
@@ -4979,7 +5007,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 110.49) (xy 198.12 110.49)
+			(xy 182.88 110.49) (xy 187.96 110.49)
 		)
 		(stroke
 			(width 0)
@@ -8166,7 +8194,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "2.2k"
 			(at 140.97 124.4599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8436,6 +8464,85 @@
 			(project "player_melodic"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 182.88 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "732e77ad-48cf-4006-9be3-5fe39823a3ae")
+		(property "Reference" "#PWR034"
+			(at 182.88 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 182.88 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 182.88 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e172c9f8-76d4-4c1e-8e79-affed97447d9")
+		)
+		(instances
+			(project "player_melodic"
+				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -9344,6 +9451,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 191.77 110.49 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "af1bda0c-5386-4c30-a635-7a37539b9062")
+		(property "Reference" "R10"
+			(at 191.77 113.538 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "15k"
+			(at 191.77 116.078 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cynthia:R SMD  0805"
+			(at 191.77 108.712 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 191.77 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "fe1d5d57-9483-40ae-96f3-c7074b0fae45")
+		)
+		(pin "1"
+			(uuid "ebcc4ba4-d517-4ee0-854d-d69d4ab3321e")
+		)
+		(instances
+			(project "player_melodic"
+				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 78.74 59.69 0)
 		(unit 1)
@@ -10124,7 +10310,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_5.3x6.2mm_P1.27mm"
+		(property "Footprint" "cynthia:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 172.72 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -10670,6 +10856,88 @@
 			(project "player_melodic"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
 					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 182.88 114.3 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dab33a7b-93f7-44b8-8fe0-15d2c3cb7695")
+		(property "Reference" "R9"
+			(at 180.34 113.0299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 180.34 115.5699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "cynthia:R SMD  0805"
+			(at 181.102 114.3 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 182.88 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "58ca2bf4-0e8d-4f2c-b1d7-c3aab7ebf6c6")
+		)
+		(pin "1"
+			(uuid "95c8dd43-fef2-441d-80ab-d8266f04df75")
+		)
+		(instances
+			(project "player_melodic"
+				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
+					(reference "R9")
 					(unit 1)
 				)
 			)

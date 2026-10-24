@@ -1,5 +1,7 @@
 panelHeight = 128.5;
 thickness = 2;
+mountHoleOffset=7.5;
+mountHoleGap=5.08;
 mountHoleDiameter = 3.0;
 jackHoleDiameter = 6;
 ledHoleDiameter = 5;
@@ -7,6 +9,7 @@ pushButtonHoleDiameter = 7;
 potHoleDiameter = 6;
 switchHoleDiameter = 6;
 rotarySwitchHoleDiameter = 9.1;
+microSwitchHoleDiameter=3;
 
 
 function hp(x) = x * 5.08 - 0.3;
@@ -28,6 +31,10 @@ module euroRackMountHole(x, y, d = 3.2, slot = 1, depth = 100) {
         }
 }
 
+module euroRackMountHoles(n_top, n_bot) {
+   euroRackMountHole(mountHoleOffset + n_top*mountHoleGap, 3, slot=3);
+   euroRackMountHole(mountHoleOffset + n_bot*mountHoleGap, panelHeight-3, slot=3);
+}
 
 module punchHole(x, y, holeSize,chamfer=false){
   translate([x, y, -1]){
@@ -42,6 +49,9 @@ module punchHole(x, y, holeSize,chamfer=false){
 
 module led(x, y) {
     punchHole(x, y, ledHoleDiameter);
+}
+module microswitch(x, y) {
+    punchHole(x, y, microSwitchHoleDiameter);
 }
 module switch(x, y) { 
     punchHole(x, y, switchHoleDiameter);

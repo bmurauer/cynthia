@@ -5,9 +5,9 @@
 	(uuid "1ca31c35-1e11-4409-ae38-7c0e3718d0bd")
 	(paper "A4")
 	(title_block
-		(title "conductor control board")
-		(date "2026-09-19")
-		(rev "0.1")
+		(title "#05: Conductor - Control Board")
+		(date "2026-10-24")
+		(rev "2")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x04_Socket"
@@ -4724,7 +4724,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:SMDIP-8_W7.62mm"
+		(property "Footprint" "cynthia:SMDIP-8_W7.62mm_hand_solder"
 			(at 71.12 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -5479,7 +5479,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:SMDIP-8_W7.62mm"
+		(property "Footprint" "cynthia:SMDIP-8_W7.62mm_hand_solder"
 			(at 71.12 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -6013,7 +6013,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:SMDIP-8_W7.62mm"
+		(property "Footprint" "cynthia:SMDIP-8_W7.62mm_hand_solder"
 			(at 71.12 137.16 0)
 			(hide yes)
 			(show_name no)

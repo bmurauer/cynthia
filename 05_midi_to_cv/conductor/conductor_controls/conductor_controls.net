@@ -2,17 +2,17 @@
 	(version "E")
 	(design
 		(source "/home/benjamin/git/cynthia/05_midi_to_cv/conductor/conductor_controls/conductor_controls.kicad_sch")
-		(date "2026-09-19T20:00:06")
-		(tool "Eeschema 10.0.6")
+		(date "2026-10-24T14:52:30")
+		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
 			(name "/")
 			(tstamps "/")
 			(title_block
-				(title "conductor control board")
+				(title "#05: Conductor - Control Board")
 				(company)
-				(rev "0.1")
-				(date "2026-09-19")
+				(rev "2")
+				(date "2026-10-24")
 				(source "conductor_controls.kicad_sch")
 				(comment
 					(number "1")
@@ -237,14 +237,14 @@
 		(comp
 			(ref "IC1")
 			(value "TLP2662")
-			(footprint "Package_DIP:SMDIP-8_W7.62mm")
+			(footprint "cynthia:SMDIP-8_W7.62mm_hand_solder")
 			(datasheet "https://toshiba.semicon-storage.com/info/TLP2662F_datasheet_en_20151130.pdf?did=13273&prodName=TLP2662F")
 			(description "Dual Common Cathode Optocoupler")
 			(fields
 				(field
 					(name "KiLib_Generator") "package/DIP/legacy")
 				(field
-					(name "Footprint") "Package_DIP:SMDIP-8_W7.62mm")
+					(name "Footprint") "cynthia:SMDIP-8_W7.62mm_hand_solder")
 				(field
 					(name "Datasheet") "https://toshiba.semicon-storage.com/info/TLP2662F_datasheet_en_20151130.pdf?did=13273&prodName=TLP2662F")
 				(field
@@ -307,14 +307,14 @@
 		(comp
 			(ref "IC2")
 			(value "TLP2662")
-			(footprint "Package_DIP:SMDIP-8_W7.62mm")
+			(footprint "cynthia:SMDIP-8_W7.62mm_hand_solder")
 			(datasheet "https://toshiba.semicon-storage.com/info/TLP2662F_datasheet_en_20151130.pdf?did=13273&prodName=TLP2662F")
 			(description "Dual Common Cathode Optocoupler")
 			(fields
 				(field
 					(name "KiLib_Generator") "package/DIP/legacy")
 				(field
-					(name "Footprint") "Package_DIP:SMDIP-8_W7.62mm")
+					(name "Footprint") "cynthia:SMDIP-8_W7.62mm_hand_solder")
 				(field
 					(name "Datasheet") "https://toshiba.semicon-storage.com/info/TLP2662F_datasheet_en_20151130.pdf?did=13273&prodName=TLP2662F")
 				(field
@@ -377,14 +377,14 @@
 		(comp
 			(ref "IC3")
 			(value "TLP2662")
-			(footprint "Package_DIP:SMDIP-8_W7.62mm")
+			(footprint "cynthia:SMDIP-8_W7.62mm_hand_solder")
 			(datasheet "https://toshiba.semicon-storage.com/info/TLP2662F_datasheet_en_20151130.pdf?did=13273&prodName=TLP2662F")
 			(description "Dual Common Cathode Optocoupler")
 			(fields
 				(field
 					(name "KiLib_Generator") "package/DIP/legacy")
 				(field
-					(name "Footprint") "Package_DIP:SMDIP-8_W7.62mm")
+					(name "Footprint") "cynthia:SMDIP-8_W7.62mm_hand_solder")
 				(field
 					(name "Datasheet") "https://toshiba.semicon-storage.com/info/TLP2662F_datasheet_en_20151130.pdf?did=13273&prodName=TLP2662F")
 				(field

@@ -13,7 +13,7 @@
 //   PA5  (pin 12)  DAC SCK     - MCP4822 pin 3, SPI1
 //   PA7  (pin 14)  DAC SDI     - MCP4822 pin 4, SPI1
 //
-// DAC A -> U1A buffer -> VELOCITY 1 (J5), DAC B -> U1B buffer -> VELOCITY 2 (J6).
+// DAC A -> U1A (2.5x) -> VELOCITY 1 (J5), DAC B -> U1B (2.5x) -> VELOCITY 2 (J6).
 const uint32_t kPinLearn = PA0;
 const uint32_t kPinLed = PA1;
 const uint32_t kPinGate1 = PA2;
@@ -48,8 +48,13 @@ midi::MidiInterface<BusTransport> busMidi(busTransport);
 // 1x gain, bit 12 (~SHDN) set means output enabled. At 1x gain one LSB is
 // 0.5mV (0-2.0475V), the only usable range on a 3.3V supply - 2x gain would
 // ask for 4.096V and clip at the rail.
-constexpr uint16_t kDacChannelA = 0x3000; // velocity 1, into U1A (buffer)
-constexpr uint16_t kDacChannelB = 0xB000; // velocity 2, into U1B (buffer)
+constexpr uint16_t kDacChannelA = 0x3000; // velocity 1, into U1A
+constexpr uint16_t kDacChannelB = 0xB000; // velocity 2, into U1B
+
+// U1A/U1B are non-inverting stages with a gain of 1 + 15k / 10k = 2.5x
+// (rev2 onwards), so code 4000 (2.000V) gives 5.000V at full velocity.
+// On rev1 boards, where U1 is a unity follower, this tops out at 2.000V.
+constexpr uint32_t kVelocityFullScale = 4000;
 
 // Drum gates don't simply follow the note like the melodic player's:
 // - Pads and sequencers often send the note-off within a millisecond or two,
@@ -286,8 +291,8 @@ void handleNoteOn(uint8_t note, uint8_t velocity) {
   for (Output &output : outputs) {
     if (output.note != note) continue;
 
-    // Velocity 0-127 -> 0-4064 codes -> 0-2.03V, through the unity buffer.
-    writeDac(output.dacChannel, velocity << 5);
+    // Velocity 0-127 -> 0-4000 codes -> 0-2V, 0-5V after U1's 2.5x gain.
+    writeDac(output.dacChannel, (velocity * kVelocityFullScale + 63) / 127);
     output.held = true;
 
     if (output.open || output.reopenPending) {

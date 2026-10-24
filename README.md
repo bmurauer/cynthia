@@ -10,12 +10,13 @@ Every project should at least contain:
 - `schematics` for the schematics, made in [KiCAD](https://www.kicad.org/)
 - `stripboard` for the design of the stripboard (you don't need this if you order proper PCBs). 
   I use [DIY Layout Creator](https://diy-fever.com/software/diylc/) for this.
-- `panel` for the Kosmo-format (20cm height) panels.
-  I use a custom template for [OpenSCAD](https://diy-fever.com/software/diylc/) which can be found in `lib/kosmo.scad`.
-  On linux, you can use the template by copying it to:
+- `panel` (or `front_panel`) for the front panels.
+  I use custom templates for [OpenSCAD](https://openscad.org/), which can be found in `lib/openscad/`:
+  `kosmo.scad` for the Kosmo-format (20cm height) panels and `eurorack.scad` for the eurorack (3U, 128.5mm) panels.
+  On linux, you can use the templates by copying them to:
   ```bash
-  mkdir ~/.local/share/OpenSCAD/libraries 
-  cp lib/kosmo.scad ~/.local/share/OpenSCAD/libraries/
+  mkdir -p ~/.local/share/OpenSCAD/libraries
+  cp lib/openscad/*.scad ~/.local/share/OpenSCAD/libraries/
   ```
 
 Some modules have additional subfolders with sound samples or Arduino source code.
@@ -66,8 +67,46 @@ I bought a 30m microphone cable from which I snip off what I need.
 
 ## OpenSCAD panels
 
-Design the panels using [OpenSCAD](https://diy-fever.com/software/diylc/), because it is intuitive to me as a programmer.
+Design the panels using [OpenSCAD](https://openscad.org/), because it is intuitive to me as a programmer.
 I then print the panels using a standard filament 3D printer.
+Both templates define the same basic modules (`panel`, `jack`, `pot`, `led`, `switch`, `pushButton`, ...),
+so only include one of them per panel.
+
+### Eurorack panels
+
+`eurorack.scad` sets the panel height to 128.5mm and provides `hp(n)` for the panel width
+(`n * 5.08mm - 0.3mm` tolerance, so that neighbouring panels don't jam).
+
+The mounting holes follow the Doepfer A-100 spec: 3mm from the top and bottom edges, the first hole 7.5mm from the
+left edge, and further positions on the 5.08mm (1HP) grid. `euroRackMountHoles(n_top, n_bot)` places one hole at
+the top and one at the bottom, each shifted `n` HP to the right of the first position. Shifting the two holes
+to different positions lets neighbouring modules share a rail without their screws colliding.
+The holes are 3.2mm wide (M3 clearance) and slotted horizontally by 3mm for tolerance.
+For custom positions, use `euroRackMountHole(x, y, d, slot)` directly.
+
+The following example generates the 4HP panel of the `05_midi_to_cv` drum velocity player:
+
+```
+include <eurorack.scad>
+
+difference() {
+    panel(hp(4));
+
+    euroRackMountHoles(0, 1); // top hole at 7.5mm, bottom hole at 12.58mm
+
+    jack(10, 19.75);
+    jack(10, 30.75);
+
+    microswitch((11.5+16)/2, 65.5);
+    led((6.5-1.27), 65.5);
+
+    jack(10, 97.75);
+    jack(10, 108.75);
+}
+```
+
+### Kosmo panels
+
 The following example generates a panel for the first module, the `01_poly_midi_2_cv`:
 
 ```
@@ -112,6 +151,36 @@ And since I am an even crappier woodcraftsman than I am an electrician, the pane
 > [!NOTE]
 > The distance between the tabs that I have used depends on the pre-drilled holes of the strip boards that I like to use.
 > Please change this distance if you have other PCBs.
+
+## PCB Design and Build Notes
+
+Lessons from the first batch of eurorack PCBs (#05 rev1), to keep in mind for every new board.
+
+### Layout
+
+- **Same orientation on sibling boards.** Boards that share most of their circuit (like the #05 players) should
+  place shared parts in the same orientation. On #05 rev1, the TL072 on the drum velocity player was rotated
+  180° compared to the melodic player, which cost me one botched soldering job. Across the whole project,
+  keep IC pin 1 in the same corner wherever the layout allows.
+- **Align bus headers between coupled modules.** When modules are connected by a ribbon cable (like the #05
+  player bus), put the bus header at the same vertical position on every PCB, so the cable runs straight
+  across the case.
+
+### Releasing a board revision
+
+- Put a silkscreen text on every board saying what it is and which revision it is, e.g.
+  `#05: Conductor: Main Board` / `Rev. 2`. Set the same title and revision in the schematic's title block,
+  so the netlist carries them too. Boards of a multi-board module or sibling modules look alike once they
+  are out of the bag, and a rev1 board in hand must be told apart from a rev2 one.
+- Commit the exact state that is sent to the fab, including the Gerbers, and tag that commit as
+  `<module>-rev<N>` (e.g. `05-rev1`). Start the next revision from that tag, so the ordered version can
+  always be recovered.
+
+### Bring-up
+
+- Measure every supply rail at the **far end** of a bus as well as at its source. On #05 rev1, a bad solder
+  joint on the conductor meant that -12V never reached the players. Nothing on the conductor uses -12V, so the
+  conductor tested fine, and the fault only showed up as a player op-amp stuck high.
 
 ## Thanks to
 

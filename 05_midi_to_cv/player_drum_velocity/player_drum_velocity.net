@@ -2,16 +2,16 @@
 	(version "E")
 	(design
 		(source "/home/benjamin/git/cynthia/05_midi_to_cv/player_drum_velocity/player_drum_velocity.kicad_sch")
-		(date "2026-09-30T19:56:10")
-		(tool "Eeschema 10.0.6")
+		(date "2026-10-24T14:26:22")
+		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
 			(name "/")
 			(tstamps "/")
 			(title_block
-				(title)
+				(title "#02 Player: Double Drums with Velocity")
 				(company)
-				(rev)
+				(rev "2")
 				(date)
 				(source "player_drum_velocity.kicad_sch")
 				(comment
@@ -1515,7 +1515,7 @@
 		)
 		(comp
 			(ref "R9")
-			(value "4.7k")
+			(value "2.2k")
 			(footprint "cynthia:R SMD  0805")
 			(description "Resistor")
 			(fields
@@ -1553,6 +1553,222 @@
 				(tstamps "/")
 			)
 			(tstamps "8debc4b4-7ac5-4c7a-a094-70a75a8d839c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R10")
+			(value "10k")
+			(footprint "cynthia:R SMD  0805")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "cynthia:R SMD  0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "player_drum_velocity")
+			)
+			(property
+				(name "Sheetfile")
+				(value "player_drum_velocity.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "db581326-1ea3-4a9d-a6b8-c867a651efbe")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R11")
+			(value "10k")
+			(footprint "cynthia:R SMD  0805")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "cynthia:R SMD  0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "player_drum_velocity")
+			)
+			(property
+				(name "Sheetfile")
+				(value "player_drum_velocity.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "eb367f5d-fc89-40ab-9e3c-bdac22180efb")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R12")
+			(value "15k")
+			(footprint "cynthia:R SMD  0805")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "cynthia:R SMD  0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "player_drum_velocity")
+			)
+			(property
+				(name "Sheetfile")
+				(value "player_drum_velocity.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "5ced2fb8-4337-4bf9-8a60-295d5151eeb6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R13")
+			(value "15k")
+			(footprint "cynthia:R SMD  0805")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "cynthia:R SMD  0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "player_drum_velocity")
+			)
+			(property
+				(name "Sheetfile")
+				(value "player_drum_velocity.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "e7fbdd93-56a4-4454-88ac-6b984cf6cf2c")
 			(units
 				(unit
 					(name "A")
@@ -1926,12 +2142,12 @@
 		(comp
 			(ref "U5")
 			(value "MCP4822")
-			(footprint "Package_SO:SOIC-8_5.3x6.2mm_P1.27mm")
+			(footprint "cynthia:SOIC-8_3.9x4.9mm_P1.27mm")
 			(datasheet "http://ww1.microchip.com/downloads/en/DeviceDoc/20002249B.pdf")
 			(description "2-Channel 12-Bit D/A Converters with SPI Interface and Internal Reference (2.048V)")
 			(fields
 				(field
-					(name "Footprint") "Package_SO:SOIC-8_5.3x6.2mm_P1.27mm")
+					(name "Footprint") "cynthia:SOIC-8_3.9x4.9mm_P1.27mm")
 				(field
 					(name "Datasheet") "http://ww1.microchip.com/downloads/en/DeviceDoc/20002249B.pdf")
 				(field
@@ -3012,6 +3228,16 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "R10")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R11")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
 				(ref "R9")
 				(pin "1")
 				(pintype "passive")
@@ -3226,6 +3452,46 @@
 		)
 		(net
 			(code "17")
+			(name "Net-(R12-Pad1)")
+			(class "Default")
+			(node
+				(ref "R12")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R8")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "7")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "18")
+			(name "Net-(R13-Pad1)")
+			(class "Default")
+			(node
+				(ref "R13")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R7")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "1")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "19")
 			(name "Net-(U1A-+)")
 			(class "Default")
 			(node
@@ -3242,18 +3508,18 @@
 			)
 		)
 		(net
-			(code "18")
+			(code "20")
 			(name "Net-(U1A--)")
 			(class "Default")
 			(node
-				(ref "R7")
+				(ref "R11")
 				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "U1")
-				(pin "1")
-				(pintype "output")
+				(ref "R13")
+				(pin "2")
+				(pintype "passive")
 			)
 			(node
 				(ref "U1")
@@ -3263,7 +3529,7 @@
 			)
 		)
 		(net
-			(code "19")
+			(code "21")
 			(name "Net-(U1B-+)")
 			(class "Default")
 			(node
@@ -3280,11 +3546,16 @@
 			)
 		)
 		(net
-			(code "20")
+			(code "22")
 			(name "Net-(U1B--)")
 			(class "Default")
 			(node
-				(ref "R8")
+				(ref "R10")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R12")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -3294,14 +3565,9 @@
 				(pinfunction "-_6")
 				(pintype "input")
 			)
-			(node
-				(ref "U1")
-				(pin "7")
-				(pintype "output")
-			)
 		)
 		(net
-			(code "21")
+			(code "23")
 			(name "Net-(U2-PA0)")
 			(class "Default")
 			(node
@@ -3318,7 +3584,7 @@
 			)
 		)
 		(net
-			(code "22")
+			(code "24")
 			(name "Net-(U2-PA2)")
 			(class "Default")
 			(node
@@ -3334,7 +3600,7 @@
 			)
 		)
 		(net
-			(code "23")
+			(code "25")
 			(name "Net-(U2-PA3)")
 			(class "Default")
 			(node
@@ -3350,7 +3616,7 @@
 			)
 		)
 		(net
-			(code "24")
+			(code "26")
 			(name "Net-(U2-PA4)")
 			(class "Default")
 			(node
@@ -3367,7 +3633,7 @@
 			)
 		)
 		(net
-			(code "25")
+			(code "27")
 			(name "Net-(U2-PA5)")
 			(class "Default")
 			(node
@@ -3384,7 +3650,7 @@
 			)
 		)
 		(net
-			(code "26")
+			(code "28")
 			(name "Net-(U2-PA7)")
 			(class "Default")
 			(node
@@ -3401,7 +3667,7 @@
 			)
 		)
 		(net
-			(code "27")
+			(code "29")
 			(name "RESET")
 			(class "Default")
 			(node
@@ -3418,7 +3684,7 @@
 			)
 		)
 		(net
-			(code "28")
+			(code "30")
 			(name "SWD CLOCK")
 			(class "Default")
 			(node
@@ -3435,7 +3701,7 @@
 			)
 		)
 		(net
-			(code "29")
+			(code "31")
 			(name "SWD DATA")
 			(class "Default")
 			(node
@@ -3452,7 +3718,7 @@
 			)
 		)
 		(net
-			(code "30")
+			(code "32")
 			(name "unconnected-(J1-Pin_7-Pad7)")
 			(class "Default")
 			(node
@@ -3463,7 +3729,7 @@
 			)
 		)
 		(net
-			(code "31")
+			(code "33")
 			(name "unconnected-(J1-Pin_8-Pad8)")
 			(class "Default")
 			(node
@@ -3474,7 +3740,7 @@
 			)
 		)
 		(net
-			(code "32")
+			(code "34")
 			(name "unconnected-(J3-PadTN)")
 			(class "Default")
 			(node
@@ -3485,7 +3751,7 @@
 			)
 		)
 		(net
-			(code "33")
+			(code "35")
 			(name "unconnected-(J4-PadTN)")
 			(class "Default")
 			(node
@@ -3496,7 +3762,7 @@
 			)
 		)
 		(net
-			(code "34")
+			(code "36")
 			(name "unconnected-(J5-PadTN)")
 			(class "Default")
 			(node
@@ -3507,7 +3773,7 @@
 			)
 		)
 		(net
-			(code "35")
+			(code "37")
 			(name "unconnected-(J6-PadTN)")
 			(class "Default")
 			(node
@@ -3518,7 +3784,7 @@
 			)
 		)
 		(net
-			(code "36")
+			(code "38")
 			(name "unconnected-(U2-PA6-Pad13)")
 			(class "Default")
 			(node
@@ -3529,7 +3795,7 @@
 			)
 		)
 		(net
-			(code "37")
+			(code "39")
 			(name "unconnected-(U2-PA8{slash}PB0{slash}PB1{slash}PB2-Pad15)")
 			(class "Default")
 			(node
@@ -3540,7 +3806,7 @@
 			)
 		)
 		(net
-			(code "38")
+			(code "40")
 			(name "unconnected-(U2-PA9{slash}PA11-Pad16)")
 			(class "Default")
 			(node
@@ -3551,7 +3817,7 @@
 			)
 		)
 		(net
-			(code "39")
+			(code "41")
 			(name "unconnected-(U2-PA10{slash}PA12-Pad17)")
 			(class "Default")
 			(node
@@ -3562,7 +3828,7 @@
 			)
 		)
 		(net
-			(code "40")
+			(code "42")
 			(name "unconnected-(U2-PB3{slash}PB4{slash}PB5{slash}PB6-Pad20)")
 			(class "Default")
 			(node
@@ -3573,7 +3839,7 @@
 			)
 		)
 		(net
-			(code "41")
+			(code "43")
 			(name "unconnected-(U2-PB9{slash}PC14-Pad2)")
 			(class "Default")
 			(node
@@ -3584,7 +3850,7 @@
 			)
 		)
 		(net
-			(code "42")
+			(code "44")
 			(name "unconnected-(U2-PC15-Pad3)")
 			(class "Default")
 			(node

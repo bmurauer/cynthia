@@ -47,7 +47,12 @@ midi::MidiInterface<BusTransport> busMidi(busTransport);
 // 0.5mV (0-2.0475V), the only usable range on a 3.3V supply - 2x gain would
 // ask for 4.096V and clip at the rail.
 constexpr uint16_t kDacChannelA = 0x3000; // note CV, into U1A
-constexpr uint16_t kDacChannelB = 0xB000; // velocity CV, into U1B (buffer)
+constexpr uint16_t kDacChannelB = 0xB000; // velocity CV, into U1B
+
+// U1B amplifies the velocity CV by 1 + R10 / R9 = 1 + 15k / 10k = 2.5x
+// (rev2 onwards), so code 4000 (2.000V) gives 5.000V at full velocity.
+// On rev1 boards, where U1B is a unity follower, this tops out at 2.000V.
+constexpr uint32_t kVelocityFullScale = 4000;
 
 // U1A amplifies the note CV by 1 + (R7 + RV1) / R3 = 1 + (18k + 0..5k) / 10k,
 // i.e. 2.8x..3.3x. The DAC is scaled for RV1 at mid-travel (3.05x), leaving
@@ -218,8 +223,8 @@ void updateLearnBlink() {
 }
 
 void handleNoteOn(uint8_t note, uint8_t velocity) {
-  // Velocity 0-127 -> 0-4064 codes -> 0-2.03V, through the unity buffer.
-  writeDac(kDacChannelB, velocity << 5);
+  // Velocity 0-127 -> 0-4000 codes -> 0-2V, 0-5V after U1B's 2.5x gain.
+  writeDac(kDacChannelB, (velocity * kVelocityFullScale + 63) / 127);
   writeDac(kDacChannelA, noteToDacCode(note));
   if (heldNotes < 255) heldNotes++;
   setGate(true);

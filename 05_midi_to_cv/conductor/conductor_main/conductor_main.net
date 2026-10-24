@@ -2,17 +2,17 @@
 	(version "E")
 	(design
 		(source "/home/benjamin/git/cynthia/05_midi_to_cv/conductor/conductor_main/conductor_main.kicad_sch")
-		(date "2026-09-19T20:01:19")
-		(tool "Eeschema 10.0.6")
+		(date "2026-10-24T15:00:52")
+		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
 			(name "/")
 			(tstamps "/")
 			(title_block
-				(title)
+				(title "#05: Conductor: Main Board")
 				(company)
-				(rev)
-				(date)
+				(rev "2")
+				(date "2026-10-24")
 				(source "conductor_main.kicad_sch")
 				(comment
 					(number "1")
@@ -945,14 +945,14 @@
 		(comp
 			(ref "U1")
 			(value "SN74HCT125")
-			(footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+			(footprint "cynthia:SOIC-14_3.9x8.7mm_P1.27mm")
 			(datasheet "https://www.ti.com/lit/ds/symlink/sn74ahct125.pdf")
 			(description "Quadruple Bus Buffer Gates With 3-State Outputs")
 			(fields
 				(field
 					(name "KiLib_Generator") "package/gullwing")
 				(field
-					(name "Footprint") "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+					(name "Footprint") "cynthia:SOIC-14_3.9x8.7mm_P1.27mm")
 				(field
 					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/sn74ahct125.pdf")
 				(field
@@ -987,8 +987,8 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "e75467ed-e688-4ef4-bc2f-e5e7aeeb1fe6" "5aec4dfe-d2af-4d69-9c8a-d05407dc104f"
-				"4f12a100-0468-40f9-86bd-861967ee3150" "041e944b-43e9-4844-be66-c1fc38194b56"
+			(tstamps "4f12a100-0468-40f9-86bd-861967ee3150" "041e944b-43e9-4844-be66-c1fc38194b56"
+				"5aec4dfe-d2af-4d69-9c8a-d05407dc104f" "e75467ed-e688-4ef4-bc2f-e5e7aeeb1fe6"
 				"00480f32-0366-484a-8f6b-8690eff735f0"
 			)
 			(units
@@ -1126,19 +1126,16 @@
 			(lib_id "cynthia:eurorack 10pin header")
 			(members
 				(member
+					(uuid "/703d9ab8-1c03-41e1-a6b3-76d3a61a5d43")
+				)
+				(member
+					(uuid "/6f5aab91-dec9-443b-b595-d8333e20f8f0")
+				)
+				(member
 					(uuid "/edcf8882-8d7f-4919-becf-b036a4b0bb38")
 				)
 				(member
-					(uuid "/400aa32a-c1ef-4606-aa85-2670797a7639")
-				)
-				(member
-					(uuid "/9ecc636c-7b7d-4528-a17e-6436999a8a99")
-				)
-				(member
-					(uuid "/9a2a8315-51d7-4329-91e1-c35808f41992")
-				)
-				(member
-					(uuid "/703d9ab8-1c03-41e1-a6b3-76d3a61a5d43")
+					(uuid "/0b5ada2d-b62d-4faf-ac83-6402040be36d")
 				)
 				(member
 					(uuid "/0b34f4a6-4b65-4926-bd02-2ba9c9755e50")
@@ -1147,13 +1144,16 @@
 					(uuid "/65d17fcb-5325-4ea6-a51e-9b38a38e0aa5")
 				)
 				(member
-					(uuid "/0b5ada2d-b62d-4faf-ac83-6402040be36d")
-				)
-				(member
-					(uuid "/6f5aab91-dec9-443b-b595-d8333e20f8f0")
+					(uuid "/400aa32a-c1ef-4606-aa85-2670797a7639")
 				)
 				(member
 					(uuid "/9b9d683e-ad51-4a49-8772-0288642e220b")
+				)
+				(member
+					(uuid "/9a2a8315-51d7-4329-91e1-c35808f41992")
+				)
+				(member
+					(uuid "/9ecc636c-7b7d-4528-a17e-6436999a8a99")
 				)
 			)
 		)

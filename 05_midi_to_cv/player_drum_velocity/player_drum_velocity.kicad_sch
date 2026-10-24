@@ -4,6 +4,10 @@
 	(generator_version "10.0")
 	(uuid "56a398e6-7b9d-4862-a4a8-33772f6f7ce2")
 	(paper "A4")
+	(title_block
+		(title "#02 Player: Double Drums with Velocity")
+		(rev "2")
+	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:TL072"
 			(pin_names
@@ -4245,6 +4249,12 @@
 		(uuid "57422479-91d0-4c9b-aea0-a5b7ae2de455")
 	)
 	(junction
+		(at 203.2 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ad2b23a-8d0a-4ad4-bb4b-576399ddb21b")
+	)
+	(junction
 		(at 218.44 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4279,6 +4289,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d2135148-7a98-4c61-bee1-12c15d1012af")
+	)
+	(junction
+		(at 203.2 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2b28a3e-bff0-448d-af71-86308609ab7c")
 	)
 	(junction
 		(at 33.02 161.29)
@@ -4574,6 +4590,16 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 77.47) (xy 203.2 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f13232f-f241-459e-9557-7b4597e54b31")
+	)
+	(wire
+		(pts
 			(xy 172.72 71.12) (xy 172.72 74.93)
 		)
 		(stroke
@@ -4651,6 +4677,16 @@
 			(type default)
 		)
 		(uuid "6851fcd2-fd15-436d-9bbf-12face21db74")
+	)
+	(wire
+		(pts
+			(xy 215.9 105.41) (xy 218.44 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ad6038c-beab-419b-8c58-b9eea92b172f")
 	)
 	(wire
 		(pts
@@ -4784,7 +4820,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 105.41) (xy 218.44 105.41)
+			(xy 203.2 105.41) (xy 208.28 105.41)
 		)
 		(stroke
 			(width 0)
@@ -5064,6 +5100,26 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 113.03) (xy 203.2 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f47ac31b-91a3-468e-8374-662b3fe08b57")
+	)
+	(wire
+		(pts
+			(xy 203.2 85.09) (xy 203.2 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4f926c7-8af6-4c68-9309-cc30c5905546")
+	)
+	(wire
+		(pts
 			(xy 80.01 92.71) (xy 160.02 92.71)
 		)
 		(stroke
@@ -5074,7 +5130,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 77.47) (xy 203.2 77.47)
+			(xy 218.44 77.47) (xy 214.63 77.47)
 		)
 		(stroke
 			(width 0)
@@ -6528,6 +6584,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 203.2 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b9e8081-32a7-4822-b90d-6fad586c0acd")
+		(property "Reference" "#PWR038"
+			(at 203.2 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 203.2 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 203.2 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6b82b30a-95cf-4d75-9fae-9c92b7cb562f")
+		)
+		(instances
+			(project "player_drum_velocity"
+				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 63.5 180.34 0)
 		(unit 1)
@@ -7511,6 +7646,88 @@
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
 					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 212.09 105.41 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5ced2fb8-4337-4bf9-8a60-295d5151eeb6")
+		(property "Reference" "R12"
+			(at 210.8199 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "15k"
+			(at 213.3599 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "cynthia:R SMD  0805"
+			(at 212.09 107.188 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 212.09 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 212.09 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d816f5ae-3a16-4c63-bebb-6ec3b8c52b7a")
+		)
+		(pin "1"
+			(uuid "1e568b36-54e5-4419-b983-8dd7ce8f73b6")
+		)
+		(instances
+			(project "player_drum_velocity"
+				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -8696,7 +8913,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "2.2k"
 			(at 129.54 113.0299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10258,7 +10475,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_5.3x6.2mm_P1.27mm"
+		(property "Footprint" "cynthia:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 193.04 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -10891,6 +11108,167 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 203.2 109.22 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "db581326-1ea3-4a9d-a6b8-c867a651efbe")
+		(property "Reference" "R10"
+			(at 200.66 107.9499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 200.66 110.4899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "cynthia:R SMD  0805"
+			(at 201.422 109.22 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 203.2 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d998cb75-d79f-48fa-9f2f-08783e1f696c")
+		)
+		(pin "1"
+			(uuid "94db2a9e-261d-45c6-a991-a21786fafe59")
+		)
+		(instances
+			(project "player_drum_velocity"
+				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 203.2 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dcce2073-ea1d-4c27-a9e8-7c115ffeb05a")
+		(property "Reference" "#PWR037"
+			(at 203.2 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 203.2 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 203.2 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f0db0c31-ed92-4959-bc15-192aa58c9bba")
+		)
+		(instances
+			(project "player_drum_velocity"
+				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 175.26 27.94 0)
 		(mirror x)
 		(unit 1)
@@ -11309,6 +11687,170 @@
 			(project "player_drum_velocity"
 				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 210.82 77.47 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e7fbdd93-56a4-4454-88ac-6b984cf6cf2c")
+		(property "Reference" "R13"
+			(at 209.5499 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "15k"
+			(at 212.0899 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "cynthia:R SMD  0805"
+			(at 210.82 79.248 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "858f0cf2-e60b-4a67-bfc4-2811702611f0")
+		)
+		(pin "1"
+			(uuid "92070559-8cdf-4b60-8922-13bf89517ab1")
+		)
+		(instances
+			(project "player_drum_velocity"
+				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 203.2 81.28 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "eb367f5d-fc89-40ab-9e3c-bdac22180efb")
+		(property "Reference" "R11"
+			(at 200.66 80.0099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 200.66 82.5499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "cynthia:R SMD  0805"
+			(at 201.422 81.28 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 203.2 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e2f48664-a41b-4dda-9301-db44402bc727")
+		)
+		(pin "1"
+			(uuid "0eee2b57-bf44-4908-93f3-5980a3728b25")
+		)
+		(instances
+			(project "player_drum_velocity"
+				(path "/56a398e6-7b9d-4862-a4a8-33772f6f7ce2"
+					(reference "R11")
 					(unit 1)
 				)
 			)

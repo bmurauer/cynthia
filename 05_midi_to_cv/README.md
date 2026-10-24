@@ -359,6 +359,24 @@ error plus resistor tolerance. Full scale is about 6.2V, i.e. 75 notes (C1-D7).
 The obvious shortcut of making RV1 span the whole 1x-3x range was rejected: one
 cent is ~0.06% of gain, which a single-turn trimmer covering 1x-3x cannot resolve.
 
+**Calibration** is done by hand with RV1, one trimmer per note output. Central
+calibration died with the core, and a player has no way to measure its own output, so
+software calibration in flash was ruled out. This is confirmed on rev1: there is no
+offset trim (MIDI note 24 is code 0, 0V, and any small offset is absorbed by the VCO's
+tune knob), so only the scale needs adjusting:
+
+1. Measure the note output with a multimeter, on a range that resolves 1mV at ~6V.
+2. Adjust RV1 until **MIDI note 96 minus MIDI note 36 reads 5.000V** (about 6.0V and
+   1.0V). Measuring the difference cancels the DAC and op-amp offsets, and the
+   5-octave span gives about 0.25 cent per octave of resolution per mV.
+3. Use MIDI note numbers, not note names. This firmware counts MIDI 24 as C1, while
+   many DAWs call MIDI 48 "C2". Avoid note 24 (the DAC's zero-scale error sits there)
+   and anything above note 98 (clamped to full scale).
+4. Calibrate the player first, then tune the VCO's own scale trimmers against it, so
+   that the player is an exact 1V/oct reference for every VCO.
+
+Rev1 result: 1.000V at note 36 and 5.997V at note 96, under 1 cent per octave.
+
 One tradeoff worth knowing: reference tempco shows up as a gain error on 1V/oct and
 scales with output voltage. At 0.833mV per cent, a 20°C warm-up gives roughly 6
 cents of drift at 50ppm/°C versus about 0.25 cents at 2ppm/°C. A trimmer corrects
@@ -413,6 +431,44 @@ player count this system will reach; the 250000 baud recommendation exists to
 absorb *aggregate* load from several simultaneously active inputs, not to reduce
 per-message latency.
 
+## Revision 2
+
+Rev1 is the version ordered on 2026-09-30, tagged `05-rev1`. All four boards work.
+
+**Rev2 is in progress and not ordered.** The KiCad files on `main` are the rev2
+working state: they collect the fixes for everything that came up on rev1, but none
+of it is pressing enough to order new PCBs for, so there is no rev2 order planned
+yet. Rev2 stays open until it is ordered and tagged `05-rev2`; new issues go on the
+list below until then. The firmware supports both revisions.
+
+### Fixed in the rev2 design files
+
+- **Velocity outputs: 0-5V instead of 0-2V.** The velocity op-amps (both halves of
+  U1 on the drum velocity player, U1B on the melodic player) are unity followers in
+  rev1, so the velocity outputs top out at the DAC's ~2.03V. In rev2 each is a
+  non-inverting stage with a gain of 2.5x (Rf = 15k, Rg = 10k), and the firmware
+  maps velocity 127 to DAC code 4000 instead of `velocity << 5`. That gives exactly
+  2.000V x 2.5 = 5.000V at full velocity. Both players' firmware already does this
+  (on rev1 boards it now tops out at 2.000V instead of 2.03V).
+- **Brighter panel LEDs.** The 4.7k LED resistor (R9 on the drum velocity player,
+  R8 on the melodic player) makes the LED too dim on the rev1 modules. Rev2 uses
+  2.2k, roughly doubling the current to ~0.6mA at 3.3V.
+- **Same TL072 orientation on both players.** On rev1, the drum velocity player's
+  TL072 is rotated 180° compared to the melodic player's.
+- **Hand-solder footprints.** The MCP4822s sat on the wide 208-mil SOIC-8 footprint
+  in rev1. All SOICs now use the extended-pad footprints from the `cynthia` library
+  (SOIC-8 on the players, SOIC-14 for the SN74HCT125 on conductor_main), and the
+  TLP2662s use `cynthia:SMDIP-8_W7.62mm_hand_solder`.
+- **Board label and revision on the silkscreen** of all four boards, and in each
+  schematic's title block.
+
+### Still open
+
+- **Align the bus headers.** The player bus header is still at a different height on
+  each board, measured from the top edge of the PCB: 69.25mm on the drum velocity
+  player (J1), 78.4mm on the melodic player (J2) and 85mm on conductor_main (J2). Put
+  them at the same vertical position, so the ribbon cable runs straight.
+
 ## Superseded Design
 
 An earlier version of this module used a smart core plus **passive** expansion
@@ -450,13 +506,5 @@ ever needed again.
     free, but desyncs if a player resets or is added mid-performance.
   - **(c) Conductor rewrites channels before broadcasting** - works, but puts state
     back into the conductor, which is what this overhaul removed.
-- **1V/oct calibration method.** Central calibration died with the core, and there
-  is no REPL path or back-channel to a player. Recommendation is a per-output analog
-  trimmer, matching existing practice in `kosmo_poly_midi_2_cv`. A software
-  calibration in flash is possible, but with no measurement path a player cannot
-  calibrate itself, so a human adjusting a trimmer is the pragmatic answer.
-- **Conductor clock outputs**: assumed that "handles clock/start/stop" means the
-  conductor carries its own clock / run / reset output jacks on its panel. Needs
-  confirming - it also decides how much panel space the conductor needs.
 - **Designated clock jack marking**: all TRS inputs look alike, so the clock/start/
   stop jack needs a label or dedicated LED. Decide which when the panel is laid out.
