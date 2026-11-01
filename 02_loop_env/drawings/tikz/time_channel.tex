@@ -25,9 +25,12 @@
   \draw (sj) to[short, -*] ++(0,-2.8) coordinate (cvn)
         to[R, l=R22 100\,k$\Omega$] ++(-2.8,0) to[short, -o] ++(-1.6,0) node[left, align=right]{\cb{J2 ATTACK CV}\\\scriptsize via J4/J2 pin 5};
   \draw (cvn) -- ++(0,-1.6) to[R, l=R25 1.5\,M$\Omega$] ++(-2.8,0) -- ++(-1.6,0) node[left]{+12\,V};
-  % pot RV2 as divider: GND (pin 1, CCW) .. -12V (pin 3, CW), wiper pin 2
-  \draw ($(w)+(-1.6,1.4)$) node[ground, yscale=-1]{} node[left=6pt, font=\sffamily\scriptsize]{GND (pin 1, CCW)}
+  % pot RV1 as divider: pin 1 (CCW) via R8 to GND .. -12V (pin 3, CW), wiper pin 2
+  \draw ($(w)+(-1.6,3.4)$) node[ground, yscale=-1]{}
+        to[R, l_={\cb{R8 2.2\,k$\Omega$}}] ++(0,-2.0) node[left, font=\sffamily\scriptsize]{pin 1 (CCW)}
         to[pR, n=pot, l_={\cb{RV1 10\,k$\Omega$ ATTACK}}] ++(0,-2.8) node[below, font=\sffamily\scriptsize]{$-$12\,V (pin 3, CW)};
+  \node[font=\sffamily\scriptsize, align=left, anchor=west] at ($(w)+(-1.2,3.0)$)
+    {R8 trims the fast end:\\pot CCW $\approx$ 1\,ms, not 0.4\,ms};
   \draw (pot.wiper) -- (w);
   \node[font=\sffamily\scriptsize, above] at ($(pot.wiper)!.5!(w)$) {via J4/J2 pin 1};
   % base divider
@@ -55,7 +58,7 @@
   \node[pin, right] at (qb.E) {4};
 
   \node[font=\sffamily\scriptsize, align=left, anchor=north west] at (-9,-5.2)
-    {Release channel: identical, with U3B (pins 6/5/7), R23/R24/R26/R28, R30, R32, R34, Q3, \cb{RV2}, \cb{J3} (via J4/J2 pins 2 and 6);\\
+    {Release channel: identical, with U3B (pins 6/5/7), R23/R24/R26/R28, R30, R32, R34, Q3, \cb{RV2}, \cb{R9}, \cb{J3} (via J4/J2 pins 2 and 6);\\
      its base node BASE\_RELEASE is fed by R15 (release kill). Both Q1 collectors (pin 6) join at $I_{ABC}$.\\
      Black: main board, \cb{blue: control board}.};
 \end{circuitikz}

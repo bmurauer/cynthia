@@ -2,17 +2,17 @@
 	(version "E")
 	(design
 		(source "/home/benjamin/git/cynthia/02_loop_env/control_board/control_board.kicad_sch")
-		(date "2026-10-08T21:00:34")
-		(tool "Eeschema 10.0.6")
+		(date "2026-11-01T17:11:18")
+		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
 			(name "/")
 			(tstamps "/")
 			(title_block
-				(title)
+				(title "#02: Loop Env - Control Board")
 				(company)
-				(rev)
-				(date)
+				(rev "1")
+				(date "2026-10-30")
 				(source "control_board.kicad_sch")
 				(comment
 					(number "1")
@@ -563,7 +563,7 @@
 		)
 		(comp
 			(ref "J4")
-			(value "Conn_01x08_Socket")
+			(value "B")
 			(footprint "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical")
 			(description "Generic connector, single row, 01x08, script generated")
 			(fields
@@ -635,7 +635,7 @@
 		)
 		(comp
 			(ref "J5")
-			(value "Conn_01x08_Socket")
+			(value "A")
 			(footprint "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical")
 			(description "Generic connector, single row, 01x08, script generated")
 			(fields
@@ -707,8 +707,9 @@
 		)
 		(comp
 			(ref "J6")
-			(value "EOC OUT")
+			(value "~")
 			(footprint "cynthia:3.5mm thonk jack socket mono switched")
+			(description "EOC OUT")
 			(fields
 				(field
 					(name "Footprint") "cynthia:3.5mm thonk jack socket mono switched")
@@ -716,8 +717,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description")
-				)
+					(name "Description") "EOC OUT")
 			)
 			(libsource
 				(lib "cynthia")
@@ -1320,6 +1320,114 @@
 			)
 		)
 		(comp
+			(ref "R8")
+			(value "2.2k")
+			(footprint "cynthia:R SMD  0805")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "cynthia:R SMD  0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "control_board.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "795d191c-8c43-4bc7-b832-514662f7cfb4")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R9")
+			(value "2.2k")
+			(footprint "cynthia:R SMD  0805")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "cynthia:R SMD  0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "control_board.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a64c9e0d-d18e-4217-97cd-415a7ed884b7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "RV1")
 			(value "10k")
 			(footprint "cynthia:potientiometer")
@@ -1471,7 +1579,7 @@
 		)
 		(comp
 			(ref "RV3")
-			(value "5k")
+			(value "A5k")
 			(footprint "cynthia:potientiometer")
 			(description "SHAPE")
 			(fields
@@ -2765,15 +2873,13 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "RV1")
-				(pin "1")
-				(pinfunction "1_1")
+				(ref "R8")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
-				(ref "RV2")
-				(pin "1")
-				(pinfunction "1_1")
+				(ref "R9")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -2950,6 +3056,38 @@
 		)
 		(net
 			(code "18")
+			(name "Net-(R8-Pad1)")
+			(class "Default")
+			(node
+				(ref "R8")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "RV1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "19")
+			(name "Net-(R9-Pad1)")
+			(class "Default")
+			(node
+				(ref "R9")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "RV2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "20")
 			(name "Net-(SW3-A)")
 			(class "Default")
 			(node
@@ -2976,7 +3114,7 @@
 			)
 		)
 		(net
-			(code "19")
+			(code "21")
 			(name "Net-(SW3-C)")
 			(class "Default")
 			(node
@@ -2997,7 +3135,7 @@
 			)
 		)
 		(net
-			(code "20")
+			(code "22")
 			(name "Net-(U1A--)")
 			(class "Default")
 			(node
@@ -3025,7 +3163,7 @@
 			)
 		)
 		(net
-			(code "21")
+			(code "23")
 			(name "Net-(U1B--)")
 			(class "Default")
 			(node
@@ -3046,7 +3184,7 @@
 			)
 		)
 		(net
-			(code "22")
+			(code "24")
 			(name "RELEASE")
 			(class "Default")
 			(node
@@ -3063,7 +3201,7 @@
 			)
 		)
 		(net
-			(code "23")
+			(code "25")
 			(name "RELEASE CV")
 			(class "Default")
 			(node
@@ -3080,7 +3218,7 @@
 			)
 		)
 		(net
-			(code "24")
+			(code "26")
 			(name "S")
 			(class "Default")
 			(node
@@ -3097,7 +3235,7 @@
 			)
 		)
 		(net
-			(code "25")
+			(code "27")
 			(name "SHAPE 1")
 			(class "Default")
 			(node
@@ -3114,7 +3252,7 @@
 			)
 		)
 		(net
-			(code "26")
+			(code "28")
 			(name "SHAPE 2")
 			(class "Default")
 			(node
@@ -3137,7 +3275,7 @@
 			)
 		)
 		(net
-			(code "27")
+			(code "29")
 			(name "unconnected-(J6-PadTN)")
 			(class "Default")
 			(node
@@ -3148,7 +3286,7 @@
 			)
 		)
 		(net
-			(code "28")
+			(code "30")
 			(name "unconnected-(J7-PadTN)")
 			(class "Default")
 			(node
@@ -3159,7 +3297,7 @@
 			)
 		)
 		(net
-			(code "29")
+			(code "31")
 			(name "unconnected-(SW2B-A-Pad4)")
 			(class "Default")
 			(node

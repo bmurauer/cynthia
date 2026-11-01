@@ -3,11 +3,16 @@ import numpy as np
 from run import sim, cross
 
 
+def est_time(x):
+    """Rough linear-mode 0->8V time at pot rotation x, used to size the sim length."""
+    return 1.2e-3 * np.exp(x * 9.4)
+
+
 def timing_table():
     print("Gate mode: attack 0->8V, release hold->0.3V")
     for shape, name in [(1, 'lin'), (0, 'exp')]:
         for x in [0, 0.5, 0.8, 1.0]:
-            est = 0.1e-6 * 4 / (1e-3 * np.exp(-x * 10.2)) * (3.5 if shape == 0 else 1)
+            est = est_time(x) * (3.5 if shape == 0 else 1)
             tg = est * 1.6 + 5e-3
             tstop = tg + est * 1.6 + 10e-3
             r = sim(tstop, tstop / 20000, TG=tg, XA=x, XR=x, SHAPE=shape)
@@ -21,7 +26,7 @@ def timing_table():
 def cv_table():
     print("Attack CV at pot 50%, linear")
     for cv in [-5, -1, 0, 1, 5]:
-        est = 0.1e-6 * 4 / (1e-3 * np.exp(-0.5 * 10.4)) * np.exp(-cv * 0.8)
+        est = est_time(0.5) * np.exp(-cv * 1.05)
         tg = est * 1.5 + 5e-3
         r = sim(tg + est * 1.5 + 5e-3, (tg + est * 1.5 + 5e-3) / 20000, TG=tg, SHAPE=1, CVA=cv)
         ta = cross(r['t'], r['out'], 8.0)
@@ -36,7 +41,7 @@ def loop_corners():
             for vos in [-4e-3, 4e-3]:
                 for vp in [11.0, 11.5, 12.0]:
                     for headroom in [1.6, 2.2]:
-                        est = 0.1e-6 * 4 / (1e-3 * np.exp(-x * 10.2)) * (3.5 if shape == 0 else 1) * 2
+                        est = est_time(x) * (3.5 if shape == 0 else 1) * 2
                         tstop = est * 8
                         r = sim(tstop, tstop / 40000, TG=1e3, TP=2e3, MODE=1, XA=x, XR=x,
                                 SHAPE=shape, VOS=vos, VP=vp, SAT=vp - headroom)
@@ -74,10 +79,10 @@ def timing_plot(path='timing.png'):
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
     runs = [
-        ('Gate mode (attack pot 50%, release pot 55%, shape 50%)',
-         sim(0.30, 5e-5, TG=0.12, TP=1, XA=0.5, XR=0.55, SHAPE=0.5)),
+        ('Gate mode (attack pot 40%, release pot 45%, shape 50%)',
+         sim(0.30, 5e-5, TG=0.12, TP=1, XA=0.4, XR=0.45, SHAPE=0.5)),
         ('Loop mode, free-running: gate input ignored (same pots)',
-         sim(0.30, 5e-5, TG=1, TP=2, MODE=1, XA=0.5, XR=0.55, SHAPE=0.5)),
+         sim(0.30, 5e-5, TG=1, TP=2, MODE=1, XA=0.4, XR=0.45, SHAPE=0.5)),
     ]
     fig, axes = plt.subplots(4, 2, figsize=(12, 7), sharex=True,
                              gridspec_kw=dict(height_ratios=[1, 1, 1, 2.5]))

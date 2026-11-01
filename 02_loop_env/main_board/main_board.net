@@ -2,17 +2,17 @@
 	(version "E")
 	(design
 		(source "/home/benjamin/git/cynthia/02_loop_env/main_board/main_board.kicad_sch")
-		(date "2026-10-08T21:04:42")
-		(tool "Eeschema 10.0.6")
+		(date "2026-11-01T17:11:07")
+		(tool "Eeschema 10.0.7")
 		(sheet
 			(number "1")
 			(name "/")
 			(tstamps "/")
 			(title_block
-				(title "#02: Looping EnvGen")
+				(title "#02: Loop Env - Main Board")
 				(company "Benjamin Murauer")
 				(rev "1")
-				(date "2026-06-28")
+				(date "2026-10-30")
 				(source "main_board.kicad_sch")
 				(comment
 					(number "1")
@@ -1315,13 +1315,13 @@
 			(ref "Q2")
 			(value "BCM857BS")
 			(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6")
-			(datasheet "https://assets.nexperia.com/documents/data-sheet/BC857BS.pdf")
+			(datasheet "https://assets.nexperia.com/documents/data-sheet/BCM847BS.pdf")
 			(description "100mA IC, 45V Vce, Dual PNP/PNP Transistors, SOT-363")
 			(fields
 				(field
 					(name "Footprint") "Package_TO_SOT_SMD:SOT-363_SC-70-6")
 				(field
-					(name "Datasheet") "https://assets.nexperia.com/documents/data-sheet/BC857BS.pdf")
+					(name "Datasheet") "https://assets.nexperia.com/documents/data-sheet/BCM847BS.pdf")
 				(field
 					(name "Description") "100mA IC, 45V Vce, Dual PNP/PNP Transistors, SOT-363")
 			)
@@ -1386,13 +1386,13 @@
 			(ref "Q3")
 			(value "BCM857BS")
 			(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6")
-			(datasheet "https://assets.nexperia.com/documents/data-sheet/BC857BS.pdf")
+			(datasheet "https://assets.nexperia.com/documents/data-sheet/BCM847BS.pdf")
 			(description "100mA IC, 45V Vce, Dual PNP/PNP Transistors, SOT-363")
 			(fields
 				(field
 					(name "Footprint") "Package_TO_SOT_SMD:SOT-363_SC-70-6")
 				(field
-					(name "Datasheet") "https://assets.nexperia.com/documents/data-sheet/BC857BS.pdf")
+					(name "Datasheet") "https://assets.nexperia.com/documents/data-sheet/BCM847BS.pdf")
 				(field
 					(name "Description") "100mA IC, 45V Vce, Dual PNP/PNP Transistors, SOT-363")
 			)
@@ -1671,7 +1671,7 @@
 		)
 		(comp
 			(ref "R5")
-			(value "2.2m")
+			(value "2.2M")
 			(footprint "cynthia:R SMD  0805")
 			(description "Resistor")
 			(fields
@@ -2751,7 +2751,7 @@
 		)
 		(comp
 			(ref "R25")
-			(value "1.5m")
+			(value "1.5M")
 			(footprint "cynthia:R SMD  0805")
 			(description "Resistor")
 			(fields
@@ -2805,7 +2805,7 @@
 		)
 		(comp
 			(ref "R26")
-			(value "1.5m")
+			(value "1.5M")
 			(footprint "cynthia:R SMD  0805")
 			(description "Resistor")
 			(fields
@@ -3671,34 +3671,34 @@
 					(uuid "/f6635d7b-9874-4593-bbe4-f51fe58bd6f0")
 				)
 				(member
-					(uuid "/ee7051f4-e18f-4c75-a471-ed818b9842e0")
-				)
-				(member
 					(uuid "/edcf8882-8d7f-4919-becf-b036a4b0bb38")
 				)
 				(member
-					(uuid "/703d9ab8-1c03-41e1-a6b3-76d3a61a5d43")
-				)
-				(member
-					(uuid "/0b5ada2d-b62d-4faf-ac83-6402040be36d")
-				)
-				(member
-					(uuid "/6ced661a-a388-4d8b-ba3b-95766197e14d")
+					(uuid "/ee7051f4-e18f-4c75-a471-ed818b9842e0")
 				)
 				(member
 					(uuid "/6f5aab91-dec9-443b-b595-d8333e20f8f0")
 				)
 				(member
+					(uuid "/0b5ada2d-b62d-4faf-ac83-6402040be36d")
+				)
+				(member
 					(uuid "/0b34f4a6-4b65-4926-bd02-2ba9c9755e50")
 				)
 				(member
-					(uuid "/9b9d683e-ad51-4a49-8772-0288642e220b")
+					(uuid "/703d9ab8-1c03-41e1-a6b3-76d3a61a5d43")
+				)
+				(member
+					(uuid "/9ecc636c-7b7d-4528-a17e-6436999a8a99")
+				)
+				(member
+					(uuid "/6ced661a-a388-4d8b-ba3b-95766197e14d")
 				)
 				(member
 					(uuid "/9a2a8315-51d7-4329-91e1-c35808f41992")
 				)
 				(member
-					(uuid "/9ecc636c-7b7d-4528-a17e-6436999a8a99")
+					(uuid "/9b9d683e-ad51-4a49-8772-0288642e220b")
 				)
 			)
 		)
@@ -4841,6 +4841,18 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "U1")
+				(pin "3")
+				(pinfunction "+_3")
+				(pintype "input")
+			)
+			(node
+				(ref "U1")
+				(pin "4")
+				(pinfunction "-_4")
+				(pintype "input")
+			)
+			(node
 				(ref "U3")
 				(pin "3")
 				(pinfunction "+_3")
@@ -5524,28 +5536,6 @@
 		)
 		(net
 			(code "46")
-			(name "unconnected-(U1C-+-Pad3)")
-			(class "Default")
-			(node
-				(ref "U1")
-				(pin "3")
-				(pinfunction "+_3")
-				(pintype "input+no_connect")
-			)
-		)
-		(net
-			(code "47")
-			(name "unconnected-(U1C---Pad4)")
-			(class "Default")
-			(node
-				(ref "U1")
-				(pin "4")
-				(pinfunction "-_4")
-				(pintype "input+no_connect")
-			)
-		)
-		(net
-			(code "48")
 			(name "unconnected-(U1C-DIODE_BIAS-Pad2)")
 			(class "Default")
 			(node

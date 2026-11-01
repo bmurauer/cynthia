@@ -28,7 +28,7 @@ I want to keep this part analog, and not rely on a MCU to perform fancy things.
 
 ## Design (rev 2): LM13700 slew core
 
-Status: designed and simulated (behavioural OTA model), **not yet breadboarded**.
+Status: designed, simulated (behavioural OTA model) and fully breadboarded (gate and loop mode); rev 1 PCBs laid out.
 Replaces the rev 1 experiment (RC timing with switched transistor current sources for linear mode).
 
 ### Principle
@@ -40,7 +40,7 @@ The OTA input sees the difference between a *target* voltage and the cap voltage
 
 So the curve shape is set by a single resistor between the two OTA inputs (the shape pot), and lin ↔ exp morphs continuously.
 The cap is always charged by the same current source; nothing is switched in or out.
-Times are set by I_ABC via an exponential converter, so linear pots give a log feel and CV is just a summing resistor.
+Times are set by I_ABC via an exponential converter, so linear time pots give a log feel and CV is just a summing resistor.
 
 ![block diagram](drawings/tikz/overview.svg)
 
@@ -69,6 +69,11 @@ ICs: main U1 LM13700 (one half used, second half spare, e.g. for a VCA later), m
   Exponential over the useful range, and it can never exceed I_tail (~1.45mA; LM13700 max is 2mA), whatever the CV does.
 - Q2/Q3 must be **BCM857BS** (matched dual PNP, SOT-363), not the unmatched BC857BS.
   Matching comes from the shared die, so no reference transistor or op-amp is needed.
+- The time pots RV1/RV2 are **linear** (B10k): the expo converter already makes every 10% of travel ~2.6× slower.
+  A log pot would crowd even more of the travel into the fast end.
+- R8/R9 (2.2k, control board) sit between the pots' CCW end and GND. Without them, the first half of the travel
+  only covers 0.4..32ms, which all looks instant; with them, mid-travel is ~90ms and the slow end is unchanged.
+- The shape pot RV3 is **log** (A5k). With a linear pot, the whole lin ↔ exp morph happens in the first quarter of its travel.
 
 #### Stage enables
 ![stage enables](drawings/tikz/enables.svg)
@@ -104,11 +109,11 @@ The LM13700 is a behavioural model (tanh law + input bias + offset); TL074 swing
 
 | | linear (shape CW) | exponential (shape CCW) |
 |---|---|---|
-| fastest attack / release (pot CCW) | 0.4 ms | ~1 ms |
-| pot at 50% | 32 ms | 81 ms |
+| fastest attack / release (pot CCW) | 1.1 ms | 2.7 ms |
+| pot at 50% | 88 ms | 225 ms |
 | slowest (pot CW) | 14.6 s | ~37 s |
 
-- CV: +1V ≈ 2.8× faster; ±5V spans 0.5ms .. 5.8s at pot 50%
+- CV: +1V ≈ 2.8× faster; ±5V spans 0.8ms .. 16s at pot 50%
 - CV overdrive (+12V CV, pot CCW, rails 11-12V): I_ABC stays ≤1.55mA
 - Gate mode: rests at exactly 0V, holds at ≈9.1V while gate is high (LEVEL at max; all output voltages in this section are at max LEVEL)
 - Loop mode: ≈0.2-0.5V .. 8V; never stalled over 48 corners of OTA offset (±4mV, datasheet max), rails (11.0-12.0V) and op-amp swing
@@ -129,9 +134,11 @@ The LM13700 is a behavioural model (tanh law + input bias + offset); TL074 swing
    Check linear vs exponential ramps with the shape pot, the 0V rest level (clamp) and the slope (I = C·dV/dt, 100µA ≈ 1V/ms).
 
    ![breadboard step 1](drawings/tikz/breadboard_step1.svg)
-2. **One time channel** instead of the resistor (no kill paths needed): pot range ~0.4ms..15s, CV, DC checks
-   (common emitters ≈ +0.6V, BASE ≈ −0.02..+0.29V over the pot).
-3. **Second channel, enables and gate/Schmitt logic:** the full envelope.
+2. **One time channel** instead of the resistor (no kill paths needed): pot range ~1ms..15s, CV, DC checks
+   (U3 output ≈ +1.0..+8.8V, common emitters ≈ +0.6V, BASE ≈ +0.03..+0.29V over the pot).
+3. **Second channel, enables and gate/Schmitt logic:** the full envelope. DC checks: the switched-off channel's
+   BASE sits at ≈ +0.55..+0.85V (attack while the gate is low, release while it is high). A BASE that stays below
+   ≈ +0.1V gives an instant ramp; on the breadboard, that was a matched pair wired the wrong way round.
 
 Things to check on the way:
 - Slowest times (leakage of clamp diode, OTA output, cap)
