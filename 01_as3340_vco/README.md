@@ -42,17 +42,18 @@ Fill in the "Design" columns before building; fill in the "As-Built" columns aft
 
 | Ref | Label | Signal Type (Design) | Expected Behavior / Range (Design) | Measured Behavior / Range (As-Built) | Notes |
 |-----|-------|-----------------------|--------------------------------------|-----------------------------------------|-------|
-| J3 | SYNC IN | audio or CV | absolute voltage is not important (AC coupled), depending on SW1, rising or falling edges are detected. | | |
-| J4 | FM IN | CV | +/-12V eurorack CV, AC-coupled | | AC-coupled (C5+R6=1M) into VLFI. No clamp diodes. Static DC blocked by C5 in steady state; worst-case transient current is negligible. Decision: no clamp diodes added - all signal sources in this system are self-built/trusted, never exceed +/-12V. Revisit if this module is ever exposed to external/untrusted gear. |
-| J5 | PWM CV IN | CV | +12V: constant DC output, -12V: constant DC output, 0V: 50% duty cycle square wave | | Verified against schematic (U1A/U1B math, assuming RV3 PWM-depth pot at max and RV1 manual-PWM pot centered): VPWM = 0.2136*(Vcc+V_J5). -12V => 0.000V exactly (0% duty), 0V => 2.563V (~51% duty), +12V => 5.126V (saturates >100%). Matches spec at full CV depth; at partial depth or with manual offset applied, +/-12V won't reach the saturation points. |
-| J6 | 1V/O IN | CV | +/-12V eurorack CV, DC-coupled | | DC-coupled via R3=100k directly into VFCI (chip abs-max +/-6V, VFCI is a current summing node). No clamp diodes (unlike SYNC IN). Worst case -12V => ~120uA, within safe range - oscillator just bottoms out, no damage expected. Combined with coarse/fine tune pots at full CCW: ~-160 to -220uA total into VFCI, still ~200x below the chip's 40mA/pin abs max. Decision: no clamp diodes added - all signal sources in this system are self-built/trusted, never exceed +/-12V. Revisit if this module is ever exposed to external/untrusted gear. |
+| J1 | 1V/O IN | CV | +/-12V eurorack CV, DC-coupled | | DC-coupled via R3=100k directly into VFCI (chip abs-max +/-6V, VFCI is a current summing node). No clamp diodes (unlike SYNC IN). Worst case -12V => ~120uA, within safe range - oscillator just bottoms out, no damage expected. Combined with coarse/fine tune pots at full CCW: ~-160 to -220uA total into VFCI, still ~200x below the chip's 40mA/pin abs max. Decision: no clamp diodes added - all signal sources in this system are self-built/trusted, never exceed +/-12V. Revisit if this module is ever exposed to external/untrusted gear. |
+| J2 | SYNC IN | audio or CV | absolute voltage is not important (AC coupled), depending on SW1, rising or falling edges are detected. | | |
+| J3 | FM IN | CV | +/-12V eurorack CV, AC-coupled | | Attenuated by RV5 (FM CV LVL), then AC-coupled (C1=100nF + R7=1M) into VLFI. No clamp diodes. Static DC blocked by C1 in steady state; worst-case transient current is negligible. Decision: no clamp diodes added - all signal sources in this system are self-built/trusted, never exceed +/-12V. Revisit if this module is ever exposed to external/untrusted gear. |
+| J4 | PWM CV IN | CV | +12V: constant DC output, -12V: constant DC output, 0V: 50% duty cycle square wave | | Verified against schematic (U1A/U1B math, assuming RV4 PWM CV LVL pot at max and RV3 PWM OFFSET pot centered): VPWM = 0.2136*(Vcc+V_J4). -12V => 0.000V exactly (0% duty), 0V => 2.563V (~51% duty), +12V => 5.126V (saturates >100%). Matches spec at full CV depth; at partial depth or with manual offset applied, +/-12V won't reach the saturation points. |
+| J5 | RESET IN | | | | |
 
 ### Outputs
 
 | Ref | Label | Signal Type (Design) | Expected Behavior / Range (Design) | Measured Behavior / Range (As-Built) | Notes |
 |-----|-------|-----------------------|--------------------------------------|-----------------------------------------|-------|
-| J7 | SQUARE OUT | audio or CV | +/-5V | | |
-| J8 | SAW OUT | audio or CV | +/-5V | | |
-| J9 | TRI OUT | audio or CV| +/-5V| | |
-| J10 | SINE OUT | audio or CV| +/-5V| | |
+| J8 | SQUARE OUT | audio or CV | +/-5V | | |
+| J9 | SAW OUT | audio or CV | +/-5V | | |
+| J10 | TRI OUT | audio or CV| +/-5V| | |
+| J11 | SINE OUT | audio or CV| +/-5V| | |
 
