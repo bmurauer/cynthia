@@ -1,13 +1,13 @@
-(footprint "6.25mm Jack Stereo Switched"
-	(version 20241229)
+(footprint "6.35mm Jack Stereo Switched"
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 3 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "b02ad803-e803-4e56-9a28-862e2d5b7050")
+		(uuid "5e555298-d5c6-4bdd-b815-1bd518e440ac")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 12 3 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "81457096-ce27-429d-906b-f0277773cf33")
+		(uuid "55a3dbf4-d9ad-4d4d-9f77-c06690429b5a")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "8971f1a8-0e0e-4ca0-b7ea-fca8f94cd85d")
+		(uuid "2c280f56-45d8-45af-869a-edfdc230e9d3")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "04d16b43-7040-44db-861a-40920d6c74cb")
+		(uuid "97ce7086-bdbf-4d4b-8adf-eefe8c456bb6")
 		(effects
 			(font
 				(size 1 1)
@@ -54,6 +54,7 @@
 		)
 	)
 	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_poly
 		(pts
 			(xy -2.031769 2.031769) (xy 14.994158 1.994158) (xy 15 -10.5) (xy 10.5 -15) (xy -1.983537 -14.983537)
@@ -64,7 +65,7 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "ab08194a-870e-4a9a-9122-ab8857d28308")
+		(uuid "7c99cd7b-3e8b-4a47-864c-6f70219991f2")
 	)
 	(pad "R" thru_hole oval
 		(at 0 -7 90)
@@ -72,7 +73,7 @@
 		(drill oval 2.5 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "f530ddba-7369-4b6b-8228-0d3457375bf8")
+		(uuid "a2db2ae0-77eb-4cb2-98c6-06f0902eb33a")
 	)
 	(pad "RN" thru_hole oval
 		(at 4 -13)
@@ -80,7 +81,7 @@
 		(drill oval 2.5 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "226cb969-e0a0-419a-a8c5-37427895223a")
+		(uuid "c68f55ae-f57e-41f6-8b5f-28310a22984b")
 	)
 	(pad "S" thru_hole oval
 		(at 11 -11 134)
@@ -88,7 +89,7 @@
 		(drill oval 2.5 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "5353ff7e-dc1d-489e-95c6-cbb74ddc6bb6")
+		(uuid "b9225766-bd1e-46ee-b1a6-6e784b859b91")
 	)
 	(pad "T" thru_hole oval
 		(at 7 0)
@@ -96,7 +97,7 @@
 		(drill oval 2.5 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "7e267113-999d-490b-8ded-b8bd4fa8bc46")
+		(uuid "4de0d252-3d45-4807-b014-3d4f7b16fa4d")
 	)
 	(pad "TN" thru_hole oval
 		(at 13 -4 90)
@@ -104,7 +105,18 @@
 		(drill oval 2.5 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "5bf940ca-8d51-4680-b8d9-1cdb8ec252d4")
+		(uuid "2e747ab7-8545-4ab3-98f3-80b2e6ce19d1")
 	)
 	(embedded_fonts no)
+	(model "/home/benjamin/git/cynthia/lib/kicad/3d_models/6.35_mm_jack_socket_5_pins.step"
+		(offset
+			(xyz 6.5 6.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
 )
