@@ -1153,7 +1153,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_Potentiometer_Dual_MountingPin"
+		(symbol "Device:R_Potentiometer_Dual"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -1173,7 +1173,7 @@
 					)
 				)
 			)
-			(property "Value" "R_Potentiometer_Dual_MountingPin"
+			(property "Value" "R_Potentiometer_Dual"
 				(at 0 1.905 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1205,7 +1205,7 @@
 					)
 				)
 			)
-			(property "Description" "Dual potentiometer with a mounting pin"
+			(property "Description" "Dual potentiometer"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1293,7 +1293,7 @@
 					)
 				)
 			)
-			(symbol "R_Potentiometer_Dual_MountingPin_0_1"
+			(symbol "R_Potentiometer_Dual_0_1"
 				(rectangle
 					(start -8.89 -1.524)
 					(end -3.81 -3.556)
@@ -1557,27 +1557,7 @@
 					)
 				)
 			)
-			(symbol "R_Potentiometer_Dual_MountingPin_1_1"
-				(polyline
-					(pts
-						(xy -1.27 -4.578) (xy 1.27 -4.578)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "Mounting"
-					(at 0 -4.066 0)
-					(effects
-						(font
-							(size 0.381 0.381)
-						)
-					)
-				)
+			(symbol "R_Potentiometer_Dual_1_1"
 				(pin passive line
 					(at -10.16 -2.54 0)
 					(length 1.27)
@@ -1679,24 +1659,6 @@
 						)
 					)
 					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 90)
-					(length 3.048)
-					(name "MountPin"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2643,12 +2605,6 @@
 		(uuid "d0749726-2588-47dc-8bc4-dbb73822c281")
 	)
 	(junction
-		(at 39.37 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d30519dc-31d3-44a2-98b4-946aa0b591f8")
-	)
-	(junction
 		(at 187.96 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3285,16 +3241,6 @@
 			(type default)
 		)
 		(uuid "d7912bd5-985b-4225-aaad-9f5c5f82f4a8")
-	)
-	(wire
-		(pts
-			(xy 39.37 147.32) (xy 39.37 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9df0000-7439-43b9-bd4d-11e4da752c36")
 	)
 	(wire
 		(pts
@@ -5018,6 +4964,154 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Potentiometer_Dual")
+		(at 46.99 144.78 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "639bb2c3-6c6b-4cdc-a2c1-f6493417e423")
+		(property "Reference" "RV1"
+			(at 41.91 146.0501 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "R_Potentiometer_Dual"
+			(at 41.91 143.5101 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "cynthia:Alpha Dual Potentiometer Inline"
+			(at 45.085 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.085 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Headphone Volume"
+			(at 51.308 145.796 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "${KICAD9_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 46.99 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "pot_dual"
+			(at 46.99 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 46.99 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=r1A 2=wA 3=r0A 4=r1B 5=wB 6=r0B"
+			(at 46.99 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" "Rtot=1 wpos=0.4"
+			(at 46.99 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6f9e5a1e-1dc3-491b-a67c-d8db451ac706")
+		)
+		(pin "5"
+			(uuid "510b3610-6c1f-4ebc-9143-6b153f945f91")
+		)
+		(pin "6"
+			(uuid "55fc0299-5baa-4e6e-a64e-dd104f86b583")
+		)
+		(pin "4"
+			(uuid "e4f9f7e5-3e62-4b6d-9e45-c7e9e114fcde")
+		)
+		(pin "3"
+			(uuid "07533269-9812-414c-886c-2cbe89e99bc5")
+		)
+		(pin "2"
+			(uuid "aa8034da-f398-4f06-a602-799440a74167")
+		)
+		(instances
+			(project "front_board"
+				(path "/2d5a911f-4b9f-4fa8-89c3-2c221dbff547"
+					(reference "RV1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x05_Pin")
 		(at 173.99 83.82 0)
 		(mirror y)
@@ -6433,154 +6527,6 @@
 			(project "front_board"
 				(path "/2d5a911f-4b9f-4fa8-89c3-2c221dbff547"
 					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Potentiometer_Dual_MountingPin")
-		(at 46.99 144.78 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ce94e4e4-ca3b-4ab8-94f8-40ddecb882e8")
-		(property "Reference" "RV2"
-			(at 51.562 143.51 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "A50k"
-			(at 51.562 146.05 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "cynthia:Alpha Dual Potentiometer Inline"
-			(at 33.782 160.274 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 45.085 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Volume"
-			(at 52.832 148.59 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Library" "${KICAD9_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 46.99 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "pot_dual"
-			(at 46.99 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 46.99 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=r1A 2=wA 3=r0A 4=r1B 5=wB 6=r0B"
-			(at 46.99 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Params" "Rtot=1 wpos=0.4"
-			(at 46.99 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "7fe027ca-de3d-4478-9e43-c6deb0c6ba66")
-		)
-		(pin "5"
-			(uuid "60e57681-6d99-48ef-bfe1-343839112b77")
-		)
-		(pin "1"
-			(uuid "73a381a3-5606-426a-9bd9-b26f4a2158f0")
-		)
-		(pin "2"
-			(uuid "89bb07e3-2384-4bd1-9db2-826347c59672")
-		)
-		(pin "3"
-			(uuid "115c100a-0f85-488d-a0da-ac0e1492c26b")
-		)
-		(pin "6"
-			(uuid "67d3ce52-92c2-416d-a504-89d60fa724e3")
-		)
-		(pin "MP"
-			(uuid "9ff6afc3-921a-40fb-98e7-b416b22adecd")
-		)
-		(instances
-			(project "front_board"
-				(path "/2d5a911f-4b9f-4fa8-89c3-2c221dbff547"
-					(reference "RV2")
 					(unit 1)
 				)
 			)
