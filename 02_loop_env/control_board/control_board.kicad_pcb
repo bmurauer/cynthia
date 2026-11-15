@@ -146,12 +146,6 @@
 		(path "/e0540ed9-b523-4636-a7a4-93a5399634c6")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "S" "T" "TN")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -327,12 +321,6 @@
 		(path "/f18a0958-e9ba-403c-9ab7-39bfa0a7cae6")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -531,12 +519,6 @@
 		(path "/bc392426-c9e7-4255-b0e8-5ebab9986565")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "S" "T" "TN")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -691,12 +673,6 @@
 		(path "/cfcd39a8-5ebc-4490-893d-47b8ddaeac19")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "S" "T" "TN")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -851,12 +827,6 @@
 		(path "/d42cf3e7-7f1c-4c3e-87ee-e59ed29d6ebb")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "S" "T" "TN")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -1012,12 +982,6 @@
 		(path "/a0ff157f-31d1-423b-abda-5fce78d26cf1")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "2" "1" "3")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -1093,7 +1057,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "B10k"
 			(at 6.5 -5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -1175,12 +1139,6 @@
 		(path "/f21bee43-be81-4c77-8a93-3377a430c4c9")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -1205,22 +1163,6 @@
 					(thickness 0.15)
 				)
 			)
-		)
-		(pad "" thru_hole circle
-			(at -4.5 0)
-			(size 4 4)
-			(drill 2)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(uuid "cfea7868-99bb-4ce3-a27f-b1a34b2492b4")
-		)
-		(pad "" thru_hole circle
-			(at 4.5 0)
-			(size 4 4)
-			(drill 2)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(uuid "69e68fda-7005-4949-bd52-5c00b55e7b2b")
 		)
 		(pad "1" thru_hole circle
 			(at -2.54 7)
@@ -1254,6 +1196,22 @@
 			(pinfunction "3_3")
 			(pintype "passive")
 			(uuid "5f91dd8f-626c-47c9-89ce-9b9134941c65")
+		)
+		(pad "MP" thru_hole circle
+			(at -4.5 0)
+			(size 4 4)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "cfea7868-99bb-4ce3-a27f-b1a34b2492b4")
+		)
+		(pad "MP" thru_hole circle
+			(at 4.5 0)
+			(size 4 4)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "69e68fda-7005-4949-bd52-5c00b55e7b2b")
 		)
 		(embedded_fonts no)
 		(model "/home/benjamin/git/cynthia/lib/kicad/3d_models/pot.step"
@@ -1328,16 +1286,6 @@
 		(path "/f3ed5b77-4bc9-48bf-a57b-cad2e321cc99")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "2" "1" "3")
-			)
-			(unit
-				(name "B")
-				(pins "5" "4" "6")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -1529,12 +1477,6 @@
 		(path "/1ab1251c-ff8a-4c1a-bcae-1407c1dedcbd")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -1559,22 +1501,6 @@
 					(thickness 0.15)
 				)
 			)
-		)
-		(pad "" thru_hole circle
-			(at -4.5 0)
-			(size 4 4)
-			(drill 2)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(uuid "f9a6f8f6-a578-493c-afdd-be3bc394ba74")
-		)
-		(pad "" thru_hole circle
-			(at 4.5 0)
-			(size 4 4)
-			(drill 2)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(uuid "4edb70cf-ac5e-46d9-aaa0-f6903c296d9b")
 		)
 		(pad "1" thru_hole circle
 			(at -2.54 7)
@@ -1608,6 +1534,22 @@
 			(pinfunction "3_3")
 			(pintype "passive")
 			(uuid "263cae35-9536-4eed-9097-c34a251d639b")
+		)
+		(pad "MP" thru_hole circle
+			(at -4.5 0)
+			(size 4 4)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "f9a6f8f6-a578-493c-afdd-be3bc394ba74")
+		)
+		(pad "MP" thru_hole circle
+			(at 4.5 0)
+			(size 4 4)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "4edb70cf-ac5e-46d9-aaa0-f6903c296d9b")
 		)
 		(embedded_fonts no)
 		(model "/home/benjamin/git/cynthia/lib/kicad/3d_models/pot.step"
@@ -1701,12 +1643,6 @@
 		(path "/2614b939-439f-4dc1-bf16-2178d179c513")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1855,7 +1791,7 @@
 			(at -5.5 9.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "68e9f339-67b3-4b19-8df5-d4e149431ea6")
+			(uuid "dd763da6-bd5e-407e-9764-1694eb11774b")
 			(effects
 				(font
 					(size 1 1)
@@ -1863,11 +1799,11 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "B10k"
 			(at 6 -4.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "f5674dbb-79c1-41e2-b424-a2135f6db91f")
+			(uuid "45ddd7ee-6253-47d1-8e82-008a94b85df6")
 			(effects
 				(font
 					(size 1 1)
@@ -1881,7 +1817,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b7c63a2a-f454-47bb-af2d-634bff9647bb")
+			(uuid "1819c1a2-890f-401b-96c3-648c192f8561")
 			(effects
 				(font
 					(size 1 1)
@@ -1894,7 +1830,7 @@
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "57542572-b28d-4b92-91e0-e98ad0144602")
+			(uuid "f7570e4d-8964-46c8-a6bd-28386eef8c77")
 			(effects
 				(font
 					(size 1 1)
@@ -1946,12 +1882,6 @@
 		(path "/8b754b3c-ca78-44e1-9d89-f14fd3fa0150")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -1976,22 +1906,6 @@
 					(thickness 0.15)
 				)
 			)
-		)
-		(pad "" thru_hole circle
-			(at -4.5 0)
-			(size 4 4)
-			(drill 2)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(uuid "53d0a314-f646-45f1-ab08-17cd8d3643f0")
-		)
-		(pad "" thru_hole circle
-			(at 4.5 0)
-			(size 4 4)
-			(drill 2)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(uuid "fb513a00-be66-4e40-8f9c-0e621f4a8259")
 		)
 		(pad "1" thru_hole circle
 			(at -2.54 7)
@@ -2026,6 +1940,22 @@
 			(pintype "passive")
 			(uuid "9d5decc0-b558-4eaf-9385-fe55b6c96c6f")
 		)
+		(pad "MP" thru_hole circle
+			(at -4.5 0)
+			(size 4 4)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "53d0a314-f646-45f1-ab08-17cd8d3643f0")
+		)
+		(pad "MP" thru_hole circle
+			(at 4.5 0)
+			(size 4 4)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "fb513a00-be66-4e40-8f9c-0e621f4a8259")
+		)
 		(embedded_fonts no)
 		(model "/home/benjamin/git/cynthia/lib/kicad/3d_models/pot.step"
 			(offset
@@ -2055,7 +1985,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "B10k"
 			(at 6 -4.56 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -2138,12 +2068,6 @@
 		(path "/333e29b0-85a3-41bd-ba05-f13faccdad21")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -2168,22 +2092,6 @@
 					(thickness 0.15)
 				)
 			)
-		)
-		(pad "" thru_hole circle
-			(at -4.5 0)
-			(size 4 4)
-			(drill 2)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(uuid "6d60376a-7ea4-47b9-ba18-8465d9a0a8c7")
-		)
-		(pad "" thru_hole circle
-			(at 4.5 0)
-			(size 4 4)
-			(drill 2)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(uuid "660700dc-fb75-4379-9e70-a2e09014d282")
 		)
 		(pad "1" thru_hole circle
 			(at -2.54 7)
@@ -2217,6 +2125,22 @@
 			(pinfunction "3_3")
 			(pintype "passive")
 			(uuid "d03c31c1-6302-4736-8429-cf8eec334720")
+		)
+		(pad "MP" thru_hole circle
+			(at -4.5 0)
+			(size 4 4)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "6d60376a-7ea4-47b9-ba18-8465d9a0a8c7")
+		)
+		(pad "MP" thru_hole circle
+			(at 4.5 0)
+			(size 4 4)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "660700dc-fb75-4379-9e70-a2e09014d282")
 		)
 		(embedded_fonts no)
 		(model "/home/benjamin/git/cynthia/lib/kicad/3d_models/pot.step"
@@ -2288,12 +2212,6 @@
 		(path "/ea55fb3e-97f2-4c7c-a314-29572c778d46")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -2412,12 +2330,6 @@
 		(path "/71fcd3ce-d9f2-4c3f-b115-9d09422a611c")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "S" "T" "TN")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -2585,12 +2497,6 @@
 		(path "/28286023-b2dc-4b90-b84a-eee195c7793f")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2749,12 +2655,6 @@
 		(path "/bce63c58-4eee-4d16-91e3-5c29f0ae6897")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2932,12 +2832,6 @@
 		(path "/6c7c3ac8-97a6-4dfb-8173-a350ca3b805d")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3226,12 +3120,6 @@
 		(path "/96f2a2b3-f807-4381-81b0-1bf971370427")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3390,12 +3278,6 @@
 		(path "/921cf6a6-081a-4f30-92f3-dafebbc18d74")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "4" "5" "6" "7" "8")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3577,7 +3459,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GATE_IN")
+			(net "LOOP")
 			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "f32845b0-cf81-403a-a01a-ae8c4afcd4de")
@@ -3621,7 +3503,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "GATE_CLEAN")
+			(net "GATE_IN")
 			(pinfunction "Pin_6_6")
 			(pintype "passive")
 			(uuid "d2d2b2b1-9021-4f98-bfbe-c4cb0969759a")
@@ -3632,7 +3514,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "LOOP")
+			(net "GATE_CLEAN")
 			(pinfunction "Pin_7_7")
 			(pintype "passive")
 			(uuid "4b787e72-e883-4081-a7b4-2b05ee37b32c")
@@ -3732,12 +3614,6 @@
 		(path "/af297504-c678-4c0c-b553-0eb0da6d9992")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3915,12 +3791,6 @@
 		(path "/ab325887-1183-4cfd-ab44-d6a7dedabeb2")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4237,12 +4107,6 @@
 		(path "/b598d072-6894-4cd5-90de-202dc0a000a7")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4625,12 +4489,6 @@
 		(path "/f0177927-fd1e-4cea-bb76-dae908e5a770")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "4" "5" "6" "7" "8")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4801,7 +4659,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "ATTACK")
+			(net "RELEASE")
 			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "9a46e3aa-1e0a-4b4c-8a92-09d03068f304")
@@ -4812,7 +4670,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "RELEASE")
+			(net "RELEASE CV")
 			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "04a0323a-ff2c-4338-a80f-c93310a339fe")
@@ -4845,7 +4703,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "ATTACK CV")
+			(net "ATTACK")
 			(pinfunction "Pin_5_5")
 			(pintype "passive")
 			(uuid "8d33a88c-c6bb-4618-baea-def3c22271c7")
@@ -4856,7 +4714,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "RELEASE CV")
+			(net "ATTACK CV")
 			(pinfunction "Pin_6_6")
 			(pintype "passive")
 			(uuid "fa70907d-2ac7-47c4-8c3c-ab1a65be7dcf")
@@ -4967,12 +4825,6 @@
 		(path "/896a68d3-da91-4a5a-88bc-dbad5dd2d656")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5159,12 +5011,6 @@
 		(path "/a1bae620-8e96-4db9-9404-351847749f8d")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5547,12 +5393,6 @@
 		(path "/795d191c-8c43-4bc7-b832-514662f7cfb4")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5711,12 +5551,6 @@
 		(path "/a64c9e0d-d18e-4217-97cd-415a7ed884b7")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5875,12 +5709,6 @@
 		(path "/54dcb488-01cb-4e6d-a4ed-b858a9388639")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6039,12 +5867,6 @@
 		(path "/5ed59f53-b70a-46fc-8ce6-a3800b3df370")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6203,12 +6025,6 @@
 		(path "/067f14e3-798e-477a-a915-9c92edb50247")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6367,12 +6183,6 @@
 		(path "/3deec649-b5c6-485d-bc1d-fa53b392c9e4")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6531,20 +6341,6 @@
 		(path "/da727597-048e-45ee-98a2-6be99fab69b0")
 		(sheetname "/")
 		(sheetfile "control_board.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "2" "1")
-			)
-			(unit
-				(name "B")
-				(pins "5" "6" "7")
-			)
-			(unit
-				(name "C")
-				(pins "8" "4")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7146,36 +6942,124 @@
 		(uuid "e849b188-9942-4581-b824-9cc807293bc3")
 	)
 	(segment
-		(start 135.5 116.6)
-		(end 132.96 119.14)
+		(start 131.31 132.476346)
+		(end 131.31 120.79)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "RELEASE CV")
-		(uuid "58e225a6-68a1-43d1-a473-c6454be3cbd9")
+		(uuid "117b3897-c4a2-4db4-804f-f9414c60d001")
 	)
 	(segment
-		(start 132.96 119.14)
-		(end 132.96 132)
+		(start 122.54 132)
+		(end 123.69 130.85)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "RELEASE CV")
-		(uuid "9eb1fed2-d2f0-44fc-a7d4-755b8cf9ff83")
+		(uuid "2e0ee5f7-aa38-44d4-8035-eb8c987f9510")
 	)
 	(segment
-		(start 130.42 132)
-		(end 130.42 105.68)
+		(start 122.5 131.7)
+		(end 122.8 132)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "RELEASE CV")
+		(uuid "4ddd5a36-1eec-42fd-af22-ba455a695408")
+	)
+	(segment
+		(start 129.01 132.476346)
+		(end 129.683654 133.15)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "RELEASE CV")
+		(uuid "55cc7273-1964-416b-ad38-0b0d60e189fa")
+	)
+	(segment
+		(start 123.69 130.85)
+		(end 128.336346 130.85)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "RELEASE CV")
+		(uuid "623c4253-837c-4267-89d6-2deab11a3727")
+	)
+	(segment
+		(start 131.31 120.79)
+		(end 135.5 116.6)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "RELEASE CV")
+		(uuid "6bb623b5-399e-4ffd-b662-a8c40e29ee72")
+	)
+	(segment
+		(start 128.336346 130.85)
+		(end 129.01 131.523654)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "RELEASE CV")
+		(uuid "78b42631-52c6-484e-a064-2a124b879237")
+	)
+	(segment
+		(start 130.636346 133.15)
+		(end 131.31 132.476346)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "RELEASE CV")
+		(uuid "7a4e734c-ff97-489c-a91e-d74b2b233919")
+	)
+	(segment
+		(start 129.01 131.523654)
+		(end 129.01 132.476346)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "RELEASE CV")
+		(uuid "d6c2a98b-593c-4527-a3ea-ffeaa06f62bd")
+	)
+	(segment
+		(start 129.683654 133.15)
+		(end 130.636346 133.15)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "RELEASE CV")
+		(uuid "e28e5737-632b-489d-bf14-d7dce016281b")
+	)
+	(segment
+		(start 132.7 132)
+		(end 132.7 123.3)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "ATTACK CV")
-		(uuid "1f0f3349-c46e-4baa-bb08-1afc09b3f4e8")
+		(uuid "576befd0-11d3-410b-b06c-646fa259623c")
 	)
 	(segment
-		(start 130.42 105.68)
+		(start 132.7 123.3)
+		(end 138 118)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "ATTACK CV")
+		(uuid "a02053df-0220-43d5-9374-1adf49ef8aa2")
+	)
+	(segment
+		(start 138 118)
+		(end 138 106.5)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "ATTACK CV")
+		(uuid "a153d202-2ca0-4909-a353-df39d5d4f5ec")
+	)
+	(segment
+		(start 138 106.5)
+		(end 135.5 104)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "ATTACK CV")
+		(uuid "e9f7c76a-cd71-4068-9479-ea6b5d675b73")
+	)
+	(segment
+		(start 135.5 104)
 		(end 135.5 100.6)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "ATTACK CV")
-		(uuid "3ae7e936-d08a-4258-b5aa-a9d2eae88969")
+		(uuid "ec0143f4-20ec-43b9-9196-c307a51d9abc")
 	)
 	(segment
 		(start 117 152.5)
@@ -7563,19 +7447,27 @@
 	)
 	(segment
 		(start 120.5 97.75)
-		(end 120.51 97.75)
+		(end 133.21 97.75)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "LOOP")
-		(uuid "9fa9ca0c-0e2e-4db9-8935-01684d93f54c")
+		(uuid "6ede6a94-bb0b-42a4-8422-aad284d2cd39")
 	)
 	(segment
-		(start 120.51 97.75)
-		(end 123.26 95)
+		(start 133.21 97.75)
+		(end 135.96 95)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "LOOP")
-		(uuid "fed5f97d-10ef-4212-96c5-1b1deadc3b88")
+		(uuid "8e0ac37c-1aed-45d7-b0f2-effee744b25c")
+	)
+	(segment
+		(start 136 95)
+		(end 135.96 95)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "LOOP")
+		(uuid "beff2564-8f60-4dc7-96d2-4c65e81d55ee")
 	)
 	(segment
 		(start 117.975 92.255)
@@ -7602,12 +7494,28 @@
 		(uuid "ad39d10c-a429-41e7-8b95-0795f228e1f5")
 	)
 	(segment
-		(start 124.875 89.5)
-		(end 124.875 94.535)
+		(start 123.26 95)
+		(end 123.26 92.74)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "GATE_CLEAN")
-		(uuid "7b034afa-45ce-46f7-894e-815967d16a08")
+		(uuid "08aa4885-eb10-43a9-b047-119c1aaf661f")
+	)
+	(segment
+		(start 123.26 92.74)
+		(end 124.875 91.125)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "GATE_CLEAN")
+		(uuid "60399e94-bc5b-4823-a2e5-054a0fed0ebf")
+	)
+	(segment
+		(start 124.875 91.125)
+		(end 124.875 89.5)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "GATE_CLEAN")
+		(uuid "7ac9f103-227a-4b6b-86a4-2fa6f0e63bcd")
 	)
 	(segment
 		(start 124.875 89.5)
@@ -7616,22 +7524,6 @@
 		(layer "B.Cu")
 		(net "GATE_CLEAN")
 		(uuid "8f2d85ef-b905-4ffe-be4f-ca6dc9dceb87")
-	)
-	(segment
-		(start 125.34 95)
-		(end 125.84 95)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "GATE_CLEAN")
-		(uuid "ec18bd30-f02b-4059-a2a3-2146bbb78375")
-	)
-	(segment
-		(start 124.875 94.535)
-		(end 125.34 95)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "GATE_CLEAN")
-		(uuid "fecef14c-ac63-4c49-97b8-81e1d108a1ab")
 	)
 	(segment
 		(start 128.38 95)
@@ -7706,20 +7598,20 @@
 		(uuid "c61dd3ca-b01c-4fe7-8667-e0b20d932d61")
 	)
 	(segment
-		(start 122.5 131.7)
-		(end 122.8 132)
+		(start 120 132)
+		(end 120 130.5)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "RELEASE")
-		(uuid "4ddd5a36-1eec-42fd-af22-ba455a695408")
+		(uuid "5e188da1-1cfe-4a51-9562-bc784e71c449")
 	)
 	(segment
-		(start 122.5 128)
-		(end 122.5 131.7)
+		(start 120 130.5)
+		(end 122.5 128)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "RELEASE")
-		(uuid "6c9ec7e7-8497-4aea-8da8-c2baefdaf85a")
+		(uuid "97195edf-cd7e-4b48-a1a3-5f21cd4cca5b")
 	)
 	(segment
 		(start 133 147)
@@ -7818,12 +7710,20 @@
 		(uuid "39355dd3-92f5-4288-a59f-ed20b6a382ca")
 	)
 	(segment
-		(start 127.88 132)
-		(end 125.04 129.16)
+		(start 125.04 128)
+		(end 124.913654 128)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "-12V")
-		(uuid "5a7b3c11-6c7a-40c9-bf1e-344a3b02cba0")
+		(uuid "55d7a7ba-6a40-4700-8c14-1ce943ee9e10")
+	)
+	(segment
+		(start 126.12 133.5)
+		(end 127.62 132)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "-12V")
+		(uuid "5d5826db-7420-4be6-b61d-111a63f7d406")
 	)
 	(segment
 		(start 125.04 112.06)
@@ -7842,6 +7742,14 @@
 		(uuid "6ce0d0f7-20ee-4eb8-93e0-cf471cd8cd6e")
 	)
 	(segment
+		(start 121.39 131.523654)
+		(end 121.39 132.89)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "-12V")
+		(uuid "98a4c1a0-665b-40dd-b8e9-0a49ed1a1bc3")
+	)
+	(segment
 		(start 124.04 113.06)
 		(end 124.04 127)
 		(width 0.2)
@@ -7850,12 +7758,20 @@
 		(uuid "a1e8dcab-468f-48dc-a268-e9663233b53d")
 	)
 	(segment
-		(start 125.04 129.16)
-		(end 125.04 128)
+		(start 124.913654 128)
+		(end 121.39 131.523654)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "-12V")
-		(uuid "a25da424-3e27-49bb-bfb7-db993f50d8a2")
+		(uuid "afeb93ab-0718-4c63-ba1d-1de27c7d860a")
+	)
+	(segment
+		(start 122 133.5)
+		(end 126.12 133.5)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "-12V")
+		(uuid "b7380bd4-f8ba-4d87-b7c5-658175e28605")
 	)
 	(segment
 		(start 133.5 157.5)
@@ -7872,6 +7788,14 @@
 		(layer "B.Cu")
 		(net "-12V")
 		(uuid "d75e6533-a7f2-4598-8497-5fadf9a584d7")
+	)
+	(segment
+		(start 121.39 132.89)
+		(end 122 133.5)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "-12V")
+		(uuid "f91cdc40-31b9-4ac9-bb4d-890893be37ad")
 	)
 	(segment
 		(start 124.04 127)
@@ -7922,52 +7846,36 @@
 		(uuid "e7c85948-f86b-4c7c-b2aa-671cad23138d")
 	)
 	(segment
-		(start 118.66 124.34)
-		(end 119.75 123.25)
+		(start 122.5 112.06)
+		(end 123.8 110.76)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "ATTACK")
-		(uuid "09a76b00-e52a-4676-9200-253d37f3504e")
+		(uuid "13390f2f-02ef-4ebd-b44f-869f6222841b")
 	)
 	(segment
-		(start 120.26 132)
-		(end 118.66 130.4)
+		(start 125.578478 110.76)
+		(end 130.16 115.341522)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "ATTACK")
-		(uuid "2f9016ec-7a7e-4a1c-86cf-4b2f27ef3fa6")
+		(uuid "af5bb69f-e8f9-4398-bc7d-2de680af21cd")
 	)
 	(segment
-		(start 118.66 130.4)
-		(end 118.66 124.34)
+		(start 123.8 110.76)
+		(end 125.578478 110.76)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "ATTACK")
-		(uuid "627e95a5-b21f-40a5-98f7-0196b316d587")
+		(uuid "c9e64dba-86a4-4db9-9a57-752b583b09ff")
 	)
 	(segment
-		(start 121.75 123.25)
-		(end 122.5 122.5)
+		(start 130.16 115.341522)
+		(end 130.16 132)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "ATTACK")
-		(uuid "70c1684c-905f-43a5-8a84-aa6a9e6ed664")
-	)
-	(segment
-		(start 122.5 122.5)
-		(end 122.5 112.06)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "ATTACK")
-		(uuid "b8e24940-2dd9-4e11-84fa-6491805eac23")
-	)
-	(segment
-		(start 119.75 123.25)
-		(end 121.75 123.25)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "ATTACK")
-		(uuid "ce82b172-081e-4290-a11f-fe93f8cd53a1")
+		(uuid "f40bbf2a-3bbd-4bed-8743-0dd8d2696119")
 	)
 	(segment
 		(start 135 152.5)
@@ -8130,6 +8038,14 @@
 		(uuid "f0d13a3a-a41c-477a-bc62-70ba3da58e82")
 	)
 	(segment
+		(start 125.8 95)
+		(end 126.95 96.15)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "GATE_IN")
+		(uuid "255bb3dd-5c9e-4417-94fb-69460c054b03")
+	)
+	(segment
 		(start 135.5 85)
 		(end 135.5 73)
 		(width 0.2)
@@ -8138,28 +8054,12 @@
 		(uuid "3ba573e3-7af4-4861-a7e4-4e37cf541227")
 	)
 	(segment
-		(start 135.96 95)
-		(end 139.34 91.62)
+		(start 129.5 95.466346)
+		(end 129.5 91)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "GATE_IN")
-		(uuid "41d3bf0a-14cc-470b-82a7-74929a29a7a8")
-	)
-	(segment
-		(start 139.34 88.84)
-		(end 135.5 85)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "GATE_IN")
-		(uuid "4e7d1aae-cc6d-4cdd-b7a5-9e88b5c6753f")
-	)
-	(segment
-		(start 139.34 91.62)
-		(end 139.34 88.84)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "GATE_IN")
-		(uuid "5f7fcd23-8099-44b7-928b-dbfeabcaebde")
+		(uuid "426b970d-3fd6-4000-a2f3-9d020dd6c470")
 	)
 	(segment
 		(start 132.45 76.05)
@@ -8178,12 +8078,28 @@
 		(uuid "93eeec43-59c2-4c25-9bce-5779cb1f3f6d")
 	)
 	(segment
-		(start 136 95)
-		(end 135.96 95)
+		(start 126.95 96.15)
+		(end 128.816346 96.15)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "GATE_IN")
-		(uuid "beff2564-8f60-4dc7-96d2-4c65e81d55ee")
+		(uuid "d59bf3e5-56a2-4e71-ae51-3d6202ce006d")
+	)
+	(segment
+		(start 129.5 91)
+		(end 135.5 85)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "GATE_IN")
+		(uuid "daed1a8c-c27a-47ee-9232-bf68533ee2b5")
+	)
+	(segment
+		(start 128.816346 96.15)
+		(end 129.5 95.466346)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "GATE_IN")
+		(uuid "feb0003d-91b2-4313-9fa6-371cc2503593")
 	)
 	(segment
 		(start 137.5 154.916)
