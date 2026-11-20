@@ -3869,6 +3869,290 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "cynthia:BCM847BS"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "BCM847BS"
+				(at 5.08 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+				(at 5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BCM847BS.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "100mA IC, 45V Vce, Matched Dual NPN/NPN Transistors, SOT-363"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "NPN/NPN Transistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT?363*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "BCM847BS_0_1"
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "BCM847BS_1_1"
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "BCM847BS_2_1"
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+12V"
 			(power global)
 			(pin_numbers
@@ -4481,7 +4765,7 @@
 		(uuid "208b5314-4959-4ce6-afe9-215a453eb00b")
 	)
 	(junction
-		(at 93.98 264.16)
+		(at 100.33 264.16)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2ac7f0ad-b23f-4aeb-9241-c01aee1acee5")
@@ -4769,7 +5053,7 @@
 		(uuid "d9ca291a-cfa0-4a5d-bbe5-7213f01616b7")
 	)
 	(junction
-		(at 99.06 256.54)
+		(at 105.41 256.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e3e734bc-00e6-4fd0-a77d-fe43210123e5")
@@ -4817,7 +5101,7 @@
 		(uuid "f6ef912d-3fa0-46e0-8b95-670490ba0c11")
 	)
 	(junction
-		(at 99.06 271.78)
+		(at 105.41 271.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f8e23542-1dfd-43b9-88b7-874502a0df7c")
@@ -5296,7 +5580,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 261.62) (xy 93.98 264.16)
+			(xy 100.33 261.62) (xy 100.33 264.16)
 		)
 		(stroke
 			(width 0)
@@ -5413,6 +5697,16 @@
 			(type default)
 		)
 		(uuid "389e35f0-747a-4d41-9066-aa0dfe426504")
+	)
+	(wire
+		(pts
+			(xy 69.85 269.24) (xy 78.74 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39832f69-ae0f-41ff-9ec2-3a693cbc4b3a")
 	)
 	(wire
 		(pts
@@ -5726,7 +6020,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 271.78) (xy 99.06 271.78)
+			(xy 100.33 271.78) (xy 105.41 271.78)
 		)
 		(stroke
 			(width 0)
@@ -7166,7 +7460,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 264.16) (xy 96.52 264.16)
+			(xy 100.33 264.16) (xy 102.87 264.16)
 		)
 		(stroke
 			(width 0)
@@ -7203,6 +7497,16 @@
 			(type default)
 		)
 		(uuid "df97c4df-444f-4ef8-b489-f9141a23c57b")
+	)
+	(wire
+		(pts
+			(xy 135.89 109.22) (xy 142.24 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfc445b0-bc6b-476d-a058-f99adf593844")
 	)
 	(wire
 		(pts
@@ -7266,7 +7570,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 264.16) (xy 93.98 266.7)
+			(xy 100.33 264.16) (xy 100.33 266.7)
 		)
 		(stroke
 			(width 0)
@@ -7313,6 +7617,16 @@
 			(type default)
 		)
 		(uuid "e857f169-24bb-49cb-a2fb-c0792f40a1cf")
+	)
+	(wire
+		(pts
+			(xy 69.85 259.08) (xy 78.74 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e925e07f-70de-4248-a0ac-fd651249eed3")
 	)
 	(wire
 		(pts
@@ -7406,6 +7720,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 264.16) (xy 78.74 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f257fcc1-f3c2-46ee-91e1-4d66d6972134")
+	)
+	(wire
+		(pts
 			(xy 210.82 134.62) (xy 217.17 134.62)
 		)
 		(stroke
@@ -7446,7 +7770,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 256.54) (xy 99.06 256.54)
+			(xy 100.33 256.54) (xy 105.41 256.54)
 		)
 		(stroke
 			(width 0)
@@ -8863,6 +9187,100 @@
 		)
 	)
 	(symbol
+		(lib_id "cynthia:BCM847BS")
+		(at 234.95 123.19 0)
+		(mirror y)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0c673cb6-03d4-46a4-9805-a9e04144305e")
+		(property "Reference" "Q2"
+			(at 229.362 116.586 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BCM847BS"
+			(at 229.362 119.126 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+			(at 229.87 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BCM847BS.pdf"
+			(at 234.95 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100mA IC, 45V Vce, Matched Dual NPN/NPN Transistors, SOT-363"
+			(at 234.95 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "47875a8e-d5bd-4325-a921-945bf77f95ba")
+		)
+		(pin "1"
+			(uuid "8f823fb7-ef4d-4c21-808f-0448ba3eca3f")
+		)
+		(pin "6"
+			(uuid "8f61f855-f4d3-4ed0-ae71-c3e68e9463f7")
+		)
+		(pin "3"
+			(uuid "426f8ce6-f80d-46d6-960c-3c0ed11ece0b")
+		)
+		(pin "5"
+			(uuid "ef7dce80-612e-436c-9a52-0fb2dbbe7822")
+		)
+		(pin "4"
+			(uuid "c1a7fc35-7ebe-4fd1-b397-417df20cef0f")
+		)
+		(instances
+			(project "01_main_board"
+				(path "/7bf3d2ed-8bab-4c92-b1a7-3c419691fd96"
+					(reference "Q2")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Audio:AS3340")
 		(at 135.89 78.74 0)
 		(unit 1)
@@ -9972,116 +10390,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC847")
-		(at 234.95 123.19 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "27d5ceaf-c637-4268-a2f0-d0f3eb4737bb")
-		(property "Reference" "Q3"
-			(at 229.87 121.9199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC847"
-			(at 229.87 124.4599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 229.87 125.095 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657"
-			(at 234.95 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, NPN Transistor, SOT-23"
-			(at 234.95 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "NPN"
-			(at 234.95 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=B 2=E 3=C"
-			(at 234.95 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "5a7eed67-f076-41ed-b6bc-e5f1bd752a74")
-		)
-		(pin "2"
-			(uuid "bb5a343e-a539-47a8-94ed-df66b139500e")
-		)
-		(pin "1"
-			(uuid "c6e4e012-129c-422f-ba38-578519267220")
-		)
-		(instances
-			(project "01_main_board"
-				(path "/7bf3d2ed-8bab-4c92-b1a7-3c419691fd96"
-					(reference "Q3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 74.93 49.53 90)
 		(unit 1)
@@ -10185,6 +10493,7 @@
 		)
 		(property "Value" "TestPoint"
 			(at 154.94 56.3879 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10241,7 +10550,7 @@
 	)
 	(symbol
 		(lib_id "power:-12V")
-		(at 99.06 271.78 180)
+		(at 105.41 271.78 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10252,7 +10561,7 @@
 		(fields_autoplaced yes)
 		(uuid "2a39b2c6-b9e9-4df4-8160-ba953041e8f8")
 		(property "Reference" "#PWR022"
-			(at 99.06 267.97 0)
+			(at 105.41 267.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10263,7 +10572,7 @@
 			)
 		)
 		(property "Value" "-12V"
-			(at 99.06 276.86 0)
+			(at 105.41 276.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10273,7 +10582,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 271.78 0)
+			(at 105.41 271.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10284,7 +10593,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 271.78 0)
+			(at 105.41 271.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10295,7 +10604,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"-12V\""
-			(at 99.06 271.78 0)
+			(at 105.41 271.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10328,7 +10637,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2a78a267-b19b-42de-9214-d79bb2968d1a")
-		(property "Reference" "RV1"
+		(property "Reference" "RV6"
 			(at 77.47 24.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10427,7 +10736,7 @@
 		(instances
 			(project "01_main_board"
 				(path "/7bf3d2ed-8bab-4c92-b1a7-3c419691fd96"
-					(reference "RV1")
+					(reference "RV6")
 					(unit 1)
 				)
 			)
@@ -10435,7 +10744,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 93.98 259.08 180)
+		(at 100.33 259.08 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10445,7 +10754,7 @@
 		(dnp no)
 		(uuid "2a8f6b32-64aa-4e42-be04-7a8ef9efed5c")
 		(property "Reference" "C12"
-			(at 87.376 256.794 0)
+			(at 93.726 256.794 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10456,7 +10765,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 87.376 259.334 0)
+			(at 93.726 259.334 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10467,7 +10776,7 @@
 			)
 		)
 		(property "Footprint" "cynthia:C SMD 0805"
-			(at 93.98 259.08 0)
+			(at 100.33 259.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10478,7 +10787,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 259.08 0)
+			(at 100.33 259.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10489,7 +10798,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 93.98 259.08 0)
+			(at 100.33 259.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11392,7 +11701,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3beb0eb9-5216-4b76-8fd5-2f913d43dca9")
-		(property "Reference" "RV3"
+		(property "Reference" "RV8"
 			(at 100.33 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11489,7 +11798,7 @@
 		(instances
 			(project "01_main_board"
 				(path "/7bf3d2ed-8bab-4c92-b1a7-3c419691fd96"
-					(reference "RV3")
+					(reference "RV8")
 					(unit 1)
 				)
 			)
@@ -11823,6 +12132,100 @@
 		)
 	)
 	(symbol
+		(lib_id "cynthia:BCM847BS")
+		(at 208.28 123.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "440bc8d3-2f9d-456e-8ba6-128e10ffbf58")
+		(property "Reference" "Q2"
+			(at 213.36 121.9199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BCM847BS"
+			(at 213.36 124.4599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+			(at 213.36 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BCM847BS.pdf"
+			(at 208.28 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100mA IC, 45V Vce, Matched Dual NPN/NPN Transistors, SOT-363"
+			(at 208.28 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "47875a8e-d5bd-4325-a921-945bf77f95ba")
+		)
+		(pin "1"
+			(uuid "8f823fb7-ef4d-4c21-808f-0448ba3eca3f")
+		)
+		(pin "6"
+			(uuid "8f61f855-f4d3-4ed0-ae71-c3e68e9463f7")
+		)
+		(pin "3"
+			(uuid "426f8ce6-f80d-46d6-960c-3c0ed11ece0b")
+		)
+		(pin "5"
+			(uuid "ef7dce80-612e-436c-9a52-0fb2dbbe7822")
+		)
+		(pin "4"
+			(uuid "c1a7fc35-7ebe-4fd1-b397-417df20cef0f")
+		)
+		(instances
+			(project "01_main_board"
+				(path "/7bf3d2ed-8bab-4c92-b1a7-3c419691fd96"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Amplifier_Operational:TL074")
 		(at 78.74 210.82 0)
 		(unit 4)
@@ -12029,7 +12432,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4a082c4b-989f-492c-b5d7-ff763b3ecb78")
-		(property "Reference" "RV5"
+		(property "Reference" "RV10"
 			(at 219.202 141.732 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12128,7 +12531,7 @@
 		(instances
 			(project "01_main_board"
 				(path "/7bf3d2ed-8bab-4c92-b1a7-3c419691fd96"
-					(reference "RV5")
+					(reference "RV10")
 					(unit 1)
 				)
 			)
@@ -13778,6 +14181,7 @@
 		)
 		(property "Value" "TestPoint"
 			(at 158.75 81.7879 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14385,7 +14789,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 96.52 264.16 0)
+		(at 102.87 264.16 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14396,7 +14800,7 @@
 		(fields_autoplaced yes)
 		(uuid "73e4a36f-7caf-474b-a3a5-485be0586c8a")
 		(property "Reference" "#PWR020"
-			(at 96.52 270.51 0)
+			(at 102.87 270.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14407,7 +14811,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 96.52 269.24 0)
+			(at 102.87 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14418,7 +14822,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 96.52 264.16 0)
+			(at 102.87 264.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14429,7 +14833,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 264.16 0)
+			(at 102.87 264.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14440,7 +14844,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 96.52 264.16 0)
+			(at 102.87 264.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15485,6 +15889,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 78.74 259.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "83f4b4f2-8503-4472-b237-0c008a9e337f")
+		(property "Reference" "TP5"
+			(at 81.28 254.5079 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 81.28 257.0479 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 83.82 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 78.74 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0377f528-c8ec-41da-8e30-18f2b61ac730")
+		)
+		(instances
+			(project "01_main_board"
+				(path "/7bf3d2ed-8bab-4c92-b1a7-3c419691fd96"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 135.89 48.26 0)
 		(unit 1)
@@ -15804,7 +16288,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 99.06 256.54 0)
+		(at 105.41 256.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15815,7 +16299,7 @@
 		(fields_autoplaced yes)
 		(uuid "87fb428e-447f-4b88-b8f1-2615401dce77")
 		(property "Reference" "#PWR021"
-			(at 99.06 260.35 0)
+			(at 105.41 260.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15826,7 +16310,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 99.06 251.46 0)
+			(at 105.41 251.46 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15836,7 +16320,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 256.54 0)
+			(at 105.41 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15847,7 +16331,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 256.54 0)
+			(at 105.41 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15858,7 +16342,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 99.06 256.54 0)
+			(at 105.41 256.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17609,116 +18093,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC847")
-		(at 208.28 123.19 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aaf54303-6851-41dc-b32b-189cc65326cc")
-		(property "Reference" "Q2"
-			(at 213.36 121.9199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC847"
-			(at 213.36 124.4599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 213.36 125.095 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657"
-			(at 208.28 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, NPN Transistor, SOT-23"
-			(at 208.28 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "NPN"
-			(at 208.28 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=B 2=E 3=C"
-			(at 208.28 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "996ccd7a-9671-42a6-b066-4f65dd7e13f9")
-		)
-		(pin "2"
-			(uuid "fbd23c54-7cc0-4d78-8323-d86e762eb8b7")
-		)
-		(pin "1"
-			(uuid "95a16385-7c25-4a60-b8a6-3bcef893a45d")
-		)
-		(instances
-			(project "01_main_board"
-				(path "/7bf3d2ed-8bab-4c92-b1a7-3c419691fd96"
-					(reference "Q2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 148.59 33.02 0)
 		(unit 1)
@@ -17743,6 +18117,7 @@
 		)
 		(property "Value" "TestPoint"
 			(at 151.13 30.9879 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17799,7 +18174,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 93.98 269.24 180)
+		(at 100.33 269.24 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17809,7 +18184,7 @@
 		(dnp no)
 		(uuid "acbdfe17-4fb4-4682-a860-0e0dce203c8f")
 		(property "Reference" "C13"
-			(at 87.376 266.954 0)
+			(at 93.726 266.954 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17820,7 +18195,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 87.376 269.494 0)
+			(at 93.726 269.494 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17831,7 +18206,7 @@
 			)
 		)
 		(property "Footprint" "cynthia:C SMD 0805"
-			(at 93.98 269.24 0)
+			(at 100.33 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17842,7 +18217,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 269.24 0)
+			(at 100.33 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17853,7 +18228,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 93.98 269.24 0)
+			(at 100.33 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18725,6 +19100,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 78.74 269.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c4685c25-c1dc-4178-85ec-7bc85a5352b1")
+		(property "Reference" "TP6"
+			(at 81.28 264.6679 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 81.28 267.2079 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 83.82 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 78.74 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "27370c90-82e9-4bb2-b6f2-28000a4291e3")
+		)
+		(instances
+			(project "01_main_board"
+				(path "/7bf3d2ed-8bab-4c92-b1a7-3c419691fd96"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 104.14 195.58 180)
 		(unit 1)
@@ -18804,7 +19259,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:TL074")
-		(at 101.6 264.16 0)
+		(at 107.95 264.16 0)
 		(unit 5)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18815,7 +19270,7 @@
 		(fields_autoplaced yes)
 		(uuid "c8077d6c-651e-4d62-806a-0f10eb109719")
 		(property "Reference" "U1"
-			(at 100.33 262.8899 0)
+			(at 106.68 262.8899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18826,7 +19281,7 @@
 			)
 		)
 		(property "Value" "TL074"
-			(at 100.33 265.4299 0)
+			(at 106.68 265.4299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18837,7 +19292,7 @@
 			)
 		)
 		(property "Footprint" "cynthia:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 100.33 261.62 0)
+			(at 106.68 261.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18848,7 +19303,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 102.87 259.08 0)
+			(at 109.22 259.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18859,7 +19314,7 @@
 			)
 		)
 		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
-			(at 101.6 264.16 0)
+			(at 107.95 264.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20670,7 +21125,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e5e9fb3f-a6ad-4964-ba75-3aedec933a97")
-		(property "Reference" "RV2"
+		(property "Reference" "RV7"
 			(at 70.104 34.29 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20767,7 +21222,7 @@
 		(instances
 			(project "01_main_board"
 				(path "/7bf3d2ed-8bab-4c92-b1a7-3c419691fd96"
-					(reference "RV2")
+					(reference "RV7")
 					(unit 1)
 				)
 			)
@@ -21016,6 +21471,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 142.24 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ecb6bf06-1068-494e-a3b4-881d30d31aa9")
+		(property "Reference" "TP7"
+			(at 144.78 104.6479 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 144.78 107.1879 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 147.32 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 142.24 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "67a5fe07-3371-48d7-b44f-14259f58e331")
+		)
+		(instances
+			(project "01_main_board"
+				(path "/7bf3d2ed-8bab-4c92-b1a7-3c419691fd96"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 69.85 259.08 0)
 		(unit 1)
@@ -21179,6 +21714,86 @@
 			(project "01_main_board"
 				(path "/7bf3d2ed-8bab-4c92-b1a7-3c419691fd96"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 86.36 210.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1e36469-595e-4f4b-b449-8b8148a3839c")
+		(property "Reference" "TP9"
+			(at 88.9 206.2479 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 88.9 208.7879 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 91.44 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 86.36 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "750b3352-61ec-4516-9731-17c01541ceeb")
+		)
+		(instances
+			(project "01_main_board"
+				(path "/7bf3d2ed-8bab-4c92-b1a7-3c419691fd96"
+					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -21504,6 +22119,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 78.74 264.16 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f91fe442-1276-4db0-8d94-b573917cf59c")
+		(property "Reference" "TP8"
+			(at 81.28 259.5879 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 81.28 262.1279 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D3.80mm_Drill2.5mm"
+			(at 83.82 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 78.74 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f8c865c0-9705-4790-983b-20885acbd68e")
+		)
+		(instances
+			(project "01_main_board"
+				(path "/7bf3d2ed-8bab-4c92-b1a7-3c419691fd96"
+					(reference "TP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Potentiometer_Trim")
 		(at 196.85 105.41 180)
 		(unit 1)
@@ -21514,7 +22209,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fba10be3-95b0-4af7-b4cb-5f37ad84beb2")
-		(property "Reference" "RV4"
+		(property "Reference" "RV9"
 			(at 199.39 104.1399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21613,7 +22308,7 @@
 		(instances
 			(project "01_main_board"
 				(path "/7bf3d2ed-8bab-4c92-b1a7-3c419691fd96"
-					(reference "RV4")
+					(reference "RV9")
 					(unit 1)
 				)
 			)
