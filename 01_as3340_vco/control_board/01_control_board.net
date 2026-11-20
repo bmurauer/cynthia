@@ -2,8 +2,8 @@
 	(version "E")
 	(design
 		(source "/home/benjamin/git/cynthia/01_as3340_vco/control_board/01_control_board.kicad_sch")
-		(date "2026-11-03T00:01:57")
-		(tool "Eeschema 10.0.7")
+		(date "2026-11-20T14:25:05")
+		(tool "Eeschema 10.0.8")
 		(sheet
 			(number "1")
 			(name "/")
@@ -531,7 +531,7 @@
 			(ref "J8")
 			(value "~")
 			(footprint "cynthia:3.5mm thonk jack socket mono switched")
-			(description "SQUARE OUT")
+			(description "SQUARE")
 			(fields
 				(field
 					(name "Footprint") "cynthia:3.5mm thonk jack socket mono switched")
@@ -539,7 +539,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "SQUARE OUT")
+					(name "Description") "SQUARE")
 			)
 			(libsource
 				(lib "cynthia")
@@ -580,7 +580,7 @@
 			(ref "J9")
 			(value "~")
 			(footprint "cynthia:3.5mm thonk jack socket mono switched")
-			(description "SAW OUT")
+			(description "SAW")
 			(fields
 				(field
 					(name "Footprint") "cynthia:3.5mm thonk jack socket mono switched")
@@ -588,7 +588,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "SAW OUT")
+					(name "Description") "SAW")
 			)
 			(libsource
 				(lib "cynthia")
@@ -629,7 +629,7 @@
 			(ref "J10")
 			(value "~")
 			(footprint "cynthia:3.5mm thonk jack socket mono switched")
-			(description "TRI OUT")
+			(description "TRI")
 			(fields
 				(field
 					(name "Footprint") "cynthia:3.5mm thonk jack socket mono switched")
@@ -637,7 +637,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "TRI OUT")
+					(name "Description") "TRI")
 			)
 			(libsource
 				(lib "cynthia")
@@ -678,7 +678,7 @@
 			(ref "J11")
 			(value "~")
 			(footprint "cynthia:3.5mm thonk jack socket mono switched")
-			(description "SINE OUT")
+			(description "SINE")
 			(fields
 				(field
 					(name "Footprint") "cynthia:3.5mm thonk jack socket mono switched")
@@ -686,7 +686,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "SINE OUT")
+					(name "Description") "SINE")
 			)
 			(libsource
 				(lib "cynthia")
@@ -995,7 +995,7 @@
 		)
 		(comp
 			(ref "RV1")
-			(value "100k")
+			(value "B100k")
 			(footprint "cynthia:potientiometer")
 			(description "COARSE")
 			(fields
@@ -1070,7 +1070,7 @@
 		)
 		(comp
 			(ref "RV2")
-			(value "100k")
+			(value "B100k")
 			(footprint "cynthia:potientiometer")
 			(description "FINE")
 			(fields
@@ -1145,7 +1145,7 @@
 		)
 		(comp
 			(ref "RV3")
-			(value "250k")
+			(value "B250k")
 			(footprint "cynthia:potientiometer")
 			(description "PWM OFFSET")
 			(fields
@@ -1220,7 +1220,7 @@
 		)
 		(comp
 			(ref "RV4")
-			(value "100k")
+			(value "B100k")
 			(footprint "cynthia:potientiometer")
 			(description "PWM CV LVL")
 			(fields
@@ -1295,7 +1295,7 @@
 		)
 		(comp
 			(ref "RV5")
-			(value "100k")
+			(value "A100k")
 			(footprint "cynthia:potientiometer")
 			(description "FM CV LVL")
 			(fields
@@ -1372,6 +1372,7 @@
 			(ref "SW1")
 			(value "~")
 			(footprint "cynthia:switch_linear_2x4")
+			(description "SYNC MODE")
 			(fields
 				(field
 					(name "Footprint") "cynthia:switch_linear_2x4")
@@ -1379,8 +1380,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description")
-				)
+					(name "Description") "SYNC MODE")
 			)
 			(libsource
 				(lib "cynthia")
@@ -1442,7 +1442,7 @@
 			(ref "SW2")
 			(value "SW_SPDT")
 			(footprint "cynthia:switch_spdt")
-			(description "MODE SELECT")
+			(description "MODE")
 			(fields
 				(field
 					(name "Footprint") "cynthia:switch_spdt")
@@ -1450,7 +1450,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "MODE SELECT")
+					(name "Description") "MODE")
 			)
 			(libsource
 				(lib "Switch")
@@ -1495,7 +1495,7 @@
 			(ref "SW3")
 			(value "~")
 			(footprint "cynthia:push button")
-			(description "Manual Reset")
+			(description "RESET")
 			(fields
 				(field
 					(name "Footprint") "cynthia:push button")
@@ -1503,7 +1503,7 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Manual Reset")
+					(name "Description") "RESET")
 			)
 			(libsource
 				(lib "Switch")
@@ -2138,8 +2138,8 @@
 			(class "Default")
 			(node
 				(ref "J7")
-				(pin "10")
-				(pinfunction "Pin_10_10")
+				(pin "11")
+				(pinfunction "Pin_11_11")
 				(pintype "passive")
 			)
 			(node
@@ -2155,8 +2155,8 @@
 			(class "Default")
 			(node
 				(ref "J7")
-				(pin "11")
-				(pinfunction "Pin_11_11")
+				(pin "12")
+				(pinfunction "Pin_12_12")
 				(pintype "passive")
 			)
 			(node
@@ -2168,29 +2168,12 @@
 		)
 		(net
 			(code "6")
-			(name "CAP_VCO")
-			(class "Default")
-			(node
-				(ref "J7")
-				(pin "12")
-				(pinfunction "Pin_12_12")
-				(pintype "passive")
-			)
-			(node
-				(ref "SW2")
-				(pin "3")
-				(pinfunction "C_3")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "7")
 			(name "FM_CV")
 			(class "Default")
 			(node
 				(ref "J7")
-				(pin "8")
-				(pinfunction "Pin_8_8")
+				(pin "4")
+				(pinfunction "Pin_4_4")
 				(pintype "passive")
 			)
 			(node
@@ -2201,7 +2184,7 @@
 			)
 		)
 		(net
-			(code "8")
+			(code "7")
 			(name "GND")
 			(class "Default")
 			(node
@@ -2283,6 +2266,18 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "J6")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "J7")
+				(pin "9")
+				(pinfunction "Pin_9_9")
+				(pintype "passive")
+			)
+			(node
 				(ref "J8")
 				(pin "S")
 				(pinfunction "S_S")
@@ -2313,7 +2308,7 @@
 			)
 		)
 		(net
-			(code "9")
+			(code "8")
 			(name "Net-(D1-A)")
 			(class "Default")
 			(node
@@ -2330,7 +2325,7 @@
 			)
 		)
 		(net
-			(code "10")
+			(code "9")
 			(name "Net-(J2-PadT)")
 			(class "Default")
 			(node
@@ -2353,7 +2348,7 @@
 			)
 		)
 		(net
-			(code "11")
+			(code "10")
 			(name "Net-(J3-PadT)")
 			(class "Default")
 			(node
@@ -2370,7 +2365,7 @@
 			)
 		)
 		(net
-			(code "12")
+			(code "11")
 			(name "Net-(J4-PadT)")
 			(class "Default")
 			(node
@@ -2387,7 +2382,7 @@
 			)
 		)
 		(net
-			(code "13")
+			(code "12")
 			(name "Net-(J8-PadT)")
 			(class "Default")
 			(node
@@ -2403,7 +2398,7 @@
 			)
 		)
 		(net
-			(code "14")
+			(code "13")
 			(name "Net-(J9-PadT)")
 			(class "Default")
 			(node
@@ -2419,7 +2414,7 @@
 			)
 		)
 		(net
-			(code "15")
+			(code "14")
 			(name "Net-(J10-PadT)")
 			(class "Default")
 			(node
@@ -2435,7 +2430,7 @@
 			)
 		)
 		(net
-			(code "16")
+			(code "15")
 			(name "Net-(J11-PadT)")
 			(class "Default")
 			(node
@@ -2451,7 +2446,7 @@
 			)
 		)
 		(net
-			(code "17")
+			(code "16")
 			(name "OUT_SAW")
 			(class "Default")
 			(node
@@ -2467,7 +2462,7 @@
 			)
 		)
 		(net
-			(code "18")
+			(code "17")
 			(name "OUT_SINE")
 			(class "Default")
 			(node
@@ -2483,7 +2478,7 @@
 			)
 		)
 		(net
-			(code "19")
+			(code "18")
 			(name "OUT_SQUARE")
 			(class "Default")
 			(node
@@ -2499,7 +2494,7 @@
 			)
 		)
 		(net
-			(code "20")
+			(code "19")
 			(name "OUT_TRI")
 			(class "Default")
 			(node
@@ -2515,7 +2510,7 @@
 			)
 		)
 		(net
-			(code "21")
+			(code "20")
 			(name "PWM_CV")
 			(class "Default")
 			(node
@@ -2532,7 +2527,7 @@
 			)
 		)
 		(net
-			(code "22")
+			(code "21")
 			(name "PWM_OFFSET")
 			(class "Default")
 			(node
@@ -2549,7 +2544,7 @@
 			)
 		)
 		(net
-			(code "23")
+			(code "22")
 			(name "RESET")
 			(class "Default")
 			(node
@@ -2560,8 +2555,8 @@
 			)
 			(node
 				(ref "J7")
-				(pin "9")
-				(pinfunction "Pin_9_9")
+				(pin "10")
+				(pinfunction "Pin_10_10")
 				(pintype "passive")
 			)
 			(node
@@ -2577,13 +2572,13 @@
 			)
 		)
 		(net
-			(code "24")
+			(code "23")
 			(name "SYNC_H")
 			(class "Default")
 			(node
 				(ref "J7")
-				(pin "5")
-				(pinfunction "Pin_5_5")
+				(pin "6")
+				(pinfunction "Pin_6_6")
 				(pintype "passive")
 			)
 			(node
@@ -2600,13 +2595,13 @@
 			)
 		)
 		(net
-			(code "25")
+			(code "24")
 			(name "SYNC_H_NEG")
 			(class "Default")
 			(node
 				(ref "J7")
-				(pin "6")
-				(pinfunction "Pin_6_6")
+				(pin "7")
+				(pinfunction "Pin_7_7")
 				(pintype "passive")
 			)
 			(node
@@ -2623,13 +2618,13 @@
 			)
 		)
 		(net
-			(code "26")
+			(code "25")
 			(name "SYNC_H_POS")
 			(class "Default")
 			(node
 				(ref "J7")
-				(pin "4")
-				(pinfunction "Pin_4_4")
+				(pin "5")
+				(pinfunction "Pin_5_5")
 				(pintype "passive")
 			)
 			(node
@@ -2646,13 +2641,13 @@
 			)
 		)
 		(net
-			(code "27")
+			(code "26")
 			(name "SYNC_SOFT")
 			(class "Default")
 			(node
 				(ref "J7")
-				(pin "7")
-				(pinfunction "Pin_7_7")
+				(pin "8")
+				(pinfunction "Pin_8_8")
 				(pintype "passive")
 			)
 			(node
@@ -2669,7 +2664,7 @@
 			)
 		)
 		(net
-			(code "28")
+			(code "27")
 			(name "TUNE_COARSE")
 			(class "Default")
 			(node
@@ -2686,7 +2681,7 @@
 			)
 		)
 		(net
-			(code "29")
+			(code "28")
 			(name "TUNE_FINE")
 			(class "Default")
 			(node
@@ -2703,18 +2698,7 @@
 			)
 		)
 		(net
-			(code "30")
-			(name "unconnected-(J6-Pin_3-Pad3)")
-			(class "Default")
-			(node
-				(ref "J6")
-				(pin "3")
-				(pinfunction "Pin_3_3")
-				(pintype "passive+no_connect")
-			)
-		)
-		(net
-			(code "31")
+			(code "29")
 			(name "unconnected-(J8-PadTN)")
 			(class "Default")
 			(node
@@ -2725,7 +2709,7 @@
 			)
 		)
 		(net
-			(code "32")
+			(code "30")
 			(name "unconnected-(J9-PadTN)")
 			(class "Default")
 			(node
@@ -2736,7 +2720,7 @@
 			)
 		)
 		(net
-			(code "33")
+			(code "31")
 			(name "unconnected-(J10-PadTN)")
 			(class "Default")
 			(node
@@ -2747,7 +2731,7 @@
 			)
 		)
 		(net
-			(code "34")
+			(code "32")
 			(name "unconnected-(J11-PadTN)")
 			(class "Default")
 			(node
@@ -2755,6 +2739,17 @@
 				(pin "TN")
 				(pinfunction "TN_TN")
 				(pintype "input+no_connect")
+			)
+		)
+		(net
+			(code "33")
+			(name "unconnected-(SW2-C-Pad3)")
+			(class "Default")
+			(node
+				(ref "SW2")
+				(pin "3")
+				(pinfunction "C_3")
+				(pintype "passive")
 			)
 		)
 	)
