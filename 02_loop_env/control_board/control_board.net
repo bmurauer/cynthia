@@ -2,8 +2,8 @@
 	(version "E")
 	(design
 		(source "/home/benjamin/git/cynthia/02_loop_env/control_board/control_board.kicad_sch")
-		(date "2026-11-01T17:11:18")
-		(tool "Eeschema 10.0.7")
+		(date "2026-11-21T16:54:22")
+		(tool "Eeschema 10.0.8")
 		(sheet
 			(number "1")
 			(name "/")
@@ -1429,7 +1429,7 @@
 		)
 		(comp
 			(ref "RV1")
-			(value "10k")
+			(value "B10k")
 			(footprint "cynthia:potientiometer")
 			(description "ATTACK")
 			(fields
@@ -1504,7 +1504,7 @@
 		)
 		(comp
 			(ref "RV2")
-			(value "10k")
+			(value "B10k")
 			(footprint "cynthia:potientiometer")
 			(description "RELEASE")
 			(fields
@@ -1654,7 +1654,7 @@
 		)
 		(comp
 			(ref "RV4")
-			(value "10k")
+			(value "B10k")
 			(footprint "cynthia:potientiometer")
 			(description "GAIN")
 			(fields
@@ -1902,6 +1902,108 @@
 			)
 		)
 		(comp
+			(ref "TP1")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "control_board.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ca7f3dbe-65f2-4640-9271-258cdd409841")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP2")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "control_board.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1957575f-d5fe-413b-bc7e-722d57af0b68")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "U1")
 			(value "TL072")
 			(footprint "cynthia:SOIC-8_3.9x4.9mm_P1.27mm")
@@ -2123,6 +2225,36 @@
 				(pin
 					(num "8")
 					(name "Pin_8")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Connector")
+			(part "TestPoint")
+			(description "test point")
+			(footprints
+				(fp "Pin*")
+				(fp "Test*")
+			)
+			(fields
+				(field
+					(name "Reference") "TP")
+				(field
+					(name "Value") "TestPoint")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
 					(type "passive")
 				)
 			)
@@ -2616,6 +2748,12 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "TP1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
 				(ref "U1")
 				(pin "8")
 				(pinfunction "V+_8")
@@ -2656,6 +2794,12 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "TP2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
 				(ref "U1")
 				(pin "4")
 				(pinfunction "V-_4")
@@ -2668,8 +2812,8 @@
 			(class "Default")
 			(node
 				(ref "J4")
-				(pin "1")
-				(pinfunction "Pin_1_1")
+				(pin "5")
+				(pinfunction "Pin_5_5")
 				(pintype "passive")
 			)
 			(node
@@ -2691,8 +2835,8 @@
 			)
 			(node
 				(ref "J4")
-				(pin "5")
-				(pinfunction "Pin_5_5")
+				(pin "6")
+				(pinfunction "Pin_6_6")
 				(pintype "passive")
 			)
 		)
@@ -2719,8 +2863,8 @@
 			(class "Default")
 			(node
 				(ref "J5")
-				(pin "6")
-				(pinfunction "Pin_6_6")
+				(pin "7")
+				(pinfunction "Pin_7_7")
 				(pintype "passive")
 			)
 			(node
@@ -2748,8 +2892,8 @@
 			)
 			(node
 				(ref "J5")
-				(pin "2")
-				(pinfunction "Pin_2_2")
+				(pin "6")
+				(pinfunction "Pin_6_6")
 				(pintype "passive")
 			)
 			(node
@@ -2901,8 +3045,8 @@
 			)
 			(node
 				(ref "J5")
-				(pin "7")
-				(pinfunction "Pin_7_7")
+				(pin "2")
+				(pinfunction "Pin_2_2")
 				(pintype "passive")
 			)
 			(node
@@ -3189,8 +3333,8 @@
 			(class "Default")
 			(node
 				(ref "J4")
-				(pin "2")
-				(pinfunction "Pin_2_2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
 				(pintype "passive")
 			)
 			(node
@@ -3212,8 +3356,8 @@
 			)
 			(node
 				(ref "J4")
-				(pin "6")
-				(pinfunction "Pin_6_6")
+				(pin "2")
+				(pinfunction "Pin_2_2")
 				(pintype "passive")
 			)
 		)
