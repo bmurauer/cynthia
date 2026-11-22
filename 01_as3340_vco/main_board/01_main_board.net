@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/home/benjamin/git/cynthia/01_as3340_vco/main_board/01_main_board.kicad_sch")
-		(date "2026-11-20T19:01:19")
+		(date "2026-11-22T17:28:17")
 		(tool "Eeschema 10.0.8")
 		(sheet
 			(number "1")
@@ -423,7 +423,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "0b34f4a6-4b65-4926-bd02-2ba9c9755e50")
+			(tstamps "fe7ad396-d6be-4bf4-a1fb-c0319b0046c7")
 			(units
 				(unit
 					(name "A")
@@ -483,7 +483,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "703d9ab8-1c03-41e1-a6b3-76d3a61a5d43")
+			(tstamps "91ffda85-863e-44e9-a936-70a5813bc815")
 			(units
 				(unit
 					(name "A")
@@ -1094,8 +1094,8 @@
 		)
 		(comp
 			(ref "D1")
-			(value "1N4148WS")
-			(footprint "Diode_SMD:D_SOD-323_HandSoldering")
+			(value "1N4148W")
+			(footprint "Diode_SMD:D_SOD-123")
 			(description "Diode, small symbol")
 			(fields
 				(field
@@ -1103,7 +1103,7 @@
 				(field
 					(name "Sim.Pins") "1=K 2=A")
 				(field
-					(name "Footprint") "Diode_SMD:D_SOD-323_HandSoldering")
+					(name "Footprint") "Diode_SMD:D_SOD-123")
 				(field
 					(name "Datasheet")
 				)
@@ -1160,8 +1160,8 @@
 		)
 		(comp
 			(ref "D2")
-			(value "1N4148WS")
-			(footprint "Diode_SMD:D_SOD-323_HandSoldering")
+			(value "1N4148W")
+			(footprint "Diode_SMD:D_SOD-123")
 			(description "Diode, small symbol")
 			(fields
 				(field
@@ -1169,7 +1169,7 @@
 				(field
 					(name "Sim.Pins") "1=K 2=A")
 				(field
-					(name "Footprint") "Diode_SMD:D_SOD-323_HandSoldering")
+					(name "Footprint") "Diode_SMD:D_SOD-123")
 				(field
 					(name "Datasheet")
 				)
@@ -1228,15 +1228,15 @@
 			(ref "D3")
 			(value "1N5819HW-7-F")
 			(footprint "Diode_SMD:D_SOD-123")
-			(datasheet "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf")
-			(description "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323")
+			(datasheet "https://4donline.ihs.com/images/VipMasterIC/IC/DIOD/DIOD-S-A0011437026/DIOD-S-A0011683586-1.pdf?hkey=CECEF36DEECDED6468708AAF2E19C0C6")
+			(description "40V 600mV@1A 1A SOD-123 Schottky Barrier Diodes, SOD-123")
 			(fields
 				(field
 					(name "Footprint") "Diode_SMD:D_SOD-123")
 				(field
-					(name "Datasheet") "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf")
+					(name "Datasheet") "https://4donline.ihs.com/images/VipMasterIC/IC/DIOD/DIOD-S-A0011437026/DIOD-S-A0011683586-1.pdf?hkey=CECEF36DEECDED6468708AAF2E19C0C6")
 				(field
-					(name "Description") "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323")
+					(name "Description") "40V 600mV@1A 1A SOD-123 Schottky Barrier Diodes, SOD-123")
 			)
 			(libsource
 				(lib "Diode")
@@ -1282,15 +1282,15 @@
 			(ref "D4")
 			(value "1N5819HW-7-F")
 			(footprint "Diode_SMD:D_SOD-123")
-			(datasheet "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf")
-			(description "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323")
+			(datasheet "https://4donline.ihs.com/images/VipMasterIC/IC/DIOD/DIOD-S-A0011437026/DIOD-S-A0011683586-1.pdf?hkey=CECEF36DEECDED6468708AAF2E19C0C6")
+			(description "40V 600mV@1A 1A SOD-123 Schottky Barrier Diodes, SOD-123")
 			(fields
 				(field
 					(name "Footprint") "Diode_SMD:D_SOD-123")
 				(field
-					(name "Datasheet") "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf")
+					(name "Datasheet") "https://4donline.ihs.com/images/VipMasterIC/IC/DIOD/DIOD-S-A0011437026/DIOD-S-A0011683586-1.pdf?hkey=CECEF36DEECDED6468708AAF2E19C0C6")
 				(field
-					(name "Description") "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323")
+					(name "Description") "40V 600mV@1A 1A SOD-123 Schottky Barrier Diodes, SOD-123")
 			)
 			(libsource
 				(lib "Diode")
@@ -1334,8 +1334,8 @@
 		)
 		(comp
 			(ref "D5")
-			(value "1N4148WS")
-			(footprint "Diode_SMD:D_SOD-323_HandSoldering")
+			(value "1N4148W")
+			(footprint "Diode_SMD:D_SOD-123")
 			(description "Diode, small symbol")
 			(fields
 				(field
@@ -1343,7 +1343,7 @@
 				(field
 					(name "Sim.Pins") "1=K 2=A")
 				(field
-					(name "Footprint") "Diode_SMD:D_SOD-323_HandSoldering")
+					(name "Footprint") "Diode_SMD:D_SOD-123")
 				(field
 					(name "Datasheet")
 				)
@@ -2849,7 +2849,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "e66202c5-cfd9-4787-899f-7cdb8539a223")
+			(tstamps "8e579a22-bf7a-410a-8709-fcfe46d02f27")
 			(units
 				(unit
 					(name "A")
@@ -3443,7 +3443,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "4b1a14ab-f85c-4be9-a2e4-8d11c1dc29e5")
+			(tstamps "504a7b5a-86c5-4883-b1a9-4f62c1e78e3d")
 			(units
 				(unit
 					(name "A")
@@ -3551,7 +3551,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "2482280f-56da-4902-bed4-9a96bcaeb767")
+			(tstamps "4d643125-5e89-46da-8c11-bb18a2b03112")
 			(units
 				(unit
 					(name "A")
@@ -5519,8 +5519,8 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "c8077d6c-651e-4d62-806a-0f10eb109719" "8c2460f0-6f08-4bc8-9bd3-4acf39d7b47a"
-				"d0334a9b-802f-4471-9548-f23fafc9183f" "605c3425-3151-4426-b837-2558c49a49df"
+			(tstamps "d0334a9b-802f-4471-9548-f23fafc9183f" "8c2460f0-6f08-4bc8-9bd3-4acf39d7b47a"
+				"c8077d6c-651e-4d62-806a-0f10eb109719" "605c3425-3151-4426-b837-2558c49a49df"
 				"44135a64-421a-4195-8f08-ef25bf8c3098"
 			)
 			(units
@@ -5632,8 +5632,8 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "79eb84ba-63ab-4043-a079-c81bcab7180e" "72811143-38f8-4716-8a29-cbcca6f909ba"
-				"de53cb7e-aa98-4080-af6a-5591d5342063" "5b831ab9-3f54-45a0-bbb7-f542d1e27009"
+			(tstamps "79eb84ba-63ab-4043-a079-c81bcab7180e" "5b831ab9-3f54-45a0-bbb7-f542d1e27009"
+				"72811143-38f8-4716-8a29-cbcca6f909ba" "de53cb7e-aa98-4080-af6a-5591d5342063"
 				"57217c4f-b1c9-4d0e-9d73-b295c361cc9e"
 			)
 			(units
@@ -5803,7 +5803,57 @@
 			)
 		)
 	)
-	(groups)
+	(groups
+		(group
+			(name "Eurorack Power Header")
+			(uuid "/362a1ba3-5386-486e-b0dd-21a26554a05a")
+			(lib_id "cynthia:Eurorack Power Header")
+			(members
+				(member
+					(uuid "/f91fe442-1276-4db0-8d94-b573917cf59c")
+				)
+				(member
+					(uuid "/3d1a4769-8a36-4679-accd-2d9202ad4cf5")
+				)
+				(member
+					(uuid "/c4685c25-c1dc-4178-85ec-7bc85a5352b1")
+				)
+				(member
+					(uuid "/9a2a8315-51d7-4329-91e1-c35808f41992")
+				)
+				(member
+					(uuid "/83f4b4f2-8503-4472-b237-0c008a9e337f")
+				)
+				(member
+					(uuid "/9b9d683e-ad51-4a49-8772-0288642e220b")
+				)
+				(member
+					(uuid "/6f5aab91-dec9-443b-b595-d8333e20f8f0")
+				)
+				(member
+					(uuid "/76451139-2229-4d08-8e5a-a5703a4b1890")
+				)
+				(member
+					(uuid "/91ffda85-863e-44e9-a936-70a5813bc815")
+				)
+				(member
+					(uuid "/fe7ad396-d6be-4bf4-a1fb-c0319b0046c7")
+				)
+				(member
+					(uuid "/0b5ada2d-b62d-4faf-ac83-6402040be36d")
+				)
+				(member
+					(uuid "/65d17fcb-5325-4ea6-a51e-9b38a38e0aa5")
+				)
+				(member
+					(uuid "/400aa32a-c1ef-4606-aa85-2670797a7639")
+				)
+				(member
+					(uuid "/9ecc636c-7b7d-4528-a17e-6436999a8a99")
+				)
+			)
+		)
+	)
 	(variants)
 	(libparts
 		(libpart
