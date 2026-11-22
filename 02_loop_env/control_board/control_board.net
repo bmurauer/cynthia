@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/home/benjamin/git/cynthia/02_loop_env/control_board/control_board.kicad_sch")
-		(date "2026-11-21T16:54:22")
+		(date "2026-11-22T17:14:56")
 		(tool "Eeschema 10.0.8")
 		(sheet
 			(number "1")
@@ -164,8 +164,8 @@
 		)
 		(comp
 			(ref "D1")
-			(value "1N4148WS")
-			(footprint "Diode_SMD:D_SOD-323_HandSoldering")
+			(value "1N4148W")
+			(footprint "Diode_SMD:D_SOD-123")
 			(description "Diode")
 			(fields
 				(field
@@ -173,7 +173,7 @@
 				(field
 					(name "Sim.Pins") "1=K 2=A")
 				(field
-					(name "Footprint") "Diode_SMD:D_SOD-323_HandSoldering")
+					(name "Footprint") "Diode_SMD:D_SOD-123")
 				(field
 					(name "Datasheet")
 				)
@@ -230,8 +230,8 @@
 		)
 		(comp
 			(ref "D2")
-			(value "1N4148WS")
-			(footprint "Diode_SMD:D_SOD-323_HandSoldering")
+			(value "1N4148W")
+			(footprint "Diode_SMD:D_SOD-123")
 			(description "Diode")
 			(fields
 				(field
@@ -239,7 +239,7 @@
 				(field
 					(name "Sim.Pins") "1=K 2=A")
 				(field
-					(name "Footprint") "Diode_SMD:D_SOD-323_HandSoldering")
+					(name "Footprint") "Diode_SMD:D_SOD-123")
 				(field
 					(name "Datasheet")
 				)
@@ -2042,7 +2042,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "da727597-048e-45ee-98a2-6be99fab69b0" "8e4e6b3f-3769-466a-b0f4-7af1932b73ed"
+			(tstamps "8e4e6b3f-3769-466a-b0f4-7af1932b73ed" "da727597-048e-45ee-98a2-6be99fab69b0"
 				"87d81da1-010f-49b9-b129-7feda5518515"
 			)
 			(units

@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/home/benjamin/git/cynthia/02_loop_env/main_board/main_board.kicad_sch")
-		(date "2026-11-21T16:54:12")
+		(date "2026-11-22T17:30:56")
 		(tool "Eeschema 10.0.8")
 		(sheet
 			(number "1")
@@ -57,11 +57,13 @@
 		(comp
 			(ref "C1")
 			(value "22uF")
-			(footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
+			(footprint "cynthia:CP_Radial_D6.3mm_P2.50mm")
 			(description "Polarized capacitor, small US symbol")
 			(fields
 				(field
-					(name "Footprint") "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
+					(name "KiLib_Generator") "capacitor/THT/other")
+				(field
+					(name "Footprint") "cynthia:CP_Radial_D6.3mm_P2.50mm")
 				(field
 					(name "Datasheet")
 				)
@@ -72,6 +74,10 @@
 				(lib "Device")
 				(part "C_Polarized_Small_US")
 				(description "Polarized capacitor, small US symbol")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "capacitor/THT/other")
 			)
 			(property
 				(name "Sheetname")
@@ -93,7 +99,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "0b34f4a6-4b65-4926-bd02-2ba9c9755e50")
+			(tstamps "fe7ad396-d6be-4bf4-a1fb-c0319b0046c7")
 			(units
 				(unit
 					(name "A")
@@ -111,11 +117,13 @@
 		(comp
 			(ref "C2")
 			(value "22uF")
-			(footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
+			(footprint "cynthia:CP_Radial_D6.3mm_P2.50mm")
 			(description "Polarized capacitor, small US symbol")
 			(fields
 				(field
-					(name "Footprint") "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
+					(name "KiLib_Generator") "capacitor/THT/other")
+				(field
+					(name "Footprint") "cynthia:CP_Radial_D6.3mm_P2.50mm")
 				(field
 					(name "Datasheet")
 				)
@@ -126,6 +134,10 @@
 				(lib "Device")
 				(part "C_Polarized_Small_US")
 				(description "Polarized capacitor, small US symbol")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "capacitor/THT/other")
 			)
 			(property
 				(name "Sheetname")
@@ -147,7 +159,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "703d9ab8-1c03-41e1-a6b3-76d3a61a5d43")
+			(tstamps "91ffda85-863e-44e9-a936-70a5813bc815")
 			(units
 				(unit
 					(name "A")
@@ -650,22 +662,22 @@
 		)
 		(comp
 			(ref "D1")
-			(value "SS14")
-			(footprint "Diode_SMD:D_SMA")
-			(datasheet "https://www.vishay.com/docs/88746/ss12.pdf")
-			(description "40V 1A Schottky Diode, SMA")
+			(value "1N5819HW-7-F")
+			(footprint "Diode_SMD:D_SOD-123")
+			(datasheet "https://4donline.ihs.com/images/VipMasterIC/IC/DIOD/DIOD-S-A0011437026/DIOD-S-A0011683586-1.pdf?hkey=CECEF36DEECDED6468708AAF2E19C0C6")
+			(description "40V 600mV@1A 1A SOD-123 Schottky Barrier Diodes, SOD-123")
 			(fields
 				(field
-					(name "Footprint") "Diode_SMD:D_SMA")
+					(name "Footprint") "Diode_SMD:D_SOD-123")
 				(field
-					(name "Datasheet") "https://www.vishay.com/docs/88746/ss12.pdf")
+					(name "Datasheet") "https://4donline.ihs.com/images/VipMasterIC/IC/DIOD/DIOD-S-A0011437026/DIOD-S-A0011683586-1.pdf?hkey=CECEF36DEECDED6468708AAF2E19C0C6")
 				(field
-					(name "Description") "40V 1A Schottky Diode, SMA")
+					(name "Description") "40V 600mV@1A 1A SOD-123 Schottky Barrier Diodes, SOD-123")
 			)
 			(libsource
 				(lib "Diode")
-				(part "SS14")
-				(description "40V 1A Schottky Diode, SMA")
+				(part "1N5819WS")
+				(description "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323")
 			)
 			(property
 				(name "Sheetname")
@@ -681,13 +693,13 @@
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "D*SMA*")
+				(value "D*SOD?323*")
 			)
 			(sheetpath
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "6ced661a-a388-4d8b-ba3b-95766197e14d")
+			(tstamps "65d17fcb-5325-4ea6-a51e-9b38a38e0aa5")
 			(units
 				(unit
 					(name "A")
@@ -704,22 +716,22 @@
 		)
 		(comp
 			(ref "D2")
-			(value "SS14")
-			(footprint "Diode_SMD:D_SMA")
-			(datasheet "https://www.vishay.com/docs/88746/ss12.pdf")
-			(description "40V 1A Schottky Diode, SMA")
+			(value "1N5819HW-7-F")
+			(footprint "Diode_SMD:D_SOD-123")
+			(datasheet "https://4donline.ihs.com/images/VipMasterIC/IC/DIOD/DIOD-S-A0011437026/DIOD-S-A0011683586-1.pdf?hkey=CECEF36DEECDED6468708AAF2E19C0C6")
+			(description "40V 600mV@1A 1A SOD-123 Schottky Barrier Diodes, SOD-123")
 			(fields
 				(field
-					(name "Footprint") "Diode_SMD:D_SMA")
+					(name "Footprint") "Diode_SMD:D_SOD-123")
 				(field
-					(name "Datasheet") "https://www.vishay.com/docs/88746/ss12.pdf")
+					(name "Datasheet") "https://4donline.ihs.com/images/VipMasterIC/IC/DIOD/DIOD-S-A0011437026/DIOD-S-A0011683586-1.pdf?hkey=CECEF36DEECDED6468708AAF2E19C0C6")
 				(field
-					(name "Description") "40V 1A Schottky Diode, SMA")
+					(name "Description") "40V 600mV@1A 1A SOD-123 Schottky Barrier Diodes, SOD-123")
 			)
 			(libsource
 				(lib "Diode")
-				(part "SS14")
-				(description "40V 1A Schottky Diode, SMA")
+				(part "1N5819WS")
+				(description "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323")
 			)
 			(property
 				(name "Sheetname")
@@ -735,13 +747,13 @@
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "D*SMA*")
+				(value "D*SOD?323*")
 			)
 			(sheetpath
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "ee7051f4-e18f-4c75-a471-ed818b9842e0")
+			(tstamps "400aa32a-c1ef-4606-aa85-2670797a7639")
 			(units
 				(unit
 					(name "A")
@@ -758,8 +770,8 @@
 		)
 		(comp
 			(ref "D3")
-			(value "1N4148WS")
-			(footprint "Diode_SMD:D_SOD-323_HandSoldering")
+			(value "1N4148W")
+			(footprint "Diode_SMD:D_SOD-123")
 			(description "Diode")
 			(fields
 				(field
@@ -767,7 +779,7 @@
 				(field
 					(name "Sim.Pins") "1=K 2=A")
 				(field
-					(name "Footprint") "Diode_SMD:D_SOD-323_HandSoldering")
+					(name "Footprint") "Diode_SMD:D_SOD-123")
 				(field
 					(name "Datasheet")
 				)
@@ -824,8 +836,8 @@
 		)
 		(comp
 			(ref "D4")
-			(value "1N4148WS")
-			(footprint "Diode_SMD:D_SOD-323_HandSoldering")
+			(value "1N4148W")
+			(footprint "Diode_SMD:D_SOD-123")
 			(description "Diode")
 			(fields
 				(field
@@ -833,7 +845,7 @@
 				(field
 					(name "Sim.Pins") "1=K 2=A")
 				(field
-					(name "Footprint") "Diode_SMD:D_SOD-323_HandSoldering")
+					(name "Footprint") "Diode_SMD:D_SOD-123")
 				(field
 					(name "Datasheet")
 				)
@@ -890,8 +902,8 @@
 		)
 		(comp
 			(ref "D5")
-			(value "1N4148WS")
-			(footprint "Diode_SMD:D_SOD-323_HandSoldering")
+			(value "1N4148W")
+			(footprint "Diode_SMD:D_SOD-123")
 			(description "Diode")
 			(fields
 				(field
@@ -899,7 +911,7 @@
 				(field
 					(name "Sim.Pins") "1=K 2=A")
 				(field
-					(name "Footprint") "Diode_SMD:D_SOD-323_HandSoldering")
+					(name "Footprint") "Diode_SMD:D_SOD-123")
 				(field
 					(name "Datasheet")
 				)
@@ -956,7 +968,7 @@
 		)
 		(comp
 			(ref "D6")
-			(value "BAS416")
+			(value "BAS416-QF")
 			(footprint "Diode_SMD:D_SOD-323_HandSoldering")
 			(description "Diode")
 			(fields
@@ -1027,6 +1039,8 @@
 			(description "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)")
 			(fields
 				(field
+					(name "KiLib_Generator") "connector/pin_header_socket")
+				(field
 					(name "Footprint") "cynthia:Eurorack Header")
 				(field
 					(name "Datasheet")
@@ -1038,6 +1052,10 @@
 				(lib "Connector_Generic")
 				(part "Conn_02x05_Odd_Even")
 				(description "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "connector/pin_header_socket")
 			)
 			(property
 				(name "Sheetname")
@@ -3290,57 +3308,6 @@
 			)
 		)
 		(comp
-			(ref "TP1")
-			(value "TestPoint")
-			(footprint "TestPoint:TestPoint_Keystone_5000-5004_Miniature")
-			(description "test point")
-			(fields
-				(field
-					(name "Footprint") "TestPoint:TestPoint_Keystone_5000-5004_Miniature")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "test point")
-			)
-			(libsource
-				(lib "Connector")
-				(part "TestPoint")
-				(description "test point")
-			)
-			(property
-				(name "Sheetname")
-				(value "main_board")
-			)
-			(property
-				(name "Sheetfile")
-				(value "main_board.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "test point tp")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Pin* Test*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "389026f0-2de4-4e50-a43a-3c32756f5dc1")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-					)
-				)
-			)
-		)
-		(comp
 			(ref "TP2")
 			(value "TestPoint")
 			(footprint "TestPoint:TestPoint_Pad_D2.0mm")
@@ -3443,57 +3410,6 @@
 			)
 		)
 		(comp
-			(ref "TP4")
-			(value "TestPoint")
-			(footprint "TestPoint:TestPoint_Keystone_5000-5004_Miniature")
-			(description "test point")
-			(fields
-				(field
-					(name "Footprint") "TestPoint:TestPoint_Keystone_5000-5004_Miniature")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "test point")
-			)
-			(libsource
-				(lib "Connector")
-				(part "TestPoint")
-				(description "test point")
-			)
-			(property
-				(name "Sheetname")
-				(value "main_board")
-			)
-			(property
-				(name "Sheetfile")
-				(value "main_board.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "test point tp")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Pin* Test*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "2264c272-ad8e-49bb-9fa1-283929729893")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-					)
-				)
-			)
-		)
-		(comp
 			(ref "TP5")
 			(value "TestPoint")
 			(footprint "TestPoint:TestPoint_Pad_D2.0mm")
@@ -3545,6 +3461,159 @@
 			)
 		)
 		(comp
+			(ref "TP6")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_Pad_1.0x1.0mm")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Pad_1.0x1.0mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "main_board")
+			)
+			(property
+				(name "Sheetfile")
+				(value "main_board.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "83f4b4f2-8503-4472-b237-0c008a9e337f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP7")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_Loop_D3.80mm_Drill2.5mm")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Loop_D3.80mm_Drill2.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "main_board")
+			)
+			(property
+				(name "Sheetfile")
+				(value "main_board.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "f91fe442-1276-4db0-8d94-b573917cf59c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP8")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_Pad_1.0x1.0mm")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Pad_1.0x1.0mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "main_board")
+			)
+			(property
+				(name "Sheetfile")
+				(value "main_board.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "c4685c25-c1dc-4178-85ec-7bc85a5352b1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "U1")
 			(value "LM13700")
 			(footprint "cynthia:SOIC-16_3.9x9.9mm_P1.27mm")
@@ -3583,8 +3652,8 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "e0c10681-68bc-4c05-a165-bab6cb12310e" "d6b173ad-a42f-4f7d-b528-41e3016a7723"
-				"9789aae7-6537-4df7-93ec-02de2ff6dbf6" "4260c940-7069-4345-8c61-0090107651a6"
+			(tstamps "9789aae7-6537-4df7-93ec-02de2ff6dbf6" "d6b173ad-a42f-4f7d-b528-41e3016a7723"
+				"e0c10681-68bc-4c05-a165-bab6cb12310e" "4260c940-7069-4345-8c61-0090107651a6"
 				"11ae818e-aab3-49ce-ac6b-daf35d0853b2"
 			)
 			(units
@@ -3918,33 +3987,27 @@
 	)
 	(groups
 		(group
-			(name "Eurorack 10-pin header")
-			(uuid "/2aa86cb7-1956-4a97-b881-ea0934740616")
-			(lib_id "cynthia:Eurorack 10-pin header")
+			(name "eurorack 10pin header")
+			(uuid "/15499cf7-db8e-4d73-9d17-f9d46413d712")
+			(lib_id "cynthia:eurorack 10pin header")
+			(members)
+		)
+		(group
+			(name "Eurorack Power Header")
+			(uuid "/68bb4e44-5640-4921-b391-076bb03da524")
+			(lib_id "cynthia:Eurorack Power Header")
 			(members
 				(member
-					(uuid "/f6635d7b-9874-4593-bbe4-f51fe58bd6f0")
+					(uuid "/9ecc636c-7b7d-4528-a17e-6436999a8a99")
 				)
 				(member
-					(uuid "/ee7051f4-e18f-4c75-a471-ed818b9842e0")
+					(uuid "/c4685c25-c1dc-4178-85ec-7bc85a5352b1")
 				)
 				(member
-					(uuid "/edcf8882-8d7f-4919-becf-b036a4b0bb38")
+					(uuid "/83f4b4f2-8503-4472-b237-0c008a9e337f")
 				)
 				(member
-					(uuid "/703d9ab8-1c03-41e1-a6b3-76d3a61a5d43")
-				)
-				(member
-					(uuid "/0b34f4a6-4b65-4926-bd02-2ba9c9755e50")
-				)
-				(member
-					(uuid "/0b5ada2d-b62d-4faf-ac83-6402040be36d")
-				)
-				(member
-					(uuid "/6ced661a-a388-4d8b-ba3b-95766197e14d")
-				)
-				(member
-					(uuid "/9a2a8315-51d7-4329-91e1-c35808f41992")
+					(uuid "/91ffda85-863e-44e9-a936-70a5813bc815")
 				)
 				(member
 					(uuid "/6f5aab91-dec9-443b-b595-d8333e20f8f0")
@@ -3953,7 +4016,28 @@
 					(uuid "/9b9d683e-ad51-4a49-8772-0288642e220b")
 				)
 				(member
-					(uuid "/9ecc636c-7b7d-4528-a17e-6436999a8a99")
+					(uuid "/f91fe442-1276-4db0-8d94-b573917cf59c")
+				)
+				(member
+					(uuid "/76451139-2229-4d08-8e5a-a5703a4b1890")
+				)
+				(member
+					(uuid "/3d1a4769-8a36-4679-accd-2d9202ad4cf5")
+				)
+				(member
+					(uuid "/fe7ad396-d6be-4bf4-a1fb-c0319b0046c7")
+				)
+				(member
+					(uuid "/9a2a8315-51d7-4329-91e1-c35808f41992")
+				)
+				(member
+					(uuid "/0b5ada2d-b62d-4faf-ac83-6402040be36d")
+				)
+				(member
+					(uuid "/65d17fcb-5325-4ea6-a51e-9b38a38e0aa5")
+				)
+				(member
+					(uuid "/400aa32a-c1ef-4606-aa85-2670797a7639")
 				)
 			)
 		)
@@ -4452,23 +4536,23 @@
 		)
 		(libpart
 			(lib "Diode")
-			(part "SS14")
-			(description "40V 1A Schottky Diode, SMA")
-			(docs "https://www.vishay.com/docs/88746/ss12.pdf")
+			(part "1N5819WS")
+			(description "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323")
+			(docs "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf")
 			(footprints
-				(fp "D*SMA*")
+				(fp "D*SOD?323*")
 			)
 			(fields
 				(field
 					(name "Reference") "D")
 				(field
-					(name "Value") "SS14")
+					(name "Value") "1N5819WS")
 				(field
-					(name "Footprint") "Diode_SMD:D_SMA")
+					(name "Footprint") "Diode_SMD:D_SOD-323")
 				(field
-					(name "Datasheet") "https://www.vishay.com/docs/88746/ss12.pdf")
+					(name "Datasheet") "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf")
 				(field
-					(name "Description") "40V 1A Schottky Diode, SMA")
+					(name "Description") "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323")
 			)
 			(pins
 				(pin
@@ -4688,6 +4772,12 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "TP6")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
 				(ref "U1")
 				(pin "11")
 				(pinfunction "V+_11")
@@ -4751,6 +4841,12 @@
 				(ref "J2")
 				(pin "4")
 				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP8")
+				(pin "1")
+				(pinfunction "1_1")
 				(pintype "passive")
 			)
 			(node
@@ -5138,13 +5234,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "TP1")
-				(pin "1")
-				(pinfunction "1_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "TP4")
+				(ref "TP7")
 				(pin "1")
 				(pinfunction "1_1")
 				(pintype "passive")
