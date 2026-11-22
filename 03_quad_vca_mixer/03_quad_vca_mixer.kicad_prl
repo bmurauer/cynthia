@@ -26,7 +26,7 @@
       "pads": false,
       "text": true,
       "tracks": true,
-      "vias": false,
+      "vias": true,
       "zones": false
     },
     "visible_items": [
@@ -63,7 +63,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "15_oct_vca_mixer.kicad_prl",
+    "filename": "03_quad_vca_mixer.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
@@ -101,7 +101,7 @@
       121,
       88,
       121,
-      780
+      1412
     ],
     "custom_group_rules": [],
     "expanded_rows": [],

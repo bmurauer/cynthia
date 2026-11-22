@@ -4,10 +4,10 @@
 	(generator_version "10.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at -4.5 9.5 0)
+		(at -7 13 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "bba5f7bf-14cb-487d-99c6-8e5c71cccb69")
+		(uuid "6db8113f-feaf-46c0-947e-082424e68d0a")
 		(effects
 			(font
 				(size 1 1)
@@ -16,10 +16,10 @@
 		)
 	)
 	(property "Value" "Val**"
-		(at 6.5 9.5 0)
+		(at 6.75 5.75 90)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "0dc3be8f-21f0-490e-8dfc-9e5a2b53ae02")
+		(uuid "533bc3e3-3e15-46c0-a5ce-1cac6f74a63d")
 		(effects
 			(font
 				(size 1 1)
@@ -33,7 +33,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "5c4bfd69-baac-4a4e-b3c2-fea91c49fd56")
+		(uuid "9f7abcb9-13a7-486a-a334-365390d05a8e")
 		(effects
 			(font
 				(size 1 1)
@@ -42,30 +42,79 @@
 		)
 	)
 	(property "Description" "Desc**"
-		(at -6.9 -6.8 0)
+		(at 8.75 13.25 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "ff9933be-845c-4a35-b9e0-ba5820df0575")
+		(uuid "f3796ce6-9810-42a5-a58a-dc44c238aadb")
 		(effects
 			(font
 				(size 1 1)
 				(thickness 0.15)
 			)
-			(justify left)
+			(justify right)
 		)
 	)
 	(attr through_hole)
 	(duplicate_pad_numbers_are_jumpers no)
-	(fp_rect
-		(start -5.4 -6)
-		(end 5.4 10)
+	(fp_line
+		(start -5.5 -6)
+		(end 5.4 -6)
 		(stroke
 			(width 0.1)
-			(type solid)
+			(type default)
 		)
-		(fill no)
 		(layer "F.SilkS")
-		(uuid "22524d58-1962-4eb2-b079-129cebc1f37a")
+		(uuid "3b52cb14-0d70-4718-9ed6-1c2156ff1b48")
+	)
+	(fp_line
+		(start -5.5 -1.75)
+		(end -5.5 -6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "b185ed51-e9bd-4156-b0de-60c56d295b75")
+	)
+	(fp_line
+		(start -5.5 1.75)
+		(end -5.5 9.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3a66c12b-0cf7-4bb3-a2de-385c8417a55f")
+	)
+	(fp_line
+		(start 5.4 -6)
+		(end 5.4 -1.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "ec360d3f-41e1-453e-acc3-3e5051cac30c")
+	)
+	(fp_line
+		(start 5.4 9.75)
+		(end -5.5 9.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "2627613f-2dc4-439a-856c-e2454a764e14")
+	)
+	(fp_line
+		(start 5.4 9.75)
+		(end 5.4 1.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "0681807e-575b-4d76-b07b-37f0732c4530")
 	)
 	(fp_rect
 		(start -9 -6.1)
@@ -76,13 +125,13 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "887b077e-032d-4788-8efb-7d243a2993f6")
+		(uuid "2213af11-c976-4908-9380-b716eb2c2f28")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 -4.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "9f724370-61ad-4646-9dc9-02bbe0b8a313")
+		(uuid "fa48ad1e-8838-4b1b-b6f5-a55169e19e32")
 		(effects
 			(font
 				(size 1 1)
@@ -96,7 +145,7 @@
 		(drill 2)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "ff623f2b-4895-4468-8fe6-f9e7d76b47a2")
+		(uuid "65e07f75-ee89-48a8-a991-f6f8c7e9ae90")
 	)
 	(pad "" thru_hole circle
 		(at 3.75 11)
@@ -104,7 +153,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "0dc56d2b-2b98-4d23-9ca3-1151e18ab9b8")
+		(uuid "f8a2f62c-5401-47c2-8adc-4844051963a1")
 	)
 	(pad "" thru_hole circle
 		(at 6.8 0)
@@ -112,7 +161,7 @@
 		(drill 2)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "4a80866b-0c54-446f-bd13-cb4545e89ff9")
+		(uuid "3c9e81ad-c2a3-4e4d-8d16-49514ca0e836")
 	)
 	(pad "1" thru_hole circle
 		(at -3.75 11)
@@ -120,7 +169,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "1a4d45cc-915c-49c9-b0fc-c6348efc21dc")
+		(uuid "ab97976b-d762-4ed4-b130-336c0ab4b8a5")
 	)
 	(pad "2" thru_hole circle
 		(at -1.25 11)
@@ -128,7 +177,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "56e27fb4-2f3d-4386-bddb-5119c00c5f0c")
+		(uuid "651ec5dc-518b-41df-bdcd-f22a554097af")
 	)
 	(pad "3" thru_hole circle
 		(at 1.25 11)
@@ -136,7 +185,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "bee88e1d-fd73-4a86-98c9-f648ca885dc3")
+		(uuid "a01b62ce-ebbb-414b-be1e-7db8ae1cbb75")
 	)
 	(embedded_fonts no)
 	(model "/home/benjamin/git/cynthia/lib/kicad/3d_models/pot.step"

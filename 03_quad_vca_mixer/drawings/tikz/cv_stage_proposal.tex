@@ -1,0 +1,50 @@
+% PROPOSAL (not in the schematic yet): one-pot CV stage of channel 1, plus the shared +5 V reference.
+% Existing designators (J2, RV5, R22, D3, Q1, TP3) follow 03_quad_vca_mixer.net; parts without a
+% number are new. Render: tools/render_tikz.sh 03_quad_vca_mixer/drawings/tikz/cv_stage_proposal.tex
+\documentclass[border=8pt]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\usetikzlibrary{backgrounds,calc}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.8, diodes/scale=0.7}
+\begin{document}
+\begin{circuitikz}[font=\sffamily\small, show background rectangle,
+                   background rectangle/.style={fill=white}]
+  \tikzset{pin/.style={font=\sffamily\scriptsize, text=gray}}
+
+  % ---- jack and level pot ----
+  \draw (-1.5,1.5) node[left]{J2 T (CV in)} to[short, o-*] (2,1.5) coordinate (top);
+  \draw (2,4) node[above]{VREF (+5\,V)} to[ncs, l_={J2 TN}] (2,1.5);
+  \draw (top) to[pR, n=pot, l_={\shortstack{RV1 LEVEL\\100\,k$\Omega$ log}}] (2,-1.5) node[ground]{};
+
+  % ---- inverting stage ----
+  \node[op amp] (u) at (8,-0.49) {\scriptsize U3A};
+  \node[pin, above left] at (u.-) {2};
+  \node[pin, below left] at (u.+) {3};
+  \node[pin, above right] at (u.out) {1};
+  \draw (pot.wiper) -- (pot.wiper -| 3.5,0) to[R, l={220\,k$\Omega$}, -*] (u.- -| 6,0) coordinate (inv) -- (u.-);
+  \draw (u.+) -- ++(-0.4,0) -- ++(0,-0.6) node[ground]{};
+  \draw (inv) -- (6,2.5) to[R, l={330\,k$\Omega$}] (8,2.5)
+        to[vR, l={RV5 100\,k$\Omega$}, a={CV scale}] (10,2.5) -- (10,0 |- u.out);
+  \draw (u.out) to[short, -*] (10,0 |- u.out) coordinate (o);
+
+  % ---- tail resistor and clamp ----
+  \draw (o) to[R, l={R22 10\,k$\Omega$}, -*] (13,0 |- o) coordinate (e);
+  \draw (e) -- (15,0 |- e) node[right, align=left]{to Q1 E1/E2\\(tail of pair)};
+  \draw (e) to[D, l_={D3}, *-] (13,-3) node[ground]{};
+  \draw (e) -- (13,1.6) node[above]{TP3};
+
+  \node[font=\sffamily\scriptsize, align=left, anchor=north west] at (3.0,-2.4)
+     {$V_\mathrm{out} = -V_\mathrm{wiper}\cdot(330\,\mathrm{k} + \mathrm{RV5})/220\,\mathrm{k}$\\
+      gain 1.5 \dots\ 1.95; set RV5 so that 5\,V at full LEVEL\\
+      gives unity gain (U3A out $\approx -8.9$\,V)};
+  \node[font=\sffamily\scriptsize, align=left, anchor=north west] at (13.4,-1.4)
+     {negative CV $\rightarrow$ U3A out positive\\$\rightarrow$ D3 clamps, channel off};
+
+  % ---- shared reference (one for all four channels) ----
+  \draw (0,-5) node[vcc]{+12\,V} to[R, l_={13\,k$\Omega$}] (0,-7) coordinate (d)
+        to[R, l_={10\,k$\Omega$}] (0,-9) node[ground]{};
+  \node[op amp, noinv input up] (b) at (3.5,-7.49) {\scriptsize U1C};
+  \draw (d) to[short, *-] (d -| b.+) -- (b.+);
+  \draw (b.-) -- ++(0,-1) -| (b.out);
+  \draw (b.out) to[short, -o] ++(1.5,0) node[right]{VREF $\approx$ 5\,V (to TN of all CV jacks)};
+\end{circuitikz}
+\end{document}
