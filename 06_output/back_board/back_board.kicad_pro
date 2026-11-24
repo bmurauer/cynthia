@@ -528,7 +528,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "pcb/",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
@@ -665,7 +665,7 @@
         "uuid": "080310b0-6a26-4c61-82f0-dde575c8a271"
       }
     ],
-    "used_designators": "#FLG3,#PWR4-29,C3-10,J1-7,R1-14,RV1,U1-3",
+    "used_designators": "#FLG3,#PWR4-29,C3-10,J1-7,JP1-2,R1-14,RV1,U1-3",
     "variants": []
   },
   "sheets": [

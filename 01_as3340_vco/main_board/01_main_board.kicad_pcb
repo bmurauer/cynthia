@@ -90,7 +90,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "gerber/")
+			(outputdirectory "pcb/")
 		)
 	)
 	(footprint "cynthia:R SMD  0805"

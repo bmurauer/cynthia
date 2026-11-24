@@ -2557,28 +2557,28 @@
 		(uuid "7adadcfb-33e7-4077-b847-c8020778b27d")
 	)
 	(junction
-		(at 80.01 161.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "82e6e848-cbf0-4a06-9e69-ea0bfec54ddf")
-	)
-	(junction
-		(at 187.96 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9dbe11ff-bc73-430b-a2ac-a4b6f75ce0a6")
-	)
-	(junction
 		(at 77.47 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9dc718f1-9d54-4322-ac57-491b12e90ba0")
 	)
 	(junction
+		(at 96.52 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9f432000-31db-47e5-904c-2c60e61043e0")
+	)
+	(junction
 		(at 153.67 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a6c031df-adc5-4218-9452-5717484d25d7")
+	)
+	(junction
+		(at 96.52 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0220ad3-8274-4949-905a-8c3d448a4296")
 	)
 	(junction
 		(at 76.2 41.91)
@@ -2593,28 +2593,16 @@
 		(uuid "bf275d15-1dc4-4656-afde-1ee7213ed608")
 	)
 	(junction
-		(at 187.96 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c4023afd-7563-4957-a24a-fe68ed2d8fcb")
-	)
-	(junction
 		(at 34.29 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d0749726-2588-47dc-8bc4-dbb73822c281")
 	)
 	(junction
-		(at 187.96 83.82)
+		(at 182.88 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e835f543-993e-4373-b89c-fbc2d50a481c")
-	)
-	(junction
-		(at 80.01 133.35)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fac1542a-d98f-4170-a69b-3de177e2eafa")
 	)
 	(junction
 		(at 46.99 88.9)
@@ -2664,16 +2652,6 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 133.35) (xy 99.06 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d454d19-8776-4d6e-9e56-5c0cb69ee938")
-	)
-	(wire
-		(pts
 			(xy 86.36 53.34) (xy 106.68 53.34)
 		)
 		(stroke
@@ -2681,16 +2659,6 @@
 			(type default)
 		)
 		(uuid "0e64d27e-f320-4495-8cd0-a65cd3ff7192")
-	)
-	(wire
-		(pts
-			(xy 64.77 163.83) (xy 64.77 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11e2f38d-cbda-4ee6-926b-c37aa87dca6d")
 	)
 	(wire
 		(pts
@@ -2704,13 +2672,23 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 138.43) (xy 49.53 138.43)
+			(xy 49.53 138.43) (xy 81.28 138.43)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "14eda77a-e005-41b1-9b74-a4adc66bb4a4")
+	)
+	(wire
+		(pts
+			(xy 106.68 140.97) (xy 115.57 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17ebf3df-e696-4b34-8be3-9b0317a86c3a")
 	)
 	(wire
 		(pts
@@ -2724,33 +2702,13 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 133.35) (xy 82.55 133.35)
+			(xy 96.52 140.97) (xy 96.52 148.59)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1b5a38f1-1466-45e2-960c-eb10c481c3d9")
-	)
-	(wire
-		(pts
-			(xy 199.39 81.28) (xy 187.96 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21cca8b0-ef3b-4cd3-b918-2797416bd5d4")
-	)
-	(wire
-		(pts
-			(xy 64.77 135.89) (xy 64.77 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24d35011-5e39-48d3-abd2-80362deaa1f8")
+		(uuid "1d1e6547-b1af-4a5e-afe9-eade1fe505ea")
 	)
 	(wire
 		(pts
@@ -2774,6 +2732,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 130.81) (xy 96.52 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28d63fca-716f-438c-9d13-20fa519c396a")
+	)
+	(wire
+		(pts
 			(xy 59.69 96.52) (xy 64.77 96.52)
 		)
 		(stroke
@@ -2791,16 +2759,6 @@
 			(type default)
 		)
 		(uuid "2da284a2-e6e0-48db-96b4-9d939bee66d7")
-	)
-	(wire
-		(pts
-			(xy 187.96 83.82) (xy 187.96 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3293270d-2dec-400c-a042-c795b5317eff")
 	)
 	(wire
 		(pts
@@ -2844,17 +2802,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 158.75) (xy 64.77 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43037cf9-e8e8-4f41-9ce5-ef9d44dc1e90")
-	)
-	(wire
-		(pts
-			(xy 187.96 81.28) (xy 187.96 83.82)
+			(xy 182.88 81.28) (xy 182.88 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2864,13 +2812,33 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 133.35) (xy 80.01 140.97)
+			(xy 81.28 176.53) (xy 96.52 176.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "58a7fe65-3dea-4735-a4b1-11fd60a12821")
+		(uuid "4cda0169-aef1-4cf7-9427-76430da28ffe")
+	)
+	(wire
+		(pts
+			(xy 96.52 130.81) (xy 96.52 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e9aaf4e-c095-43d6-b159-0fe4ec464d19")
+	)
+	(wire
+		(pts
+			(xy 115.57 140.97) (xy 115.57 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ed4ad23-5411-47ca-b5d5-e8da034b46aa")
 	)
 	(wire
 		(pts
@@ -2881,16 +2849,6 @@
 			(type default)
 		)
 		(uuid "5c3c78b6-0bc2-4396-95eb-7d3554b165bb")
-	)
-	(wire
-		(pts
-			(xy 90.17 161.29) (xy 99.06 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e14c364-abe4-4d95-b1a6-b91c7e46bfe7")
 	)
 	(wire
 		(pts
@@ -2914,16 +2872,6 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 161.29) (xy 80.01 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "632a1b8a-9430-41da-9fcb-e230195f6b0b")
-	)
-	(wire
-		(pts
 			(xy 153.67 78.74) (xy 168.91 78.74)
 		)
 		(stroke
@@ -2931,16 +2879,6 @@
 			(type default)
 		)
 		(uuid "696f5ec4-761e-4e04-9d83-dd61ec48191c")
-	)
-	(wire
-		(pts
-			(xy 99.06 161.29) (xy 99.06 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f87dfcb-0614-425f-b7ad-59bba79a64ee")
 	)
 	(wire
 		(pts
@@ -2974,16 +2912,6 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 168.91) (xy 80.01 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "797d0cf1-a734-42d6-bee8-5f34dd55a519")
-	)
-	(wire
-		(pts
 			(xy 153.67 83.82) (xy 168.91 83.82)
 		)
 		(stroke
@@ -2994,13 +2922,23 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 86.36) (xy 187.96 91.44)
+			(xy 182.88 83.82) (xy 182.88 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7af87d86-4bd6-4f9b-9234-45d6d68de40c")
+	)
+	(wire
+		(pts
+			(xy 96.52 168.91) (xy 99.06 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c007ee6-cd7e-459a-ab2d-98c6847d49b1")
 	)
 	(wire
 		(pts
@@ -3011,6 +2949,16 @@
 			(type default)
 		)
 		(uuid "7ea900f1-307d-4087-aec1-aca0f7f5951b")
+	)
+	(wire
+		(pts
+			(xy 115.57 168.91) (xy 115.57 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "813d2855-c92e-4af7-a2a2-8a7e3bc6aaef")
 	)
 	(wire
 		(pts
@@ -3034,6 +2982,26 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 168.91) (xy 96.52 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "868280b5-d2b5-4d15-93a6-5f355e246839")
+	)
+	(wire
+		(pts
+			(xy 57.15 151.13) (xy 57.15 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b5ae301-5712-4ef9-96f8-080f35ccf27f")
+	)
+	(wire
+		(pts
 			(xy 76.2 66.04) (xy 88.9 66.04)
 		)
 		(stroke
@@ -3054,7 +3022,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 83.82) (xy 187.96 83.82)
+			(xy 199.39 83.82) (xy 182.88 83.82)
 		)
 		(stroke
 			(width 0)
@@ -3094,6 +3062,26 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 166.37) (xy 57.15 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5a16ab2-23e3-452d-bf1c-6607e6b13d27")
+	)
+	(wire
+		(pts
+			(xy 81.28 171.45) (xy 81.28 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a783a414-c5de-49f1-a6ea-99e1a8a12ac8")
+	)
+	(wire
+		(pts
 			(xy 106.68 53.34) (xy 106.68 44.45)
 		)
 		(stroke
@@ -3114,13 +3102,13 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 86.36) (xy 199.39 86.36)
+			(xy 106.68 168.91) (xy 115.57 168.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "adf52659-431f-4c65-8823-b7ec3b6909e7")
+		(uuid "b015fc8d-7abf-4682-989c-ef48e936c31c")
 	)
 	(wire
 		(pts
@@ -3164,13 +3152,13 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 161.29) (xy 82.55 161.29)
+			(xy 96.52 140.97) (xy 99.06 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "be9c0bd8-b58c-4530-bc23-b3944f0530b5")
+		(uuid "c3d71e9f-d08f-4364-ae33-8b47179f95f2")
 	)
 	(wire
 		(pts
@@ -3204,33 +3192,13 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 130.81) (xy 57.15 138.43)
+			(xy 96.52 157.48) (xy 96.52 168.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cd31a41e-c909-4cbd-bfc6-fc87d21d90a0")
-	)
-	(wire
-		(pts
-			(xy 90.17 133.35) (xy 99.06 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce3eb1c1-f632-4fec-ba8b-471fe8dd5a14")
-	)
-	(wire
-		(pts
-			(xy 64.77 140.97) (xy 80.01 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0fff97a-7965-4efd-8eda-ec1319fbbe15")
+		(uuid "d0e7d08a-5465-464f-8ec4-2c0bb38d9608")
 	)
 	(wire
 		(pts
@@ -3244,13 +3212,13 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 130.81) (xy 64.77 130.81)
+			(xy 81.28 148.59) (xy 96.52 148.59)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "decb3325-dc7f-49b3-9968-a86b52d210e3")
+		(uuid "d81ce878-d90b-494e-aaa3-ec5d341ef8e6")
 	)
 	(wire
 		(pts
@@ -3264,16 +3232,6 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 151.13) (xy 57.15 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e783face-fc09-4570-8aac-1b50fc91bced")
-	)
-	(wire
-		(pts
 			(xy 88.9 71.12) (xy 86.36 71.12)
 		)
 		(stroke
@@ -3281,6 +3239,16 @@
 			(type default)
 		)
 		(uuid "eb48ad58-754f-4ecd-b171-cc8893f07a51")
+	)
+	(wire
+		(pts
+			(xy 81.28 143.51) (xy 81.28 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ece63d6e-54bd-4a77-8e6f-637b047cb708")
 	)
 	(wire
 		(pts
@@ -3322,7 +3290,17 @@
 		)
 		(uuid "fecebf61-b727-4af5-b59a-0653f6fad58a")
 	)
-	(global_label "LEFT"
+	(wire
+		(pts
+			(xy 100.33 157.48) (xy 96.52 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fed41101-7399-40b5-b662-e7be54ee2700")
+	)
+	(global_label "LEFT_FULL"
 		(shape input)
 		(at 26.67 142.24 180)
 		(fields_autoplaced yes)
@@ -3334,7 +3312,7 @@
 		)
 		(uuid "15f47ad1-5437-4170-a9e2-5a9555e0388f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 19.4515 142.24 0)
+			(at 14.0086 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3346,7 +3324,55 @@
 			)
 		)
 	)
-	(global_label "RIGHT"
+	(global_label "RIGHT_FULL"
+		(shape input)
+		(at 168.91 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2318b942-46c0-45a9-97c6-89cd0974f000")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 155.039 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "LEFT_ATT"
+		(shape input)
+		(at 199.39 81.28 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "266c34c2-48f8-4fba-a749-78dbc2f9d0f3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 188.1801 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "RIGHT_FULL"
 		(shape output)
 		(at 110.49 68.58 0)
 		(fields_autoplaced yes)
@@ -3358,7 +3384,7 @@
 		)
 		(uuid "267bd55c-8e9e-44ad-a6e8-03b0a9365ce8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 118.9181 68.58 0)
+			(at 124.361 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3370,7 +3396,55 @@
 			)
 		)
 	)
-	(global_label "RIGHT"
+	(global_label "LEFT_ATT"
+		(shape output)
+		(at 101.6 130.81 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "35fce9b2-5b2d-4300-8865-3a94b0758a3e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 112.8099 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "RIGHT_ATT"
+		(shape input)
+		(at 199.39 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3816a582-9bf0-47e7-8a76-97a59742f2f8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 186.9705 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "RIGHT_FULL"
 		(shape input)
 		(at 26.67 154.94 180)
 		(fields_autoplaced yes)
@@ -3382,7 +3456,7 @@
 		)
 		(uuid "76eb8466-d14c-46b5-9b33-079d173bbfe8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 18.2419 154.94 0)
+			(at 12.799 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3394,9 +3468,9 @@
 			)
 		)
 	)
-	(global_label "LEFT"
+	(global_label "RIGHT_ATT"
 		(shape output)
-		(at 110.49 44.45 0)
+		(at 100.33 157.48 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3404,9 +3478,9 @@
 			)
 			(justify left)
 		)
-		(uuid "8a3e9200-33ae-4d86-9a2c-65b6061704e3")
+		(uuid "7bcb8850-b650-4b33-845c-33f4f5682c1a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 117.7085 44.45 0)
+			(at 112.7495 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3418,19 +3492,19 @@
 			)
 		)
 	)
-	(global_label "RIGHT"
-		(shape input)
-		(at 168.91 86.36 180)
+	(global_label "LEFT_FULL"
+		(shape output)
+		(at 110.49 44.45 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "bc625713-68f5-4593-8fe6-5780d9f7b0c6")
+		(uuid "8a3e9200-33ae-4d86-9a2c-65b6061704e3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 160.4819 86.36 0)
+			(at 123.1514 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3438,11 +3512,11 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 	)
-	(global_label "LEFT"
+	(global_label "LEFT_FULL"
 		(shape input)
 		(at 168.91 81.28 180)
 		(fields_autoplaced yes)
@@ -3452,9 +3526,9 @@
 			)
 			(justify right)
 		)
-		(uuid "f274abfe-5188-41bb-b47e-6c0626856e8f")
+		(uuid "ac3b16c4-aa5b-4dfc-ba47-2b9184e5b14c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 161.6915 81.28 0)
+			(at 156.2486 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3468,7 +3542,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 104.14 152.4 0)
+		(at 120.65 160.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3477,9 +3551,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "01eef4da-6d57-4523-87ef-9f6fc3af98a2")
+		(uuid "05fb8a85-da74-44f9-b456-36c15e295c03")
 		(property "Reference" "#PWR018"
-			(at 104.14 158.75 0)
+			(at 120.65 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3490,7 +3564,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 104.14 157.48 0)
+			(at 120.65 165.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3500,7 +3574,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 104.14 152.4 0)
+			(at 120.65 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3511,7 +3585,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 152.4 0)
+			(at 120.65 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3522,7 +3596,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 104.14 152.4 0)
+			(at 120.65 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3533,7 +3607,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "40104652-2898-4947-ab08-6543b3ad057c")
+			(uuid "2aa25081-a3d1-406c-ae6a-f0f7c6153ddc")
 		)
 		(instances
 			(project "front_board"
@@ -4223,7 +4297,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 187.96 81.28 0)
+		(at 182.88 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4234,7 +4308,7 @@
 		(fields_autoplaced yes)
 		(uuid "3cc459af-b73e-443e-a72e-0bfcba3f3566")
 		(property "Reference" "#FLG01"
-			(at 187.96 79.375 0)
+			(at 182.88 79.375 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4245,7 +4319,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 187.96 76.2 0)
+			(at 182.88 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4256,7 +4330,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 187.96 81.28 0)
+			(at 182.88 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4267,7 +4341,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 187.96 81.28 0)
+			(at 182.88 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4278,7 +4352,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 187.96 81.28 0)
+			(at 182.88 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4629,106 +4703,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:NJM4556A")
-		(at 72.39 133.35 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4cc28c21-cd7c-4459-9998-04e53c77bb58")
-		(property "Reference" "U2"
-			(at 72.39 123.19 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NJM4556A"
-			(at 72.39 125.73 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "cynthia:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 72.39 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.njr.com/semicon/PDF/NJM4556A_E.pdf"
-			(at 72.39 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Dual High Current Operational Amplifier, DIP-8/DMP-8/SIP-8/SSOP-8"
-			(at 72.39 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "552c2c4a-ce47-4d50-a1f6-6b759fec477a")
-		)
-		(pin "6"
-			(uuid "a71d8d89-4824-4eb3-874d-0befc70a1580")
-		)
-		(pin "2"
-			(uuid "35dad8b2-816a-42a0-916d-811b38111663")
-		)
-		(pin "4"
-			(uuid "8a7e089c-9711-4330-8b3f-140a2aa23dd7")
-		)
-		(pin "8"
-			(uuid "016602c9-e705-4509-b45f-d557b6576ffd")
-		)
-		(pin "7"
-			(uuid "f2ce5123-84b8-48dc-a85b-d0662623ca15")
-		)
-		(pin "1"
-			(uuid "07b0e5b4-83ef-467f-b8a0-b32dd3a37adc")
-		)
-		(pin "5"
-			(uuid "6c6cb15d-2b50-46b4-acf5-15aafd0168aa")
-		)
-		(instances
-			(project "front_board"
-				(path "/2d5a911f-4b9f-4fa8-89c3-2c221dbff547"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 187.96 91.44 0)
+		(at 182.88 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4739,7 +4715,7 @@
 		(fields_autoplaced yes)
 		(uuid "58696b9d-bb8b-4954-b322-f8b2edd6eb74")
 		(property "Reference" "#PWR029"
-			(at 187.96 97.79 0)
+			(at 182.88 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4750,7 +4726,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 187.96 96.52 0)
+			(at 182.88 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4760,7 +4736,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 187.96 91.44 0)
+			(at 182.88 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4771,7 +4747,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 187.96 91.44 0)
+			(at 182.88 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4782,7 +4758,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 187.96 91.44 0)
+			(at 182.88 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4806,7 +4782,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 86.36 161.29 90)
+		(at 102.87 168.91 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4815,9 +4791,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "597abcc5-3208-4c2e-8c52-e0126361485f")
+		(uuid "5a0c44e5-b4f2-4d1a-aeb2-fb454088f37a")
 		(property "Reference" "R1"
-			(at 86.36 154.94 90)
+			(at 102.87 162.56 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4827,7 +4803,7 @@
 			)
 		)
 		(property "Value" "10R"
-			(at 86.36 157.48 90)
+			(at 102.87 165.1 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4837,7 +4813,7 @@
 			)
 		)
 		(property "Footprint" "cynthia:R SMD  0805"
-			(at 86.36 163.068 90)
+			(at 102.87 170.688 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4848,7 +4824,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 161.29 0)
+			(at 102.87 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4859,7 +4835,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 86.36 161.29 0)
+			(at 102.87 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4870,10 +4846,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "18155669-aec6-44e8-97b9-d344420ff187")
+			(uuid "e6fe13bf-ff38-418d-8f63-90994ce586b4")
 		)
 		(pin "1"
-			(uuid "afb3172f-86a1-4358-b11f-05f4177a5fbe")
+			(uuid "e349a38e-106b-4dff-ab94-abbc6e6e4ced")
 		)
 		(instances
 			(project "front_board"
@@ -4985,9 +4961,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R_Potentiometer_Dual"
+		(property "Value" "A50k"
 			(at 41.91 143.5101 90)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5107,6 +5082,104 @@
 				(path "/2d5a911f-4b9f-4fa8-89c3-2c221dbff547"
 					(reference "RV1")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:NJM4556A")
+		(at 88.9 168.91 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a19a00e-dbf2-4302-a5ef-84d31e99704d")
+		(property "Reference" "U2"
+			(at 88.9 158.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NJM4556A"
+			(at 88.9 161.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cynthia:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 88.9 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.njr.com/semicon/PDF/NJM4556A_E.pdf"
+			(at 88.9 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual High Current Operational Amplifier, DIP-8/DMP-8/SIP-8/SSOP-8"
+			(at 88.9 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "81b3ef96-5731-43ee-8280-2247a4179a28")
+		)
+		(pin "6"
+			(uuid "784e8871-ab61-411e-92a7-a9e87e93e290")
+		)
+		(pin "2"
+			(uuid "71a5d5a3-70cd-43ac-893f-f298e8658c89")
+		)
+		(pin "4"
+			(uuid "8a7e089c-9711-4330-8b3f-140a2aa23dd9")
+		)
+		(pin "8"
+			(uuid "016602c9-e705-4509-b45f-d557b6576fff")
+		)
+		(pin "7"
+			(uuid "01fd812f-309b-4c22-af7c-26234ba6dad0")
+		)
+		(pin "1"
+			(uuid "d4ba70b9-6add-4d6f-ae80-f1e2bcde582a")
+		)
+		(pin "5"
+			(uuid "ffe90892-a552-433e-9e17-7c4bee868e4b")
+		)
+		(instances
+			(project "front_board"
+				(path "/2d5a911f-4b9f-4fa8-89c3-2c221dbff547"
+					(reference "U2")
+					(unit 2)
 				)
 			)
 		)
@@ -5681,86 +5754,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 86.36 133.35 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8a00da7c-83c3-4203-97c0-bdb9de7d2762")
-		(property "Reference" "R2"
-			(at 86.36 127 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10R"
-			(at 86.36 129.54 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "cynthia:R SMD  0805"
-			(at 86.36 135.128 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 86.36 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 86.36 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "6479b526-8880-4df3-96af-1efb92997bfa")
-		)
-		(pin "1"
-			(uuid "1293de0d-8d8a-4578-841f-a029ee93bf3a")
-		)
-		(instances
-			(project "front_board"
-				(path "/2d5a911f-4b9f-4fa8-89c3-2c221dbff547"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 153.67 90.17 0)
 		(unit 1)
@@ -6099,104 +6092,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:NJM4556A")
-		(at 72.39 161.29 0)
-		(unit 2)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "96bb0457-e3c1-4d4a-9d24-651195f00488")
-		(property "Reference" "U2"
-			(at 72.39 151.13 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NJM4556A"
-			(at 72.39 153.67 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "cynthia:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 72.39 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.njr.com/semicon/PDF/NJM4556A_E.pdf"
-			(at 72.39 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Dual High Current Operational Amplifier, DIP-8/DMP-8/SIP-8/SSOP-8"
-			(at 72.39 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "81b3ef96-5731-43ee-8280-2247a4179a28")
-		)
-		(pin "6"
-			(uuid "9aaf2f03-0165-47d9-aaac-b0aa5c658876")
-		)
-		(pin "2"
-			(uuid "71a5d5a3-70cd-43ac-893f-f298e8658c89")
-		)
-		(pin "4"
-			(uuid "8a7e089c-9711-4330-8b3f-140a2aa23dd9")
-		)
-		(pin "8"
-			(uuid "016602c9-e705-4509-b45f-d557b6576fff")
-		)
-		(pin "7"
-			(uuid "d26969f6-da59-480b-90d7-4f5237cba8ff")
-		)
-		(pin "1"
-			(uuid "d4ba70b9-6add-4d6f-ae80-f1e2bcde582a")
-		)
-		(pin "5"
-			(uuid "dc28b670-c461-4e09-8512-0c9ed13f3bf3")
-		)
-		(instances
-			(project "front_board"
-				(path "/2d5a911f-4b9f-4fa8-89c3-2c221dbff547"
-					(reference "U2")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+12V")
 		(at 195.58 76.2 0)
 		(unit 1)
@@ -6269,6 +6164,86 @@
 			(project "front_board"
 				(path "/2d5a911f-4b9f-4fa8-89c3-2c221dbff547"
 					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 102.87 140.97 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad35e279-75f0-427d-9795-b7bdd74c573e")
+		(property "Reference" "R2"
+			(at 102.87 134.62 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10R"
+			(at 102.87 137.16 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cynthia:R SMD  0805"
+			(at 102.87 142.748 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 102.87 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "dc82369e-69f6-4bea-a9a3-ee014b141b90")
+		)
+		(pin "1"
+			(uuid "6bfebb1f-75ba-480b-9e7c-fd9d4f588ae6")
+		)
+		(instances
+			(project "front_board"
+				(path "/2d5a911f-4b9f-4fa8-89c3-2c221dbff547"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -6769,6 +6744,104 @@
 		)
 	)
 	(symbol
+		(lib_id "Amplifier_Operational:NJM4556A")
+		(at 88.9 140.97 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2630ea5-4464-4b82-8569-5b53657df9e1")
+		(property "Reference" "U2"
+			(at 88.9 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NJM4556A"
+			(at 88.9 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cynthia:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 88.9 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.njr.com/semicon/PDF/NJM4556A_E.pdf"
+			(at 88.9 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual High Current Operational Amplifier, DIP-8/DMP-8/SIP-8/SSOP-8"
+			(at 88.9 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "dadb7662-d09a-4790-a00c-eb478c0140a3")
+		)
+		(pin "6"
+			(uuid "a71d8d89-4824-4eb3-874d-0befc70a1580")
+		)
+		(pin "2"
+			(uuid "f86edf9a-92ae-4c64-bbfd-fa83193d6051")
+		)
+		(pin "4"
+			(uuid "8a7e089c-9711-4330-8b3f-140a2aa23dd7")
+		)
+		(pin "8"
+			(uuid "016602c9-e705-4509-b45f-d557b6576ffd")
+		)
+		(pin "7"
+			(uuid "f2ce5123-84b8-48dc-a85b-d0662623ca15")
+		)
+		(pin "1"
+			(uuid "a4c72ef2-3cab-4deb-b1d1-fc0a1c3f7083")
+		)
+		(pin "5"
+			(uuid "6c6cb15d-2b50-46b4-acf5-15aafd0168aa")
+		)
+		(instances
+			(project "front_board"
+				(path "/2d5a911f-4b9f-4fa8-89c3-2c221dbff547"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 39.37 147.32 0)
 		(unit 1)
@@ -7008,6 +7081,90 @@
 		)
 	)
 	(symbol
+		(lib_id "cynthia:3.5mm jack stereo")
+		(at 120.65 154.94 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ea8114f8-d110-4c65-adea-e756408b2925")
+		(property "Reference" "J4"
+			(at 119.634 150.114 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" ""
+			(at 120.65 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cynthia:3.5mm jack stereo round"
+			(at 120.65 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "HEADPHONES OUT"
+			(at 133.858 155.194 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "R"
+			(uuid "7897caac-50e9-4142-9ae6-e58c6a77d943")
+		)
+		(pin "T"
+			(uuid "777a67c1-7670-4522-9ee4-e4de48f40541")
+		)
+		(pin "S"
+			(uuid "bb0069f9-240b-4838-bd25-509bcb87657f")
+		)
+		(instances
+			(project "front_board"
+				(path "/2d5a911f-4b9f-4fa8-89c3-2c221dbff547"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 77.47 88.9 0)
 		(unit 1)
@@ -7080,90 +7237,6 @@
 			(project "front_board"
 				(path "/2d5a911f-4b9f-4fa8-89c3-2c221dbff547"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "cynthia:3.5mm jack stereo")
-		(at 104.14 147.32 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f78057c6-34c2-41ac-b509-95802857457d")
-		(property "Reference" "J4"
-			(at 103.124 142.494 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" ""
-			(at 104.14 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "cynthia:3.5mm jack stereo round"
-			(at 104.14 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 104.14 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "HEADPHONES OUT"
-			(at 117.348 147.574 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "R"
-			(uuid "f652fdf7-d481-471c-97ae-b331d0830b5e")
-		)
-		(pin "T"
-			(uuid "01d79ff0-fbbb-4b27-a802-9b9c7f1d6025")
-		)
-		(pin "S"
-			(uuid "554fa430-6b9f-4208-823e-06366cb4a83e")
-		)
-		(instances
-			(project "front_board"
-				(path "/2d5a911f-4b9f-4fa8-89c3-2c221dbff547"
-					(reference "J4")
 					(unit 1)
 				)
 			)

@@ -85,7 +85,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "gerber/")
+			(outputdirectory "pcb/")
 		)
 	)
 	(footprint "cynthia:3.5mm thonk jack socket mono switched"

@@ -2,8 +2,8 @@
 	(version "E")
 	(design
 		(source "/home/benjamin/git/cynthia/06_output/back_board/back_board.kicad_sch")
-		(date "2026-11-08T16:36:58")
-		(tool "Eeschema 10.0.7")
+		(date "2026-11-24T21:15:50")
+		(tool "Eeschema 10.0.8")
 		(sheet
 			(number "1")
 			(name "/")
@@ -99,7 +99,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "0b34f4a6-4b65-4926-bd02-2ba9c9755e50")
+			(tstamps "fe7ad396-d6be-4bf4-a1fb-c0319b0046c7")
 			(units
 				(unit
 					(name "A")
@@ -159,7 +159,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "703d9ab8-1c03-41e1-a6b3-76d3a61a5d43")
+			(tstamps "91ffda85-863e-44e9-a936-70a5813bc815")
 			(units
 				(unit
 					(name "A")
@@ -286,15 +286,15 @@
 			(ref "D1")
 			(value "1N5819HW-7-F")
 			(footprint "Diode_SMD:D_SOD-123")
-			(datasheet "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf")
-			(description "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323")
+			(datasheet "https://4donline.ihs.com/images/VipMasterIC/IC/DIOD/DIOD-S-A0011437026/DIOD-S-A0011683586-1.pdf?hkey=CECEF36DEECDED6468708AAF2E19C0C6")
+			(description "40V 600mV@1A 1A SOD-123 Schottky Barrier Diodes, SOD-123")
 			(fields
 				(field
 					(name "Footprint") "Diode_SMD:D_SOD-123")
 				(field
-					(name "Datasheet") "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf")
+					(name "Datasheet") "https://4donline.ihs.com/images/VipMasterIC/IC/DIOD/DIOD-S-A0011437026/DIOD-S-A0011683586-1.pdf?hkey=CECEF36DEECDED6468708AAF2E19C0C6")
 				(field
-					(name "Description") "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323")
+					(name "Description") "40V 600mV@1A 1A SOD-123 Schottky Barrier Diodes, SOD-123")
 			)
 			(libsource
 				(lib "Diode")
@@ -340,15 +340,15 @@
 			(ref "D2")
 			(value "1N5819HW-7-F")
 			(footprint "Diode_SMD:D_SOD-123")
-			(datasheet "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf")
-			(description "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323")
+			(datasheet "https://4donline.ihs.com/images/VipMasterIC/IC/DIOD/DIOD-S-A0011437026/DIOD-S-A0011683586-1.pdf?hkey=CECEF36DEECDED6468708AAF2E19C0C6")
+			(description "40V 600mV@1A 1A SOD-123 Schottky Barrier Diodes, SOD-123")
 			(fields
 				(field
 					(name "Footprint") "Diode_SMD:D_SOD-123")
 				(field
-					(name "Datasheet") "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf")
+					(name "Datasheet") "https://4donline.ihs.com/images/VipMasterIC/IC/DIOD/DIOD-S-A0011437026/DIOD-S-A0011683586-1.pdf?hkey=CECEF36DEECDED6468708AAF2E19C0C6")
 				(field
-					(name "Description") "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323")
+					(name "Description") "40V 600mV@1A 1A SOD-123 Schottky Barrier Diodes, SOD-123")
 			)
 			(libsource
 				(lib "Diode")
@@ -711,6 +711,72 @@
 			)
 		)
 		(comp
+			(ref "JP3")
+			(value "Conn_02x03_Odd_Even")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical")
+			(description "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(fields
+				(field
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(libsource
+				(lib "Connector_Generic")
+				(part "Conn_02x03_Odd_Even")
+				(description "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Sheetname")
+				(value "back_board")
+			)
+			(property
+				(name "Sheetfile")
+				(value "back_board.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_2x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9bf5c733-9784-4b3a-b038-e3a20cb129f7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "6")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "R3")
 			(value "47k")
 			(footprint "cynthia:R SMD  0805")
@@ -749,7 +815,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "5526c5cf-04bc-4c69-be25-d9e5bf6f0d61")
+			(tstamps "562b54b7-7537-4551-82f5-79879a237b7c")
 			(units
 				(unit
 					(name "A")
@@ -965,7 +1031,7 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "62f7386d-54cd-46c4-8efa-b10f8ad97cb4")
+			(tstamps "5281fd42-b913-4a55-a424-c1d30a2db8ba")
 			(units
 				(unit
 					(name "A")
@@ -1143,6 +1209,267 @@
 			)
 		)
 		(comp
+			(ref "R13")
+			(value "12k")
+			(footprint "cynthia:R SMD  0805")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "cynthia:R SMD  0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "back_board")
+			)
+			(property
+				(name "Sheetfile")
+				(value "back_board.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "af42df71-1e07-419f-a559-9ff4176b28ce")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R16")
+			(value "12k")
+			(footprint "cynthia:R SMD  0805")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "cynthia:R SMD  0805")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "back_board")
+			)
+			(property
+				(name "Sheetfile")
+				(value "back_board.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a21d979f-bda3-4d84-b0d3-aa81b72aaa22")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP1")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_Pad_1.0x1.0mm")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Pad_1.0x1.0mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "back_board")
+			)
+			(property
+				(name "Sheetfile")
+				(value "back_board.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "83f4b4f2-8503-4472-b237-0c008a9e337f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP2")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_Loop_D3.80mm_Drill2.5mm")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Loop_D3.80mm_Drill2.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "back_board")
+			)
+			(property
+				(name "Sheetfile")
+				(value "back_board.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "f91fe442-1276-4db0-8d94-b573917cf59c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP3")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_Pad_1.0x1.0mm")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Pad_1.0x1.0mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "back_board")
+			)
+			(property
+				(name "Sheetfile")
+				(value "back_board.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "c4685c25-c1dc-4178-85ec-7bc85a5352b1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "U3")
 			(value "TL072")
 			(footprint "cynthia:SOIC-8_3.9x4.9mm_P1.27mm")
@@ -1232,39 +1559,54 @@
 			(name "eurorack 10pin header")
 			(uuid "/f5bac6d8-8450-4cb2-bcb5-122c4b23b438")
 			(lib_id "cynthia:eurorack 10pin header")
+			(members)
+		)
+		(group
+			(name "Eurorack Power Header")
+			(uuid "/145245ee-623a-4103-9804-1ce27f90df89")
+			(lib_id "cynthia:Eurorack Power Header")
 			(members
 				(member
-					(uuid "/bdbc833e-2d69-4f40-bdb8-07ec02cee222")
+					(uuid "/0b5ada2d-b62d-4faf-ac83-6402040be36d")
 				)
 				(member
-					(uuid "/9b9d683e-ad51-4a49-8772-0288642e220b")
-				)
-				(member
-					(uuid "/9a2a8315-51d7-4329-91e1-c35808f41992")
+					(uuid "/76451139-2229-4d08-8e5a-a5703a4b1890")
 				)
 				(member
 					(uuid "/6f5aab91-dec9-443b-b595-d8333e20f8f0")
 				)
 				(member
-					(uuid "/703d9ab8-1c03-41e1-a6b3-76d3a61a5d43")
+					(uuid "/91ffda85-863e-44e9-a936-70a5813bc815")
+				)
+				(member
+					(uuid "/fe7ad396-d6be-4bf4-a1fb-c0319b0046c7")
+				)
+				(member
+					(uuid "/f91fe442-1276-4db0-8d94-b573917cf59c")
+				)
+				(member
+					(uuid "/3d1a4769-8a36-4679-accd-2d9202ad4cf5")
 				)
 				(member
 					(uuid "/65d17fcb-5325-4ea6-a51e-9b38a38e0aa5")
 				)
 				(member
-					(uuid "/0b34f4a6-4b65-4926-bd02-2ba9c9755e50")
+					(uuid "/400aa32a-c1ef-4606-aa85-2670797a7639")
 				)
 				(member
-					(uuid "/0b5ada2d-b62d-4faf-ac83-6402040be36d")
+					(uuid "/9a2a8315-51d7-4329-91e1-c35808f41992")
 				)
 				(member
-					(uuid "/edcf8882-8d7f-4919-becf-b036a4b0bb38")
+					(uuid "/83f4b4f2-8503-4472-b237-0c008a9e337f")
 				)
 				(member
 					(uuid "/9ecc636c-7b7d-4528-a17e-6436999a8a99")
 				)
 				(member
-					(uuid "/400aa32a-c1ef-4606-aa85-2670797a7639")
+					(uuid "/c4685c25-c1dc-4178-85ec-7bc85a5352b1")
+				)
+				(member
+					(uuid "/9b9d683e-ad51-4a49-8772-0288642e220b")
 				)
 			)
 		)
@@ -1390,6 +1732,90 @@
 				(pin
 					(num "5")
 					(name "Pin_5")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Connector")
+			(part "TestPoint")
+			(description "test point")
+			(footprints
+				(fp "Pin*")
+				(fp "Test*")
+			)
+			(fields
+				(field
+					(name "Reference") "TP")
+				(field
+					(name "Value") "TestPoint")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Connector_Generic")
+			(part "Conn_02x03_Odd_Even")
+			(description "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(footprints
+				(fp "Connector*:*_2x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_02x03_Odd_Even")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "Pin_3")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "Pin_4")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "Pin_5")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "Pin_6")
 					(type "passive")
 				)
 			)
@@ -1705,6 +2131,12 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "TP1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
 				(ref "U3")
 				(pin "8")
 				(pinfunction "V+_8")
@@ -1735,6 +2167,12 @@
 				(ref "J7")
 				(pin "5")
 				(pinfunction "Pin_5_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP3")
+				(pin "1")
+				(pinfunction "1_1")
 				(pintype "passive")
 			)
 			(node
@@ -1836,20 +2274,8 @@
 			)
 			(node
 				(ref "J7")
-				(pin "2")
-				(pinfunction "Pin_2_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "J7")
 				(pin "3")
 				(pinfunction "Pin_3_3")
-				(pintype "passive")
-			)
-			(node
-				(ref "J7")
-				(pin "4")
-				(pinfunction "Pin_4_4")
 				(pintype "passive")
 			)
 			(node
@@ -1872,10 +2298,32 @@
 				(pin "1")
 				(pintype "passive")
 			)
+			(node
+				(ref "TP2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
 		)
 		(net
 			(code "4")
-			(name "LEFT")
+			(name "LEFT_ATT")
+			(class "Default")
+			(node
+				(ref "J7")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R13")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "5")
+			(name "LEFT_FULL")
 			(class "Default")
 			(node
 				(ref "J6")
@@ -1890,7 +2338,7 @@
 			)
 		)
 		(net
-			(code "5")
+			(code "6")
 			(name "Net-(D1-A)")
 			(class "Default")
 			(node
@@ -1913,7 +2361,7 @@
 			)
 		)
 		(net
-			(code "6")
+			(code "7")
 			(name "Net-(D2-K)")
 			(class "Default")
 			(node
@@ -1936,7 +2384,7 @@
 			)
 		)
 		(net
-			(code "7")
+			(code "8")
 			(name "Net-(J2-PadR)")
 			(class "Default")
 			(node
@@ -1952,7 +2400,7 @@
 			)
 		)
 		(net
-			(code "8")
+			(code "9")
 			(name "Net-(J2-PadT)")
 			(class "Default")
 			(node
@@ -1968,7 +2416,7 @@
 			)
 		)
 		(net
-			(code "9")
+			(code "10")
 			(name "Net-(J5-PadR)")
 			(class "Default")
 			(node
@@ -1984,7 +2432,7 @@
 			)
 		)
 		(net
-			(code "10")
+			(code "11")
 			(name "Net-(J5-PadT)")
 			(class "Default")
 			(node
@@ -2000,12 +2448,45 @@
 			)
 		)
 		(net
-			(code "11")
-			(name "Net-(U3A-+)")
+			(code "12")
+			(name "Net-(JP3-Pin_1)")
 			(class "Default")
 			(node
-				(ref "R7")
+				(ref "JP3")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R16")
 				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "13")
+			(name "Net-(JP3-Pin_2)")
+			(class "Default")
+			(node
+				(ref "JP3")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R13")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "14")
+			(name "Net-(JP3-Pin_3)")
+			(class "Default")
+			(node
+				(ref "JP3")
+				(pin "3")
+				(pinfunction "Pin_3_3")
 				(pintype "passive")
 			)
 			(node
@@ -2021,7 +2502,61 @@
 			)
 		)
 		(net
-			(code "12")
+			(code "15")
+			(name "Net-(JP3-Pin_4)")
+			(class "Default")
+			(node
+				(ref "JP3")
+				(pin "4")
+				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "R4")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "5")
+				(pinfunction "+_5")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "16")
+			(name "Net-(JP3-Pin_5)")
+			(class "Default")
+			(node
+				(ref "JP3")
+				(pin "5")
+				(pinfunction "Pin_5_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "R7")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "17")
+			(name "Net-(JP3-Pin_6)")
+			(class "Default")
+			(node
+				(ref "JP3")
+				(pin "6")
+				(pinfunction "Pin_6_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "R3")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "18")
 			(name "Net-(U3A--)")
 			(class "Default")
 			(node
@@ -2042,28 +2577,7 @@
 			)
 		)
 		(net
-			(code "13")
-			(name "Net-(U3B-+)")
-			(class "Default")
-			(node
-				(ref "R3")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R4")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "U3")
-				(pin "5")
-				(pinfunction "+_5")
-				(pintype "input")
-			)
-		)
-		(net
-			(code "14")
+			(code "19")
 			(name "Net-(U3B--)")
 			(class "Default")
 			(node
@@ -2084,8 +2598,24 @@
 			)
 		)
 		(net
-			(code "15")
-			(name "RIGHT")
+			(code "20")
+			(name "RIGHT_ATT")
+			(class "Default")
+			(node
+				(ref "J7")
+				(pin "4")
+				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "R16")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "21")
+			(name "RIGHT_FULL")
 			(class "Default")
 			(node
 				(ref "J6")
@@ -2100,7 +2630,7 @@
 			)
 		)
 		(net
-			(code "16")
+			(code "22")
 			(name "unconnected-(J2-PadRN)")
 			(class "Default")
 			(node
@@ -2111,7 +2641,7 @@
 			)
 		)
 		(net
-			(code "17")
+			(code "23")
 			(name "unconnected-(J2-PadTN)")
 			(class "Default")
 			(node
@@ -2122,7 +2652,7 @@
 			)
 		)
 		(net
-			(code "18")
+			(code "24")
 			(name "unconnected-(J5-PadRN)")
 			(class "Default")
 			(node
@@ -2133,7 +2663,7 @@
 			)
 		)
 		(net
-			(code "19")
+			(code "25")
 			(name "unconnected-(J5-PadTN)")
 			(class "Default")
 			(node
