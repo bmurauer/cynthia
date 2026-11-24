@@ -1,0 +1,91 @@
+% Filter core of module 04: diode chain, exponential current steering, mode inputs and resonance loop.
+% Reference designators follow 04_diode_ladder_vcf.net. Values marked (!) differ from the Steiner reference.
+% Render: tools/render_tikz.sh 04_diode_ladder_vcf/drawings/tikz/filter_core.tex
+\documentclass[border=8pt]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\usetikzlibrary{backgrounds,calc}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.8, diodes/scale=0.7}
+\begin{document}
+\begin{circuitikz}[font=\sffamily\small, show background rectangle,
+                   background rectangle/.style={fill=white}]
+  \tikzset{pin/.style={font=\sffamily\scriptsize, text=gray}}
+  \tikzset{note/.style={font=\sffamily\scriptsize, align=left}}
+
+  % --- Diode chain: all diodes point the same way, Q2 side (anode) to Q1 side (cathode)
+  \draw (3,0) to[D, l_=D1--D3, *-*] (0,0);
+  \draw (6,0) to[D, l_=D4--D5, *-] (3,0);
+  \draw (9,0) to[D, l_=D6--D7, *-*] (6,0);
+  \draw (12,0) to[D, l_=D8--D10, *-*] (9,0);
+
+  % --- Caps: outer pair returns to the BP / resonance rail, centre cap to the HP node
+  \draw (3,0) to[C, l_=C6 1.5\,nF] (3,-2.6) coordinate (bpl);
+  \draw (9,0) to[C, l=C11 1.5\,nF] (9,-2.6) coordinate (bpr);
+  \draw (6,0) to[C, l=C8 1.5\,nF] (6,-1.5) coordinate (hp);
+  \draw (hp) to[R, l=R12 1\,k$\Omega$, *-] (8.2,-1.5) node[ground]{};
+  \draw (hp) to[short, -o] (4.2,-1.5) node[above, font=\sffamily\scriptsize]{HP in};
+  \draw (bpl) to[short, -*] (bpr);
+  \draw (bpl) to[short, -o] (1.3,-2.6) node[above, font=\sffamily\scriptsize]{BP in (C17)};
+  \draw (6,-2.6) to[R, l=R15 180\,k$\Omega$, *-] (6,-4.3) node[ground]{};
+
+  % --- Load resistors, symmetry trimmer and supply
+  \draw (0,0) to[short] (0,1.3) to[R, l=R8 1.8\,k$\Omega$] (0,3.2);
+  \draw (12,0) to[short] (12,1.3) to[R, l_=R16 1.8\,k$\Omega$] (12,3.2);
+  \draw (0,3.2) -- (4.5,3.2) to[pR, n=rv4, l_=RV4 1\,k$\Omega$ symmetry] (7.5,3.2) -- (12,3.2);
+  \draw (rv4.wiper) -- (6,4.6) coordinate (top);
+  \draw (top) to[R, l_=R11 180\,k$\Omega$ (!), *-*] (6,6.4) coordinate (dec);
+  \draw (dec) to[R, l_=R10 180\,k$\Omega$ (!)] (6,8.2) node[vcc]{+12\,V};
+  \draw (dec) to[short] (9.8,6.4) to[C, l=C15 47\,$\mu$F] (9.8,4.8) node[ground]{};
+  \draw (top) to[C, l_=C16 2.2\,$\mu$F, -o] (2.8,4.6) node[left, font=\sffamily\scriptsize]{LP in};
+
+  % --- Differential pair
+  \node[npn, anchor=C] (q1) at (0,-3.8) {};
+  \node[npn, xscale=-1, anchor=C] (q2) at (12,-3.8) {};
+  \node[left, xshift=-14pt, yshift=12pt] at (q1) {Q1};
+  \node[right, xshift=14pt, yshift=12pt] at (q2) {Q2};
+  \draw (0,0) -- (q1.C);
+  \draw (12,0) -- (q2.C);
+  \draw (q2.B) -- ++(0.6,0) node[ground]{};
+  \draw (q1.E) |- (6,-6.4) coordinate (tail);
+  \draw (q2.E) |- (tail);
+  \draw (tail) to[R, l=R13 3.9\,k$\Omega$, *-*] (6,-8.2) coordinate (tl);
+  \draw (tl) to[R, l=R14 82\,$\Omega$] (6,-9.8) node[vee]{$-$12\,V};
+  \draw (tl) to[short] (8.2,-8.2) to[C, l=C10 47\,$\mu$F] (8.2,-9.8) node[ground]{};
+
+  % --- Cutoff control at Q1 base
+  \draw (q1.B) to[short, -*] ++(-2,0) coordinate (b);
+  \draw (b) to[R, l_=R4 220\,k$\Omega$, -o] ++(-3,0) node[left, align=right, font=\sffamily\scriptsize]{CV (J2,\\RV1 level)};
+  \draw (b) -- ++(0,-1.5) coordinate (b2) to[R, l_=R5 100\,k$\Omega$, -o] ++(-3,0) node[left, align=right, font=\sffamily\scriptsize]{Offset (RV2,\\via R1 to +12\,V)};
+  \draw (b2) to[R, l=R9 220\,$\Omega$, *-] ++(0,-1.5) to[vR, l=RV3 2\,k$\Omega$] ++(0,-1.6) node[ground]{};
+
+  % --- Output buffer
+  \draw (6,0) -- (6,0.7) to[short] (12.6,0.7) to[C, l=C9 680\,nF] (14.2,0.7) coordinate (o);
+  \draw (o) to[R, l_=R17 2.2\,M$\Omega$, *-] (14.2,-0.9) node[ground]{};
+  \node[op amp, noinv input up, anchor=+] (uc) at (16.2,0.7) {\scriptsize U1C};
+  \draw (o) -- (uc.+);
+  \node[pin, above left] at (uc.+) {10};
+  \node[pin, below left] at (uc.-) {9};
+  \draw (uc.out) to[short, -o] ++(2.4,0) coordinate (e) node[right, align=left, font=\sffamily\scriptsize]{to U1B (gain $-$22),\\R26, J3 Audio Out};
+  \node[note, above] at ($(uc.out)+(0.9,0.5)$) {gain 3.1\\(R20 / R19)};
+
+  % --- Resonance loop back to the capacitor rail
+  \coordinate (fbt) at ($(uc.out)+(0.9,0)$);
+  \draw (fbt) to[short, *-] ++(0,-2.1) coordinate (f1);
+  \draw (f1) to[R, l=R22 3.9\,k$\Omega$] ($(f1)+(0,-1.8)$) coordinate (f2);
+  \draw (f2) to[vR, l=RV5 2\,k$\Omega$] ($(f2)+(0,-1.8)$) coordinate (f3);
+  \draw (f3) to[pR, n=rv6, l=RV6 100\,k$\Omega$ resonance] ($(f3)+(0,-2.2)$) node[ground]{};
+  \draw (rv6.wiper) to[C, l=C14 10\,$\mu$F] ++(-2,0) coordinate (f4);
+  \draw (f4) to[R, l=R23 220\,k$\Omega$] ++(-2.2,0) coordinate (f5);
+  \node[op amp, noinv input up, xscale=-1, anchor=+] (ud) at (f5) {};
+  \node[font=\scriptsize] at (ud) {U1D};
+  \draw (ud.-) -- ++(0,-1) -| (ud.out);
+  \draw (f5) to[R, l=R21 1\,M$\Omega$, *-] ++(0,1.5) node[ground, rotate=180]{};
+  \draw (ud.out) -- ($(ud.out)+(-0.3,0)$) |- (10.6,-2.6);
+  \draw (10.6,-2.6) to[R, l_=R18 1\,k$\Omega$] (bpr);
+
+  % --- Mode table
+  \node[note, anchor=north west, draw, inner sep=5pt] at (-6.8,8.2) {
+    \textbf{SW1: where U1A's output (U1.1) enters the core}\\
+    LP: C16\quad BP: C17\quad HP: R12 / C8\quad AP: C16 + R12\\[3pt]
+    (!) reference uses R10 390\,$\Omega$, R11 1\,k$\Omega$};
+\end{circuitikz}
+\end{document}
