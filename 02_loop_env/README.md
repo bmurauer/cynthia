@@ -28,7 +28,7 @@ I want to keep this part analog, and not rely on a MCU to perform fancy things.
 
 ## Design (rev 2): LM13700 slew core
 
-Status: designed, simulated (behavioural OTA model) and fully breadboarded (gate and loop mode); rev 1 PCBs laid out.
+Status: designed, simulated (behavioural OTA model) and fully breadboarded (gate and loop mode); rev 1 PCBs ordered (tag `02-rev1`). See `STATUS.md`.
 Replaces the rev 1 experiment (RC timing with switched transistor current sources for linear mode).
 
 ### Principle

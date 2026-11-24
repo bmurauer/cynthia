@@ -105,52 +105,6 @@ difference() {
 }
 ```
 
-### Kosmo panels
-
-The following example generates a panel for the first module, the `01_poly_midi_2_cv`:
-
-```
-width = 100;
-include <kosmo.scad>
-
-difference(){
-    panel(width);
-    midiSocket(width/2, panelHeight-35);
-    
-    buffer=20; // space between border and first item
-
-    jack(buffer, 40); 
-    switch(width/2, 40);
-    jack(width-buffer, 40);
-    
-    jack(buffer, 70); 
-    switch(width/2, 70);
-    jack(width-buffer, 70);
-    
-    jack(buffer, 100); 
-    switch(width/2, 100);
-    jack(width-buffer, 100);
-    
-    jack(buffer, 130); 
-    switch(width/2, 130);
-    jack(width-buffer, 130);
-}
-pcbHolders();
-
-```
-
-This results in the following panel: ![generated panel](images/01_poly_midi_2_cv.png)
-
-I have included two tabs for the PCB that are printed with the panel, to which I can screw the PCB using M3 screws.
-The tabs have small indentations for the nuts.
-Since I have a crappy 3D printer, those holes are not very tidy, and I use my soldering iron to convince the nuts to go where they should.
-And since I am an even crappier woodcraftsman than I am an electrician, the panels are set to 197 mm height in the library file to compensate for the bad measuring I did when making the case.
-
-![pcb tabs](images/pcb_holder.png)
-
-> [!NOTE]
-> The distance between the tabs that I have used depends on the pre-drilled holes of the strip boards that I like to use.
-> Please change this distance if you have other PCBs.
 
 ## PCB Design and Build Notes
 

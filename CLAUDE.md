@@ -9,3 +9,5 @@ Read netlists with `tools/netlist.py <module>` (e.g. `tools/netlist.py 02 --ref 
 When reviewing or designing PCBs, check them against the "PCB Design and Build Notes" section of the top-level `README.md` (part orientation on sibling boards, bus header alignment, board label and revision on silkscreen, revision tags, bring-up).
 
 Don't update files immediately if the conversation is fundamental and different options are being considered. Discuss and settle on an approach first.
+
+`STATUS.md` records the physical state of every eurorack module (what is breadboarded, ordered, built) and the stages each module goes through. Read it before working on a module. If a request doesn't fit the recorded stage (e.g. asking how to calibrate a module whose schematic isn't finished, or laying out a PCB before the breadboard gate is met), point that out and ask me to update `STATUS.md` before continuing. When a module reaches stage 3, suggest which blocks of the schematic are worth breadboarding and which can be skipped, and make sure the reason for any skip gets recorded.

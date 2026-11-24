@@ -3,7 +3,7 @@
 Stereo output module: takes two eurorack-level signals and provides impedance-balanced 6.35mm line outputs and a
 3.5mm headphone output with a volume control.
 
-Status: rev 1 PCBs laid out, not ordered or built yet. The panel will be designed once the PCBs have arrived.
+Status: rev 1 PCBs ordered (tag `06-rev1`), not built yet. The panel will be designed once the PCBs have arrived. See `STATUS.md`.
 
 ## I/O Specification
 
@@ -40,8 +40,8 @@ Each channel runs through the same stages. Left is shown, with right in brackets
       input needs to reject common-mode noise. A TS plug simply grounds the ring, which is harmless.
 
 RV1's signal goes to pins 3 and 6 and its GND to pins 1 and 4, so that clockwise turns the volume up. This is the same
-as the other level pots in the project. The mounting tabs are not connected to any net yet. The printed panel doesn't
-ground the pot's frame either, so it is currently floating.
+as the other level pots in the project. The mounting tabs are deliberately left unconnected (see `TODO.md`), so the
+pot's frame floats; the printed panel doesn't ground it either.
 
 ### Line output mode
 

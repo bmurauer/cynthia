@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/home/benjamin/git/cynthia/03_quad_vca_mixer/03_quad_vca_mixer.kicad_sch")
-		(date "2026-11-22T21:16:04")
+		(date "2026-11-24T21:46:11")
 		(tool "Eeschema 10.0.8")
 		(sheet
 			(number "1")
@@ -1917,8 +1917,8 @@
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "ae985b43-85fd-46ee-96cd-89a421c2b7c5" "9d7eb1bc-d4a7-499f-957f-7a759b9a447d"
-				"a05f1f49-5711-409c-b164-0835e0f2153b" "7441ddf8-0caa-482d-86db-c3ce4eea433c"
+			(tstamps "7441ddf8-0caa-482d-86db-c3ce4eea433c" "a05f1f49-5711-409c-b164-0835e0f2153b"
+				"ae985b43-85fd-46ee-96cd-89a421c2b7c5" "9d7eb1bc-d4a7-499f-957f-7a759b9a447d"
 				"6ad26b5e-ca25-4096-b1ec-f596b8c77e2d"
 			)
 			(units
@@ -3356,7 +3356,7 @@
 				(names "/amp stage/")
 				(tstamps "/aebf6210-c6a8-4abb-861b-8d1c211fb154/")
 			)
-			(tstamps "cfc5a3d5-8e36-4b8d-a1dd-651278176458" "87f0c3ce-cde2-4ecd-b6fb-ab7aacd81c6c"
+			(tstamps "87f0c3ce-cde2-4ecd-b6fb-ab7aacd81c6c" "cfc5a3d5-8e36-4b8d-a1dd-651278176458"
 				"5ef45192-49ed-4e90-910f-1a85bf5cae22"
 			)
 			(units
@@ -4766,7 +4766,7 @@
 				(names "/amp stage1/")
 				(tstamps "/81fdd8c4-f204-4b67-abf2-3ada141268b6/")
 			)
-			(tstamps "cfc5a3d5-8e36-4b8d-a1dd-651278176458" "87f0c3ce-cde2-4ecd-b6fb-ab7aacd81c6c"
+			(tstamps "87f0c3ce-cde2-4ecd-b6fb-ab7aacd81c6c" "cfc5a3d5-8e36-4b8d-a1dd-651278176458"
 				"5ef45192-49ed-4e90-910f-1a85bf5cae22"
 			)
 			(units
@@ -6176,7 +6176,7 @@
 				(names "/amp stage2/")
 				(tstamps "/24c23df7-228e-42a8-9ad1-68833cc3b0bc/")
 			)
-			(tstamps "cfc5a3d5-8e36-4b8d-a1dd-651278176458" "87f0c3ce-cde2-4ecd-b6fb-ab7aacd81c6c"
+			(tstamps "87f0c3ce-cde2-4ecd-b6fb-ab7aacd81c6c" "cfc5a3d5-8e36-4b8d-a1dd-651278176458"
 				"5ef45192-49ed-4e90-910f-1a85bf5cae22"
 			)
 			(units
@@ -7586,7 +7586,7 @@
 				(names "/amp stage3/")
 				(tstamps "/664f7d1e-1dc9-4851-b90d-b9f15dbd7242/")
 			)
-			(tstamps "cfc5a3d5-8e36-4b8d-a1dd-651278176458" "87f0c3ce-cde2-4ecd-b6fb-ab7aacd81c6c"
+			(tstamps "87f0c3ce-cde2-4ecd-b6fb-ab7aacd81c6c" "cfc5a3d5-8e36-4b8d-a1dd-651278176458"
 				"5ef45192-49ed-4e90-910f-1a85bf5cae22"
 			)
 			(units
@@ -7642,6 +7642,9 @@
 					(uuid "/fe7ad396-d6be-4bf4-a1fb-c0319b0046c7")
 				)
 				(member
+					(uuid "/c4685c25-c1dc-4178-85ec-7bc85a5352b1")
+				)
+				(member
 					(uuid "/9ecc636c-7b7d-4528-a17e-6436999a8a99")
 				)
 				(member
@@ -7651,19 +7654,10 @@
 					(uuid "/3d1a4769-8a36-4679-accd-2d9202ad4cf5")
 				)
 				(member
-					(uuid "/c4685c25-c1dc-4178-85ec-7bc85a5352b1")
-				)
-				(member
-					(uuid "/91ffda85-863e-44e9-a936-70a5813bc815")
-				)
-				(member
-					(uuid "/9a2a8315-51d7-4329-91e1-c35808f41992")
-				)
-				(member
 					(uuid "/400aa32a-c1ef-4606-aa85-2670797a7639")
 				)
 				(member
-					(uuid "/76451139-2229-4d08-8e5a-a5703a4b1890")
+					(uuid "/91ffda85-863e-44e9-a936-70a5813bc815")
 				)
 				(member
 					(uuid "/0b5ada2d-b62d-4faf-ac83-6402040be36d")
@@ -7673,6 +7667,12 @@
 				)
 				(member
 					(uuid "/6f5aab91-dec9-443b-b595-d8333e20f8f0")
+				)
+				(member
+					(uuid "/76451139-2229-4d08-8e5a-a5703a4b1890")
+				)
+				(member
+					(uuid "/9a2a8315-51d7-4329-91e1-c35808f41992")
 				)
 				(member
 					(uuid "/83f4b4f2-8503-4472-b237-0c008a9e337f")
