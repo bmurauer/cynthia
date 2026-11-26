@@ -120,6 +120,16 @@ Lessons from the first batch of eurorack PCBs (#05 rev1), to keep in mind for ev
   player bus), put the bus header at the same vertical position on every PCB, so the cable runs straight
   across the case.
 
+### Signal levels
+
+- **Gates and triggers are 0/+5V.** New modules output 0/+5V gates. Gate inputs trigger at about 1-2.5V and
+  survive ±12V, so hotter gates from other gear still work. #02's EOC output (about +10V) predates this
+  convention.
+- **Use the TL07xH variants** (TL072H, TL074H), and write the H into the schematic value so the BOM orders
+  the right part. Their input range reaches from (V-)+1.5V up to V+, the output swings to within about 0.2V
+  of the rails, and they don't reverse phase. The old TL07x die is only guaranteed to about 4V from the rails
+  and can flip its output to the opposite rail when an input goes too far negative.
+
 ### Releasing a board revision
 
 - Put a silkscreen text on every board saying what it is and which revision it is, e.g.

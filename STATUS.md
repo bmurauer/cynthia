@@ -13,6 +13,7 @@ Only the eurorack modules are tracked here, not the KOSMO ones.
 | #04 Diode Ladder VCF | 2 Circuit | Not yet | Finish the schematic, then decide what to breadboard | PCB file only holds unrouted footprints | 2026-11-24 |
 | #05 MIDI to CV | 8 In use | Done | None | One conductor, one drum velocity player and two melodic players built and tested in the 84HP Eowave case. Rev2 notes in its README | 2026-11-24 |
 | #06 Output | 5 Ordered | Skipped: similar circuits proven in KOSMO modules, simple operation | Bring-up when PCBs arrive: test both JP3 positions | Tagged `06-rev1` | 2026-11-24 |
+| #07 Buffered Multiple | 4 PCB | Skipped: proven TL074H follower circuits, simple operation. Check output ringing into a long cable at bring-up instead | Order with the next batch | 2 inputs (input 2 normalled to input 1), 4 buffered outputs each, -10V to +10V on TL074H. Concept, I/O table and design notes in its README | 2026-11-26 |
 
 ## Stages
 
@@ -20,7 +21,7 @@ Every module goes through these stages in order. A stage is done when its gate i
 
 | # | Stage | Gate (done when...) |
 |---|-------|---------------------|
-| 1 | Concept | One paragraph on what it does, the HP and the panel controls. The "Design" columns of the I/O table are filled in. |
+| 1 | Concept | One paragraph on the functionality I expect from the module, and the controls and jacks needed to achieve it. The "Design" columns of the I/O table are filled in. The HP width is not fixed here: it follows from the number of controls during PCB layout. |
 | 2 | Circuit | The schematic is based on a proven reference circuit where possible, and the netlist has been exported. Optionally simulated. |
 | 3 | Breadboard | The breadboarded parts work with real parts on real ±12V, and key measurements are in the README. Anything not breadboarded has a recorded reason (see below). **No PCB layout before this gate.** |
 | 4 | PCB | Layout passes DRC and schematic parity, it has been reviewed against the "PCB Design and Build Notes" in `README.md`, and the module README matches the netlist. |
